@@ -1,0 +1,7 @@
+node_modules/
+db/*.sqlite
+tmp/
+.DS_Store
+analisis/.venv/
+analisis/__marimo__/
+__pycache__/

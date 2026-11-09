@@ -1,0 +1,211 @@
+{
+  "id": "mondragon",
+  "siglas": "MCC",
+  "nombre": "Mondragon Corporación Cooperativa",
+  "familia": "cooperativa",
+  "pais": "Euskadi",
+  "fundacion": 1956,
+  "tamano": [
+    70000,
+    "Unas 70.000 personas trabajadoras; una parte no son socias (filiales, sobre todo fuera de Euskadi).",
+    "media"
+  ],
+  "corriente": "Cooperativismo de trabajo asociado",
+  "autogestionada": true,
+  "resumen": "Grupo de cooperativas soberanas. En cada una: Asamblea General (1 socio = 1 voto), Consejo Rector elegido por la Asamblea, Gerencia nombrada por el Consejo Rector y Consejo Social (representa a los socios en temas laborales, consultivo). A escala corporativa: Congreso Cooperativo con delegados de las cooperativas, Comisión Permanente y Consejo General. Las cooperativas pueden irse (Ulma y Orona, 2022).",
+  "poder_formal": "Asamblea General de cada cooperativa.",
+  "poder_real": "Gerencias profesionales y Consejo General corporativo. Los socios votan el capital y las grandes decisiones, pero la información técnica la tiene la gerencia.",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Socios trabajadores",
+      "nivel": 0,
+      "tipo": "base"
+    },
+    {
+      "id": "nosoc",
+      "n": "Trabajadores no socios (filiales)",
+      "nivel": 0,
+      "tipo": "base",
+      "desc": "Sin voto."
+    },
+    {
+      "id": "ag",
+      "n": "Asamblea General de la cooperativa",
+      "nivel": 1,
+      "tipo": "soberano",
+      "elegido_por": [
+        "af"
+      ],
+      "decide": "Mayoría, 1 socio = 1 voto",
+      "freq": "Anual + extraordinarias"
+    },
+    {
+      "id": "cs",
+      "n": "Consejo Social",
+      "nivel": 2,
+      "tipo": "delegados",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Consultivo en condiciones de trabajo."
+    },
+    {
+      "id": "cr",
+      "n": "Consejo Rector",
+      "nivel": 2,
+      "tipo": "coordinacion",
+      "elegido_por": [
+        "ag"
+      ]
+    },
+    {
+      "id": "ger",
+      "n": "Gerencia",
+      "nivel": 3,
+      "tipo": "ejecutivo",
+      "elegido_por": [
+        "cr"
+      ]
+    },
+    {
+      "id": "cong",
+      "n": "Congreso Cooperativo (corporativo)",
+      "nivel": 4,
+      "tipo": "delegados",
+      "elegido_por": [
+        "ag"
+      ]
+    },
+    {
+      "id": "cp",
+      "n": "Comisión Permanente",
+      "nivel": 5,
+      "tipo": "delegados",
+      "elegido_por": [
+        "cong"
+      ]
+    },
+    {
+      "id": "cg",
+      "n": "Consejo General / Presidencia corporativa",
+      "nivel": 6,
+      "tipo": "ejecutivo",
+      "cima": true,
+      "elegido_por": [
+        "cp"
+      ]
+    }
+  ],
+  "reglas": {
+    "metodo": "Mayoría en asamblea de socios; gestión delegada.",
+    "ponderacion": "1 socio = 1 voto independientemente del capital aportado.",
+    "mandato": "Libre (representativo).",
+    "cargos": "Consejo Rector con mandatos de varios años renovables.",
+    "reforma": "Asamblea General de cada cooperativa; Congreso para normas corporativas.",
+    "minorias": "Pueden salir del grupo."
+  },
+  "codigos": {
+    "mandato": [
+      1,
+      "Representativo.",
+      "media"
+    ],
+    "revocabilidad": [
+      2,
+      "La Asamblea puede cesar al Consejo Rector.",
+      "media"
+    ],
+    "rotacion": [
+      2,
+      "Renovación parcial periódica.",
+      "media"
+    ],
+    "profesionalizacion": [
+      1,
+      "Gerencia profesional.",
+      "alta"
+    ],
+    "eleccion_direccion": [
+      2,
+      "Asamblea → Consejo Rector → Gerencia.",
+      "alta"
+    ],
+    "agenda_base": [
+      1,
+      "Propuestas preparadas por el Consejo Rector y la Gerencia.",
+      "media"
+    ],
+    "pluralismo": [
+      2,
+      "Consejo Social como contrapeso.",
+      "media"
+    ],
+    "autonomia_base": [
+      3,
+      "Cooperativas soberanas con derecho de salida.",
+      "alta"
+    ],
+    "brecha_formal_real": [
+      3,
+      "Tecnocracia gerencial; trabajadores sin voto en filiales.",
+      "media"
+    ],
+    "regla_decision": [
+      4,
+      "Mayoría.",
+      "media"
+    ],
+    "capacidad_ejecutiva": [
+      4,
+      "La Gerencia opera con amplio margen.",
+      "media"
+    ],
+    "freq_soberano_meses": [
+      12,
+      "Asamblea General anual.",
+      "media"
+    ],
+    "freq_intermedio_meses": [
+      1,
+      "Consejo Rector mensual.",
+      "baja"
+    ],
+    "niveles": [
+      2,
+      "Asamblea → Consejo Rector.",
+      "alta"
+    ],
+    "estructura_federal": [
+      3,
+      "Grupo de cooperativas.",
+      "alta"
+    ],
+    "coste_coordinacion": [
+      4,
+      "Bajo.",
+      "media"
+    ]
+  },
+  "problemas": [
+    {
+      "t": "democratico",
+      "x": "Escalar por filiales no cooperativas crea una clase de trabajadores sin voto: la democracia no crece con la empresa."
+    },
+    {
+      "t": "democratico",
+      "x": "Asimetría de información entre la gerencia y la asamblea. La crisis de Fagor (2013) mostró que la asamblea ratificaba lo que proponía la dirección técnica."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "El derecho de salida de cada cooperativa preserva la soberanía, pero debilita la solidaridad del grupo (Ulma y Orona en 2022)."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Mondragon — Gobierno corporativo",
+      "u": "https://www.mondragon-corporation.com/"
+    }
+  ],
+  "confianza": "media"
+}

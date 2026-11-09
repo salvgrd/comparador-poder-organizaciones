@@ -1,0 +1,12 @@
+[project]
+name = "analisis-poder-obrero"
+version = "0.1.0"
+description = "Análisis de la estructura de poder de organizaciones obreras"
+requires-python = ">=3.12"
+dependencies = [
+    "marimo>=0.16",
+    "polars>=1.30",
+    "altair>=5.5",
+    "scikit-learn>=1.6",
+    "networkx>=3.4",
+]

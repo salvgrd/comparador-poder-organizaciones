@@ -1,0 +1,268 @@
+{
+  "id": "cnt",
+  "siglas": "CNT",
+  "nombre": "Confederación Nacional del Trabajo",
+  "familia": "sindicato",
+  "pais": "Estado español",
+  "fundacion": 1910,
+  "tamano": [
+    5000,
+    "Unos miles de afiliadas; la CNT no publica cifras consolidadas. Estimación.",
+    "baja"
+  ],
+  "corriente": "Anarcosindicalismo (sección de la CIT desde 2018)",
+  "autogestionada": true,
+  "resumen": "Federación de sindicatos plenamente autónomos. Toda decisión confederal sube desde las asambleas de sindicato como acuerdo escrito; las delegaciones no opinan a título personal. No participa en elecciones a comités de empresa y no tiene cargos remunerados.",
+  "poder_formal": "Asambleas de sindicato. El Congreso (cada 4 años) y los Plenos agregan sus acuerdos con voto ponderado degresivo.",
+  "poder_real": "Muy repartido. El cuello de botella está en el núcleo militante de cada sindicato, que prepara órdenes del día y redacta acuerdos, y en el tiempo libre necesario para ocupar cargos no remunerados.",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Afiliación",
+      "nivel": 0,
+      "tipo": "base",
+      "desc": "Voz y voto en asamblea desde que se acepta la afiliación (art. 16)."
+    },
+    {
+      "id": "secc",
+      "n": "Sección sindical",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Asamblea de la plantilla afiliada en una empresa. Decide su acción sindical; delegados LOLS con mismas reglas que cualquier cargo."
+    },
+    {
+      "id": "sind",
+      "n": "Asamblea del sindicato (SOV o Sindicato Único de Ramo)",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ],
+      "decide": "Mayoría simple, 1 afiliada = 1 voto (art. 53)",
+      "desc": "Órgano soberano real. Plenamente autónomo (art. 2). Elige su comité y mandata a sus delegaciones."
+    },
+    {
+      "id": "csind",
+      "n": "Comité del sindicato",
+      "nivel": 2,
+      "tipo": "coordinacion",
+      "elegido_por": [
+        "sind"
+      ],
+      "desc": "Secretaría General, Organización, Tesorería… Revocable en cualquier momento por la asamblea."
+    },
+    {
+      "id": "fl",
+      "n": "Federación Local / Pleno Local",
+      "nivel": 2,
+      "tipo": "delegados",
+      "elegido_por": [
+        "sind"
+      ],
+      "decide": "Mayoría simple, voto ponderado por tramos (art. 62)",
+      "desc": "Delegaciones de los sindicatos de la localidad con acuerdos escritos."
+    },
+    {
+      "id": "fr",
+      "n": "Federaciones de Ramo",
+      "nivel": 3,
+      "tipo": "sectorial",
+      "elegido_por": [
+        "sind"
+      ],
+      "desc": "Federan sindicatos o secciones de un mismo ramo. Su secretaría está en el Comité Confederal con voz y sin voto."
+    },
+    {
+      "id": "pr",
+      "n": "Pleno Regional",
+      "nivel": 3,
+      "tipo": "delegados",
+      "elegido_por": [
+        "sind"
+      ],
+      "decide": "Mayoría simple ponderada; consenso o refundición antes de votar (arts. 76-80)",
+      "desc": "Máxima instancia en la Confederación Regional. Admite nuevos sindicatos y elige el SP regional."
+    },
+    {
+      "id": "cr",
+      "n": "Comité Regional (SP regional)",
+      "nivel": 4,
+      "tipo": "coordinacion",
+      "elegido_por": [
+        "pr"
+      ],
+      "desc": "Gestiona y coordina; mandatos de 2 años + 2 máx., revocables."
+    },
+    {
+      "id": "pc",
+      "n": "Pleno Confederal",
+      "nivel": 5,
+      "tipo": "delegados",
+      "elegido_por": [
+        "pr"
+      ],
+      "decide": "Mayoría simple; voto de Regionales por tramos 1-17 votos",
+      "desc": "Máxima instancia entre congresos. Delegaciones de los Plenos Regionales, convocado con 30 días. Elige sede y SP del Comité Confederal."
+    },
+    {
+      "id": "cong",
+      "n": "Congreso Confederal",
+      "nivel": 6,
+      "tipo": "soberano",
+      "elegido_por": [
+        "sind"
+      ],
+      "decide": "Mayoría simple ponderada; consenso / refundición previa",
+      "freq": "Cada 4 años, con ≥12 meses de preparación (art. 93)",
+      "desc": "Delegaciones de todos los sindicatos. Traza la línea ideológica; sus acuerdos solo se cambian en otro congreso."
+    },
+    {
+      "id": "cc",
+      "n": "Comité Confederal",
+      "nivel": 6,
+      "tipo": "coordinacion",
+      "elegido_por": [
+        "pr",
+        "pc"
+      ],
+      "desc": "Secretarías generales de las Regionales + SP + secretarías de Federaciones de Ramo (art. 102). Coordina, no legisla."
+    },
+    {
+      "id": "sp",
+      "n": "Secretariado Permanente del CC",
+      "nivel": 7,
+      "tipo": "ejecutivo",
+      "cima": true,
+      "elegido_por": [
+        "pc"
+      ],
+      "desc": "Una Federación Local se postula como sede con nombres concretos (art. 103). No remunerado; 2 años + 2; revocable en cualquier momento."
+    }
+  ],
+  "reglas": {
+    "metodo": "Mayoría simple con proporcionalidad corregida (degresiva) y búsqueda previa de consenso mediante comisiones de refundición.",
+    "ponderacion": "Sindicatos: 2 votos (15-20 afiliadas) hasta 15 votos (>1.000). Regionales en Pleno Confederal: 1 a 17 votos. Sindicatos con <6 meses: 1 voto (arts. 25, 62).",
+    "mandato": "Imperativo: las delegaciones transmiten acuerdos de asamblea, no opiniones personales (art. 55). Delegaciones indirectas: entregar acuerdos por escrito a otra delegación.",
+    "cargos": "No remunerados; no puede ocupar cargo quien cobre del sindicato (art. 105 g-h). 2 años + prórroga de 2. Revocables en cualquier momento.",
+    "reforma": "Estatutos solo en Congreso. Disolución o fusión bloqueadas si 7 sindicatos se oponen (arts. 180-181). Ciertos artículos: 75% en Pleno + ratificación en Congreso.",
+    "minorias": "Votos particulares en comisiones de refundición. No hay tendencias organizadas. La minoría dentro de cada sindicato desaparece en el mandato."
+  },
+  "codigos": {
+    "mandato": [
+      4,
+      "Art. 55: las delegaciones no vierten opiniones personales; llevan acuerdos escritos.",
+      "alta"
+    ],
+    "revocabilidad": [
+      4,
+      "Art. 105 b: todos los cargos revocables en cualquier momento por asamblea o pleno.",
+      "alta"
+    ],
+    "rotacion": [
+      4,
+      "Mandatos de 2 años con una prórroga máxima de 2.",
+      "alta"
+    ],
+    "profesionalizacion": [
+      4,
+      "Cargos no remunerados; incompatibles con cobrar del sindicato. Sin delegados de comité de empresa.",
+      "alta"
+    ],
+    "eleccion_direccion": [
+      3,
+      "SP elegido en Pleno por delegaciones mandatadas; sede rotatoria entre Federaciones Locales.",
+      "alta"
+    ],
+    "agenda_base": [
+      4,
+      "Arts. 67-68: se incluyen todas las propuestas de los sindicatos; solo se excluye una por «no orgánica» si votan en contra 2/3 de regionales o sindicatos.",
+      "alta"
+    ],
+    "pluralismo": [
+      2,
+      "Votos particulares y refundición, pero sin tendencias; el mandato en bloque borra minorías internas.",
+      "alta"
+    ],
+    "autonomia_base": [
+      4,
+      "Art. 2: sindicatos plenamente autónomos en su funcionamiento interno.",
+      "alta"
+    ],
+    "brecha_formal_real": [
+      1,
+      "Organización pequeña con estatutos muy garantistas; el poder informal reside en los núcleos militantes locales.",
+      "media"
+    ],
+    "regla_decision": [
+      3,
+      "Mayoría simple ponderada, pero tras consenso/refundición obligatoria en cada punto.",
+      "alta"
+    ],
+    "capacidad_ejecutiva": [
+      1,
+      "El SP gestiona y ejecuta; no puede fijar posición nueva sin pleno.",
+      "alta"
+    ],
+    "freq_soberano_meses": [
+      48,
+      "Congreso cada 4 años.",
+      "alta"
+    ],
+    "freq_intermedio_meses": [
+      6,
+      "Plenos Confederales ordinarios varias veces por ciclo; la convocatoria exige 30 días + asambleas previas.",
+      "media"
+    ],
+    "niveles": [
+      3,
+      "Sindicato → Pleno Regional → Pleno Confederal.",
+      "alta"
+    ],
+    "estructura_federal": [
+      4,
+      "Federalismo de abajo arriba replicable a cualquier escala.",
+      "alta"
+    ],
+    "coste_coordinacion": [
+      1,
+      "Cada decisión confederal exige asambleas en todos los sindicatos, luego pleno regional y luego confederal.",
+      "alta"
+    ]
+  },
+  "problemas": [
+    {
+      "t": "agilidad",
+      "x": "Una posición nueva a escala estatal recorre asamblea → Pleno Regional → Pleno Confederal, con 30 días de convocatoria mínima. Reaccionar a una coyuntura en semanas es difícil sin plenos extraordinarios."
+    },
+    {
+      "t": "democratico",
+      "x": "La proporcionalidad corregida es fuertemente degresiva: un sindicato de 15 personas tiene 0,13 votos por afiliada y uno de 1.200 tiene 0,0125. Una afiliada de sindicato pequeño pesa unas 10 veces más. Protege la diversidad territorial, pero puede dejar en minoría a la mayoría de la afiliación."
+    },
+    {
+      "t": "democratico",
+      "x": "El mandato en bloque por sindicato hace que el 49% en desacuerdo dentro de un sindicato no se registre en ningún nivel superior."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "Cargos no remunerados de 2-4 años: la rotación es alta pero selecciona a quien tiene tiempo libre. El trabajo organizativo crece con la afiliación sin una estructura técnica que lo absorba."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "Historial de escisiones (1979-84 con la CGT, 2018 con la AIT): la autonomía fuerte hace que los conflictos se resuelvan por salida más que por síntesis."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "CNT — Normativa Orgánica y Estatutos (XII Congreso, Canovelles 2022)",
+      "u": "https://www.cnt.es/wp-content/uploads/2025/03/Acuerdos-sobre-Normativa-Organica-y-Estatutos-Acuerdos-del-XII-Congreso-Confederal-1-2.pdf"
+    },
+    {
+      "t": "CNT — Acuerdos del XII Congreso Confederal",
+      "u": "https://www.cnt.es/wp-content/uploads/2025/03/Acuerdos-del-XII-Congreso-Confederal-Canovelles-2022.pdf"
+    }
+  ],
+  "confianza": "alta"
+}

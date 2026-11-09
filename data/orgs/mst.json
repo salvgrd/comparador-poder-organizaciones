@@ -1,0 +1,230 @@
+{
+  "id": "mst",
+  "siglas": "MST",
+  "nombre": "Movimento dos Trabalhadores Rurais Sem Terra",
+  "familia": "movimiento",
+  "pais": "Brasil",
+  "fundacion": 1984,
+  "tamano": [
+    450000,
+    "Unas 450.000 familias asentadas y decenas de miles acampadas (cifras del propio MST).",
+    "media"
+  ],
+  "corriente": "Movimiento campesino de masas; principios organizativos de dirección colectiva",
+  "autogestionada": true,
+  "resumen": "Pirámide de instancias con base en los núcleos de familias (10-30 familias, con coordinación paritaria hombre-mujer). Por encima, brigadas, coordinaciones regionales y estatales y una Coordinación y Dirección Nacional colectiva, sin presidente. Sectores temáticos transversales (producción, educación, género, salud). Principios: dirección colectiva, división de tareas, disciplina, crítica y autocrítica, vínculo con la base.",
+  "poder_formal": "Congreso Nacional (cada varios años) y Encuentro Nacional.",
+  "poder_real": "Dirección Nacional y cuadros históricos, con fuerte formación política (Escola Nacional Florestan Fernandes). La base decide la vida del asentamiento y la cooperativa.",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Familias acampadas y asentadas",
+      "nivel": 0,
+      "tipo": "base"
+    },
+    {
+      "id": "nb",
+      "n": "Núcleos de base",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "10-30 familias; coordinación paritaria."
+    },
+    {
+      "id": "brig",
+      "n": "Brigadas",
+      "nivel": 2,
+      "tipo": "delegados",
+      "elegido_por": [
+        "nb"
+      ],
+      "desc": "Unas 500 familias; agrupan núcleos."
+    },
+    {
+      "id": "reg",
+      "n": "Coordinaciones regionales",
+      "nivel": 3,
+      "tipo": "delegados",
+      "elegido_por": [
+        "brig"
+      ]
+    },
+    {
+      "id": "est",
+      "n": "Coordinaciones y direcciones estatales",
+      "nivel": 4,
+      "tipo": "delegados",
+      "elegido_por": [
+        "reg"
+      ]
+    },
+    {
+      "id": "sect",
+      "n": "Sectores y colectivos",
+      "nivel": 4,
+      "tipo": "sectorial",
+      "elegido_por": [
+        "est"
+      ]
+    },
+    {
+      "id": "enc",
+      "n": "Encuentro Nacional",
+      "nivel": 5,
+      "tipo": "delegados",
+      "elegido_por": [
+        "est"
+      ],
+      "freq": "Cada ~2 años"
+    },
+    {
+      "id": "cong",
+      "n": "Congreso Nacional",
+      "nivel": 6,
+      "tipo": "soberano",
+      "elegido_por": [
+        "est"
+      ],
+      "freq": "Cada 5-7 años; miles de delegados",
+      "decide": "Aclamación o mayoría de líneas preparadas"
+    },
+    {
+      "id": "cn",
+      "n": "Coordinación Nacional",
+      "nivel": 6,
+      "tipo": "delegados",
+      "elegido_por": [
+        "enc"
+      ]
+    },
+    {
+      "id": "dn",
+      "n": "Dirección Nacional (colectiva)",
+      "nivel": 7,
+      "tipo": "ejecutivo",
+      "cima": true,
+      "elegido_por": [
+        "enc",
+        "cn"
+      ],
+      "desc": "Representantes por estado, con paridad; sin presidencia."
+    }
+  ],
+  "reglas": {
+    "metodo": "Búsqueda de unidad mediante debate en instancias; votación en encuentros. Dirección colectiva.",
+    "ponderacion": "Delegados por estado y por instancia.",
+    "mandato": "Mixto: la coordinación responde a su núcleo o brigada.",
+    "cargos": "Paridad de género; no hay presidente. Los liderazgos históricos se mantienen décadas.",
+    "reforma": "Congreso Nacional.",
+    "minorias": "Disciplina y unidad; poco espacio para corrientes."
+  },
+  "codigos": {
+    "mandato": [
+      2,
+      "La coordinación representa a su núcleo, sin mandato formal estricto.",
+      "media"
+    ],
+    "revocabilidad": [
+      3,
+      "Coordinaciones de núcleo sustituibles por las familias.",
+      "media"
+    ],
+    "rotacion": [
+      2,
+      "Rotación en la base; continuidad en la cúpula.",
+      "media"
+    ],
+    "profesionalizacion": [
+      2,
+      "Militantes liberados sostenidos por el movimiento y las cooperativas.",
+      "media"
+    ],
+    "eleccion_direccion": [
+      2,
+      "Indirecta a 4-5 saltos, aunque con raíz en núcleos reales.",
+      "media"
+    ],
+    "agenda_base": [
+      2,
+      "Las líneas se preparan desde la dirección y se debaten en la base.",
+      "media"
+    ],
+    "pluralismo": [
+      1,
+      "Unidad y disciplina.",
+      "media"
+    ],
+    "autonomia_base": [
+      3,
+      "Asentamientos y cooperativas con autogestión productiva.",
+      "media"
+    ],
+    "brecha_formal_real": [
+      3,
+      "La formación de cuadros y los liderazgos históricos concentran la estrategia.",
+      "media"
+    ],
+    "regla_decision": [
+      3,
+      "Unidad buscada; votación posible.",
+      "media"
+    ],
+    "capacidad_ejecutiva": [
+      3,
+      "La Dirección Nacional coordina ocupaciones y campañas a escala nacional.",
+      "media"
+    ],
+    "freq_soberano_meses": [
+      72,
+      "Congreso cada 5-7 años.",
+      "media"
+    ],
+    "freq_intermedio_meses": [
+      6,
+      "Coordinación Nacional varias veces al año.",
+      "baja"
+    ],
+    "niveles": [
+      5,
+      "Núcleo → brigada → región → estado → nacional.",
+      "media"
+    ],
+    "estructura_federal": [
+      4,
+      "Pirámide modular probada a escala de cientos de miles de familias.",
+      "alta"
+    ],
+    "coste_coordinacion": [
+      3,
+      "La delegación por instancias reduce el coste.",
+      "media"
+    ]
+  },
+  "problemas": [
+    {
+      "t": "democratico",
+      "x": "Una cadena de 5 niveles entre la familia y la Dirección Nacional. Los núcleos son reales, pero la estrategia nacional se forma en la cúpula y en las escuelas de cuadros."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "Es el mejor ejemplo de escalabilidad con base asamblearia: el núcleo de 10-30 familias es una unidad de tamaño fijo que se replica (como la célula). El tamaño de cada asamblea no crece con la organización."
+    },
+    {
+      "t": "agilidad",
+      "x": "Puede coordinar ocupaciones simultáneas en todo el país (jornadas de abril), pero sus grandes cambios de línea siguen el ritmo de congresos de 5-7 años."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "MST — Nossa organização",
+      "u": "https://mst.org.br/quem-somos/"
+    },
+    {
+      "t": "Grupo Animal — Zapatistas y MST: contexto (referencia cruzada)",
+      "u": "https://grupoanimal.mx/sociedad/zapatistas-30-anos-ezln-poblaciones-chiapas"
+    }
+  ],
+  "confianza": "media"
+}

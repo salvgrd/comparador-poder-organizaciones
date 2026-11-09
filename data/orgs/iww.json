@@ -1,0 +1,182 @@
+{
+  "id": "iww",
+  "siglas": "IWW",
+  "nombre": "Industrial Workers of the World",
+  "familia": "sindicato",
+  "pais": "Internacional (sobre todo EE. UU., Canadá, Reino Unido)",
+  "fundacion": 1905,
+  "tamano": [
+    7000,
+    "Unos miles de miembros. Estimación.",
+    "baja"
+  ],
+  "corriente": "Sindicalismo revolucionario industrial («One Big Union»)",
+  "autogestionada": true,
+  "resumen": "Democracia directa por referéndum. La Junta Ejecutiva General (GEB) y el Secretario-Tesorero General se eligen cada año por voto de toda la membresía. Los cambios de Constitución aprobados en la Convención anual se ratifican por referéndum. Ramas (branches) locales y sindicatos industriales.",
+  "poder_formal": "La membresía por referéndum.",
+  "poder_real": "Repartido entre la GEB, que cambia cada año, y las ramas activas. Hay poca continuidad y la participación en los referendos es baja.",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Miembros",
+      "nivel": 0,
+      "tipo": "base"
+    },
+    {
+      "id": "br",
+      "n": "Branches (ramas locales)",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ]
+    },
+    {
+      "id": "iu",
+      "n": "Industrial Unions",
+      "nivel": 2,
+      "tipo": "sectorial",
+      "elegido_por": [
+        "br"
+      ]
+    },
+    {
+      "id": "conv",
+      "n": "Convención General anual",
+      "nivel": 2,
+      "tipo": "delegados",
+      "elegido_por": [
+        "br"
+      ],
+      "freq": "Anual"
+    },
+    {
+      "id": "ref",
+      "n": "Referéndum general",
+      "nivel": 3,
+      "tipo": "soberano",
+      "elegido_por": [
+        "af"
+      ],
+      "decide": "Mayoría de votos emitidos"
+    },
+    {
+      "id": "geb",
+      "n": "General Executive Board",
+      "nivel": 4,
+      "tipo": "ejecutivo",
+      "cima": true,
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Elegida por referéndum anual, con límites de mandatos consecutivos."
+    }
+  ],
+  "reglas": {
+    "metodo": "Referéndum de toda la membresía para cargos y Constitución.",
+    "ponderacion": "1 miembro = 1 voto.",
+    "mandato": "Delegados a Convención con instrucciones de su rama.",
+    "cargos": "Mandatos anuales, límites, revocación (recall) por referéndum.",
+    "reforma": "Convención + referéndum.",
+    "minorias": "Cualquier grupo de ramas puede iniciar un referéndum."
+  },
+  "codigos": {
+    "mandato": [
+      2,
+      "Delegados instruidos por sus ramas.",
+      "media"
+    ],
+    "revocabilidad": [
+      3,
+      "Recall por referéndum.",
+      "media"
+    ],
+    "rotacion": [
+      4,
+      "Mandatos de 1 año con límites.",
+      "media"
+    ],
+    "profesionalizacion": [
+      4,
+      "Muy pocos cargos pagados.",
+      "media"
+    ],
+    "eleccion_direccion": [
+      4,
+      "Voto directo de toda la membresía.",
+      "media"
+    ],
+    "agenda_base": [
+      3,
+      "Iniciativa de referéndum desde las ramas.",
+      "media"
+    ],
+    "pluralismo": [
+      3,
+      "Competencia abierta.",
+      "baja"
+    ],
+    "autonomia_base": [
+      3,
+      "Ramas autónomas.",
+      "media"
+    ],
+    "brecha_formal_real": [
+      2,
+      "Con baja participación, los activistas deciden los referendos.",
+      "media"
+    ],
+    "regla_decision": [
+      4,
+      "Mayoría.",
+      "media"
+    ],
+    "capacidad_ejecutiva": [
+      2,
+      "GEB limitada y renovada cada año.",
+      "media"
+    ],
+    "freq_soberano_meses": [
+      12,
+      "Referéndum y Convención anuales.",
+      "media"
+    ],
+    "freq_intermedio_meses": [
+      1,
+      "GEB con reuniones frecuentes.",
+      "baja"
+    ],
+    "niveles": [
+      1,
+      "Membresía → GEB directamente.",
+      "media"
+    ],
+    "estructura_federal": [
+      3,
+      "Ramas e industrial unions.",
+      "media"
+    ],
+    "coste_coordinacion": [
+      3,
+      "El referéndum escala bien en coste.",
+      "media"
+    ]
+  },
+  "problemas": [
+    {
+      "t": "agilidad",
+      "x": "Los referendos anuales y la ejecutiva rotativa dificultan una estrategia sostenida."
+    },
+    {
+      "t": "democratico",
+      "x": "La democracia plebiscitaria con baja participación da el poder a las minorías organizadas, y el voto individual se separa de la deliberación colectiva en asamblea."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "IWW — Constitution",
+      "u": "https://www.iww.org/constitution/"
+    }
+  ],
+  "confianza": "baja"
+}

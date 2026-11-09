@@ -1,0 +1,238 @@
+{
+  "id": "ccoo",
+  "siglas": "CCOO",
+  "nombre": "Confederación Sindical de Comisiones Obreras",
+  "familia": "sindicato",
+  "pais": "Estado español",
+  "fundacion": 1976,
+  "tamano": [
+    1000000,
+    "En torno a un millón de afiliadas según la propia organización.",
+    "media"
+  ],
+  "corriente": "Sindicalismo de clase sociopolítico, representativo y de concertación",
+  "autogestionada": false,
+  "resumen": "Doble estructura: federaciones de rama (sector) y uniones territoriales, que confluyen en la Confederación. Democracia representativa en cascada de congresos. Su poder procede sobre todo de la audiencia electoral (delegadas de comités) y de la negociación institucional, más que de la afiliación.",
+  "poder_formal": "Congreso Confederal (cada 4 años) elegido en cascada desde los congresos de federaciones y uniones.",
+  "poder_real": "Comisión Ejecutiva Confederal y Secretaría General, con un aparato técnico y de liberados amplio. Firman la concertación social y convocan huelgas generales. En 2025 el secretario general fue reelegido como candidato único con el 96,1% de los votos.",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Afiliación",
+      "nivel": 0,
+      "tipo": "base"
+    },
+    {
+      "id": "secc",
+      "n": "Sección sindical",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "En la empresa; trabaja con las delegadas electas en comités."
+    },
+    {
+      "id": "fedp",
+      "n": "Sindicatos / congresos provinciales e intercomarcales",
+      "nivel": 2,
+      "tipo": "delegados",
+      "elegido_por": [
+        "secc"
+      ]
+    },
+    {
+      "id": "fed",
+      "n": "Federaciones estatales de rama (congresos)",
+      "nivel": 3,
+      "tipo": "delegados",
+      "elegido_por": [
+        "fedp"
+      ],
+      "desc": "Industria, Servicios, Enseñanza, Sanidad, Construcción y Servicios, Hábitat…"
+    },
+    {
+      "id": "ut",
+      "n": "Confederaciones de nacionalidad y uniones regionales",
+      "nivel": 3,
+      "tipo": "delegados",
+      "elegido_por": [
+        "fedp"
+      ]
+    },
+    {
+      "id": "cong",
+      "n": "Congreso Confederal",
+      "nivel": 4,
+      "tipo": "soberano",
+      "elegido_por": [
+        "fed",
+        "ut"
+      ],
+      "freq": "Cada 4 años (XIII Congreso, junio de 2025)",
+      "decide": "Mayoría de delegados",
+      "desc": "Unos 700 delegados votaron en 2025."
+    },
+    {
+      "id": "cons",
+      "n": "Consejo Confederal",
+      "nivel": 5,
+      "tipo": "delegados",
+      "elegido_por": [
+        "cong",
+        "fed",
+        "ut"
+      ],
+      "desc": "Máximo órgano entre congresos: miembros elegidos en Congreso y secretarios generales de federaciones y territorios."
+    },
+    {
+      "id": "ce",
+      "n": "Comisión Ejecutiva Confederal",
+      "nivel": 6,
+      "tipo": "ejecutivo",
+      "elegido_por": [
+        "cong"
+      ],
+      "desc": "Dirección ordinaria. En 2025 se aprobó con el 93,99%."
+    },
+    {
+      "id": "sg",
+      "n": "Secretaría General",
+      "nivel": 7,
+      "tipo": "ejecutivo",
+      "cima": true,
+      "elegido_por": [
+        "cong"
+      ],
+      "desc": "Límite estatutario de mandatos: el tercero se presentó como el último."
+    },
+    {
+      "id": "gar",
+      "n": "Comisión de Garantías",
+      "nivel": 5,
+      "tipo": "garantias",
+      "elegido_por": [
+        "cong"
+      ]
+    }
+  ],
+  "reglas": {
+    "metodo": "Democracia representativa: mayoría en congresos y órganos de dirección. Elecciones por listas.",
+    "ponderacion": "Delegados en proporción a la afiliación cotizante de cada federación o territorio.",
+    "mandato": "Libre (representativo). No hay mandato imperativo formal.",
+    "cargos": "Límite de mandatos para la Secretaría General. Amplio uso de liberaciones y crédito horario.",
+    "reforma": "Congreso Confederal.",
+    "minorias": "Existen listas alternativas y sectores críticos con representación proporcional en órganos cuando superan umbrales. En la práctica dominan las candidaturas únicas."
+  },
+  "codigos": {
+    "mandato": [
+      1,
+      "Delegados con mandato libre.",
+      "media"
+    ],
+    "revocabilidad": [
+      1,
+      "La revocación solo es posible por el órgano que elige, con procedimiento reforzado.",
+      "baja"
+    ],
+    "rotacion": [
+      2,
+      "Límite de mandatos en la Secretaría General (hasta 3 × 4 años).",
+      "media"
+    ],
+    "profesionalizacion": [
+      1,
+      "Gran aparato de liberados, técnicos y estructura financiada en parte por la participación institucional.",
+      "media"
+    ],
+    "eleccion_direccion": [
+      1,
+      "Elección en cascada a 3-4 niveles; candidatura única habitual (96,1% en 2025).",
+      "alta"
+    ],
+    "agenda_base": [
+      1,
+      "Ponencias redactadas por la dirección y enmendadas desde abajo.",
+      "media"
+    ],
+    "pluralismo": [
+      2,
+      "Representación proporcional de listas y sectores críticos reconocidos, aunque minoritarios.",
+      "media"
+    ],
+    "autonomia_base": [
+      2,
+      "Federaciones y territorios con autonomía relativa dentro de una disciplina confederal.",
+      "media"
+    ],
+    "brecha_formal_real": [
+      2,
+      "El poder institucional (concertación, comités) supera al de la afiliación.",
+      "media"
+    ],
+    "regla_decision": [
+      4,
+      "Mayoría simple; la dirección decide entre congresos.",
+      "media"
+    ],
+    "capacidad_ejecutiva": [
+      4,
+      "La Ejecutiva firma acuerdos y convoca movilizaciones sin consulta vinculante.",
+      "media"
+    ],
+    "freq_soberano_meses": [
+      48,
+      "Congreso cada 4 años.",
+      "alta"
+    ],
+    "freq_intermedio_meses": [
+      4,
+      "Consejo Confederal varias veces al año.",
+      "media"
+    ],
+    "niveles": [
+      4,
+      "Sección → provincial → federación/territorio → Congreso.",
+      "media"
+    ],
+    "estructura_federal": [
+      3,
+      "Matriz rama × territorio; escala a un millón de afiliadas.",
+      "media"
+    ],
+    "coste_coordinacion": [
+      4,
+      "Bajo coste por decisión: delegación representativa y aparato profesional.",
+      "media"
+    ]
+  },
+  "problemas": [
+    {
+      "t": "democratico",
+      "x": "La distancia de delegación de 3-4 saltos y las candidaturas únicas hacen que la afiliación casi no tenga opciones reales sobre quién dirige."
+    },
+    {
+      "t": "democratico",
+      "x": "Su legitimidad depende de la audiencia electoral (votos de toda la plantilla) y no de la afiliación. Eso desplaza el control hacia la representación institucional."
+    },
+    {
+      "t": "agilidad",
+      "x": "Muy ágil: la Ejecutiva puede firmar un acuerdo estatal en días. El riesgo es que se decida sin las bases (por ejemplo, en reformas pactadas)."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "Es la estructura que mejor escala de la muestra, a costa de la oligarquización descrita por Michels: los cargos se profesionalizan y la base participa poco."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "CCOO — Composición de la Ejecutiva Confederal (13º Congreso)",
+      "u": "https://docpublicos.ccoo.es/cendoc/071684EjecutivaConfederal13Congreso.pdf"
+    },
+    {
+      "t": "Europa Press/Bolsamanía — Reelección con el 96,1% (2025)",
+      "u": "https://www.bolsamania.com/noticias/economia/economia--amp-ccoo-reelige-a-unai-sordo-como-secretario-general-con-el-961-de-los-votos-para-su-ultimo-mandato--20076654.html"
+    }
+  ],
+  "confianza": "media"
+}

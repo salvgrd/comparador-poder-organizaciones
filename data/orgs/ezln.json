@@ -1,0 +1,192 @@
+{
+  "id": "ezln",
+  "siglas": "EZLN",
+  "nombre": "Ejército Zapatista de Liberación Nacional y autonomía zapatista",
+  "familia": "movimiento",
+  "pais": "México (Chiapas)",
+  "fundacion": 1983,
+  "tamano": [
+    150000,
+    "Bases de apoyo no censadas; estimaciones muy variables. Orden de magnitud.",
+    "baja"
+  ],
+  "corriente": "Neozapatismo; autonomía indígena, «mandar obedeciendo»",
+  "autogestionada": true,
+  "resumen": "Dos estructuras paralelas. Una político-militar: el Comité Clandestino Revolucionario Indígena–Comandancia General (CCRI-CG), con vocería pública. Otra de autogobierno civil: en 2023 se eliminaron los MAREZ (municipios autónomos) y las Juntas de Buen Gobierno y se creó una «pirámide invertida» con los Gobiernos Autónomos Locales (GAL) de cada comunidad como núcleo, los Colectivos de GAL (CGAZ, cientos) y las Asambleas de Colectivos (ACGAZ) a escala de zona. Cargos rotativos, no remunerados y revocables.",
+  "poder_formal": "La asamblea comunitaria y sus GAL (autonomía civil).",
+  "poder_real": "Doble: las comunidades deciden lo cotidiano (tierra, salud, educación, justicia); la estrategia general y su anuncio corresponden al CCRI-CG, una estructura que no rota.",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Bases de apoyo / comunidad",
+      "nivel": 0,
+      "tipo": "base"
+    },
+    {
+      "id": "asc",
+      "n": "Asamblea comunitaria",
+      "nivel": 1,
+      "tipo": "soberano",
+      "elegido_por": [
+        "af"
+      ],
+      "decide": "Consenso / consulta"
+    },
+    {
+      "id": "gal",
+      "n": "Gobierno Autónomo Local (GAL)",
+      "nivel": 2,
+      "tipo": "coordinacion",
+      "elegido_por": [
+        "asc"
+      ],
+      "desc": "Uno por comunidad; agentes y comisariados autónomos. Núcleo de la autonomía desde 2023."
+    },
+    {
+      "id": "cgaz",
+      "n": "Colectivos de Gobiernos Autónomos Zapatistas (CGAZ)",
+      "nivel": 3,
+      "tipo": "delegados",
+      "elegido_por": [
+        "gal"
+      ],
+      "desc": "Se convocan según necesidad; cientos, frente a las 12 JBG anteriores."
+    },
+    {
+      "id": "acgaz",
+      "n": "Asambleas de Colectivos (ACGAZ)",
+      "nivel": 4,
+      "tipo": "delegados",
+      "elegido_por": [
+        "cgaz"
+      ],
+      "desc": "Ámbito de las antiguas zonas/caracoles."
+    },
+    {
+      "id": "ccri",
+      "n": "CCRI-Comandancia General",
+      "nivel": 5,
+      "tipo": "militar",
+      "cima": true,
+      "elegido_por": [
+        "asc"
+      ],
+      "desc": "Comandantas y comandantes designados históricamente por sus comunidades; no rota. Vocería: Subcomandante Moisés."
+    }
+  ],
+  "reglas": {
+    "metodo": "Consenso comunitario y consultas a los pueblos para las decisiones grandes. Los siete principios del mandar obedeciendo.",
+    "ponderacion": "Por comunidad.",
+    "mandato": "Imperativo: la autoridad obedece a la asamblea.",
+    "cargos": "Rotativos, no remunerados, revocables.",
+    "reforma": "Por consulta y decisión de la Comandancia (la reestructuración de 2023 se anunció en comunicados del CCRI-CG).",
+    "minorias": "La disidencia suele resolverse saliendo de la organización (familias que dejan de ser base de apoyo)."
+  },
+  "codigos": {
+    "mandato": [
+      4,
+      "Mandar obedeciendo.",
+      "media"
+    ],
+    "revocabilidad": [
+      4,
+      "Autoridades revocables por la asamblea.",
+      "media"
+    ],
+    "rotacion": [
+      4,
+      "Cargos rotativos civiles (pero no en el CCRI-CG).",
+      "media"
+    ],
+    "profesionalizacion": [
+      4,
+      "Cargos civiles no remunerados.",
+      "media"
+    ],
+    "eleccion_direccion": [
+      2,
+      "Lo civil se elige en asamblea; la Comandancia no se renueva por elección.",
+      "media"
+    ],
+    "agenda_base": [
+      3,
+      "Consultas a las comunidades.",
+      "media"
+    ],
+    "pluralismo": [
+      1,
+      "Organización político-militar; poco espacio para corrientes.",
+      "media"
+    ],
+    "autonomia_base": [
+      4,
+      "Pirámide invertida: el GAL es el núcleo.",
+      "media"
+    ],
+    "brecha_formal_real": [
+      3,
+      "La estrategia y las reformas estructurales salen de la Comandancia.",
+      "media"
+    ],
+    "regla_decision": [
+      1,
+      "Consenso.",
+      "media"
+    ],
+    "capacidad_ejecutiva": [
+      2,
+      "El mando militar es ágil; lo civil, lento.",
+      "baja"
+    ],
+    "freq_soberano_meses": [
+      1,
+      "Asambleas comunitarias frecuentes.",
+      "baja"
+    ],
+    "freq_intermedio_meses": [
+      6,
+      "CGAZ y ACGAZ según necesidad.",
+      "baja"
+    ],
+    "niveles": [
+      3,
+      "Comunidad → CGAZ → ACGAZ.",
+      "media"
+    ],
+    "estructura_federal": [
+      4,
+      "Modular por comunidades.",
+      "media"
+    ],
+    "coste_coordinacion": [
+      2,
+      "El consenso y la rotación tienen costes altos de aprendizaje y continuidad.",
+      "media"
+    ]
+  },
+  "problemas": [
+    {
+      "t": "democratico",
+      "x": "Doble poder: una autonomía civil muy democrática coexiste con una estructura militar que no rota y que decide la estrategia y las reformas institucionales. Es la brecha formal-real más alta de la muestra junto al MST."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "La rotación rápida de cargos no remunerados genera pérdida de experiencia. La reforma de 2023 reconoce que las JBG se habían alejado de los pueblos y vuelve al nivel comunitario."
+    },
+    {
+      "t": "agilidad",
+      "x": "El consenso comunitario y las consultas son lentos. La agilidad militar compensa en seguridad, pero no en gobierno civil."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "El Universal — Qué son los GAL que reemplazan a los MAREZ",
+      "u": "https://www.eluniversal.com.mx/estados/que-son-los-gal-estructuras-que-remplazaran-a-los-municipios-autonomos-rebeldes-del-ezln/"
+    },
+    {
+      "t": "Enlace Zapatista (comunicados)",
+      "u": "https://enlacezapatista.ezln.org.mx/"
+    }
+  ],
+  "confianza": "media"
+}

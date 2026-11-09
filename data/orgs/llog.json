@@ -1,0 +1,179 @@
+{
+  "id": "llog",
+  "siglas": "SdL",
+  "nombre": "Sindicat de Llogateres de Catalunya",
+  "familia": "movimiento",
+  "pais": "Cataluña",
+  "fundacion": 2017,
+  "tamano": [
+    5000,
+    "Varios miles de afiliadas; cifra no verificada.",
+    "baja"
+  ],
+  "corriente": "Sindicalismo de vivienda con fuerte incidencia legislativa",
+  "autogestionada": true,
+  "resumen": "Organización con asamblea de afiliadas, secciones locales y grupos de trabajo. Combina conflicto (bloques, huelgas de alquiler) con una estrategia legislativa muy eficaz (ley catalana de contención de rentas, 2020). Las portavocías públicas tienen mucho peso.",
+  "poder_formal": "Asamblea de afiliadas.",
+  "poder_real": "Equipo de portavocía y grupos de trabajo estratégicos, con capacidad de negociar con instituciones.",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Afiliación",
+      "nivel": 0,
+      "tipo": "base"
+    },
+    {
+      "id": "bloq",
+      "n": "Bloques / grupos de propietario",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ]
+    },
+    {
+      "id": "sec",
+      "n": "Secciones locales y de barrio",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ]
+    },
+    {
+      "id": "gt",
+      "n": "Grupos de trabajo",
+      "nivel": 2,
+      "tipo": "tecnico",
+      "elegido_por": [
+        "ag"
+      ]
+    },
+    {
+      "id": "ag",
+      "n": "Asamblea general de afiliadas",
+      "nivel": 2,
+      "tipo": "soberano",
+      "elegido_por": [
+        "af"
+      ]
+    },
+    {
+      "id": "port",
+      "n": "Portavocía / coordinación",
+      "nivel": 3,
+      "tipo": "ejecutivo",
+      "cima": true,
+      "elegido_por": [
+        "ag"
+      ]
+    }
+  ],
+  "reglas": {
+    "metodo": "Asamblearia con coordinación operativa.",
+    "ponderacion": "Una persona, un voto.",
+    "mandato": "Informal.",
+    "cargos": "No verificado.",
+    "reforma": "No verificado.",
+    "minorias": "No verificado."
+  },
+  "codigos": {
+    "mandato": [
+      2,
+      "Mandato informal.",
+      "baja"
+    ],
+    "revocabilidad": [
+      2,
+      "No verificado.",
+      "baja"
+    ],
+    "rotacion": [
+      2,
+      "Portavocías estables durante años.",
+      "baja"
+    ],
+    "profesionalizacion": [
+      2,
+      "Parte del trabajo técnico profesionalizado.",
+      "baja"
+    ],
+    "eleccion_direccion": [
+      2,
+      "Asamblea; no verificado.",
+      "baja"
+    ],
+    "agenda_base": [
+      2,
+      "Agenda legislativa marcada desde la coordinación.",
+      "baja"
+    ],
+    "pluralismo": [
+      2,
+      "No verificado.",
+      "baja"
+    ],
+    "autonomia_base": [
+      3,
+      "Secciones locales con autonomía.",
+      "baja"
+    ],
+    "brecha_formal_real": [
+      3,
+      "Peso alto de la portavocía en la negociación institucional.",
+      "baja"
+    ],
+    "regla_decision": [
+      3,
+      "Mayoría o consenso en asamblea.",
+      "baja"
+    ],
+    "capacidad_ejecutiva": [
+      3,
+      "Capacidad real de negociar con el Parlament y el Gobierno.",
+      "media"
+    ],
+    "freq_soberano_meses": [
+      3,
+      "No verificado.",
+      "baja"
+    ],
+    "freq_intermedio_meses": [
+      0.5,
+      "Secciones con reuniones frecuentes.",
+      "baja"
+    ],
+    "niveles": [
+      2,
+      "Sección → asamblea.",
+      "baja"
+    ],
+    "estructura_federal": [
+      2,
+      "Secciones locales en expansión por Cataluña.",
+      "baja"
+    ],
+    "coste_coordinacion": [
+      2,
+      "No verificado.",
+      "baja"
+    ]
+  },
+  "problemas": [
+    {
+      "t": "democratico",
+      "x": "La eficacia legislativa depende de una portavocía estable y con interlocución: es una forma de poder que la base no controla en el día a día."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "La relación entre secciones locales y coordinación central no está formalizada en documentos públicos."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "El Salto — Sindicat de Llogateres: la lucha inquilina renace",
+      "u": "https://www.elsaltodiario.com/vivienda/sindicat-llogaters-lucha-inquilina-renace-80-anos-despues"
+    }
+  ],
+  "confianza": "baja"
+}

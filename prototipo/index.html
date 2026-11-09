@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cartografía del poder obrero</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=Public+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: herramienta de análisis — cabecera con pestañas, una columna ancha; organigramas en estratos de abajo (base) arriba (cima). */
+:root{
+  --bg:#f3f5f8; --surface:#ffffff; --ink:#172030; --muted:#566173; --line:#d8dde5; --soft:#e9edf2;
+  --accent:#a63d24; --accent-ink:#ffffff;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#7d8693;
+  --q0:#eef3fa; --q1:#c4daf6; --q2:#7fb0ee; --q3:#2a78d6; --q4:#184f95;
+  --qt0:#172030; --qt1:#172030; --qt2:#172030; --qt3:#ffffff; --qt4:#ffffff;
+  --good:#1a7f4b; --warn:#a86a00; --bad:#b3261e;
+  --f-display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f141c; --surface:#161e2a; --ink:#e7ebf1; --muted:#a2acbb; --line:#2b3546; --soft:#1d2736;
+  --accent:#e4785c; --accent-ink:#1a0f0b;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#8c95a3;
+  --q0:#1b2433; --q1:#1d3f6e; --q2:#256abf; --q3:#4f95e8; --q4:#9ec5f4;
+  --qt0:#e7ebf1; --qt1:#e7ebf1; --qt2:#ffffff; --qt3:#0f141c; --qt4:#0f141c;
+  --good:#4cc38a; --warn:#e0a53a; --bad:#f2766d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f141c; --surface:#161e2a; --ink:#e7ebf1; --muted:#a2acbb; --line:#2b3546; --soft:#1d2736;
+  --accent:#e4785c; --accent-ink:#1a0f0b;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#8c95a3;
+  --q0:#1b2433; --q1:#1d3f6e; --q2:#256abf; --q3:#4f95e8; --q4:#9ec5f4;
+  --qt0:#e7ebf1; --qt1:#e7ebf1; --qt2:#ffffff; --qt3:#0f141c; --qt4:#0f141c;
+  --good:#4cc38a; --warn:#e0a53a; --bad:#f2766d; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.55}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header.top{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+header.top .wrap{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px 28px;padding-block:14px 0}
+.brand{display:flex;flex-direction:column;gap:2px;padding-bottom:12px;min-width:0}
+.brand h1{font-family:var(--f-display);font-stretch:75%;font-weight:800;font-size:1.65rem;line-height:1;margin:0;letter-spacing:.005em;text-wrap:balance}
+.brand h1 span{color:var(--accent)}
+.brand p{margin:0;color:var(--muted);font-size:.84rem}
+nav.tabs{display:flex;gap:2px;flex-wrap:wrap;margin-left:auto}
+nav.tabs button{font-family:var(--f-display);font-stretch:85%;font-weight:600;font-size:.95rem;background:none;border:0;border-bottom:3px solid transparent;color:var(--muted);padding:10px 12px;cursor:pointer}
+nav.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+nav.tabs button:hover{color:var(--ink)}
+button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid var(--s1);outline-offset:2px}
+main{padding-block:24px 64px}
+section.view{display:grid;gap:28px}
+h2{font-family:var(--f-display);font-stretch:80%;font-weight:700;font-size:1.35rem;margin:0 0 4px;text-wrap:balance}
+h3{font-family:var(--f-display);font-stretch:85%;font-weight:700;font-size:1.05rem;margin:0 0 6px}
+.lede{color:var(--muted);max-width:72ch;margin:0}
+.eyebrow{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px;min-width:0}
+.grid2{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:20px}
+@media (max-width:900px){.grid2{grid-template-columns:minmax(0,1fr)}}
+.scroll-x{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+th{font-family:var(--f-mono);font-weight:500;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);white-space:nowrap}
+th.sortable{cursor:pointer;user-select:none}
+th.sortable:hover{color:var(--ink)}
+td.num{text-align:right;font-family:var(--f-mono);font-size:.85rem}
+.orgname{font-weight:600;cursor:pointer;color:var(--ink);background:none;border:0;padding:0;font:inherit;text-align:left}
+.orgname:hover{text-decoration:underline}
+.sub{color:var(--muted);font-size:.8rem}
+.bar{display:flex;align-items:center;gap:8px;min-width:120px}
+.bar i{display:block;height:8px;border-radius:0 4px 4px 0;background:var(--s1)}
+.bar b{font-family:var(--f-mono);font-weight:500;font-size:.82rem;min-width:2.2em;text-align:right}
+.pill{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;font-family:var(--f-mono);padding:2px 7px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.pill.alta{color:var(--good);border-color:currentColor}
+.pill.media{color:var(--warn);border-color:currentColor}
+.pill.baja{color:var(--bad);border-color:currentColor}
+.pill.local{color:var(--accent);border-color:currentColor}
+.fam{display:inline-block;width:10px;height:10px;border-radius:50%;vertical-align:-1px;margin-right:6px}
+.fam.cooperativa{border-radius:1px;transform:rotate(45deg) scale(.85)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.82rem;color:var(--muted)}
+svg text{fill:var(--ink)}
+svg .axis text{fill:var(--muted);font-family:var(--f-mono);font-size:11px}
+svg .grid line{stroke:var(--line)}
+.tip{position:fixed;pointer-events:none;z-index:20;background:var(--surface);color:var(--ink);border:1px solid var(--line);box-shadow:0 6px 24px rgba(0,0,0,.18);border-radius:6px;padding:9px 11px;font-size:.82rem;max-width:300px}
+.tip strong{display:block;font-family:var(--f-display);font-stretch:85%;font-size:.95rem}
+.tip .k{color:var(--muted);font-family:var(--f-mono);font-size:.74rem}
+/* heatmap */
+.heat td.cell{width:44px;min-width:40px;text-align:center;font-family:var(--f-mono);font-size:.8rem;padding:0;border:2px solid var(--surface)}
+.heat td.cell span{display:block;padding:7px 0;border-radius:3px}
+.heat th.v{writing-mode:vertical-rl;transform:rotate(180deg);height:150px;vertical-align:bottom;padding:6px 4px;text-transform:none;letter-spacing:0;font-size:.74rem;white-space:nowrap}
+.heat td.low span{outline:1px dashed var(--muted);outline-offset:-3px}
+/* compare */
+.picker{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:inherit;font-size:.85rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:4px 11px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.cols{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.card h3{font-size:1.3rem;margin-bottom:2px}
+.kv{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;margin-top:12px}
+.kv div{min-width:0}
+.kv dt{font-family:var(--f-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.kv dd{margin:2px 0 0}
+.power{border-left:3px solid var(--accent);padding:6px 0 6px 12px;margin-top:12px}
+.problems{display:grid;gap:8px;margin:8px 0 0;padding:0;list-style:none}
+.problems li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;align-items:start;font-size:.9rem}
+.tag{font-family:var(--f-mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.05em;padding:2px 6px;border-radius:3px;background:var(--soft);color:var(--ink);white-space:nowrap;margin-top:2px}
+.tag.democratico::before{content:"◆ "}
+.tag.escalabilidad::before{content:"▲ "}
+.tag.agilidad::before{content:"● "}
+.idx{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:12px}
+.idx div{background:var(--soft);border-radius:4px;padding:8px}
+.idx b{display:block;font-family:var(--f-display);font-stretch:80%;font-size:1.45rem;line-height:1.1}
+.idx span{font-size:.7rem;color:var(--muted);font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.04em}
+details{border-top:1px solid var(--line);padding-top:8px;margin-top:12px}
+summary{cursor:pointer;font-weight:600;font-size:.9rem}
+.org-svg{width:100%;overflow-x:auto;margin-top:8px}
+.sources a{color:var(--s1);word-break:break-word}
+.dot-row{display:grid;grid-template-columns:minmax(120px,190px) minmax(0,1fr);align-items:center;gap:10px;font-size:.84rem;padding:4px 0;border-bottom:1px solid var(--line)}
+/* calc */
+.form{display:grid;gap:12px}
+label{font-weight:600;font-size:.86rem;display:block;margin-bottom:4px}
+textarea,select,input[type=text]{width:100%;font-family:var(--f-mono);font-size:.86rem;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:8px}
+textarea{min-height:150px;resize:vertical}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.row > div{flex:1 1 180px;min-width:0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.stat{background:var(--soft);border-radius:4px;padding:10px}
+.stat b{display:block;font-family:var(--f-display);font-stretch:80%;font-size:1.6rem;line-height:1.1}
+.stat span{font-size:.78rem;color:var(--muted)}
+.btn{font:inherit;font-weight:600;font-size:.88rem;background:var(--ink);color:var(--bg);border:0;border-radius:4px;padding:8px 14px;cursor:pointer}
+.btn.ghost{background:none;color:var(--ink);border:1px solid var(--line)}
+.prose{max-width:76ch}
+.prose p,.prose li{margin:0 0 .6em}
+.prose code,.mono{font-family:var(--f-mono);font-size:.84em}
+.formula{font-family:var(--f-mono);font-size:.84rem;background:var(--soft);padding:10px 12px;border-radius:4px;overflow-x:auto;white-space:pre}
+.weights{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px 20px}
+.weights label{display:flex;justify-content:space-between;font-weight:400;font-size:.84rem;margin:0}
+.weights input{width:100%;accent-color:var(--accent)}
+.codebook dt{font-weight:600;margin-top:10px}
+.codebook dd{margin:2px 0 0;color:var(--muted);font-size:.88rem}
+.notice{font-size:.84rem;color:var(--muted)}
+.msg{font-size:.84rem;margin-top:6px}
+.msg.err{color:var(--bad)} .msg.ok{color:var(--good)}
+@media (prefers-reduced-motion:no-preference){.panel{transition:border-color .15s}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <h1>Cartografía del <span>poder</span> obrero</h1>
+      <p>Dónde reside el poder en sindicatos, partidos y movimientos autogestionados. Comparación estructural y cuantitativa.</p>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="Secciones">
+      <button role="tab" id="tab-panorama" aria-selected="true" data-view="panorama">Panorama</button>
+      <button role="tab" id="tab-comparar" aria-selected="false" data-view="comparar">Comparar</button>
+      <button role="tab" id="tab-calc" aria-selected="false" data-view="calc">Calculadora de voto</button>
+      <button role="tab" id="tab-metodo" aria-selected="false" data-view="metodo">Método y datos</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- PANORAMA -->
+  <section class="view" id="view-panorama">
+    <div>
+      <h2>Control de base frente a agilidad</h2>
+      <p class="lede">Cada organización se sitúa según cuánto control conserva la base sobre las decisiones (eje horizontal) y con qué rapidez puede decidir (eje vertical). El tamaño del punto indica la escala. Los índices se calculan a partir de una codificación 0-4 de 16 variables y del organigrama. Los pesos se pueden ajustar en <em>Método y datos</em>.</p>
+    </div>
+    <div class="grid2">
+      <div class="panel">
+        <div class="legend" id="fam-legend"></div>
+        <div id="scatter" class="scroll-x" style="margin-top:8px"></div>
+        <p class="notice">El dilema clásico: arriba a la izquierda, dirección ágil y poco control desde abajo; abajo a la derecha, mucho control y decisiones lentas. Arriba a la derecha está lo difícil.</p>
+      </div>
+      <div class="panel">
+        <h3>Lectura rápida</h3>
+        <div id="insights" class="prose" style="font-size:.9rem"></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Índices por organización</h3>
+      <p class="notice" style="margin:0 0 8px">Pulsa una cabecera para ordenar y un nombre para abrir su ficha. <b>Saltos</b> = número de elecciones encadenadas entre la afiliación y el órgano ejecutivo superior, calculado sobre el organigrama.</p>
+      <div class="scroll-x"><table id="idx-table"></table></div>
+    </div>
+    <div class="panel">
+      <h3>Huella de variables (0-4)</h3>
+      <p class="notice" style="margin:0 0 8px">Las celdas más oscuras indican más control de base, agilidad o escalabilidad. En «brecha formal-real», un valor alto es negativo. Las celdas con borde punteado son de confianza baja. Pasa el cursor por una celda para ver la justificación.</p>
+      <div class="scroll-x"><table class="heat" id="heat"></table></div>
+    </div>
+  </section>
+
+  <!-- COMPARAR -->
+  <section class="view" id="view-comparar" hidden>
+    <div>
+      <h2>Comparar organizaciones</h2>
+      <p class="lede">Elige hasta tres. Los organigramas se leen de abajo (afiliación) hacia arriba (cima ejecutiva); cada flecha significa «elige a». El órgano marcado en color es la cima ejecutiva.</p>
+    </div>
+    <div class="picker" id="picker"></div>
+    <div class="panel" id="dotplot-panel">
+      <h3>Variable a variable</h3>
+      <div class="legend" id="dot-legend"></div>
+      <div id="dotplot"></div>
+    </div>
+    <div class="cols" id="cards"></div>
+  </section>
+
+  <!-- CALCULADORA -->
+  <section class="view" id="view-calc" hidden>
+    <div>
+      <h2>Calculadora de poder de voto</h2>
+      <p class="lede">En un pleno con voto ponderado, el porcentaje de votos no equivale al poder real. El <b>índice de Banzhaf</b> mide con qué frecuencia una delegación es decisiva, es decir, cuando su cambio de voto altera el resultado. Introduce el tamaño de cada sindicato o federación y compara las tablas de ponderación de la CNT y la CGT con otros sistemas.</p>
+    </div>
+    <div class="grid2">
+      <div class="panel form">
+        <div>
+          <label for="calc-units">Unidades (nombre:afiliadas, una por línea)</label>
+          <textarea id="calc-units" spellcheck="false"></textarea>
+          <p class="notice" style="margin:4px 0 0">Ejemplo ilustrativo con tamaños inventados. Sustitúyelo por los datos reales de cotización.</p>
+        </div>
+        <div class="row">
+          <div>
+            <label for="calc-scheme">Sistema de ponderación</label>
+            <select id="calc-scheme">
+              <option value="cnt_sind">CNT · sindicatos en Pleno/Congreso (art. 62)</option>
+              <option value="cnt_reg">CNT · Regionales en Pleno Confederal</option>
+              <option value="cgt_cong">CGT · Congreso (art. 8 Reglamento)</option>
+              <option value="cgt_cc">CGT · Comité Confederal (art. 45)</option>
+              <option value="prop">Proporcional puro (1 afiliada = 1 voto)</option>
+              <option value="sqrt">Raíz cuadrada (Penrose)</option>
+              <option value="equal">Igualitario (1 unidad = 1 voto)</option>
+            </select>
+          </div>
+          <div>
+            <label for="calc-quota">Umbral</label>
+            <select id="calc-quota">
+              <option value="0.5">Mayoría simple (&gt;50%)</option>
+              <option value="0.6667">Dos tercios</option>
+              <option value="0.75">75%</option>
+            </select>
+          </div>
+        </div>
+        <div class="row" style="align-items:center">
+          <button class="btn ghost" id="calc-compare" type="button">Comparar todos los sistemas</button>
+        </div>
+        <div id="calc-compare-out" class="scroll-x"></div>
+      </div>
+      <div class="panel">
+        <div class="stats" id="calc-stats"></div>
+        <div class="scroll-x" style="margin-top:14px"><table id="calc-table"></table></div>
+        <p class="notice" id="calc-note"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- METODO -->
+  <section class="view" id="view-metodo" hidden>
+    <div class="grid2">
+      <div class="panel prose">
+        <h2>Cómo se calcula</h2>
+        <p>Cada organización se codifica con 16 variables en una escala 0-4. Cada código lleva una justificación y un nivel de confianza (alta: leído en estatutos; media: fuentes secundarias; baja: estimación). Con eso se calculan cuatro índices de 0 a 100:</p>
+        <div class="formula">Control de base (CB) =
+  media ponderada(mandato, revocabilidad, rotación,
+                  no-profesionalización, elección de dirección,
+                  agenda desde la base, pluralismo, autonomía,
+                  proximidad)  × 25
+  × (1 − 0,5 · brecha/4)
+
+proximidad = max(0, 5 − saltos)   ← del organigrama
+
+Agilidad = media(regla de decisión, capacidad ejecutiva,
+                 frecuencia del órgano intermedio,
+                 niveles a atravesar) × 25
+
+Escalabilidad = media(estructura federal,
+                      bajo coste de coordinación,
+                      tamaño demostrado = log10(N) − 2) × 25
+
+Riesgo oligárquico (Michels) =
+  [(4−no-prof.) + (4−rotación) + (4−elección) + brecha] / 16
+  × (0,5 + 0,5 · tamaño/4) × 100</div>
+        <p>La <b>proximidad</b> no se codifica a mano: se calcula siguiendo las aristas «elige a» del organigrama desde la afiliación hasta el órgano marcado como cima. Si añades órganos, el índice cambia.</p>
+        <h3>Pesos del control de base</h3>
+        <div class="weights" id="weights"></div>
+        <p style="margin-top:8px"><button class="btn ghost" id="reset-w" type="button">Restablecer pesos</button></p>
+      </div>
+      <div class="panel prose">
+        <h2>Métodos cuantitativos que puedes aplicar</h2>
+        <ol>
+          <li><b>Índices de poder de voto (Banzhaf, Shapley-Shubik).</b> Para plenos con voto ponderado. Miden el poder real de cada delegación frente a su peso nominal. Están en la calculadora.</li>
+          <li><b>Minoría mínima ganadora.</b> El porcentaje más pequeño de la afiliación total que puede imponer un acuerdo. Detecta la sobrerrepresentación de las unidades pequeñas o grandes.</li>
+          <li><b>Desproporcionalidad (Loosemore-Hanby, Gallagher).</b> Distancia entre el porcentaje de afiliación y el porcentaje de poder.</li>
+          <li><b>Distancia de delegación.</b> Saltos entre la base y el órgano que decide; con mandato libre, cada salto diluye el control (cadena principal-agente).</li>
+          <li><b>Gráfico de control de Tannenbaum.</b> Encuesta a la afiliación: «¿cuánta influencia tiene cada nivel?». La pendiente de la curva mide la concentración y el área total mide el control.</li>
+          <li><b>Análisis de redes (centralidad de Freeman).</b> Sobre quién comunica con quién (listas de correo, actas, grupos de mensajería). Detecta nodos intermediarios que concentran información aunque no tengan cargo.</li>
+          <li><b>Rotación efectiva.</b> Índice Herfindahl de las personas que ocupan cargos a lo largo de 10 años. Un valor alto indica una élite estable aunque los estatutos rotan.</li>
+          <li><b>Participación.</b> Asistencia a asambleas dividida por la afiliación; votos en referendos o congresos divididos por el censo.</li>
+          <li><b>Latencia de decisión.</b> Días desde que se presenta una propuesta hasta que se aprueba, medidos en las actas. Es la medida directa de la agilidad.</li>
+          <li><b>Coste de decisión de Buchanan-Tullock.</b> Con unanimidad o consenso, el coste de decidir crece de forma combinatoria con N. Con mayoría simple crece de forma casi lineal, pero aumenta el coste para quien queda en minoría.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="panel">
+      <h2>Libro de códigos</h2>
+      <dl class="codebook" id="codebook"></dl>
+    </div>
+    <div class="grid2">
+      <div class="panel form">
+        <h2>Añadir o corregir una organización</h2>
+        <p class="notice" style="margin:0">Pega un objeto JSON con el esquema de <span class="mono">orgs.json</span>. Si el <span class="mono">id</span> ya existe, sustituye a esa organización. Se guarda solo en este navegador. Para que sea permanente para todo el mundo, pídeselo a Claude, que lo añadirá a <span class="mono">orgs.json</span>.</p>
+        <textarea id="import-json" spellcheck="false" placeholder='{"id":"sat","siglas":"SAT", ...}'></textarea>
+        <div class="row" style="gap:8px">
+          <button class="btn" id="import-btn" type="button">Añadir</button>
+          <button class="btn ghost" id="template-btn" type="button">Cargar plantilla</button>
+          <button class="btn ghost" id="copy-btn" type="button">Copiar JSON completo</button>
+        </div>
+        <div class="msg" id="import-msg" role="status"></div>
+        <div id="local-list"></div>
+      </div>
+      <div class="panel prose">
+        <h2>Límites de este análisis</h2>
+        <ul>
+          <li>La CNT y la CGT están codificadas a partir de sus estatutos vigentes (2022). El resto, a partir de fuentes secundarias y del conocimiento del modelo. Revisa las marcas de confianza.</li>
+          <li>Los estatutos describen el poder formal. La variable «brecha formal-real» es un juicio cualitativo: conviene contrastarla con datos de rotación, participación y redes.</li>
+          <li>El PCTE y Anticapitalistas no publican su militancia y los nombres de algunos órganos están sin verificar.</li>
+          <li>La interpretación del tramo de más de 300 afiliaciones del Congreso de la CGT («1 voto por cada 100 o fracción») se ha leído como 7 votos más 1 por cada 100 adicionales, para que la tabla no decrezca.</li>
+        </ul>
+        <h3>Organizaciones que conviene añadir</h3>
+        <p>SAT, ELA y LAB, CNT-AIT, Solidaridad Obrera, CoBas, Podemos (contraejemplo plebiscitario), Rojava/DAANES, la Confederación de Sindicatos de Inquilinas como tal, o los sindicatos de inquilinos de Berlín (Deutsche Wohnen & Co. enteignen).</p>
+      </div>
+    </div>
+  </section>
+</main>
+<div class="tip" id="tip" hidden></div>
+
+<script src="orgs.js"></script>
+<script>
+(function(){
+"use strict";
+const $ = (s,el=document)=>el.querySelector(s);
+const esc = s => String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const store = {
+  get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},
+  set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+};
+
+const FAM = {
+  sindicato:{label:"Sindicato",color:"var(--s1)"},
+  movimiento:{label:"Movimiento social / territorial",color:"var(--s2)"},
+  partido:{label:"Partido",color:"var(--s3)"},
+  cooperativa:{label:"Autogestión productiva",color:"var(--s4)"}
+};
+
+const VARS = [
+  {k:"mandato",g:"CB",l:"Mandato imperativo",a:["Libre: el delegado vota lo que quiere","","Mixto o informal","","Imperativo: lleva acuerdos escritos de su asamblea"]},
+  {k:"revocabilidad",g:"CB",l:"Revocabilidad",a:["Solo al final del mandato o por órganos superiores","Procedimiento reforzado","Por el órgano que eligió","Por la base, con trámite","En cualquier momento por asamblea o pleno"]},
+  {k:"rotacion",g:"CB",l:"Rotación / límites",a:["Sin límites","Límites laxos","Límite de unos 12 años","Límite de unos 8 años","Mandatos cortos (≤4 años en total)"]},
+  {k:"profesionalizacion",g:"CB",l:"No profesionalización",a:["Aparato amplio de liberados y técnicos","Gerencia o cúpula profesional","Liberación parcial","Casi todo voluntario","Cargos no remunerados por estatuto"]},
+  {k:"eleccion_direccion",g:"CB",l:"Elección de la dirección",a:["Cooptación","Indirecta a 3 o más niveles o candidatura única","Congreso de delegados","Asamblea o pleno con mandato","Voto directo de toda la base"]},
+  {k:"agenda_base",g:"CB",l:"Agenda desde la base",a:["La dirección fija el orden del día","La dirección redacta y la base enmienda","Mixto","La base propone y la dirección filtra poco","Todo lo que propone la base entra"]},
+  {k:"pluralismo",g:"CB",l:"Pluralismo interno",a:["Fracciones prohibidas","Disciplina fuerte","Votos particulares","Listas que compiten","Tendencias reconocidas con representación proporcional"]},
+  {k:"autonomia_base",g:"CB",l:"Autonomía de la base",a:["Subordinada","","Autonomía relativa","","Plenamente autónoma (federalismo)"]},
+  {k:"proximidad",g:"CB",l:"Proximidad (calculada)",a:["5 o más saltos hasta la cima","4 saltos","3 saltos","2 saltos","1 salto"],calc:true},
+  {k:"brecha_formal_real",g:"−",l:"Brecha formal-real",a:["El poder real coincide con los estatutos","","Desviación moderada","","El poder real está en otra parte (aparato, mando, portavocía)"],neg:true},
+  {k:"regla_decision",g:"AG",l:"Regla de decisión",a:["Unanimidad","Consenso","Consenso con votación de reserva","Mayoría tras intentar el consenso","Mayoría simple / decide la dirección"]},
+  {k:"capacidad_ejecutiva",g:"AG",l:"Capacidad ejecutiva",a:["Sin ejecutivo","Gestión sin capacidad de decidir","Coordinación con cierto margen","Ejecutivo con margen amplio","El ejecutivo fija la posición"]},
+  {k:"freq_intermedio",g:"AG",l:"Frecuencia del órgano intermedio",a:["Más de 1 año","Cada 6-12 meses","Cada 2-6 meses","Cada 2 semanas a 2 meses","Semanal o más"],calc:true},
+  {k:"niveles_s",g:"AG",l:"Niveles a atravesar",a:["5 o más","4","3","2","1"],calc:true},
+  {k:"estructura_federal",g:"ES",l:"Estructura replicable",a:["Una sola unidad","Centralista","Coordinación incipiente","Federal o matricial","Federal y modular a cualquier escala"]},
+  {k:"coste_coordinacion",g:"ES",l:"Bajo coste de coordinación",a:["Todo pasa por asamblea directa","Asambleas en todas las unidades para cada decisión","Mixto","Delegación con continuidad","Representación y aparato"]},
+  {k:"tamano_s",g:"ES",l:"Tamaño demostrado",a:["~100","~1.000","~10.000","~100.000","1.000.000 o más"],calc:true}
+];
+const CB_KEYS = ["mandato","revocabilidad","rotacion","profesionalizacion","eleccion_direccion","agenda_base","pluralismo","autonomia_base","proximidad"];
+const DEFAULT_W = Object.fromEntries(CB_KEYS.map(k=>[k,1]));
+let W = Object.assign({},DEFAULT_W,store.get("cpo-weights",{}));
+
+let BASE = [], ORGS = [];
+
+// ---------- derived metrics ----------
+function code(o,k){const c=o.codigos&&o.codigos[k];return Array.isArray(c)?c:[null,"",""]}
+function v(o,k){const c=code(o,k)[0];return typeof c==="number"?c:null}
+function clamp(x,a,b){return Math.max(a,Math.min(b,x))}
+function hops(o){
+  const org=o.organos||[]; const d={};
+  org.forEach(n=>{if(n.tipo==="base")d[n.id]=0});
+  for(let it=0;it<org.length+2;it++){
+    org.forEach(n=>{
+      if(!n.elegido_por) return;
+      const ds=n.elegido_por.map(e=>d[e]).filter(x=>x!=null);
+      if(ds.length){const nv=1+Math.min(...ds); if(d[n.id]==null||nv<d[n.id])d[n.id]=nv}
+    });
+  }
+  const top=org.find(n=>n.cima);
+  return {map:d,top:top?d[top.id]:null};
+}
+function freqScore(m){if(m==null)return null;return m<=0.5?4:m<=2?3:m<=6?2:m<=12?1:0}
+function lvlScore(n){if(n==null)return null;return clamp(5-n,0,4)}
+function sizeScore(n){if(!n)return null;return clamp(Math.log10(n)-2,0,4)}
+function derive(o){
+  const h=hops(o);
+  const s={};
+  s.hops=h.top;
+  s.proximidad = h.top==null?null:clamp(5-h.top,0,4);
+  s.freq_intermedio = freqScore(v(o,"freq_intermedio_meses"));
+  s.niveles_s = lvlScore(v(o,"niveles"));
+  s.tamano_s = sizeScore(o.tamano&&o.tamano[0]);
+  const val=k=> (k in s)?s[k]:v(o,k);
+  s.val=val;
+  let num=0,den=0;
+  CB_KEYS.forEach(k=>{const x=val(k);if(x!=null&&W[k]>0){num+=W[k]*x;den+=W[k]}});
+  const br=v(o,"brecha_formal_real")||0;
+  s.cb_raw = den?num/den*25:null;
+  s.cb = s.cb_raw==null?null:s.cb_raw*(1-0.5*br/4);
+  const mean=a=>{const f=a.filter(x=>x!=null);return f.length?f.reduce((p,c)=>p+c,0)/f.length:null};
+  s.ag = (x=>x==null?null:x*25)(mean([val("regla_decision"),val("capacidad_ejecutiva"),s.freq_intermedio,s.niveles_s]));
+  s.es = (x=>x==null?null:x*25)(mean([val("estructura_federal"),val("coste_coordinacion"),s.tamano_s]));
+  const p=val("profesionalizacion"),r=val("rotacion"),e=val("eleccion_direccion");
+  s.olig = (p==null||r==null||e==null)?null:((4-p)+(4-r)+(4-e)+br)/16*(0.5+0.5*(s.tamano_s||0)/4)*100;
+  s.brecha=br;
+  return s;
+}
+function recompute(){ORGS.forEach(o=>o._d=derive(o))}
+
+// ---------- tooltip ----------
+const tip=$("#tip");
+function showTip(html,ev){tip.innerHTML=html;tip.hidden=false;moveTip(ev)}
+function moveTip(ev){const pad=14;let x=ev.clientX+pad,y=ev.clientY+pad;const r=tip.getBoundingClientRect();if(x+r.width>innerWidth-8)x=ev.clientX-r.width-pad;if(y+r.height>innerHeight-8)y=ev.clientY-r.height-pad;tip.style.left=x+"px";tip.style.top=y+"px"}
+function hideTip(){tip.hidden=true}
+function bindTip(el,fn){el.addEventListener("pointerenter",e=>showTip(fn(),e));el.addEventListener("pointermove",moveTip);el.addEventListener("pointerleave",hideTip)}
+
+const fmt=x=>x==null?"—":Math.round(x);
+const fmtN=n=>n==null?"—":n>=1e6?(n/1e6).toLocaleString("es-ES",{maximumFractionDigits:1})+" M":n>=1e3?Math.round(n/1e3).toLocaleString("es-ES")+" mil":n.toLocaleString("es-ES");
+
+// ---------- tabs ----------
+const views=["panorama","comparar","calc","metodo"];
+function show(view){
+  views.forEach(vw=>{$("#view-"+vw).hidden=vw!==view;$("#tab-"+vw).setAttribute("aria-selected",vw===view)});
+  store.set("cpo-tab",view);
+}
+document.querySelectorAll("nav.tabs button").forEach(b=>b.addEventListener("click",()=>show(b.dataset.view)));
+
+// ---------- panorama ----------
+function famLegend(el){
+  el.innerHTML=Object.entries(FAM).map(([k,f])=>`<span><i class="fam ${k}" style="background:${f.color}"></i>${f.label}</span>`).join("");
+}
+function scatter(){
+  const Wd=720,H=470,m={l:52,r:20,t:18,b:46};
+  const X=x=>m.l+(x/100)*(Wd-m.l-m.r), Y=y=>H-m.b-(y/100)*(H-m.t-m.b);
+  let s=`<svg viewBox="0 0 ${Wd} ${H}" width="100%" style="min-width:520px;max-width:100%" role="img" aria-label="Diagrama de dispersión: control de base frente a agilidad">`;
+  s+=`<g class="grid">`;[0,25,50,75,100].forEach(t=>{s+=`<line x1="${X(t)}" x2="${X(t)}" y1="${Y(0)}" y2="${Y(100)}"/><line x1="${X(0)}" x2="${X(100)}" y1="${Y(t)}" y2="${Y(t)}"/>`});s+=`</g>`;
+  s+=`<g class="axis">`;[0,25,50,75,100].forEach(t=>{s+=`<text x="${X(t)}" y="${H-m.b+16}" text-anchor="middle">${t}</text><text x="${m.l-8}" y="${Y(t)+4}" text-anchor="end">${t}</text>`});
+  s+=`<text x="${(X(0)+X(100))/2}" y="${H-8}" text-anchor="middle" style="font-size:12px;fill:var(--ink)">Control de base →</text>`;
+  s+=`<text transform="translate(14 ${(Y(0)+Y(100))/2}) rotate(-90)" text-anchor="middle" style="font-size:12px;fill:var(--ink)">Agilidad →</text></g>`;
+  const pts=ORGS.filter(o=>o._d.cb!=null&&o._d.ag!=null).map(o=>({o,x:X(o._d.cb),y:Y(o._d.ag),r:5+2.2*(o._d.tamano_s||0)}));
+  // label nudge: avoid overlaps by moving down/up
+  const placed=[];
+  pts.sort((a,b)=>b.r-a.r).forEach(p=>{
+    const f=FAM[p.o.familia]||FAM.sindicato;
+    const shape=p.o.familia==="cooperativa"
+      ?`<rect x="${p.x-p.r*0.8}" y="${p.y-p.r*0.8}" width="${p.r*1.6}" height="${p.r*1.6}" transform="rotate(45 ${p.x} ${p.y})" fill="${f.color}" fill-opacity=".85" stroke="var(--surface)" stroke-width="2"/>`
+      :`<circle cx="${p.x}" cy="${p.y}" r="${p.r}" fill="${f.color}" fill-opacity=".85" stroke="var(--surface)" stroke-width="2"/>`;
+    let ly=p.y+4, lx=p.x+p.r+4, anchor="start";
+    if(lx>Wd-90){lx=p.x-p.r-4;anchor="end"}
+    for(let k=0;k<8;k++){const hit=placed.find(q=>Math.abs(q.y-ly)<12&&Math.abs(q.x-lx)<70);if(!hit)break;ly+=(k%2?-1:1)*12*(k+1)}
+    placed.push({x:lx,y:ly});
+    s+=`<g class="pt" data-id="${esc(p.o.id)}" style="cursor:pointer">${shape}<circle cx="${p.x}" cy="${p.y}" r="${Math.max(p.r,12)}" fill="transparent"/><text x="${lx}" y="${ly}" text-anchor="${anchor}" style="font-size:11.5px;font-family:var(--f-display);font-stretch:85%;font-weight:600">${esc(p.o.siglas)}</text></g>`;
+  });
+  s+=`</svg>`;
+  const el=$("#scatter");el.innerHTML=s;
+  el.querySelectorAll(".pt").forEach(g=>{
+    const o=ORGS.find(x=>x.id===g.dataset.id);
+    bindTip(g,()=>`<strong>${esc(o.nombre)}</strong><span class="k">CONTROL DE BASE</span> ${fmt(o._d.cb)} · <span class="k">AGILIDAD</span> ${fmt(o._d.ag)}<br><span class="k">ESCALA</span> ${fmtN(o.tamano&&o.tamano[0])} · <span class="k">SALTOS</span> ${o._d.hops??"—"}`);
+    g.addEventListener("click",()=>openCompare(o.id));
+  });
+}
+let sortKey="cb",sortDir=-1;
+function idxTable(){
+  const cols=[
+    {k:"nombre",l:"Organización"},{k:"cb",l:"Control de base",bar:"var(--s1)"},{k:"ag",l:"Agilidad",bar:"var(--s2)"},{k:"es",l:"Escalabilidad",bar:"var(--s3)"},
+    {k:"olig",l:"Riesgo oligárquico",bar:"var(--accent)"},{k:"hops",l:"Saltos"},{k:"brecha",l:"Brecha"},{k:"tam",l:"Escala"},{k:"conf",l:"Confianza"}
+  ];
+  const val=(o,k)=>k==="nombre"?o.siglas.toLowerCase():k==="tam"?(o.tamano&&o.tamano[0])||0:k==="conf"?({alta:3,media:2,baja:1}[o.confianza]||0):o._d[k];
+  const rows=[...ORGS].sort((a,b)=>{const x=val(a,sortKey),y=val(b,sortKey);if(x==null)return 1;if(y==null)return -1;return (x>y?1:x<y?-1:0)*sortDir});
+  let h=`<thead><tr>${cols.map(c=>`<th class="sortable" data-k="${c.k}" aria-sort="${sortKey===c.k?(sortDir>0?"ascending":"descending"):"none"}">${c.l}${sortKey===c.k?(sortDir>0?" ↑":" ↓"):""}</th>`).join("")}</tr></thead><tbody>`;
+  rows.forEach(o=>{
+    h+=`<tr><td><button class="orgname" data-id="${esc(o.id)}"><i class="fam ${esc(o.familia)}" style="background:${(FAM[o.familia]||FAM.sindicato).color}"></i>${esc(o.siglas)}</button>${o._local?' <span class="pill local">local</span>':""}<div class="sub">${esc(o.nombre)}</div></td>`;
+    cols.slice(1).forEach(c=>{
+      if(c.bar){const x=o._d[c.k];h+=`<td><div class="bar"><b>${fmt(x)}</b><i style="width:${x==null?0:Math.max(2,x*0.9)}px;background:${c.bar}"></i></div></td>`}
+      else if(c.k==="hops")h+=`<td class="num">${o._d.hops??"—"}</td>`;
+      else if(c.k==="brecha")h+=`<td class="num">${o._d.brecha}/4</td>`;
+      else if(c.k==="tam")h+=`<td class="num">${fmtN(o.tamano&&o.tamano[0])}</td>`;
+      else h+=`<td><span class="pill ${esc(o.confianza)}">${esc(o.confianza||"?")}</span></td>`;
+    });
+    h+=`</tr>`;
+  });
+  const t=$("#idx-table");t.innerHTML=h+"</tbody>";
+  t.querySelectorAll("th.sortable").forEach(th=>th.addEventListener("click",()=>{const k=th.dataset.k;if(sortKey===k)sortDir*=-1;else{sortKey=k;sortDir=k==="nombre"?1:-1}idxTable()}));
+  t.querySelectorAll(".orgname").forEach(b=>b.addEventListener("click",()=>openCompare(b.dataset.id)));
+}
+function heat(){
+  const vs=VARS;
+  let h=`<thead><tr><th>Organización</th>${vs.map(x=>`<th class="v" title="${esc(x.l)}">${esc(x.l)}</th>`).join("")}</tr></thead><tbody>`;
+  ORGS.forEach(o=>{
+    h+=`<tr><td style="white-space:nowrap"><button class="orgname" data-id="${esc(o.id)}">${esc(o.siglas)}</button></td>`;
+    vs.forEach(x=>{
+      const val=o._d.val(x.k);
+      const c=code(o,x.k);
+      const conf=x.calc?"calc":c[2];
+      if(val==null){h+=`<td class="cell"><span style="color:var(--muted)">·</span></td>`;return}
+      const q=Math.round(x.neg?4-val:val);
+      h+=`<td class="cell ${conf==="baja"?"low":""}" data-o="${esc(o.id)}" data-k="${x.k}"><span style="background:var(--q${q});color:var(--qt${q})">${Number.isInteger(val)?val:val.toFixed(1)}</span></td>`;
+    });
+    h+=`</tr>`;
+  });
+  const t=$("#heat");t.innerHTML=h+"</tbody>";
+  t.querySelectorAll("td.cell[data-k]").forEach(td=>{
+    const o=ORGS.find(z=>z.id===td.dataset.o),x=VARS.find(z=>z.k===td.dataset.k);
+    bindTip(td,()=>{
+      const val=o._d.val(x.k),c=code(o,x.k);
+      let j=c[1];
+      if(x.k==="proximidad")j=`${o._d.hops} saltos hasta la cima, según el organigrama.`;
+      if(x.k==="freq_intermedio")j=`${code(o,"freq_intermedio_meses")[0]} meses. ${code(o,"freq_intermedio_meses")[1]}`;
+      if(x.k==="niveles_s")j=`${code(o,"niveles")[0]} niveles. ${code(o,"niveles")[1]}`;
+      if(x.k==="tamano_s")j=o.tamano?o.tamano[1]:"";
+      const anchor=x.a[Math.round(val)]||"";
+      return `<strong>${esc(o.siglas)} · ${esc(x.l)}</strong><span class="k">${Number.isInteger(val)?val:val.toFixed(1)}/4${anchor?" — "+esc(anchor):""}</span><br>${esc(j)}${c[2]&&!x.calc?`<br><span class="k">CONFIANZA ${esc(c[2]).toUpperCase()}</span>`:""}`;
+    });
+  });
+  t.querySelectorAll(".orgname").forEach(b=>b.addEventListener("click",()=>openCompare(b.dataset.id)));
+}
+function insights(){
+  if(ORGS.length<2){$("#insights").innerHTML=`<p class="notice">Hacen falta al menos dos organizaciones para comparar.</p>`;return}
+  const by=(k,dir)=>[...ORGS].filter(o=>o._d[k]!=null).sort((a,b)=>(a._d[k]-b._d[k])*dir);
+  const top=by("cb",-1)[0],low=by("cb",1)[0],ag=by("ag",-1)[0],es=by("es",-1)[0],ol=by("olig",-1)[0];
+  const both=[...ORGS].filter(o=>o._d.cb!=null&&o._d.ag!=null).sort((a,b)=>(b._d.cb+b._d.ag)-(a._d.cb+a._d.ag))[0];
+  const hopsMax=by("hops",-1)[0];
+  const corr=(()=>{const p=ORGS.filter(o=>o._d.cb!=null&&o._d.ag!=null);const n=p.length;const mx=p.reduce((s,o)=>s+o._d.cb,0)/n,my=p.reduce((s,o)=>s+o._d.ag,0)/n;let sxy=0,sx=0,sy=0;p.forEach(o=>{const a=o._d.cb-mx,b=o._d.ag-my;sxy+=a*b;sx+=a*a;sy+=b*b});return sxy/Math.sqrt(sx*sy)})();
+  $("#insights").innerHTML=`
+  <p><b>Correlación control de base–agilidad: r = ${corr.toFixed(2)}</b>. ${corr<-0.3?"En esta muestra, más control desde abajo va con menos agilidad: el dilema existe en los datos.":"La relación es débil en esta muestra: el diseño concreto importa más que el modelo."}</p>
+  <p><b>Más control de base:</b> ${esc(top.siglas)} (${fmt(top._d.cb)}). <b>Menos:</b> ${esc(low.siglas)} (${fmt(low._d.cb)}).</p>
+  <p><b>Más ágil:</b> ${esc(ag.siglas)} (${fmt(ag._d.ag)}). <b>Más escalable:</b> ${esc(es.siglas)} (${fmt(es._d.es)}).</p>
+  <p><b>Mejor equilibrio entre control y agilidad:</b> ${esc(both.siglas)}.</p>
+  <p><b>Mayor riesgo oligárquico:</b> ${esc(ol.siglas)} (${fmt(ol._d.olig)}). <b>Cadena de delegación más larga:</b> ${esc(hopsMax.siglas)}, con ${hopsMax._d.hops} saltos.</p>
+  <p class="notice">Estas lecturas se recalculan si cambias los pesos o añades organizaciones.</p>`;
+}
+
+// ---------- compare ----------
+let picked=store.get("cpo-picked",["cnt","cgt","ccoo"]);
+function picker(){
+  picked=picked.filter(id=>ORGS.some(o=>o.id===id));
+  $("#picker").innerHTML=ORGS.map(o=>`<button class="chip" type="button" aria-pressed="${picked.includes(o.id)}" data-id="${esc(o.id)}">${esc(o.siglas)}</button>`).join("");
+  $("#picker").querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{
+    const id=b.dataset.id;
+    if(picked.includes(id))picked=picked.filter(x=>x!==id);
+    else{picked.push(id);if(picked.length>3)picked.shift()}
+    store.set("cpo-picked",picked);renderCompare();
+  }));
+}
+function openCompare(id){if(!picked.includes(id)){picked.unshift(id);if(picked.length>3)picked.pop()}else{picked=[id,...picked.filter(x=>x!==id)]}store.set("cpo-picked",picked);renderCompare();show("comparar");scrollTo({top:0})}
+const SLOT=["var(--s1)","var(--s2)","var(--s3)"];
+const MARK=["circle","square","triangle"];
+function markSvg(i,cx,cy,r,col){
+  if(i===1)return `<rect x="${cx-r}" y="${cy-r}" width="${2*r}" height="${2*r}" rx="1.5" fill="${col}" stroke="var(--surface)" stroke-width="2"/>`;
+  if(i===2)return `<path d="M${cx} ${cy-r*1.2} L${cx+r*1.1} ${cy+r*0.9} L${cx-r*1.1} ${cy+r*0.9}Z" fill="${col}" stroke="var(--surface)" stroke-width="2"/>`;
+  return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${col}" stroke="var(--surface)" stroke-width="2"/>`;
+}
+function dotplot(sel){
+  $("#dotplot-panel").hidden=!sel.length;
+  $("#dot-legend").innerHTML=sel.map((o,i)=>`<span><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">${markSvg(i,7,7,5,SLOT[i])}</svg> ${esc(o.siglas)}</span>`).join("");
+  const rows=[
+    {k:"_cb",l:"Control de base (0-100)",idx:"cb"},{k:"_ag",l:"Agilidad (0-100)",idx:"ag"},{k:"_es",l:"Escalabilidad (0-100)",idx:"es"},{k:"_ol",l:"Riesgo oligárquico (0-100)",idx:"olig"},
+    ...VARS.map(x=>({k:x.k,l:x.l,v:x}))
+  ];
+  let h="";
+  rows.forEach(r=>{
+    const w=300,hh=22,pad=10;
+    const max=r.idx?100:4;
+    const X=x=>pad+(x/max)*(w-2*pad);
+    let s=`<svg viewBox="0 0 ${w} ${hh}" width="100%" height="${hh}" preserveAspectRatio="none" style="overflow:visible"><line x1="${pad}" x2="${w-pad}" y1="${hh/2}" y2="${hh/2}" stroke="var(--line)" stroke-width="2"/>`;
+    [0,.25,.5,.75,1].forEach(t=>s+=`<line x1="${X(t*max)}" x2="${X(t*max)}" y1="${hh/2-4}" y2="${hh/2+4}" stroke="var(--line)"/>`);
+    s+=`</svg>`;
+    // marks in HTML overlay to avoid aspect distortion
+    const marks=sel.map((o,i)=>{const val=r.idx?o._d[r.idx]:o._d.val(r.k);if(val==null)return "";const pct=(pad+(val/max)*(w-2*pad))/w*100;return `<span class="dm" data-o="${esc(o.id)}" data-k="${r.k}" style="position:absolute;left:calc(${pct}% - 8px);top:3px;width:16px;height:16px;transform:translateY(${(i-1)*0}px)"><svg width="16" height="16" viewBox="0 0 16 16">${markSvg(i,8,8,5.5,SLOT[i])}</svg></span>`}).join("");
+    h+=`<div class="dot-row"><span>${esc(r.l)}${r.v&&r.v.neg?' <span class="sub">(alto = peor)</span>':""}</span><div style="position:relative;height:22px">${s}${marks}</div></div>`;
+  });
+  $("#dotplot").innerHTML=h;
+  $("#dotplot").querySelectorAll(".dm").forEach(el=>{
+    const o=ORGS.find(z=>z.id===el.dataset.o);const k=el.dataset.k;
+    bindTip(el,()=>{
+      if(k.startsWith("_")){const m={_cb:"cb",_ag:"ag",_es:"es",_ol:"olig"}[k];return `<strong>${esc(o.siglas)}</strong>${fmt(o._d[m])}/100`}
+      const c=code(o,k);return `<strong>${esc(o.siglas)}</strong>${(+o._d.val(k)).toFixed(Number.isInteger(o._d.val(k))?0:1)}/4<br>${esc(c[1]||"")}`;
+    });
+  });
+}
+function orgChart(o){
+  const org=o.organos||[]; if(!org.length)return "";
+  const levels=[...new Set(org.map(n=>n.nivel))].sort((a,b)=>a-b);
+  const byL=levels.map(l=>org.filter(n=>n.nivel===l));
+  const maxN=Math.max(...byL.map(a=>a.length));
+  const bw=150,bh=54,gx=14,gy=34;
+  const Wd=Math.max(340,maxN*(bw+gx)+gx), H=levels.length*(bh+gy)+gy;
+  const pos={};
+  byL.forEach((arr,li)=>{
+    const total=arr.length*bw+(arr.length-1)*gx; let x0=(Wd-total)/2;
+    const y=H-gy-(li+1)*(bh+gy)+gy;
+    arr.forEach((n,i)=>pos[n.id]={x:x0+i*(bw+gx),y,n});
+  });
+  const wrap=(t,max)=>{const w=String(t).split(/\s+/);const lines=[];let cur="";w.forEach(x=>{if((cur+" "+x).trim().length>max){if(cur)lines.push(cur);cur=x}else cur=(cur+" "+x).trim()});if(cur)lines.push(cur);return lines.slice(0,3)};
+  let s=`<svg viewBox="0 0 ${Wd} ${H}" width="${Wd}" style="max-width:none;display:block;margin:0 auto" role="img" aria-label="Organigrama de ${esc(o.siglas)}"><defs><marker id="ar-${esc(o.id)}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--muted)"/></marker></defs>`;
+  org.forEach(n=>{(n.elegido_por||[]).forEach(src=>{const a=pos[src],b=pos[n.id];if(!a||!b)return;
+    const x1=a.x+bw/2,y1=a.y,x2=b.x+bw/2,y2=b.y+bh; const my=(y1+y2)/2;
+    const same=a.n.nivel===b.n.nivel;
+    const d=same?`M${a.x+bw} ${a.y+bh/2} L${b.x} ${b.y+bh/2}`:`M${x1} ${y1} C${x1} ${my}, ${x2} ${my}, ${x2} ${y2+2}`;
+    s+=`<path d="${d}" fill="none" stroke="var(--muted)" stroke-opacity=".55" stroke-width="1.3" marker-end="url(#ar-${esc(o.id)})"/>`;})});
+  Object.values(pos).forEach(({x,y,n})=>{
+    const top=n.cima, base=n.tipo==="base", sov=n.tipo==="soberano", mil=n.tipo==="militar";
+    const fill=top?"var(--accent)":base?"var(--soft)":"var(--surface)";
+    const stroke=top?"var(--accent)":sov?"var(--ink)":"var(--line)";
+    const tc=top?"var(--accent-ink)":"var(--ink)";
+    const lines=wrap(n.n,22);
+    s+=`<g class="node" data-n="${esc(n.id)}" style="cursor:help"><rect x="${x}" y="${y}" width="${bw}" height="${bh}" rx="4" fill="${fill}" stroke="${stroke}" stroke-width="${sov||top?2:1}" ${mil?'stroke-dasharray="5 3"':""}/>`;
+    const ty=y+bh/2-(lines.length-1)*6.5+4;
+    lines.forEach((ln,i)=>s+=`<text x="${x+bw/2}" y="${ty+i*13}" text-anchor="middle" style="font-size:11px;fill:${tc};font-weight:${top||sov?600:400}">${esc(ln)}</text>`);
+    s+=`<text x="${x+6}" y="${y+10}" style="font-size:8px;font-family:var(--f-mono);fill:${top?"var(--accent-ink)":"var(--muted)"}">${esc((n.tipo||"").toUpperCase())}</text></g>`;
+  });
+  s+=`</svg>`;
+  return s;
+}
+function card(o){
+  const d=o._d,r=o.reglas||{};
+  const probs=(o.problemas||[]).map(p=>`<li><span class="tag ${esc(p.t)}">${esc({democratico:"democracia",escalabilidad:"escala",agilidad:"agilidad"}[p.t]||p.t)}</span><span>${esc(p.x)}</span></li>`).join("");
+  const reg=[["Método de decisión",r.metodo],["Ponderación",r.ponderacion],["Mandato",r.mandato],["Cargos",r.cargos],["Reforma",r.reforma],["Minorías",r.minorias]].filter(x=>x[1]).map(([k,x])=>`<div><dt>${k}</dt><dd>${esc(x)}</dd></div>`).join("");
+  const src=(o.fuentes||[]).map(f=>`<li><a href="${esc(f.u)}" target="_blank" rel="noopener">${esc(f.t)}</a></li>`).join("");
+  return `<article class="panel card">
+    <div class="eyebrow">${esc((FAM[o.familia]||{}).label||o.familia)} · ${esc(o.pais||"")} · ${esc(o.fundacion||"")}</div>
+    <h3>${esc(o.siglas)}</h3><div class="sub">${esc(o.nombre)} <span class="pill ${esc(o.confianza)}">confianza ${esc(o.confianza)}</span>${o._local?' <span class="pill local">local</span>':""}</div>
+    <div class="idx"><div><b>${fmt(d.cb)}</b><span>Control de base</span></div><div><b>${fmt(d.ag)}</b><span>Agilidad</span></div><div><b>${fmt(d.es)}</b><span>Escala</span></div><div><b>${d.hops??"—"}</b><span>Saltos</span></div></div>
+    <p style="margin:12px 0 0">${esc(o.resumen)}</p>
+    <div class="power"><dt class="eyebrow">Poder formal</dt><dd style="margin:2px 0 8px">${esc(o.poder_formal)}</dd><dt class="eyebrow">Dónde reside el poder realmente</dt><dd style="margin:2px 0 0">${esc(o.poder_real)}</dd></div>
+    <h3 style="margin-top:16px">Organigrama</h3>
+    <div class="org-svg">${orgChart(o)}</div>
+    <details><summary>Órganos en detalle (${(o.organos||[]).length})</summary><dl class="kv">${(o.organos||[]).filter(n=>n.tipo!=="base"||n.desc).map(n=>`<div><dt>${esc(n.tipo)}${n.cima?" · cima":""}</dt><dd><b>${esc(n.n)}</b>${n.decide?` — <i>${esc(n.decide)}</i>`:""}${n.freq?` · ${esc(n.freq)}`:""}${n.desc?`<br><span class="sub">${esc(n.desc)}</span>`:""}</dd></div>`).join("")}</dl></details>
+    <details open><summary>Reglas de decisión</summary><dl class="kv">${reg}</dl></details>
+    <details open><summary>Problemas detectados</summary><ul class="problems">${probs}</ul></details>
+    <details><summary>Fuentes</summary><ul class="sources">${src}</ul></details>
+  </article>`;
+}
+function renderCompare(){
+  picker();
+  const sel=picked.map(id=>ORGS.find(o=>o.id===id)).filter(Boolean);
+  dotplot(sel);
+  $("#cards").innerHTML=sel.length?sel.map(card).join(""):`<p class="notice">Elige al menos una organización.</p>`;
+  $("#cards").querySelectorAll(".card").forEach((c,i)=>{
+    const o=sel[i];
+    c.querySelectorAll(".node").forEach(g=>{const n=o.organos.find(z=>z.id===g.dataset.n);bindTip(g,()=>`<strong>${esc(n.n)}</strong>${n.decide?`<span class="k">DECIDE</span> ${esc(n.decide)}<br>`:""}${n.freq?`<span class="k">FRECUENCIA</span> ${esc(n.freq)}<br>`:""}${esc(n.desc||"")}${o._d&&hops(o).map[n.id]!=null?`<br><span class="k">${hops(o).map[n.id]} SALTOS DESDE LA BASE</span>`:""}`)});
+  });
+}
+
+// ---------- calculator ----------
+const SCHEMES={
+  cnt_sind:{l:"CNT sindicatos",f:n=>n<15?1:n<=20?2:n<=30?3:n<=40?4:n<=50?5:n<=60?6:n<=70?7:n<=80?8:n<=90?9:n<=100?10:n<=150?11:n<=250?12:n<=500?13:n<=1000?14:15},
+  cnt_reg:{l:"CNT regionales",f:n=>{const t=[[100,1],[200,2],[300,3],[400,4],[500,5],[600,6],[700,7],[800,8],[900,9],[1000,10],[1250,11],[1500,12],[2000,13],[3000,14],[5000,15],[10000,16]];for(const [m,v] of t)if(n<=m)return v;return 17}},
+  cgt_cong:{l:"CGT Congreso",f:n=>n<10?0:n<=50?1:n<=75?2:n<=100?3:n<=150?4:n<=200?5:n<=250?6:n<=300?7:7+Math.ceil((n-300)/100)},
+  cgt_cc:{l:"CGT Comité Confederal",f:n=>n<=100?1:n<=500?2:n<=1000?3:n<=2000?4:4+Math.ceil((n-2000)/2000)},
+  prop:{l:"Proporcional",f:n=>n},
+  sqrt:{l:"Raíz cuadrada",f:n=>Math.max(1,Math.round(Math.sqrt(n)))},
+  equal:{l:"Igualitario",f:n=>1}
+};
+const DEFAULT_UNITS="Sindicato A:1200\nSindicato B:640\nSindicato C:310\nSindicato D:180\nSindicato E:120\nSindicato F:95\nSindicato G:60\nSindicato H:45\nSindicato I:32\nSindicato J:24\nSindicato K:18\nSindicato L:16";
+function parseUnits(t){return t.split(/\n|;/).map(x=>x.trim()).filter(Boolean).map((x,i)=>{const m=x.match(/^(.*?)[:=\t,]\s*([\d.]+)\s*$/);if(m)return{n:m[1].trim()||("U"+(i+1)),a:Math.round(+m[2].replace(/\./g,""))};const k=+x.replace(/\./g,"");return isNaN(k)?null:{n:"U"+(i+1),a:k}}).filter(u=>u&&u.a>0)}
+function analyse(units,schemeKey,qf){
+  let w=units.map(u=>SCHEMES[schemeKey].f(u.a));
+  let total=w.reduce((a,b)=>a+b,0);
+  if(total>6000){const s=6000/total;w=w.map(x=>Math.max(1,Math.round(x*s)));total=w.reduce((a,b)=>a+b,0)}
+  const q=qf===0.5?Math.floor(total/2)+1:Math.ceil(total*qf-1e-9);
+  const n=units.length;
+  const swings=new Array(n).fill(0);
+  for(let i=0;i<n;i++){
+    const dp=new Float64Array(total+1);dp[0]=1;let mx=0;
+    for(let j=0;j<n;j++){if(j===i)continue;const wj=w[j];for(let s=mx;s>=0;s--)if(dp[s])dp[s+wj]+=dp[s];mx+=wj}
+    let c=0;for(let s=Math.max(0,q-w[i]);s<q&&s<=total;s++)c+=dp[s];swings[i]=c;
+  }
+  const sw=swings.reduce((a,b)=>a+b,0)||1;
+  const bz=swings.map(x=>x/sw);
+  const A=units.reduce((s,u)=>s+u.a,0);
+  // minimal winning share of membership: min affiliates with votes>=q
+  const INF=1e18;const best=new Float64Array(total+1).fill(INF);best[0]=0;let mx=0;
+  units.forEach((u,j)=>{for(let s=mx;s>=0;s--)if(best[s]<INF){const t=s+w[j];if(best[s]+u.a<best[t])best[t]=best[s]+u.a}mx+=w[j]});
+  let mwc=INF;for(let s=q;s<=total;s++)if(best[s]<mwc)mwc=best[s];
+  const share=units.map(u=>u.a/A);
+  const lh=0.5*share.reduce((s,x,i)=>s+Math.abs(x-bz[i]),0);
+  const gal=Math.sqrt(0.5*share.reduce((s,x,i)=>s+(x-bz[i])**2,0));
+  const vpa=units.map((u,i)=>w[i]/u.a);
+  const ratio=Math.max(...vpa)/Math.min(...vpa);
+  return {w,total,q,bz,share,mwc:mwc/A,lh,gal,vpa,ratio,A};
+}
+function pct(x,d=1){return (x*100).toLocaleString("es-ES",{maximumFractionDigits:d,minimumFractionDigits:d})+"%"}
+function runCalc(){
+  const t=$("#calc-units").value;store.set("cpo-units",t);
+  const sk=$("#calc-scheme").value,qf=+$("#calc-quota").value;store.set("cpo-scheme",sk);store.set("cpo-quota",qf);
+  const units=parseUnits(t);
+  if(units.length<2||units.length>60){$("#calc-stats").innerHTML=`<p class="msg err">Introduce entre 2 y 60 unidades con su número de afiliadas, por ejemplo «Sindicato A:120».</p>`;$("#calc-table").innerHTML="";return}
+  const r=analyse(units,sk,qf);
+  $("#calc-stats").innerHTML=`
+    <div class="stat"><b>${pct(r.mwc)}</b><span>de la afiliación basta para ganar una votación (minoría mínima ganadora)</span></div>
+    <div class="stat"><b>${pct(r.lh)}</b><span>de desproporcionalidad entre afiliación y poder (Loosemore-Hanby)</span></div>
+    <div class="stat"><b>×${r.ratio.toLocaleString("es-ES",{maximumFractionDigits:1})}</b><span>es lo que pesa una afiliada del grupo más favorecido frente al menos favorecido</span></div>
+    <div class="stat"><b>${r.q}/${r.total}</b><span>votos necesarios para ganar sobre el total</span></div>`;
+  let h=`<thead><tr><th>Unidad</th><th>Afiliadas</th><th>% afiliación</th><th>Votos</th><th>% votos</th><th>Banzhaf</th><th>Poder / afiliación</th></tr></thead><tbody>`;
+  units.forEach((u,i)=>{const pr=r.bz[i]/r.share[i];h+=`<tr><td>${esc(u.n)}</td><td class="num">${u.a.toLocaleString("es-ES")}</td><td class="num">${pct(r.share[i])}</td><td class="num">${r.w[i]}</td><td class="num">${pct(r.w[i]/r.total)}</td><td class="num"><div class="bar" style="justify-content:flex-end"><b>${pct(r.bz[i])}</b><i style="width:${Math.max(2,r.bz[i]*160)}px"></i></div></td><td class="num" style="color:${pr>1.25?"var(--good)":pr<0.8?"var(--bad)":"inherit"}">×${pr.toFixed(2)}</td></tr>`});
+  $("#calc-table").innerHTML=h+"</tbody>";
+  $("#calc-note").textContent=`Banzhaf normalizado: porcentaje de las veces que cada unidad es decisiva sobre el total de situaciones decisivas. Supone voto en bloque y que todas las unidades votan.${sk==="prop"&&r.total<units.reduce((s,u)=>s+u.a,0)?" Los pesos proporcionales se han escalado para el cálculo.":""}`;
+}
+function compareAll(){
+  const units=parseUnits($("#calc-units").value);if(units.length<2)return;
+  const qf=+$("#calc-quota").value;
+  let h=`<table><thead><tr><th>Sistema</th><th>Minoría mín. ganadora</th><th>Desproporción</th><th>Peso máx./mín.</th></tr></thead><tbody>`;
+  Object.entries(SCHEMES).forEach(([k,s])=>{const r=analyse(units,k,qf);h+=`<tr><td>${esc(s.l)}</td><td class="num">${pct(r.mwc)}</td><td class="num">${pct(r.lh)}</td><td class="num">×${r.ratio.toLocaleString("es-ES",{maximumFractionDigits:1})}</td></tr>`});
+  $("#calc-compare-out").innerHTML=h+"</tbody></table><p class='notice'>Un sistema justo en términos de afiliación tiende a una minoría ganadora cercana al 50% y una desproporción cercana a 0. Las tablas degresivas protegen a las unidades pequeñas a costa de la afiliación de las grandes.</p>";
+}
+
+// ---------- método ----------
+function weights(){
+  $("#weights").innerHTML=CB_KEYS.map(k=>{const x=VARS.find(z=>z.k===k);return `<div><label for="w-${k}"><span>${esc(x.l)}</span><span class="mono" id="wv-${k}">${W[k]}</span></label><input type="range" id="w-${k}" min="0" max="3" step="0.5" value="${W[k]}" data-k="${k}"></div>`}).join("");
+  $("#weights").querySelectorAll("input").forEach(inp=>inp.addEventListener("input",()=>{W[inp.dataset.k]=+inp.value;$("#wv-"+inp.dataset.k).textContent=inp.value;store.set("cpo-weights",W);refresh()}));
+}
+function codebook(){
+  $("#codebook").innerHTML=VARS.map(x=>`<dt>${esc(x.l)} <span class="sub mono">${x.g==="CB"?"control de base":x.g==="AG"?"agilidad":x.g==="ES"?"escalabilidad":"ajuste"}${x.calc?" · calculada":""}</span></dt><dd>${x.a.map((a,i)=>a?`<b>${i}</b> ${esc(a)}`:"").filter(Boolean).join(" · ")}</dd>`).join("");
+}
+const TEMPLATE={id:"nueva",siglas:"NUEVA",nombre:"Nombre completo",familia:"sindicato",pais:"",fundacion:2000,tamano:[1000,"Fuente de la cifra","baja"],corriente:"",autogestionada:true,resumen:"",poder_formal:"",poder_real:"",
+  organos:[{id:"af",n:"Afiliación",nivel:0,tipo:"base"},{id:"asam",n:"Asamblea",nivel:1,tipo:"soberano",elegido_por:["af"],decide:"Mayoría"},{id:"ej",n:"Secretariado",nivel:2,tipo:"ejecutivo",cima:true,elegido_por:["asam"]}],
+  reglas:{metodo:"",ponderacion:"",mandato:"",cargos:"",reforma:"",minorias:""},
+  codigos:Object.fromEntries(["mandato","revocabilidad","rotacion","profesionalizacion","eleccion_direccion","agenda_base","pluralismo","autonomia_base","brecha_formal_real","regla_decision","capacidad_ejecutiva","estructura_federal","coste_coordinacion"].map(k=>[k,[2,"justificación","baja"]]).concat([["freq_soberano_meses",[12,"","baja"]],["freq_intermedio_meses",[3,"","baja"]],["niveles",[2,"","baja"]]])),
+  problemas:[{t:"democratico",x:""}],fuentes:[{t:"",u:"https://"}],confianza:"baja"};
+function localList(){
+  const loc=store.get("cpo-local",[]);
+  $("#local-list").innerHTML=loc.length?`<p class="eyebrow" style="margin:8px 0 4px">Añadidas en este navegador</p>`+loc.map(o=>`<div class="row" style="align-items:center;gap:8px"><span>${esc(o.siglas)} <span class="sub">${esc(o.id)}</span></span><button class="btn ghost" type="button" data-rm="${esc(o.id)}">Quitar</button></div>`).join(""):"";
+  $("#local-list").querySelectorAll("[data-rm]").forEach(b=>b.addEventListener("click",()=>{store.set("cpo-local",store.get("cpo-local",[]).filter(o=>o.id!==b.dataset.rm));build();$("#import-msg").textContent="Organización quitada.";$("#import-msg").className="msg ok"}));
+}
+function validate(o){
+  const errs=[];
+  if(!o||typeof o!=="object")return["No es un objeto JSON."];
+  ["id","siglas","nombre"].forEach(k=>{if(!o[k])errs.push(`Falta «${k}».`)});
+  if(!o.codigos)errs.push("Falta «codigos».");
+  if(!Array.isArray(o.organos)||!o.organos.some(n=>n.tipo==="base"))errs.push("«organos» debe incluir un órgano con tipo «base».");
+  if(Array.isArray(o.organos)&&!o.organos.some(n=>n.cima))errs.push("Marca un órgano con «cima»: true.");
+  return errs;
+}
+$("#import-btn").addEventListener("click",()=>{
+  const m=$("#import-msg");
+  let data;try{data=JSON.parse($("#import-json").value)}catch(e){m.textContent="El JSON no es válido: "+e.message;m.className="msg err";return}
+  const arr=Array.isArray(data)?data:(data.orgs||[data]);
+  const loc=store.get("cpo-local",[]);
+  for(const o of arr){const e=validate(o);if(e.length){m.textContent=(o.siglas||o.id||"Organización")+": "+e.join(" ");m.className="msg err";return}
+    const i=loc.findIndex(x=>x.id===o.id);if(i>=0)loc[i]=o;else loc.push(o)}
+  store.set("cpo-local",loc);build();
+  m.textContent=`Añadida${arr.length>1?"s":""}: ${arr.map(o=>o.siglas).join(", ")}.`;m.className="msg ok";
+});
+$("#template-btn").addEventListener("click",()=>{$("#import-json").value=JSON.stringify(TEMPLATE,null,2)});
+$("#copy-btn").addEventListener("click",()=>{
+  const txt=JSON.stringify({orgs:ORGS.map(o=>{const c=Object.assign({},o);delete c._d;delete c._local;return c})},null,2);
+  const m=$("#import-msg");
+  const fallback=()=>{$("#import-json").value=txt;$("#import-json").select();m.textContent="Copia el texto seleccionado (Ctrl+C).";m.className="msg ok"};
+  try{navigator.clipboard.writeText(txt).then(()=>{m.textContent="JSON completo copiado.";m.className="msg ok"},fallback)}catch(e){fallback()}
+});
+$("#reset-w").addEventListener("click",()=>{W=Object.assign({},DEFAULT_W);store.set("cpo-weights",W);weights();refresh()});
+
+// ---------- boot ----------
+function refresh(){recompute();scatter();idxTable();heat();insights();renderCompare()}
+function build(){
+  const loc=store.get("cpo-local",[]).map(o=>Object.assign({},o,{_local:true}));
+  const ids=new Set(loc.map(o=>o.id));
+  ORGS=BASE.filter(o=>!ids.has(o.id)).concat(loc);
+  localList();refresh();
+}
+famLegend($("#fam-legend"));weights();codebook();
+$("#calc-units").value=store.get("cpo-units",DEFAULT_UNITS);
+$("#calc-scheme").value=store.get("cpo-scheme","cnt_sind");
+$("#calc-quota").value=String(store.get("cpo-quota",0.5));
+["input","change"].forEach(ev=>{$("#calc-units").addEventListener(ev,runCalc);$("#calc-scheme").addEventListener(ev,runCalc);$("#calc-quota").addEventListener(ev,()=>{runCalc();if($("#calc-compare-out").innerHTML)compareAll()})});
+$("#calc-compare").addEventListener("click",compareAll);
+runCalc();
+const tab=store.get("cpo-tab","panorama");if(views.includes(tab))show(tab);
+(window.ORGS_DATA?Promise.resolve(window.ORGS_DATA):fetch("orgs.json").then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})).then(d=>{BASE=d.orgs||[];build()}).catch(e=>{
+  $("#insights").innerHTML=`<p class="msg err">No se ha podido cargar orgs.json (${esc(e.message)}). Las organizaciones añadidas localmente siguen disponibles.</p>`;BASE=[];build();
+});
+})();
+</script>
+</body>
+</html>

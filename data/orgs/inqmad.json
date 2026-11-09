@@ -1,0 +1,255 @@
+{
+  "id": "inqmad",
+  "siglas": "SI Madrid",
+  "nombre": "Sindicato de Inquilinas e Inquilinos de Madrid",
+  "familia": "movimiento",
+  "pais": "Estado español",
+  "fundacion": 2017,
+  "tamano": [
+    4000,
+    "«En diciembre de 2024 hemos llegado a ser 4.000 personas afiliadas» (página de Transparencia). La Asamblea de 2026 habla de crecimiento, sin cifra.",
+    "alta"
+  ],
+  "corriente": "Sindicalismo de vivienda; organización por bloques y por propietario",
+  "autogestionada": true,
+  "resumen": "Desde la primera Asamblea Anual de Afiliadas (2 de febrero de 2024) tiene un organigrama formal en tres capas. (1) Órganos decisorios: Asamblea de afiliadas (anual, máximo órgano de refrendo), Plenarias (bimestrales, abiertas a las afiliadas que participan en algún espacio) y Grupo de Coordinación (dos personas por comisión o sección, con al menos una mujer). (2) Comisiones de Organización, Acción sindical y Comunicación, con sus grupos de trabajo. (3) Secciones sindicales por propietario (Sareb, Nestar/Azora, Blackstone) y por territorio (nodos), alimentadas por las asambleas de bloque a través de delegadas de bloque. En 2026 aprobó un Reglamento de Régimen Interno que no es público.",
+  "poder_formal": "Asamblea anual de afiliadas (líneas estratégicas, cuentas, reglamento). Entre asambleas, las Plenarias bimestrales.",
+  "poder_real": "El Grupo de Coordinación (delegadas de cada comisión y sección) y las afiliadas activas que van a las Plenarias. La afiliación pasiva solo interviene una vez al año. Hay personas remuneradas desde al menos 2026, cuya subida salarial aprobó la Asamblea.",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Afiliación",
+      "nivel": 0,
+      "tipo": "base",
+      "desc": "Unas 4.000 afiliadas con cuota (diciembre de 2024). La afiliación sin cuota se eliminó en 2021."
+    },
+    {
+      "id": "bloq",
+      "n": "Asambleas de bloque",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Vecinas de un mismo bloque en conflicto. Cada bloque nombra una persona de enlace o delegada de bloque."
+    },
+    {
+      "id": "secprop",
+      "n": "Secciones por propietario (conflictos)",
+      "nivel": 2,
+      "tipo": "delegados",
+      "elegido_por": [
+        "bloq"
+      ],
+      "desc": "Sareb, Nestar/Azora, Blackstone… Reúnen a los bloques de un mismo gran propietario. Si no existe sección, la delegada de bloque va al nodo territorial."
+    },
+    {
+      "id": "nodos",
+      "n": "Secciones por territorio (nodos)",
+      "nivel": 2,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af",
+        "bloq"
+      ],
+      "desc": "Sur, Latina, Carabanchel, Este, Centro, Corredor, Sierra Norte y otros."
+    },
+    {
+      "id": "com",
+      "n": "Comisiones y grupos de trabajo",
+      "nivel": 3,
+      "tipo": "tecnico",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Organización (Confederación, Antirracismo, Transfeminismo, Formaciones); Acción sindical (Asamblea inquilina, Legal, Pisos turísticos, Ecosindicalismo); Comunicación (Argumentario, Vídeo, Diseño, Web, Campañas, Portavocías)."
+    },
+    {
+      "id": "gc",
+      "n": "Grupo de Coordinación",
+      "nivel": 4,
+      "tipo": "coordinacion",
+      "cima": true,
+      "elegido_por": [
+        "secprop",
+        "nodos",
+        "com"
+      ],
+      "desc": "Dos personas por comisión y por sección o nodo, con al menos una mujer en cada caso. «Ponen en común lo que ocurre en cada espacio y velan por que los acuerdos alcanzados prosperen.» No es público cómo se eligen ni con qué frecuencia se reúne."
+    },
+    {
+      "id": "plen",
+      "n": "Plenarias",
+      "nivel": 4,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "secprop",
+        "nodos",
+        "com"
+      ],
+      "freq": "Bimestrales",
+      "desc": "Abiertas a todas las afiliadas que participan en secciones, nodos, comisiones o grupos de trabajo. Ni sus competencias ni su método de decisión son públicos."
+    },
+    {
+      "id": "aa",
+      "n": "Asamblea anual de afiliadas",
+      "nivel": 5,
+      "tipo": "soberano",
+      "elegido_por": [
+        "af"
+      ],
+      "freq": "Anual (2/02/2024; 20-21/02/2026…)",
+      "decide": "«Máximo órgano de refrendo»; método de votación no publicado",
+      "desc": "Abierta a toda la afiliación. Rendición de cuentas, líneas estratégicas, presupuesto de la caja de resistencia, salarios de las compañeras remuneradas y Reglamento de Régimen Interno (aprobado en 2026, debatido título por título)."
+    },
+    {
+      "id": "csi",
+      "n": "Confederación de Sindicatos de Inquilinas (Congreso)",
+      "nivel": 6,
+      "tipo": "delegados",
+      "elegido_por": [
+        "aa"
+      ],
+      "desc": "Su Congreso de Málaga aprobó la Reforma Inmobiliaria Popular y la hoja de ruta «La Revuelta de las llaves», que la Asamblea de 2026 reafirmó."
+    }
+  ],
+  "reglas": {
+    "metodo": "Asamblea anual como máximo órgano de refrendo; Plenarias bimestrales entre asambleas. El método (consenso o votación) no se publica.",
+    "ponderacion": "Asamblea y Plenarias: participación individual, una persona, una voz. Grupo de Coordinación: 2 personas por espacio, sea cual sea su tamaño.",
+    "mandato": "Las delegadas de bloque enlazan con su sección. Las del Grupo de Coordinación representan a su comisión o nodo; no consta si con mandato imperativo.",
+    "cargos": "Existen compañeras remuneradas; la Asamblea de 2026 aprobó su subida salarial. No constan límites ni rotación.",
+    "reforma": "Reglamento de Régimen Interno aprobado por la Asamblea anual (2026); no es público. Se mencionan estatutos que tampoco están publicados.",
+    "minorias": "No consta un mecanismo formal."
+  },
+  "codigos": {
+    "mandato": [
+      2,
+      "Delegadas de bloque y del Grupo de Coordinación representan a su espacio; no consta si con mandato imperativo.",
+      "media"
+    ],
+    "revocabilidad": [
+      2,
+      "No consta un procedimiento de revocación.",
+      "baja"
+    ],
+    "rotacion": [
+      2,
+      "No constan límites de mandato.",
+      "baja"
+    ],
+    "profesionalizacion": [
+      2,
+      "Hay compañeras remuneradas (subida salarial aprobada en 2026); la mayoría del trabajo es militante.",
+      "media"
+    ],
+    "eleccion_direccion": [
+      3,
+      "El Grupo de Coordinación sale de cada comisión o nodo, a un salto de la base; no consta cómo se elige.",
+      "media"
+    ],
+    "agenda_base": [
+      3,
+      "Las secciones y nodos alimentan las Plenarias; las líneas estratégicas se refrendan en la Asamblea anual.",
+      "media"
+    ],
+    "pluralismo": [
+      2,
+      "Sin mecanismo formal para minorías.",
+      "baja"
+    ],
+    "autonomia_base": [
+      3,
+      "Los bloques y las secciones por propietario llevan su propio conflicto.",
+      "media"
+    ],
+    "brecha_formal_real": [
+      2,
+      "Hay organigrama formal y Reglamento, pero no son públicas sus reglas de decisión; peso de las afiliadas activas y de las personas remuneradas.",
+      "media"
+    ],
+    "regla_decision": [
+      2,
+      "Método no publicado; la tradición asamblearia apunta a búsqueda de consenso.",
+      "baja"
+    ],
+    "capacidad_ejecutiva": [
+      2,
+      "El Grupo de Coordinación «vela por que los acuerdos prosperen»: ejecuta, no consta que decida.",
+      "media"
+    ],
+    "freq_soberano_meses": [
+      12,
+      "Asamblea anual de afiliadas.",
+      "alta"
+    ],
+    "freq_intermedio_meses": [
+      2,
+      "Plenarias bimestrales.",
+      "alta"
+    ],
+    "niveles": [
+      2,
+      "Sección o nodo → Plenaria; lo estratégico, a la Asamblea anual.",
+      "media"
+    ],
+    "estructura_federal": [
+      3,
+      "Matriz de secciones territoriales y por propietario + Grupo de Coordinación por delegación; integrada en una Confederación estatal.",
+      "media"
+    ],
+    "coste_coordinacion": [
+      2,
+      "La coordinación delegada reduce el coste; Plenarias y Asamblea siguen siendo de participación directa.",
+      "media"
+    ]
+  },
+  "problemas": [
+    {
+      "t": "democratico",
+      "x": "La afiliación en su conjunto decide una vez al año (refrendo). Entre asambleas deciden las Plenarias, abiertas solo a quien participa activamente en algún espacio: probablemente una fracción pequeña de las 4.000 afiliadas. Es una democracia de militantes activas, no de afiliación."
+    },
+    {
+      "t": "democratico",
+      "x": "El Reglamento de Régimen Interno (2026) y los estatutos no son públicos: no se sabe cómo se vota, qué quórum hay, cómo se elige o revoca al Grupo de Coordinación ni qué competencias exactas tienen las Plenarias."
+    },
+    {
+      "t": "democratico",
+      "x": "El Grupo de Coordinación da 2 personas a cada comisión o nodo, sea cual sea su tamaño: un nodo pequeño pesa lo mismo que una sección por propietario con muchos bloques."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "El paso de 2024 a un organigrama con delegación (bloque → sección → Grupo de Coordinación) resuelve en parte el problema de una asamblea abierta de miles de personas. Las Plenarias y la Asamblea anual siguen siendo de participación directa."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "La aparición de personal remunerado da continuidad, pero abre la vía de profesionalización que describió Michels. La Asamblea controla sus salarios, lo cual es un buen contrapeso."
+    },
+    {
+      "t": "agilidad",
+      "x": "Ágil en lo local (bloques y secciones). Entre Plenarias (cada 2 meses) la capacidad de decisión del Grupo de Coordinación no está definida públicamente."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Sindicato de Inquilinas — Cómo nos organizamos (organigrama, noviembre 2025)",
+      "u": "https://inquilinato.org/el-sindicato/como-nos-organizamos/"
+    },
+    {
+      "t": "Sindicato de Inquilinas — Primera Asamblea Anual de Afiliadas (2024)",
+      "u": "https://inquilinato.org/acabar-con-el-rentismo-caminar-hacia-la-huelga-de-alquileres-primera-asamblea-anual-de-afiliadas/"
+    },
+    {
+      "t": "Sindicato de Inquilinas — Resumen de la Asamblea Anual 2026",
+      "u": "https://inquilinato.org/asamblea-anual-sindicato-inquilinas-reforma-inmobiliaria-popular/"
+    },
+    {
+      "t": "Sindicato de Inquilinas — Transparencia",
+      "u": "https://inquilinato.org/el-sindicato/transparencia/"
+    },
+    {
+      "t": "El Salto — Así se organiza la acampada por la vivienda en Sol",
+      "u": "https://www.elsaltodiario.com/vivienda/metodos-asamblearios-desbordadas-solidaridad-asi-se-organiza-acampada-vivienda-sol"
+    }
+  ],
+  "confianza": "media"
+}

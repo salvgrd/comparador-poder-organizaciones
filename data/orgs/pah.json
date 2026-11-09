@@ -1,0 +1,186 @@
+{
+  "id": "pah",
+  "siglas": "PAH",
+  "nombre": "Plataforma de Afectados por la Hipoteca",
+  "familia": "movimiento",
+  "pais": "Estado español",
+  "fundacion": 2009,
+  "tamano": [
+    10000,
+    "Sin afiliación formal; unas 200 asambleas locales en su momento álgido. Estimación de personas activas.",
+    "baja"
+  ],
+  "corriente": "Movimiento asambleario por la vivienda; apoyo mutuo y desobediencia civil",
+  "autogestionada": true,
+  "resumen": "Red de asambleas locales autónomas que comparten nombre, principios y métodos (asesoría colectiva, stop desahucios, obra social). Se coordinan en encuentros estatales y grupos de trabajo. Decisión por consenso.",
+  "poder_formal": "Cada asamblea local.",
+  "poder_real": "Las asambleas locales. Los encuentros estatales coordinan campañas (ILP), pero no obligan a nadie.",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Personas afectadas y activistas",
+      "nivel": 0,
+      "tipo": "base"
+    },
+    {
+      "id": "loc",
+      "n": "Asamblea local (semanal)",
+      "nivel": 1,
+      "tipo": "soberano",
+      "elegido_por": [
+        "af"
+      ],
+      "decide": "Consenso"
+    },
+    {
+      "id": "com",
+      "n": "Comisiones locales",
+      "nivel": 2,
+      "tipo": "tecnico",
+      "elegido_por": [
+        "loc"
+      ]
+    },
+    {
+      "id": "terr",
+      "n": "Coordinadoras territoriales",
+      "nivel": 2,
+      "tipo": "delegados",
+      "elegido_por": [
+        "loc"
+      ]
+    },
+    {
+      "id": "enc",
+      "n": "Encuentro estatal",
+      "nivel": 3,
+      "tipo": "delegados",
+      "elegido_por": [
+        "loc"
+      ],
+      "decide": "Consenso",
+      "desc": "Coordina campañas comunes; no impone."
+    },
+    {
+      "id": "gt",
+      "n": "Grupos de trabajo estatales",
+      "nivel": 4,
+      "tipo": "coordinacion",
+      "cima": true,
+      "elegido_por": [
+        "enc"
+      ]
+    }
+  ],
+  "reglas": {
+    "metodo": "Consenso en asamblea local; red sin centro.",
+    "ponderacion": "Una persona, una voz.",
+    "mandato": "Las personas que van a los encuentros representan acuerdos locales.",
+    "cargos": "Sin cargos remunerados; portavocías rotativas en principio.",
+    "reforma": "Principios comunes acordados en encuentros.",
+    "minorias": "El consenso da a la minoría capacidad de bloqueo."
+  },
+  "codigos": {
+    "mandato": [
+      3,
+      "Representación de acuerdos locales en encuentros.",
+      "media"
+    ],
+    "revocabilidad": [
+      3,
+      "Responsabilidades rotativas y retirables.",
+      "media"
+    ],
+    "rotacion": [
+      3,
+      "Rotación como principio.",
+      "media"
+    ],
+    "profesionalizacion": [
+      4,
+      "Voluntaria.",
+      "media"
+    ],
+    "eleccion_direccion": [
+      3,
+      "No hay dirección; coordinación elegida en encuentros.",
+      "media"
+    ],
+    "agenda_base": [
+      4,
+      "Agenda local.",
+      "media"
+    ],
+    "pluralismo": [
+      2,
+      "El consenso protege a las minorías, pero empuja la disidencia hacia la salida.",
+      "media"
+    ],
+    "autonomia_base": [
+      4,
+      "Asambleas plenamente autónomas.",
+      "alta"
+    ],
+    "brecha_formal_real": [
+      2,
+      "Las portavocías mediáticas concentraron visibilidad (2010-2015).",
+      "media"
+    ],
+    "regla_decision": [
+      1,
+      "Consenso.",
+      "media"
+    ],
+    "capacidad_ejecutiva": [
+      0,
+      "Sin ejecutivo estatal.",
+      "media"
+    ],
+    "freq_soberano_meses": [
+      0.25,
+      "Asamblea local semanal.",
+      "media"
+    ],
+    "freq_intermedio_meses": [
+      6,
+      "Encuentros estatales esporádicos.",
+      "baja"
+    ],
+    "niveles": [
+      2,
+      "Asamblea → encuentro.",
+      "media"
+    ],
+    "estructura_federal": [
+      3,
+      "Modelo replicable (franquicia de método).",
+      "alta"
+    ],
+    "coste_coordinacion": [
+      2,
+      "Barato localmente, caro a escala estatal.",
+      "media"
+    ]
+  },
+  "problemas": [
+    {
+      "t": "agilidad",
+      "x": "Muy ágil en lo local (un desahucio se para en horas). Lenta y sin capacidad para decidir una posición estatal vinculante."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "Replicar el método escala bien; agregar decisiones no. Las campañas estatales (ILP 2013) dependieron de pocas personas con visibilidad."
+    },
+    {
+      "t": "democratico",
+      "x": "El consenso favorece a quien aguanta las asambleas largas; la visibilidad mediática generó liderazgos que luego pasaron a la política institucional."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "PAH — web",
+      "u": "https://afectadosporlahipoteca.com/"
+    }
+  ],
+  "confianza": "media"
+}

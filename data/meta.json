@@ -1,0 +1,4 @@
+{
+  "version": "2026-11-08",
+  "nota": "Codificación 0-4 por variable: [valor, justificación, confianza]. Confianza: alta = leído en estatutos/fuente primaria; media = fuentes secundarias fiables o conocimiento consolidado; baja = estimación o dato no publicado. Ver README.md para el esquema."
+}

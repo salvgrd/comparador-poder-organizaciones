@@ -1,0 +1,185 @@
+{
+  "id": "antic",
+  "siglas": "Anticapitalistas",
+  "nombre": "Anticapitalistas",
+  "familia": "partido",
+  "pais": "Estado español",
+  "fundacion": 2008,
+  "tamano": [
+    2000,
+    "Militancia no publicada. Estimación.",
+    "baja"
+  ],
+  "corriente": "Marxismo revolucionario, tradición de la IV Internacional. Fue corriente de Podemos hasta 2020.",
+  "autogestionada": false,
+  "resumen": "Organización militante federal con derecho de tendencia reconocido, una tradición que viene de la LCR. Se estructura en núcleos o asambleas territoriales, una dirección estatal elegida en Conferencia o Congreso con representación de posiciones y un secretariado. Fuerte autonomía territorial (p. ej., Andalucía). Los nombres exactos de los órganos y sus reglas no están verificados en estatutos.",
+  "poder_formal": "Conferencia o Congreso estatal.",
+  "poder_real": "Dirección estatal y figuras con cargo público, cuyo peso mediático es mayor que su peso orgánico.",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Militancia",
+      "nivel": 0,
+      "tipo": "base"
+    },
+    {
+      "id": "nuc",
+      "n": "Núcleos / asambleas locales",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ]
+    },
+    {
+      "id": "terr",
+      "n": "Organizaciones territoriales (nación/región)",
+      "nivel": 2,
+      "tipo": "delegados",
+      "elegido_por": [
+        "nuc"
+      ]
+    },
+    {
+      "id": "conf",
+      "n": "Conferencia / Congreso estatal",
+      "nivel": 3,
+      "tipo": "soberano",
+      "elegido_por": [
+        "nuc"
+      ],
+      "decide": "Mayoría; documentos alternativos"
+    },
+    {
+      "id": "dir",
+      "n": "Dirección estatal (Comité Central)",
+      "nivel": 4,
+      "tipo": "delegados",
+      "elegido_por": [
+        "conf"
+      ],
+      "desc": "Composición proporcional a los documentos o tendencias."
+    },
+    {
+      "id": "sec",
+      "n": "Secretariado / Ejecutiva",
+      "nivel": 5,
+      "tipo": "ejecutivo",
+      "cima": true,
+      "elegido_por": [
+        "dir"
+      ]
+    }
+  ],
+  "reglas": {
+    "metodo": "Mayoría con derecho de tendencia.",
+    "ponderacion": "Delegados por militancia (a verificar).",
+    "mandato": "Libre.",
+    "cargos": "A verificar.",
+    "reforma": "Congreso.",
+    "minorias": "Tendencias reconocidas, con representación proporcional en la dirección (tradición de la IV Internacional)."
+  },
+  "codigos": {
+    "mandato": [
+      1,
+      "Mandato libre.",
+      "baja"
+    ],
+    "revocabilidad": [
+      2,
+      "A verificar.",
+      "baja"
+    ],
+    "rotacion": [
+      2,
+      "A verificar.",
+      "baja"
+    ],
+    "profesionalizacion": [
+      3,
+      "Pocos liberados orgánicos; cargos públicos con limitación salarial.",
+      "baja"
+    ],
+    "eleccion_direccion": [
+      2,
+      "Indirecta, con proporcionalidad entre documentos.",
+      "baja"
+    ],
+    "agenda_base": [
+      2,
+      "Documentos alternativos posibles.",
+      "baja"
+    ],
+    "pluralismo": [
+      4,
+      "Derecho de tendencia.",
+      "media"
+    ],
+    "autonomia_base": [
+      3,
+      "Federal, con autonomía territorial fuerte.",
+      "media"
+    ],
+    "brecha_formal_real": [
+      2,
+      "Las figuras públicas pesan más que la estructura.",
+      "media"
+    ],
+    "regla_decision": [
+      4,
+      "Mayoría.",
+      "media"
+    ],
+    "capacidad_ejecutiva": [
+      3,
+      "El secretariado opera entre reuniones de la dirección.",
+      "baja"
+    ],
+    "freq_soberano_meses": [
+      36,
+      "A verificar.",
+      "baja"
+    ],
+    "freq_intermedio_meses": [
+      3,
+      "A verificar.",
+      "baja"
+    ],
+    "niveles": [
+      3,
+      "Núcleo → Conferencia → dirección.",
+      "baja"
+    ],
+    "estructura_federal": [
+      3,
+      "Federal.",
+      "media"
+    ],
+    "coste_coordinacion": [
+      3,
+      "Moderado.",
+      "baja"
+    ]
+  },
+  "problemas": [
+    {
+      "t": "democratico",
+      "x": "La visibilidad de los cargos públicos genera una segunda fuente de poder no elegida por la organización, el mismo problema que la llevó a salir de Podemos."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "Las tendencias reconocidas protegen la disidencia, pero en organizaciones pequeñas pueden convertirse en bloques permanentes que dificultan la síntesis."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Viento Sur — archivo de estatutos de la LCR (antecedente)",
+      "u": "https://cdn.vientosur.info/Capitulo%204%20PDFs/Doc.%204.16.pdf"
+    },
+    {
+      "t": "Anticapitalistas — web",
+      "u": "https://www.anticapitalistas.org/"
+    }
+  ],
+  "confianza": "baja"
+}

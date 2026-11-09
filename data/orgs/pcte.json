@@ -1,0 +1,209 @@
+{
+  "id": "pcte",
+  "siglas": "PCTE",
+  "nombre": "Partido Comunista de los Trabajadores de España",
+  "familia": "partido",
+  "pais": "Estado español",
+  "fundacion": 2017,
+  "tamano": [
+    1000,
+    "El partido no publica su militancia. Estimación de orden de magnitud.",
+    "baja"
+  ],
+  "corriente": "Marxismo-leninismo; centralismo democrático. Surge de la ruptura del PCPE (2017).",
+  "autogestionada": false,
+  "resumen": "Estructura leninista clásica: células o colectivos de base (prioridad en centros de trabajo), comités intermedios, Comité Central elegido por el Congreso, y Buró Político y Secretaría General elegidos por el Comité Central. Debate libre antes de decidir y unidad de acción después. Las fracciones están prohibidas. III Congreso: Madrid, 15-16 de noviembre de 2025.",
+  "poder_formal": "Congreso; entre congresos, el Comité Central.",
+  "poder_real": "Buró Político y Secretaría General. El Comité Central saliente propone las tesis y las candidaturas al Congreso, y los órganos superiores dirigen a los inferiores.",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Militancia",
+      "nivel": 0,
+      "tipo": "base"
+    },
+    {
+      "id": "cel",
+      "n": "Células / colectivos de base",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Preferentemente en el centro de trabajo."
+    },
+    {
+      "id": "loc",
+      "n": "Comités locales y regionales",
+      "nivel": 2,
+      "tipo": "coordinacion",
+      "elegido_por": [
+        "cel"
+      ]
+    },
+    {
+      "id": "cong",
+      "n": "Congreso",
+      "nivel": 3,
+      "tipo": "soberano",
+      "elegido_por": [
+        "loc"
+      ],
+      "decide": "Mayoría",
+      "freq": "III Congreso en 2025"
+    },
+    {
+      "id": "cc",
+      "n": "Comité Central",
+      "nivel": 4,
+      "tipo": "delegados",
+      "elegido_por": [
+        "cong"
+      ],
+      "desc": "Dirige entre congresos."
+    },
+    {
+      "id": "cgc",
+      "n": "Comisión de Garantías y Control",
+      "nivel": 4,
+      "tipo": "garantias",
+      "elegido_por": [
+        "cong"
+      ]
+    },
+    {
+      "id": "bp",
+      "n": "Buró Político",
+      "nivel": 5,
+      "tipo": "ejecutivo",
+      "elegido_por": [
+        "cc"
+      ]
+    },
+    {
+      "id": "sg",
+      "n": "Secretaría General",
+      "nivel": 6,
+      "tipo": "ejecutivo",
+      "cima": true,
+      "elegido_por": [
+        "cc"
+      ]
+    }
+  ],
+  "reglas": {
+    "metodo": "Centralismo democrático: mayoría y subordinación de la minoría y de los órganos inferiores.",
+    "ponderacion": "Delegados según militancia.",
+    "mandato": "Libre; disciplina de partido.",
+    "cargos": "Sin límite de mandatos conocido.",
+    "reforma": "Congreso (el III Congreso modificó los Estatutos).",
+    "minorias": "Prohibición de fracciones; debate en tribunas precongresuales."
+  },
+  "codigos": {
+    "mandato": [
+      0,
+      "Delegados libres sujetos a disciplina.",
+      "media"
+    ],
+    "revocabilidad": [
+      1,
+      "Revocación por órganos superiores, no por la base.",
+      "media"
+    ],
+    "rotacion": [
+      1,
+      "Sin límites conocidos.",
+      "baja"
+    ],
+    "profesionalizacion": [
+      2,
+      "Pocos cuadros liberados por tamaño.",
+      "baja"
+    ],
+    "eleccion_direccion": [
+      1,
+      "Indirecta en dos saltos: Congreso → CC → BP/SG.",
+      "media"
+    ],
+    "agenda_base": [
+      1,
+      "Tesis elaboradas por el CC saliente.",
+      "media"
+    ],
+    "pluralismo": [
+      0,
+      "Fracciones prohibidas.",
+      "media"
+    ],
+    "autonomia_base": [
+      0,
+      "Subordinación de las instancias inferiores.",
+      "media"
+    ],
+    "brecha_formal_real": [
+      2,
+      "La cooptación y la dirección de los órganos superiores tienden a perpetuar a la dirección.",
+      "baja"
+    ],
+    "regla_decision": [
+      4,
+      "Mayoría + disciplina.",
+      "media"
+    ],
+    "capacidad_ejecutiva": [
+      4,
+      "El Buró Político decide entre reuniones del CC.",
+      "media"
+    ],
+    "freq_soberano_meses": [
+      48,
+      "Ciclo congresual de varios años.",
+      "baja"
+    ],
+    "freq_intermedio_meses": [
+      3,
+      "Comité Central periódico.",
+      "baja"
+    ],
+    "niveles": [
+      3,
+      "Célula → comité → Congreso.",
+      "media"
+    ],
+    "estructura_federal": [
+      1,
+      "Centralista.",
+      "media"
+    ],
+    "coste_coordinacion": [
+      4,
+      "Bajo: la línea baja de arriba abajo.",
+      "media"
+    ]
+  },
+  "problemas": [
+    {
+      "t": "democratico",
+      "x": "La dirección elige a su sucesora en la práctica (lista propuesta por el CC saliente) y la base no puede organizar alternativas (prohibición de fracciones). El índice de control de base es el más bajo de la muestra."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "La disciplina escala y es eficaz, pero los desacuerdos estratégicos solo se resuelven por expulsión o escisión (así nació el propio PCTE del PCPE)."
+    },
+    {
+      "t": "agilidad",
+      "x": "Muy ágil: el Buró Político puede fijar posición el mismo día."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "PCTE — Resolución Política del III Congreso (2025)",
+      "u": "https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2025/12/16175740/Resolucion_Politica_IIICongreso_VM.pdf"
+    },
+    {
+      "t": "Wikipedia — Communist Party of the Workers of Spain",
+      "u": "https://en.wikipedia.org/wiki/Communist_Party_of_the_Workers_of_Spain"
+    }
+  ],
+  "confianza": "media"
+}
