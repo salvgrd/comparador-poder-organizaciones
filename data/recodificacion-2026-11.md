@@ -458,3 +458,84 @@ Calculado con `/api/orgs.json` y los pesos por defecto, con una copia de antes y
 | PSOE | 19,1 | 21 | 19,1 | 22 | +0,0 |
 | Podemos | 16,7 | 23 | 13,2 | 23 | −3,5 |
 | PCTE | 12,5 | 24 | 12,5 | 24 | +0,0 |
+
+## Tercera pasada: pleno mandatado y cimas corregidas (2026-11-20)
+
+Dos cambios de regla. La nota de revocabilidad dice ahora que un pleno o congreso de delegaciones con mandato imperativo de sus asambleas cuenta como la base. Y en SYRIZA y co.bas, donde la segunda pasada movió la cima, se recodifican las variables que hablan de la cima o de «la dirección». Se aplica `REGLA_FORMAL`. Todas las fuentes citadas ya estaban en `fuentes` y se han abierto de nuevo el 20 de noviembre: la Normativa Orgánica de la CNT, los Estatutos de la CGT, los Criterios básicos de la PAH, los Estatutos 2013 de SYRIZA y los Estatutos de co.bas respondieron 200. No se ha usado `data/codificaciones/`. No se han tocado la cima del PSOE ni la revocabilidad de la EZLN.
+
+### Revocabilidad con la regla del pleno mandatado
+
+La regla solo se aplica si el mandato imperativo está normado, es decir, si `mandato` vale 4 con fuente. De las organizaciones donde revoca un órgano de delegados, solo la CNT lo cumple:
+
+- CNT: `mandato` 4 (Normativa, arts. 55, 57 y 58). Se aplica la regla.
+- CGT (`mandato` 3), PAH (3), NSZZ Solidarność (3), DAANES (2), SYRIZA (1) y PSOE (0): ni el código ni su fuente recogen un mandato imperativo normado. En los Estatutos y el Reglamento de la CGT no aparece el mandato imperativo. Los Criterios básicos de la PAH solo piden llevar el orden del día «debatido» e informar a las asambleas. El Estatuto 1980 de Solidarność no dice que las instrucciones sean vinculantes. Se dejan como estaban.
+- Fagor, MCC, MST, Anticapitalistas y SI Madrid: revoca un órgano delegado o de gestión sin mandato normado, o no hay fuente. Se dejan como estaban.
+- EZLN (`mandato` 4 sin fuente): validada por la persona usuaria, no se toca.
+
+### CNT (`cnt`)
+
+| variable | antes → después | confianza | motivo y fuente |
+|---|---|---|---|
+| revocabilidad | 3 → 4 | media → media | Normativa Orgánica (XII Congreso), art. 105.b: los cargos del SP son «revocables en cualquier momento por acuerdo de asamblea o Pleno según el ámbito», sin umbral ni plazo mínimo. El Pleno Confederal lo forman delegaciones que solo transmiten acuerdos escritos (arts. 55, 57 y 58), así que cuenta como la base. La convocatoria con 30 días (art. 65) sirve para que deliberen las asambleas: es lo que hace imperativo el mandato, no un trámite reforzado. Confianza media porque el mandato llega a través de los Plenos Regionales |
+
+### SYRIZA (`syriza`)
+
+Cima: Secretariado Político y Secretario (Estatutos 2013, art. 13.3).
+
+| variable | antes → después | confianza | motivo y fuente |
+|---|---|---|---|
+| rotacion | 0 → 3 | alta → media | Estatutos 2013, art. 13.3: como máximo 2 mandatos consecutivos en el Secretariado Político, y otros 2 después de una interrupción. No se dice cuánto dura el mandato. El Comité Central dura de congreso a congreso (arts. 13.11-13.12), que se celebra cada 3 años (art. 14.1): unos 6 años, más de 4. El 0 se refería al presidente |
+| eleccion_direccion | 2 → 1 | alta → alta | Estatutos 2013, arts. 8, 13.1 y 14.2: OM → congreso → Comité Central → Secretariado Político: indirecta a 3 niveles. El 2 se refería a la elección del presidente por los delegados |
+| profesionalizacion | 2 → 2 | media → media | Sin cambios. Estatutos 2013, art. 29.3: la escala salarial es para todo el partido y no habla del presidente ni del Secretariado |
+| revocabilidad | 2 → 2 | media → media | Sin cambios. Ya se refiere al Secretariado Político (art. 13.1) |
+| capacidad_ejecutiva | 2 → 2 | alta → alta | Sin cambios. Ya se refiere al Secretariado Político (arts. 13.3 y 20.3) |
+
+### co.bas (`cobas`)
+
+Cima: Coordinadora Estatal (Estatutos, art. 18).
+
+| variable | antes → después | confianza | motivo y fuente |
+|---|---|---|---|
+| rotacion | 1 → 1 | alta → alta | Cambia la justificación, no el valor. Estatutos, arts. 16-18: los cargos de la Coordinadora Estatal duran entre congresos (cada 4 años) y la reelección no tiene límite. Antes se citaba el art. 19, que es de los coordinadores delegados |
+| eleccion_direccion | 2 → 2 | alta → alta | Se añaden los artículos. Estatutos, arts. 16-18: la designa el Congreso de delegados elegidos por la afiliación, sin mandato imperativo normado |
+| profesionalizacion | 4 → 4 | alta → alta | Sin cambios. Estatutos, art. 10: sin liberados, vale para todos los cargos |
+| revocabilidad | 1 → 1 | alta → alta | Sin cambios. Ya se refiere a la Coordinadora Estatal (arts. 16 y 18) |
+| capacidad_ejecutiva | 3 → 3 | media → media | Sin cambios. Ya se refiere a la Coordinadora Estatal (art. 18) |
+
+### Casos dudosos
+
+- CNT: el mandato del Pleno Confederal es de segundo grado. Las delegaciones regionales llevan acuerdos de Plenos Regionales, que a su vez llevan acuerdos de los sindicatos (arts. 55 y 57). La Normativa tampoco dice quién convoca un Pleno Confederal extraordinario para revocar ni con qué plazo.
+- SYRIZA: el art. 13.3 limita la pertenencia al Secretariado Político, pero no dice expresamente si el límite vale también para el Secretario, que el Comité Central elige aparte (art. 13.1). Además, la duración del mandato se deduce, no está escrita.
+
+### Control de base (CB) y puesto, antes y después
+
+Calculado con `/api/orgs.json` y los pesos por defecto, con una copia de antes y otra de después de esta pasada. Puesto: 1 = más control; los empates comparten puesto.
+
+| organización | CB antes | puesto antes | CB después | puesto después | Δ CB |
+|---|---|---|---|---|---|
+| CNT | 73,8 | 1 | 80,2 | 1 | +6,5 |
+| SO | 60,0 | 2 | 60,0 | 2 | +0,0 |
+| FaSinPat | 58,5 | 3 | 58,5 | 3 | +0,0 |
+| IWW | 58,3 | 4 | 58,3 | 4 | +0,0 |
+| PAH | 54,1 | 5 | 54,1 | 5 | +0,0 |
+| OWS | 53,9 | 6 | 53,9 | 6 | +0,0 |
+| co.bas | 41,8 | 7 | 41,8 | 7 | +0,0 |
+| CGT | 40,6 | 8 | 40,6 | 8 | +0,0 |
+| SI Madrid | 39,6 | 9 | 39,6 | 9 | +0,0 |
+| Anticapitalistas | 37,7 | 10 | 37,7 | 10 | +0,0 |
+| NSZZ Solidarność | 35,8 | 11 | 35,8 | 11 | +0,0 |
+| SdL | 35,7 | 12 | 35,7 | 12 | +0,0 |
+| EZLN | 33,0 | 13 | 33,0 | 13 | +0,0 |
+| DAANES | 28,0 | 14 | 28,0 | 14 | +0,0 |
+| PCE | 27,1 | 15 | 27,1 | 15 | +0,0 |
+| MST | 24,4 | 16 | 24,4 | 16 | +0,0 |
+| CCOO | 22,9 | 17 | 22,9 | 17 | +0,0 |
+| PT | 22,6 | 18 | 22,6 | 18 | +0,0 |
+| SYRIZA | 19,6 | 20 | 22,3 | 19 | +2,8 |
+| MCC | 21,0 | 19 | 21,0 | 20 | +0,0 |
+| Fagor Electrodomésticos | 19,5 | 21 | 19,5 | 21 | +0,0 |
+| PSOE | 19,1 | 22 | 19,1 | 22 | +0,0 |
+| Podemos | 13,2 | 23 | 13,2 | 23 | +0,0 |
+| PCTE | 12,5 | 24 | 12,5 | 24 | +0,0 |
+
+`npm test`: 22 de 22 pruebas pasan.
