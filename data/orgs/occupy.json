@@ -96,7 +96,7 @@
     ],
     "revocabilidad": [
       4,
-      "Los portavoces pueden ser revocados por su grupo en cualquier momento (Fuente: Propuesta de estructura NYCGA).",
+      "Propuesta de estructura NYCGA: los portavoces del Consejo de Portavoces rotan en cada sesión y «can be recalled by their group at any time».",
       "alta"
     ],
     "rotacion": [
@@ -121,7 +121,7 @@
     ],
     "pluralismo": [
       2,
-      "El bloqueo y el derecho de los caucus a aplazar propuestas son cauces normados de la minoría; no hay listas ni corrientes (Fuente: Propuesta de estructura NYCGA).",
+      "Propuesta de estructura NYCGA: consenso modificado en el que basta el 10 % para rechazar una propuesta y los caucus pueden aplazarla a la sesión siguiente; no hay elecciones competitivas (máximo 2 por la nota).",
       "alta"
     ],
     "autonomia_base": [
@@ -140,8 +140,8 @@
       "alta"
     ],
     "capacidad_ejecutiva": [
-      1,
-      "No hay ejecutivo: los portavoces «no tienen autoridad» y el Consejo decide en sesión (Fuente: Propuesta de estructura NYCGA). La Asamblea delegó a veces en el comité de acción directa la preparación de acciones secretas (Fuente: Wikipedia, Asamblea general de Occupy).",
+      2,
+      "Propuesta de estructura NYCGA: no hay ejecutivo; la cima es el Consejo de Portavoces, que decide la logística, los presupuestos y la admisión de grupos, mientras la Asamblea General conserva lo político. Ejecuta con margen operativo sin fijar posición.",
       "media"
     ],
     "freq_soberano_meses": [
@@ -160,8 +160,8 @@
       "alta"
     ],
     "estructura_federal": [
-      1,
-      "Una sola unidad local: la NYCGA era la asamblea de Zuccotti Park y las asambleas de Occupy adoptaron formas distintas en cada lugar (Fuente: Wikipedia, Asamblea general de Occupy). Sin fuente verificable sobre una federación formal con otras ocupaciones.",
+      0,
+      "Una sola unidad local: la NYCGA de Zuccotti Park con sus grupos de trabajo; las asambleas de Occupy de otras ciudades adoptaron formas propias sin federación formal (Wikipedia, Asamblea general de Occupy).",
       "media"
     ],
     "coste_coordinacion": [

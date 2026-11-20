@@ -79,6 +79,7 @@
       "n": "Coordinadora Estatal",
       "nivel": 4,
       "tipo": "coordinacion",
+      "cima": true,
       "elegido_por": [
         "cong"
       ],
@@ -90,7 +91,6 @@
       "n": "Coordinadores/as delegados/as",
       "nivel": 5,
       "tipo": "ejecutivo",
-      "cima": true,
       "elegido_por": [
         "ce"
       ],
@@ -112,8 +112,8 @@
       "alta"
     ],
     "revocabilidad": [
-      2,
-      "Art. 18: la Coordinadora Estatal es «designada y revocada por el Congreso»; art. 19: la Coordinadora elige y revoca a los coordinadores delegados (la cima). Sin trámite reforzado ni revocación por la base.",
+      1,
+      "Estatutos (V Congreso), art. 18: la Coordinadora Estatal (la cima) es «designada y revocada por el Congreso», que se reúne cada cuatro años; fuera de plazo hace falta un congreso extraordinario por mayoría de la propia Coordinadora o a petición de más del 25 % de la afiliación (art. 16).",
       "alta"
     ],
     "rotacion": [
@@ -138,7 +138,7 @@
     ],
     "pluralismo": [
       2,
-      "Los Estatutos no regulan tendencias, listas ni votos particulares; la única garantía es el tope del 35 % de cargos por sector o territorio (art. 15).",
+      "Estatutos (V Congreso): no regulan tendencias, listas ni votos particulares; el art. 15 limita al 35 % los cargos de un sector o territorio y el Código Ético protege la libertad de expresión y el debate (art. 13). No hay reparto proporcional de puestos.",
       "media"
     ],
     "autonomia_base": [
@@ -157,8 +157,8 @@
       "alta"
     ],
     "capacidad_ejecutiva": [
-      2,
-      "Coordinadores delegados para la representación; decisiones en la Coordinadora.",
+      3,
+      "Estatutos (V Congreso), art. 18: la Coordinadora Estatal ejecuta los acuerdos del Congreso y «dirige» las actividades entre congresos; presupuestos y cuentas se someten después a la ratificación del Congreso. Los acuerdos importantes exigen consulta vinculante a las afectadas (art. 6.c).",
       "media"
     ],
     "freq_soberano_meses": [
@@ -178,8 +178,8 @@
     ],
     "estructura_federal": [
       3,
-      "Territorial y sectorial, con topes de concentración.",
-      "media"
+      "Estatutos (V Congreso): comisiones de base y secciones soberanas en su ámbito (arts. 13-14) y coordinadoras territoriales (art. 18 bis), pero la Coordinadora vela por la creación de comisiones, inscribe las secciones y aprueba los ingresos (arts. 13, 14 y 18).",
+      "alta"
     ],
     "coste_coordinacion": [
       2,

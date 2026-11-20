@@ -114,7 +114,7 @@
     ],
     "revocabilidad": [
       1,
-      "Estatutos (XX Congreso), art. 19.3: revoca el órgano que eligió, a petición del 40 % de sus miembros y una sola vez al año por persona.",
+      "Estatutos XX Congreso, art. 19.3: revoca el órgano que eligió, a petición del 40 % de sus miembros y una sola vez al año por persona: trámite reforzado.",
       "alta"
     ],
     "rotacion": [
@@ -138,8 +138,8 @@
       "alta"
     ],
     "pluralismo": [
-      2,
-      "Arts. 18.7 y 23: prohibidas las corrientes y fracciones, salvo plataformas de opinión para los congresos (art. 53). Hay enmiendas de minoría (art. 27) y listas proporcionales para las delegaciones (art. 27.7, 55.4).",
+      3,
+      "Estatutos XX Congreso: listas con reparto proporcional para las delegaciones y los comités (arts. 27.7, 39.3 y 55.4) y enmiendas minoritarias con el 25 % (art. 27.6), pero prohibidas las corrientes y fracciones salvo plataformas de opinión para los congresos (arts. 18.7, 23 y 53).",
       "alta"
     ],
     "autonomia_base": [
@@ -159,7 +159,7 @@
     ],
     "capacidad_ejecutiva": [
       3,
-      "Art. 64: la Comisión Política asegura la dirección entre reuniones del Comité Central, ante el que responde; se reúne dos veces al mes.",
+      "Estatutos XX Congreso: la Secretaría General preside el Comité Central, la Comisión Política y el Secretariado (art. 66.2); la Comisión Política «asegura las tareas de dirección» entre reuniones del Comité Central, ante el que responde (art. 64.1). El Comité Central se reúne al menos seis veces al año (art. 62.1).",
       "alta"
     ],
     "freq_soberano_meses": [
@@ -179,8 +179,8 @@
     ],
     "estructura_federal": [
       2,
-      "Organización estatal con organizaciones de nación.",
-      "media"
+      "Estatutos XX Congreso: las organizaciones de nación o región no tienen personalidad jurídica (art. 29), aplican los acuerdos de la dirección central (art. 47.1), el Comité Central aprueba sus reglamentos (art. 31) y puede suspender sus actuaciones (art. 32).",
+      "alta"
     ],
     "coste_coordinacion": [
       3,

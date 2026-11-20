@@ -131,7 +131,7 @@
     ],
     "revocabilidad": [
       0,
-      "No hay revocatorio por la base. Solo el directorio superior puede destituir una Comisión Ejecutiva o disolver un Directorio, por mayoría absoluta y por violación del estatuto o indisciplina (Estatuto 2001, art. 230); el Encuentro puede disolver el Directorio correspondiente en los casos previstos (arts. 72 y 106).",
+      "Estatuto 2001: no hay revocatorio por la base. Solo el directorio superior puede destituir una Comisión Ejecutiva o disolver un Directorio, por mayoría absoluta y por violación del estatuto o indisciplina (art. 230); la destitución de cargos es una sanción disciplinaria (art. 210).",
       "alta"
     ],
     "rotacion": [
@@ -156,7 +156,7 @@
     ],
     "pluralismo": [
       4,
-      "Tendencias reconocidas con derecho permanente, registro, boletines internos y finanzas propias (Estatuto 2001, arts. 233, 236 y 237) y reparto proporcional en todas las elecciones con varias listas (art. 22). En el límite: se les prohíbe la expresión pública, las sedes y las relaciones internacionales (arts. 233, 235, 236 y 239).",
+      "Estatuto 2001: proporcionalidad estricta en todas las elecciones con varias chapas (art. 22.II) y tendencias con derecho permanente, registro, boletines internos y finanzas propias (arts. 233, 236 y 237). En el límite: se les prohíbe la expresión pública y las sedes propias (arts. 233.1, 235 y 236.1).",
       "media"
     ],
     "autonomia_base": [
@@ -175,9 +175,9 @@
       "alta"
     ],
     "capacidad_ejecutiva": [
-      3,
-      "La Comisión Ejecutiva Nacional ejecuta las deliberaciones del Directorio (Estatuto 2001, art. 112), pero puede decidir junto con la bancada el «fechamento de questão» que obliga a los parlamentarios (art. 67) y convoca el Encuentro para elegir candidatos (art. 106).",
-      "media"
+      2,
+      "Estatuto 2001, art. 112: la Comisión Ejecutiva Nacional, que integra la presidencia (art. 111), tiene como atribución «executar as deliberações do Diretório Nacional», además de convocar el Directorio y el Encuentro. El «fechamento de questão» con la bancada (art. 67) es una facultad puntual.",
+      "alta"
     ],
     "freq_soberano_meses": [
       36,
@@ -196,8 +196,8 @@
     ],
     "estructura_federal": [
       3,
-      "Estructura replicable: directorios zonales, municipales, estatales y nacional con las mismas instancias (Estatuto 2001, arts. 16, 98 y 109) y setoriales por área en todos los niveles (arts. 121-126). Subordinación jerárquica, no federal (art. 17). Organizado en 4.016 municipios en 2001 (Fuente: Meneguello y Amaral).",
-      "alta"
+      "Estatuto 2001: directorios zonales, municipales, estatales y nacional con las mismas instancias, pero subordinados al nivel superior (art. 17); donde no hay directorio, la Ejecutiva superior nombra una comisión provisional (art. 54).",
+      "media"
     ],
     "coste_coordinacion": [
       4,

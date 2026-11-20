@@ -38,6 +38,8 @@ CODIF = RAIZ / "data" / "codificaciones"
 SALIDA = Path(__file__).resolve().parent / "resultados"
 PUENTE = Path(__file__).resolve().parent / "indices.ts"
 REF = "referencia"
+# Codificaciones retiradas (p. ej. hechas con anclajes antiguos): se conservan pero no entran en el cálculo.
+ARCHIVO = "archivo"
 
 # Solo si node no está disponible: las 13 variables manuales del libro de códigos.
 MANUALES_RESPALDO = [
@@ -150,7 +152,7 @@ def cargar(manuales: list[str]):
     for oid, o in fichas.items():
         cod[(REF, oid)] = {k: o["codigos"].get(k) for k in manuales}
     if CODIF.exists():
-        for carpeta in sorted(p for p in CODIF.iterdir() if p.is_dir()):
+        for carpeta in sorted(p for p in CODIF.iterdir() if p.is_dir() and p.name != ARCHIVO):
             coder = carpeta.name
             for f in sorted(carpeta.glob("*.json")):
                 try:

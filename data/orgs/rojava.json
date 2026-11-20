@@ -117,7 +117,7 @@
     ],
     "revocabilidad": [
       2,
-      "Contrato Social 2023, art. 93: el Consejo Democrático de los Pueblos, que elige a la copresidencia del Consejo Ejecutivo (la cima), puede retirarle la confianza sin trámite reforzado. La revocación desde la base (art. 76, comunas; art. 122) alcanza a las copresidencias comunales y a los representantes, no a la cima.",
+      "Contrato Social 2023, art. 93: el Consejo Democrático de los Pueblos, órgano representativo que elige a la copresidencia del Consejo Ejecutivo (la cima), puede retirarle la confianza sin trámite reforzado. La revocación desde la base (art. 76) alcanza a las copresidencias de las comunas, no a la cima.",
       "media"
     ],
     "rotacion": [
@@ -142,7 +142,7 @@
     ],
     "pluralismo": [
       3,
-      "Art. 43: libertad de pensamiento político y de formar partidos; las elecciones son competitivas entre partidos y listas.",
+      "Contrato Social 2023: libertad de formar partidos (art. 43) y cuota del 40 % de los consejos para representantes elegidos dentro de las comunidades étnicas, religiosas e ideológicas (arts. 78 y 92). No hay corrientes internas con derechos.",
       "media"
     ],
     "autonomia_base": [
@@ -161,8 +161,8 @@
       "media"
     ],
     "capacidad_ejecutiva": [
-      3,
-      "El Consejo Ejecutivo gestiona la administración entre sesiones y responde ante el Consejo Democrático de los Pueblos, que puede retirarle la confianza (art. 93).",
+      2,
+      "Contrato Social 2023, art. 96: el Consejo Ejecutivo ejecuta las decisiones y políticas que fija el Consejo Democrático de los Pueblos y le rinde cuentas; los acuerdos firmados en nombre de la Administración los aprueba el Consejo (art. 93).",
       "media"
     ],
     "freq_soberano_meses": [
@@ -181,14 +181,14 @@
       "media"
     ],
     "estructura_federal": [
-      4,
-      "Confederalismo modular de comunas a regiones.",
+      3,
+      "Contrato Social 2023: comunas y consejos que deciden sus asuntos sin interferencia del nivel superior, organizados «de forma confederal» (arts. 74, 77 y 85), pero la adhesión de una región o cantón la aprueba el Consejo Democrático de los Pueblos por dos tercios (art. 93).",
       "media"
     ],
     "coste_coordinacion": [
-      2,
-      "Muchos niveles de consejos.",
-      "baja"
+      3,
+      "Contrato Social 2023: la democracia directa se limita a la comuna (art. 76); en los demás niveles deciden consejos representativos elegidos por dos años (60 % por voto directo y 40 % por las comunidades, arts. 78 y 92), con consejos ejecutivos permanentes organizados en comisiones (arts. 90 y 96). No llega a 4: hay consejos paralelos de mujeres en todos los niveles (art. 78) y las decisiones que afectan a una comisión deben acordarse con su consejo (art. 97).",
+      "media"
     ]
   },
   "problemas": [

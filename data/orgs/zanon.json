@@ -79,7 +79,7 @@
     ],
     "revocabilidad": [
       4,
-      "Sin fuente verificable: revocables.",
+      "Sin fuente verificable: Wikipedia solo dice que la asamblea decidió reiniciar la producción y crear comisiones; no consta cómo se revoca la coordinación general. Se mantiene 4 como hipótesis.",
       "baja"
     ],
     "rotacion": [
@@ -104,7 +104,7 @@
     ],
     "pluralismo": [
       2,
-      "Sin fuente verificable: no consta.",
+      "Sin fuente verificable: no consta ningún mecanismo para minorías ni elecciones competitivas (máximo 2 por la nota).",
       "baja"
     ],
     "autonomia_base": [
@@ -124,7 +124,7 @@
     ],
     "capacidad_ejecutiva": [
       2,
-      "Sin fuente verificable: coordinación limitada.",
+      "Sin fuente verificable: no consta qué decide la coordinación general. Se mantiene 2 como hipótesis.",
       "baja"
     ],
     "freq_soberano_meses": [
@@ -143,8 +143,8 @@
       "baja"
     ],
     "estructura_federal": [
-      1,
-      "Una sola unidad productiva: la fábrica de Neuquén (Wikipedia).",
+      0,
+      "Una sola unidad productiva: la fábrica de Neuquén, con comisiones por área creadas por la asamblea (Wikipedia).",
       "media"
     ],
     "coste_coordinacion": [

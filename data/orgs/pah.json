@@ -88,9 +88,9 @@
       "media"
     ],
     "revocabilidad": [
-      3,
-      "Sin fuente verificable: responsabilidades rotativas y retirables. Los Criterios básicos dicen que las portavocías las elige y renueva la asamblea y que las PAHs piden la entrada y salida de la Coordinadora Estatal, pero no regulan la revocación.",
-      "baja"
+      2,
+      "Criterios básicos (2022): la salida de la Comisión de Coordinación Estatal (la cima) se pide por la coordinadora autonómica correspondiente o, si no existe, por las PAHs de la comunidad o por la comisión que la eligió; el mandato es de 1 + 1 años con ratificación tras el primero. Revoca el órgano delegado que envía.",
+      "media"
     ],
     "rotacion": [
       4,
@@ -114,7 +114,7 @@
     ],
     "pluralismo": [
       2,
-      "El consenso da a la minoría capacidad de bloqueo; no hay listas ni corrientes.",
+      "Criterios básicos (2022): consenso como método, con votación por mayoría simple como último recurso; no hay elecciones competitivas (máximo 2 por la nota).",
       "media"
     ],
     "autonomia_base": [
@@ -133,8 +133,8 @@
       "alta"
     ],
     "capacidad_ejecutiva": [
-      3,
-      "Criterios básicos: la Comisión de Coordinación Estatal se encarga de los temas urgentes que no pueden esperar a la asamblea estatal, que ratifica después sus actuaciones.",
+      2,
+      "Criterios básicos (2022): la Comisión de Coordinación Estatal coordina y dinamiza comisiones y territorios y prepara las asambleas estatales; los temas urgentes que trata (excepción, no se codifica) los ratifica después la asamblea estatal.",
       "media"
     ],
     "freq_soberano_meses": [
@@ -153,9 +153,9 @@
       "media"
     ],
     "estructura_federal": [
-      3,
-      "Modelo replicable (franquicia de método).",
-      "alta"
+      4,
+      "Criterios básicos (2022): la asamblea local es soberana y se repiten asambleas en el nivel autonómico y estatal; una nueva PAH se crea asumiendo los criterios y con el tutelaje de una PAH cercana, que la comunica a la lista estatal, sin aprobación de un órgano central.",
+      "media"
     ],
     "coste_coordinacion": [
       2,

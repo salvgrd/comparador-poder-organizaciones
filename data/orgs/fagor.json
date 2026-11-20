@@ -111,7 +111,7 @@
     ],
     "revocabilidad": [
       2,
-      "La cima (la dirección) la nombra y supervisa el Consejo Rector (Fuente: Basterretxea et al. 2022), que puede revocar sus poderes. A su vez, la Asamblea puede destituir en cualquier momento al Consejo Rector, incluso sin estar en el orden del día, con dos tercios (Ley 4/1993, arts. 31.3 y 44.2).",
+      "Ley 4/1993, art. 41.6: la dirección-gerencia (la cima) actúa con los poderes que le confiere el Consejo Rector, órgano delegado elegido por la Asamblea (art. 41.3), que la nombra y supervisa (Basterretxea et al. 2022). Sin trámite reforzado.",
       "media"
     ],
     "rotacion": [
@@ -136,7 +136,7 @@
     ],
     "pluralismo": [
       2,
-      "Consejeros elegidos por mayoría en votación secreta, sin listas proporcionales ni corrientes (Ley 4/1993, art. 41.3); las minorías del 10 % o el 20 % pueden incluir puntos o forzar una asamblea (art. 33).",
+      "Ley 4/1993: consejeros elegidos «por el mayor número de votos» en votación secreta (art. 41.3), sin reparto proporcional; el 10 % de los votos puede añadir puntos al orden del día y el 20 % forzar una asamblea (art. 33.3-4). Las reservas de puestos del art. 45.4 son potestativas y los estatutos de Fagor no son públicos.",
       "media"
     ],
     "autonomia_base": [
@@ -155,9 +155,9 @@
       "alta"
     ],
     "capacidad_ejecutiva": [
-      3,
-      "El Consejo Rector tiene la gestión y todas las facultades no reservadas a la Asamblea (Ley 4/1993, art. 40), y la dirección, poderes para el tráfico ordinario (art. 41.6); cuentas, fusiones y cambios sustanciales los aprueba la Asamblea (art. 31.3).",
-      "alta"
+      2,
+      "Ley 4/1993, art. 41.6: los poderes de la dirección-gerencia «solo podrán referirse al tráfico ordinario de la cooperativa»; la gestión y las demás facultades son del Consejo Rector (art. 40) y las decisiones de fondo, de la Asamblea (art. 31).",
+      "media"
     ],
     "freq_soberano_meses": [
       12,
@@ -176,7 +176,7 @@
     ],
     "estructura_federal": [
       1,
-      "Una cooperativa matriz con filiales capitalistas: el modelo no se replicó al crecer (Fuente: Basterretxea et al. 2022; Errasti et al. 2016).",
+      "Una cooperativa matriz con filiales mercantiles sin órganos cooperativos (Basterretxea et al. 2022; Errasti et al. 2016): centralista.",
       "alta"
     ],
     "coste_coordinacion": [

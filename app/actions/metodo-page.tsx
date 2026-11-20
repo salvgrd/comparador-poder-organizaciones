@@ -1,6 +1,6 @@
 import type { Handle } from 'remix/component'
 
-import { CB_KEYS, GRUPO_LABEL, REGLA_FORMAL, SIN_FUENTE, UMBRAL_FUENTES, VARS, type Pesos } from '../lib/codebook.ts'
+import { CB_KEYS, GRUPO_LABEL, REGLA_CIMA, REGLA_FORMAL, SIN_FUENTE, UMBRAL_FUENTES, VARS, type Pesos } from '../lib/codebook.ts'
 import { PROB_ERROR, SIMULACIONES } from '../lib/metrics.ts'
 import { routes } from '../routes.ts'
 import { Document } from './document.tsx'
@@ -67,9 +67,7 @@ export function MetodoPage(handle: Handle<{ pesos: Pesos; guardado: string | nul
               </p>
               <h3>Qué órgano es la cima</h3>
               <p>
-                La cima es el órgano que, según los estatutos, fija la posición de la organización entre congresos.
-                Si una secretaría general se elige aparte y preside ese órgano, la cima es la secretaría. Cada ficha
-                debe marcar exactamente una cima; si hay dos, la ficha no se carga.
+                {REGLA_CIMA} Cada ficha debe marcar exactamente una cima; si hay dos, la ficha no se carga.
               </p>
               <h3>Agilidad y sus dos vías</h3>
               <p>
@@ -209,6 +207,7 @@ export function MetodoPage(handle: Handle<{ pesos: Pesos; guardado: string | nul
                       .map((a, i) => (a ? `${i} ${a}` : ''))
                       .filter(Boolean)
                       .join(' · ')}
+                    {v.nota ? <div class="sub">{v.nota}</div> : null}
                   </dd>
                 </>
               ))}
@@ -234,13 +233,19 @@ export function MetodoPage(handle: Handle<{ pesos: Pesos; guardado: string | nul
                 <li>
                   Una sola persona ha codificado todas las fichas. Como control provisional, seis organizaciones (CNT, CCOO,
                   IWW, Podemos, DAANES y Mondragon) se han recodificado a ciegas con un agente de IA que solo recibió el
-                  libro de códigos, el nombre y las fuentes. Coincidieron exactamente en el 65 % de los códigos y a ±1
-                  punto en el 95 %. El alfa de Krippendorff ordinal fue 0,80 en las 13 variables manuales; el control de
-                  base cambió de media unos 5 puntos (11 como máximo, en la IWW). Rotación, capacidad ejecutiva y, sobre
-                  todo, pluralismo no llegan al umbral habitual de 0,667. Con seis casos estos valores son muy inciertos
-                  y solo sirven para señalar anclajes ambiguos. Un agente de IA es un control más débil que una segunda
-                  persona: usa las mismas fuentes y puede compartir sesgos de lectura. Hace falta una segunda codificación
-                  humana; cualquiera puede hacerla siguiendo <code>data/codificaciones/README.md</code>.
+                  libro de códigos vigente, el nombre y las fuentes, y que tuvo que citar para cada código una fuente que
+                  hubiera abierto. Coincidieron exactamente en el 72 % de los códigos y a ±1 punto en el 99 %. El alfa de
+                  Krippendorff ordinal fue 0,88 en las 13 variables manuales y 0,91 en las de control de base. El índice
+                  de control de base cambió de media menos de 3 puntos (7 como máximo, en Podemos) y solo una vez dos
+                  codificaciones se separaron 2 puntos. Revocabilidad, pluralismo, estructura replicable y, sobre todo,
+                  capacidad ejecutiva no llegaban al umbral habitual de 0,667; sus anclajes se han reescrito después, y
+                  la próxima comprobación se hará con otras seis organizaciones para no ajustar los anclajes a estas.
+                  Con seis casos estos valores son muy inciertos y solo sirven para señalar anclajes ambiguos. Además, la
+                  codificación de referencia de la IWW, Mondragon y DAANES se revisó usando las citas de una codificación
+                  anterior del mismo agente; sin esas tres organizaciones el alfa es 0,92, pero con solo tres casos. Un
+                  agente de IA es un control más débil que una segunda persona: usa las mismas fuentes y puede compartir
+                  sesgos de lectura. Hace falta una segunda codificación humana; cualquiera puede hacerla siguiendo{' '}
+                  <code>data/codificaciones/README.md</code>.
                 </li>
                 <li>La muestra no es representativa: la mayoría de las organizaciones son del Estado español y de izquierda, hay solo dos cooperativas y solo organizaciones que siguen existiendo. No sirve para sacar medias por familia.</li>
                 <li>Se comparan con la misma escala sindicatos, partidos, una fábrica recuperada y administraciones territoriales con estructura militar (EZLN, DAANES). Compara dentro de cada familia antes de comparar entre familias.</li>

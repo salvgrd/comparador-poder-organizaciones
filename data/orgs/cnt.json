@@ -157,9 +157,9 @@
       "alta"
     ],
     "revocabilidad": [
-      4,
-      "Art. 105 b: todos los cargos revocables en cualquier momento por asamblea o pleno.",
-      "alta"
+      3,
+      "Normativa Orgánica (XII Congreso), art. 105.b: los cargos del Secretariado Permanente son «revocables en cualquier momento por acuerdo de asamblea o Pleno según el ámbito»; para el del Comité Confederal decide el Pleno Confederal, cuyas delegaciones solo transmiten acuerdos de los sindicatos (arts. 55 y 57) y que se convoca con 30 días para que debatan las asambleas (art. 65). Revoca la base con trámite ordinario, no su asamblea directamente.",
+      "media"
     ],
     "rotacion": [
       4,
@@ -183,7 +183,7 @@
     ],
     "pluralismo": [
       2,
-      "Votos particulares y refundición, pero sin tendencias; el mandato en bloque borra minorías internas.",
+      "Normativa Orgánica (XII Congreso): votos particulares en las comisiones de refundición (arts. 76-79); no hay listas proporcionales ni tendencias, y las delegaciones votan el acuerdo de su sindicato (art. 55).",
       "alta"
     ],
     "autonomia_base": [
@@ -203,7 +203,7 @@
     ],
     "capacidad_ejecutiva": [
       1,
-      "El SP gestiona y ejecuta; no puede fijar posición nueva sin pleno.",
+      "Normativa Orgánica (XII Congreso), art. 104: los comités son órganos de coordinación y gestión de los acuerdos de Pleno y «no tienen poder de decisión»; el Secretariado se atiene a la normativa y a los acuerdos de los Plenos (art. 105.c). La excepción de urgencia del art. 104.d no se codifica.",
       "alta"
     ],
     "freq_soberano_meses": [
@@ -223,8 +223,8 @@
     ],
     "estructura_federal": [
       4,
-      "Federalismo de abajo arriba replicable a cualquier escala.",
-      "alta"
+      "Normativa Orgánica (XII Congreso): el sindicato y su asamblea son la base soberana (arts. 2 y 47) y el mismo esquema de asamblea o pleno se repite en federación local, regional y confederal (art. 56). El ingreso de un sindicato lo decide el Pleno Regional de los propios sindicatos (arts. 19-21), no un órgano central.",
+      "media"
     ],
     "coste_coordinacion": [
       1,

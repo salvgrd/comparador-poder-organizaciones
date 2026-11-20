@@ -88,8 +88,8 @@
     ],
     "revocabilidad": [
       3,
-      "Art. IX sec. 3: los cargos de la Administración General son revocables por referéndum, que puede iniciar la GEB o una petición del 5 % de la membresía (art. IX sec. 2(a)).",
-      "media"
+      "Constitution (2025), art. IX sec. 3: los cargos de la Administración General están sujetos a revocación por referéndum de toda la membresía, que puede iniciar la GEB o el 5 % de los miembros (art. IX sec. 2.a): la base, con trámite ordinario.",
+      "alta"
     ],
     "rotacion": [
       4,
@@ -113,8 +113,8 @@
     ],
     "pluralismo": [
       2,
-      "No se prohíben fracciones y el art. III sec. 4(b) garantiza la libertad de criticar a los cargos en el GOB, pero el GEB se elige por voto en bloque (los 7 más votados), sin reparto proporcional, y no hay corrientes reconocidas.",
-      "media"
+      "Constitution (2025): la GEB la forman los siete candidatos más votados en referéndum (art. III sec. 3.d), sin reparto proporcional; hay libertad de criticar a los cargos en el GOB (art. III sec. 4.b) y el 5 % puede iniciar un referéndum (art. IX sec. 2.a). No hay corrientes reconocidas.",
+      "alta"
     ],
     "autonomia_base": [
       3,
@@ -133,7 +133,7 @@
     ],
     "capacidad_ejecutiva": [
       3,
-      "Art. III sec. 5: el GEB tiene la «general supervision over all affairs» entre convenciones, controla las publicaciones y concede cartas; responde ante la Convención y el referéndum.",
+      "Constitution (2025), art. III sec. 5: la GEB tiene la «general supervision over all affairs» entre convenciones y pleno poder sobre las publicaciones y las cartas; sus decisiones sobre quejas se recurren ante la Convención y la membresía (art. III sec. 7.c), y el 5 % puede llevar cualquier cuestión a referéndum (art. IX sec. 2.a).",
       "media"
     ],
     "freq_soberano_meses": [
@@ -153,8 +153,8 @@
     ],
     "estructura_federal": [
       3,
-      "Ramas e industrial unions.",
-      "media"
+      "Constitution (2025): ramas e industrial unions federadas, pero todas las cartas las expide la GEB (art. I secs. 5.b y 8; art. III sec. 5.c).",
+      "alta"
     ],
     "coste_coordinacion": [
       3,

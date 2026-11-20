@@ -84,6 +84,7 @@
       "n": "Secretariado Político y Secretario",
       "nivel": 4,
       "tipo": "ejecutivo",
+      "cima": true,
       "elegido_por": [
         "ce"
       ],
@@ -105,7 +106,6 @@
       "n": "Presidente",
       "nivel": 5,
       "tipo": "ejecutivo",
-      "cima": true,
       "elegido_por": [
         "cong"
       ],
@@ -127,9 +127,9 @@
       "alta"
     ],
     "revocabilidad": [
-      1,
-      "El presidente no puede ser revocado directamente: una moción del 50 % + 1 del Comité Central solo obliga a convocar congreso extraordinario (Estatutos 2013, art. 14.4). El 15 % de los miembros puede exigir congreso extraordinario o referéndum interno (arts. 15 y 17).",
-      "alta"
+      2,
+      "Estatutos 2013, art. 13.1: el Comité Central, que se reúne cada tres meses (art. 13.7), elige al Secretariado Político (la cima). El estatuto no regula su revocación, que corresponde al órgano que lo elige, sin trámite reforzado.",
+      "media"
     ],
     "rotacion": [
       0,
@@ -153,7 +153,7 @@
     ],
     "pluralismo": [
       4,
-      "Tendencias reconocidas, con derecho a publicar sus plataformas en los medios del partido y a expresarse en público (Estatutos 2013, art. 21), y listas separadas con reparto proporcional simple, también para los órganos ejecutivos (art. 30.6).",
+      "Estatutos 2013: tendencias reconocidas, con derecho a expresarse en público y a publicar sus plataformas en los medios del partido (art. 21), y listas separadas con reparto proporcional simple, también para los órganos ejecutivos (art. 30.6).",
       "alta"
     ],
     "autonomia_base": [
@@ -172,8 +172,8 @@
       "alta"
     ],
     "capacidad_ejecutiva": [
-      3,
-      "El presidente «actúa en el marco de las decisiones del Comité Central» y el Secretariado Político lleva los asuntos corrientes entre sesiones (Estatutos 2013, arts. 13.3 y 14.4); este puede aprobar posiciones si hace falta pronunciarse de inmediato (art. 20.3). La participación en el gobierno se somete a las orientaciones de los órganos (art. 27.2).",
+      2,
+      "Estatutos 2013, art. 13.3: el Secretariado Político aplica las decisiones del Comité Central, lleva los asuntos corrientes entre sesiones y le hace propuestas; las posiciones de los departamentos solo son política del partido cuando las aprueba el Comité Central, o el Secretariado si hay que pronunciarse de inmediato (art. 20.3, excepción que no se codifica).",
       "alta"
     ],
     "freq_soberano_meses": [
@@ -193,7 +193,7 @@
     ],
     "estructura_federal": [
       2,
-      "Tres niveles con poca autonomía intermedia; la estructura de las grandes ciudades y de las islas la decide el Comité Central (Estatutos 2013, art. 10.4).",
+      "Estatutos 2013: tres niveles (organización de miembros, prefectura y congreso, art. 10) con poca autonomía intermedia; la estructura de las grandes ciudades y de las islas la decide el Comité Central (art. 10.4).",
       "media"
     ],
     "coste_coordinacion": [

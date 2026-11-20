@@ -138,7 +138,7 @@
     ],
     "revocabilidad": [
       2,
-      "La revocación de un miembro de los órganos se hace por las mismas reglas que su elección (Estatuto 1980, § 9.7), y el afiliado tiene derecho a elegir y revocar (§ 11.2). Revoca el órgano que eligió, sin trámite reforzado. No se ha consultado el texto enmendado de 1981.",
+      "Estatuto 1980, § 9.7: la revocación se hace por las mismas reglas que la elección, y el afiliado tiene derecho a elegir y revocar (§ 11.2). Desde 1981 al presidente lo elige el congreso (Historia.org.pl, I KZD), que desde la reforma debía reunirse al menos una vez al año (Historia.org.pl, I KZD): órgano delegado anual, sin trámite reforzado. No se ha consultado el texto enmendado.",
       "media"
     ],
     "rotacion": [
@@ -163,8 +163,8 @@
     ],
     "pluralismo": [
       2,
-      "Elecciones sin límite de candidaturas, con voto a candidatos individuales y secreto (Estatuto 1980, § 9); el 10 % de los delegados puede exigir votación secreta (§ 18.6). No hay listas proporcionales ni tendencias reconocidas. El reparto de la Comisión Nacional en 1981 era proporcional por regiones, no por corrientes (Fuente: ES, KKP/KK).",
-      "media"
+      "Estatuto 1980, § 9: elecciones sin límite de candidaturas, con voto a candidatos individuales y secreto; el 10 % de los delegados puede exigir votación secreta (§ 18.6). El reparto de la Comisión Nacional en 1981 era proporcional por regiones, no por corrientes (ES, KKP/KK); no hay tendencias reconocidas.",
+      "alta"
     ],
     "autonomia_base": [
       3,
@@ -183,7 +183,7 @@
     ],
     "capacidad_ejecutiva": [
       2,
-      "El Presidium vela por la ejecución de los acuerdos de la Comisión Nacional, dirige la oficina y realiza actos jurídicos (Estatuto 1980, § 19.2); negociar y firmar convenios corresponde a la Comisión (§ 19.1). No se ha consultado el texto enmendado de 1981.",
+      "Estatuto 1980, § 19.2: el Presidium, que integra al presidente (ES, KKP/KK), vela por la ejecución de los acuerdos de la Comisión Nacional, dirige la oficina y realiza los actos jurídicos; representar al sindicato y firmar convenios corresponde a la Comisión (§ 19.1).",
       "media"
     ],
     "freq_soberano_meses": [
@@ -202,9 +202,9 @@
       "alta"
     ],
     "estructura_federal": [
-      3,
-      "Organización nacional única estructurada en regiones con órganos propios, que replican el mismo modelo en empresa, región y país, y secciones por oficio o rama en todos los niveles (Estatuto 1980, §§ 8, 21-26 y 29).",
-      "alta"
+      4,
+      "Estatuto 1980: las unidades nacen por iniciativa de los trabajadores, que forman comités fundadores y solo deben comunicarlo a la junta regional (§ 10); la misma estructura de asamblea, comisión y presidium se repite en empresa, región y país (§§ 18, 21-26).",
+      "media"
     ],
     "coste_coordinacion": [
       2,

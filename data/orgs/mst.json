@@ -129,7 +129,7 @@
     ],
     "revocabilidad": [
       2,
-      "Sin fuente verificable: no hay estatuto público; la Dirección Nacional la elegiría el Encuentro o Congreso Nacional, que puede sustituirla. La sustitución por las familias vale para la coordinación de núcleo, no para la cima.",
+      "Sin fuente verificable: no hay estatuto público; no consta cómo se revoca la Dirección Nacional. Se mantiene 2 (sustitución por el Encuentro o Congreso Nacional) como hipótesis.",
       "baja"
     ],
     "rotacion": [
@@ -154,7 +154,7 @@
     ],
     "pluralismo": [
       1,
-      "Sin fuente verificable: unidad y disciplina.",
+      "Sin fuente verificable: no hay estatuto público; no constan elecciones competitivas ni cauces para minorías.",
       "baja"
     ],
     "autonomia_base": [
@@ -174,7 +174,7 @@
     ],
     "capacidad_ejecutiva": [
       3,
-      "Sin fuente verificable: la Dirección Nacional coordina ocupaciones y campañas a escala nacional.",
+      "Sin fuente verificable: no hay estatuto público sobre las facultades de la Dirección Nacional; se mantiene 3 como hipótesis.",
       "baja"
     ],
     "freq_soberano_meses": [
@@ -193,9 +193,9 @@
       "media"
     ],
     "estructura_federal": [
-      4,
-      "Pirámide modular probada a escala de cientos de miles de familias.",
-      "alta"
+      3,
+      "MST — Nossa organização: los núcleos eligen la coordinación de cada asentamiento o campamento y «a mesma estrutura se repete em nível regional, estadual e nacional». No consta si se añaden unidades sin aprobación del centro, condición del 4.",
+      "media"
     ],
     "coste_coordinacion": [
       3,

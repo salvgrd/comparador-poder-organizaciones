@@ -85,8 +85,8 @@
     ],
     "revocabilidad": [
       3,
-      "Estatuts (2022), arts. 9.b y 15.2.d: la Asamblea General de todas las afiliadas elige y puede separar a la Junta Directiva; para hacerlo fuera de la asamblea ordinaria hace falta que la convoque la Junta o que lo pida el 10 % (arts. 10.2 y 12.2). La revocación del equipo de portavoces no está regulada aparte.",
-      "media"
+      "Estatuts (2022), arts. 9.b y 15.2.d: la Asamblea General de todas las afiliadas puede separar a la Junta Directiva; fuera de la ordinaria hace falta una asamblea extraordinaria, que la Junta debe convocar si lo pide el 10 % (art. 10.2), y el punto debe estar en el orden del día (art. 12.2): la base, con trámite ordinario.",
+      "alta"
     ],
     "rotacion": [
       1,
@@ -110,8 +110,8 @@
     ],
     "pluralismo": [
       2,
-      "Art. 13.3: si hay varias candidaturas a la Junta, gana la de mayoría simple o relativa; no hay reparto proporcional ni corrientes reconocidas.",
-      "media"
+      "Estatuts (2022), art. 13.3: si hay varias candidaturas a la Junta gana la de mayoría simple o relativa, sin reparto proporcional; el 10 % puede incluir puntos en el orden del día (art. 12.2). No hay corrientes reconocidas.",
+      "alta"
     ],
     "autonomia_base": [
       3,
@@ -130,8 +130,8 @@
     ],
     "capacidad_ejecutiva": [
       3,
-      "Art. 16: la Junta dirige y administra, y puede resolver provisionalmente lo no previsto dando cuenta en la siguiente Asamblea (art. 16.m).",
-      "media"
+      "Estatuts (2022), arts. 14.1 y 16.1.a: la Junta rige, dirige y administra «de la manera más amplia» y cumple las decisiones de la Asamblea; lo no previsto lo resuelve provisionalmente y da cuenta en la siguiente Asamblea (art. 16.1.m).",
+      "alta"
     ],
     "freq_soberano_meses": [
       12,
@@ -149,9 +149,9 @@
       "baja"
     ],
     "estructura_federal": [
-      2,
-      "Secciones locales en expansión por Cataluña.",
-      "baja"
+      1,
+      "Estatuts (2022): una sola asociación con ámbito principal en Barcelona, extensible a Cataluña (art. 3.2), cuyos órganos son la Asamblea General y la Junta (arts. 8 y 14); las secciones locales no tienen reconocimiento estatutario y la Junta solo crea grupos de trabajo (art. 16.1.i).",
+      "media"
     ],
     "coste_coordinacion": [
       2,

@@ -140,7 +140,7 @@
     ],
     "revocabilidad": [
       2,
-      "Art. 6.1.a (40º y 41º Congreso): la revocación de la Secretaría General la inicia el Comité Federal por más del 50 % y la ratifica la militancia en consulta.",
+      "Estatutos Federales 41º Congreso, art. 6.1.a: la revocación de la Secretaría General la acuerda el Comité Federal (órgano delegado que se reúne al menos dos veces al año, art. 28.1) por más del 50 %, y la militancia la aprueba en consulta en el plazo de un mes. No hay umbral de petición ni plazo mínimo.",
       "alta"
     ],
     "rotacion": [
@@ -165,7 +165,7 @@
     ],
     "pluralismo": [
       3,
-      "Art. 5.2.a: en los comités, la lista minoritaria que supere el 20 % obtiene representación proporcional. Art. 4: corrientes de opinión reconocidas (con autorización del Comité Federal), sin representación orgánica; prohibidas las tendencias organizadas (art. 3.2). La Ejecutiva se elige por mayoría (art. 5.1.b.ii).",
+      "Estatutos Federales 41º Congreso, art. 5.2.a: en los comités, la lista minoritaria que supere el 20 % obtiene representación proporcional. Art. 4: corrientes de opinión autorizadas por el Comité Federal, sin representación orgánica ni estructura permanente; prohibidas las tendencias organizadas (art. 3.2).",
       "alta"
     ],
     "autonomia_base": [
@@ -185,8 +185,8 @@
     ],
     "capacidad_ejecutiva": [
       3,
-      "La Ejecutiva Federal dirige entre reuniones del Comité Federal y fija la posición, pero los acuerdos de gobierno y de investidura se someten a consulta obligatoria de la militancia (art. 50.2).",
-      "media"
+      "Estatutos Federales 41º Congreso, art. 31.1: la Ejecutiva Federal aplica y dirige la política del partido y aprueba los documentos políticos, pero los acuerdos de gobierno y de investidura requieren consulta obligatoria a la militancia (art. 50.2) y el presupuesto lo aprueba el Comité Federal (art. 31.1.k).",
+      "alta"
     ],
     "freq_soberano_meses": [
       48,
@@ -205,7 +205,7 @@
     ],
     "estructura_federal": [
       3,
-      "Federal, probada a escala de masas.",
+      "Estatutos Federales 41º Congreso, art. 14: organización federal, pero la denominación, la organización y los estatutos de cada federación los ratifica el Comité Federal (art. 14.3), y la Ejecutiva Federal puede suspender sus actuaciones (art. 15).",
       "alta"
     ],
     "coste_coordinacion": [

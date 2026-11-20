@@ -9,6 +9,8 @@ export interface Variable {
   /** Anclajes 0..4; cadena vacía si el valor intermedio no tiene descripción propia. */
   a: [string, string, string, string, string]
   calc?: boolean
+  /** Regla de aplicación que no cabe en los anclajes. */
+  nota?: string
   /** Si el valor alto no significa «más» del índice al que pertenece, qué significa. Invierte el color. */
   alto?: string
 }
@@ -20,23 +22,27 @@ export interface Variable {
 export const REGLA_FORMAL =
   'Cada variable de estructura se codifica según los estatutos y las normas vinculantes (reglamentos, códigos éticos). Lo que pasa en la práctica va solo en la brecha formal-real, para no contarlo dos veces.'
 
+/** Qué órgano se marca como «cima» en el organigrama. Las variables que hablan de «la dirección» se refieren a él. */
+export const REGLA_CIMA =
+  'La cima es el órgano ejecutivo permanente de mayor nivel: el que actúa entre reuniones de los órganos colectivos. Si una secretaría general o una presidencia se elige aparte y preside ese órgano, la cima es esa secretaría. Sin ejecutivo, es el órgano de coordinación permanente.'
+
 export const VARS: Variable[] = [
   { k: 'mandato', g: 'CB', l: 'Mandato imperativo', a: ['Libre: el delegado vota lo que quiere, o no hay delegados (voto directo sin deliberación previa)', '', 'Mixto, o mandato habitual pero no normado', '', 'Imperativo y normado: lleva acuerdos escritos de su asamblea'] },
-  { k: 'revocabilidad', g: 'CB', l: 'Revocabilidad', a: ['Solo al final del mandato o por un órgano superior', 'Por el órgano que eligió, con trámite reforzado (umbral ≥ 20 %, plazo mínimo o un solo intento)', 'Por el órgano que eligió, sin trámite reforzado', 'Por la base, con trámite', 'En cualquier momento por asamblea o pleno'] },
+  { k: 'revocabilidad', g: 'CB', l: 'Revocabilidad', a: ['Solo al final del mandato o por un órgano superior', 'Cualquiera de las siguientes con trámite reforzado (umbral ≥ 20 %, plazo mínimo o un solo intento), o solo en un congreso extraordinario', 'Por un órgano delegado que se reúne al menos una vez al año, sin trámite reforzado', 'Por la base, con trámite ordinario', 'Por la base o su asamblea, en cualquier momento y sin trámite'], nota: 'Se codifica la revocación de la cima.' },
   { k: 'rotacion', g: 'CB', l: 'Rotación (años máximos seguidos en el cargo de la cima)', a: ['Sin límite', 'Más de 12 años, o prorrogable sin tope', 'Unos 12 años', 'Unos 8 años', '4 años o menos'] },
   { k: 'profesionalizacion', g: 'CB', l: 'No profesionalización', a: ['Dirección siempre remunerada y aparato amplio (más de 1 liberada por cada 1.000 afiliadas)', 'Dirección remunerada y aparato técnico pequeño', 'Solo algunos cargos liberados', 'Liberaciones temporales o por campaña', 'Cargos no remunerados por estatuto'] },
   { k: 'eleccion_direccion', g: 'CB', l: 'Elección de la dirección', a: ['Cooptación', 'Indirecta a 3 o más niveles o candidatura única', 'Congreso de delegados, o liderazgo unipersonal por voto directo (plebiscitario)', 'Asamblea o pleno con mandato', 'Voto directo de toda la base a órganos colegiados revocables, o asamblea general'] },
   { k: 'agenda_base', g: 'CB', l: 'Agenda desde la base', a: ['La dirección fija el orden del día', 'La dirección redacta y la base enmienda', 'Mixto', 'La base propone y la dirección filtra poco', 'Todo lo que propone la base entra'] },
-  { k: 'pluralismo', g: 'CB', l: 'Pluralismo interno', a: ['Fracciones prohibidas', 'Disciplina fuerte, sin cauces para la minoría', 'Votos particulares o enmiendas de minoría', 'Listas que compiten con reparto proporcional', 'Lo anterior y corrientes reconocidas con derechos (portavocía, recursos, representación)'] },
+  { k: 'pluralismo', g: 'CB', l: 'Pluralismo interno', a: ['Fracciones prohibidas', 'Disciplina fuerte, sin cauces para la minoría', 'Votos particulares o enmiendas de minoría', 'Sistema electoral que garantiza puestos a la minoría (proporcional o con cuota)', 'Lo anterior y corrientes reconocidas con al menos dos de: portavocía, recursos, representación'], nota: 'Sin elecciones internas competitivas, el máximo es 2.' },
   { k: 'autonomia_base', g: 'CB', l: 'Autonomía de la base', a: ['Subordinada', '', 'Autonomía relativa', '', 'Plenamente autónoma (federalismo)'] },
   { k: 'proximidad', g: 'CB', l: 'Proximidad con mandato (calculada)', a: ['Lejos de la cima, o sin mandato ni revocación', '', 'Cerca con control parcial, o lejos con mandato', '', '1 salto con mandato imperativo y revocación inmediata'], calc: true },
   { k: 'brecha_formal_real', g: 'ajuste', l: 'Brecha formal-real', a: ['El poder real coincide con los estatutos', '', 'Desviación moderada', '', 'El poder real está en otra parte (aparato, mando, portavocía)'], alto: 'alto = peor' },
   { k: 'regla_decision', g: 'CE', l: 'Regla de decisión', a: ['Unanimidad', 'Consenso', 'Consenso con votación de reserva', 'Mayoría tras intentar el consenso', 'Mayoría simple / decide la dirección'] },
-  { k: 'capacidad_ejecutiva', g: 'CE', l: 'Capacidad ejecutiva', a: ['Sin ejecutivo', 'Gestión sin capacidad de decidir', 'Coordinación con cierto margen', 'Decide entre reuniones, pero lo de fondo requiere ratificación posterior', 'Compromete a la organización (acuerdos, movilizaciones, posición pública) sin ratificación previa'] },
+  { k: 'capacidad_ejecutiva', g: 'CE', l: 'Capacidad ejecutiva', a: ['Sin ejecutivo', 'Solo administra y transmite', 'Ejecuta con margen operativo, sin poder fijar posición nueva', 'Decide entre reuniones; lo urgente o de fondo se ratifica después', 'Fija posiciones o acuerdos nuevos sin ratificación'], nota: 'Se codifica la regla general de la cima, no la excepción de urgencia.' },
   { k: 'freq_intermedio', g: 'AG', l: 'Frecuencia del órgano intermedio', a: ['Más de 1 año', 'Cada 6-12 meses', 'Cada 2-6 meses', 'Cada 2 semanas a 2 meses', 'Semanal o más'], calc: true },
   { k: 'freq_soberano', g: 'AG', l: 'Frecuencia del órgano soberano', a: ['Más de 1 año', 'Cada 6-12 meses', 'Cada 2-6 meses', 'Cada 2 semanas a 2 meses', 'Semanal o más'], calc: true },
   { k: 'niveles_s', g: 'AG', l: 'Niveles a atravesar (saltos)', a: ['5 o más saltos hasta la cima', '4 saltos', '3 saltos', '2 saltos', '1 salto'], calc: true },
-  { k: 'estructura_federal', g: 'ES', l: 'Estructura replicable', a: ['Una sola unidad', 'Centralista', 'Coordinación incipiente', 'Federal o matricial', 'Federal y modular a cualquier escala'] },
+  { k: 'estructura_federal', g: 'ES', l: 'Estructura replicable', a: ['Una sola unidad', 'Centralista', 'Unidades territoriales con poco poder propio', 'Federal o matricial, pero el centro concede cartas o aprueba estatutos', 'La misma unidad, con su asamblea soberana, se repite en todos los niveles y se añaden unidades sin aprobación del centro'] },
   { k: 'coste_coordinacion', g: 'ES', l: 'Bajo coste de coordinación', a: ['Todo pasa por asamblea directa', 'Asambleas en todas las unidades para cada decisión', 'Mixto', 'Delegación con continuidad', 'Representación y aparato'] },
   { k: 'tamano_s', g: 'contexto', l: 'Tamaño demostrado', a: ['~100', '~1.000', '~10.000', '~100.000', '1.000.000 o más'], calc: true },
 ]

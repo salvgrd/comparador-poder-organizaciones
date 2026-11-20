@@ -107,7 +107,7 @@
     ],
     "revocabilidad": [
       1,
-      "Sin fuente verificable: revocación por órganos superiores, no por la base.",
+      "Sin fuente verificable: los estatutos (III Congreso, 2025) no son públicos; se mantiene 1 (revocación por los órganos superiores en el centralismo democrático) como hipótesis.",
       "baja"
     ],
     "rotacion": [
@@ -132,7 +132,7 @@
     ],
     "pluralismo": [
       0,
-      "Sin fuente verificable: fracciones prohibidas.",
+      "Sin fuente verificable: los estatutos no son públicos; la prohibición de fracciones propia del centralismo democrático no consta en las fuentes de la ficha.",
       "baja"
     ],
     "autonomia_base": [
@@ -152,7 +152,7 @@
     ],
     "capacidad_ejecutiva": [
       3,
-      "Sin fuente verificable: centralismo democrático (web del partido): el Buró Político dirigiría entre reuniones del Comité Central, ante el que responde. Los estatutos (modificados en el III Congreso, 2025) no son públicos.",
+      "Sin fuente verificable: los estatutos no son públicos; la página Conócenos solo dice que el partido se organiza según el centralismo democrático. Se mantiene 3 como hipótesis.",
       "baja"
     ],
     "freq_soberano_meses": [
@@ -172,7 +172,7 @@
     ],
     "estructura_federal": [
       1,
-      "Centralista: el partido se organiza según el centralismo democrático (página Conócenos).",
+      "PCTE — Conócenos: «nos organizamos en función del centralismo-democrático»: centralista.",
       "media"
     ],
     "coste_coordinacion": [

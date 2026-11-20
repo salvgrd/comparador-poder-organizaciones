@@ -131,8 +131,8 @@
       "media"
     ],
     "revocabilidad": [
-      2,
-      "Estatutos (11º Congreso), art. 11.1: los integrantes de los órganos «podrán ser revocados por los órganos que las eligieron», sin umbral ni plazo reforzado.",
+      1,
+      "Estatutos 13º Congreso (2025), art. 11.1: solo revoca «el órgano que las eligió»; la Secretaría General la elige el Congreso (art. 32), que se reúne cada cuatro años, y el congreso extraordinario exige mayoría absoluta del Consejo o dos tercios de cotizantes (art. 27.b.2): solo en un congreso extraordinario.",
       "alta"
     ],
     "rotacion": [
@@ -157,7 +157,7 @@
     ],
     "pluralismo": [
       3,
-      "Art. 11.4: si no hay lista única compiten listas avaladas por el 10 % con reparto proporcional. Art. 12: corrientes sindicales reconocidas con acceso a medios, pero sin portavoces en los órganos ni disciplina de voto.",
+      "Estatutos 13º Congreso (2025), art. 11.4: si no hay lista única, reparto proporcional entre listas avaladas por el 10 %. Art. 12: corrientes reconocidas con medios y acceso a publicaciones, pero sin portavoces en los órganos (art. 12.1.e) ni representación propia: solo uno de los derechos que pide el 4.",
       "alta"
     ],
     "autonomia_base": [
@@ -177,7 +177,7 @@
     ],
     "capacidad_ejecutiva": [
       3,
-      "Art. 31.c.1: la Ejecutiva asegura la dirección permanente y decide las cuestiones urgentes entre reuniones del Consejo Confederal, ante el que responde (art. 31.b.6).",
+      "Estatutos 13º Congreso (2025), art. 31.c.1: la Ejecutiva, presidida por la Secretaría General (art. 32.f), asegura la «dirección permanente» y lleva a la práctica las decisiones del Congreso y del Consejo, ante el que responde entre congresos (art. 31.b.6). El Consejo se reúne al menos tres veces al año (art. 29.b.1).",
       "alta"
     ],
     "freq_soberano_meses": [
@@ -197,8 +197,8 @@
     ],
     "estructura_federal": [
       3,
-      "Matriz rama × territorio; escala a un millón de afiliadas.",
-      "media"
+      "Estatutos 13º Congreso (2025): matriz de federaciones de rama y uniones territoriales; el Consejo Confederal aprueba la integración de las federaciones, uniones y organizaciones que lo soliciten (art. 29.c.5).",
+      "alta"
     ],
     "coste_coordinacion": [
       4,

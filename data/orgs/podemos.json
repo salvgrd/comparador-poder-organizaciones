@@ -124,8 +124,8 @@
       "alta"
     ],
     "revocabilidad": [
-      2,
-      "Documento Organizativo 2025, art. 26: revoca la base (la Asamblea Ciudadana, todas las inscritas), que es quien elige a la SG y al CCE (sería un 3), con trámite reforzado: solo pasados 18 meses, a petición del 25 % y una sola consulta por mandato (menos 1).",
+      1,
+      "Documento Organizativo V ACE, art. 26: revoca la Asamblea Ciudadana (toda la base), pero con trámite reforzado: no antes de 18 meses desde la elección, a petición del 25 % de las inscritas (o de la SG o la mayoría absoluta del Consejo Ciudadano) y una sola consulta revocatoria por mandato. Con el anclaje nuevo cualquiera de estas condiciones da 1, sin la regla ad hoc anterior (base = 3, menos 1).",
       "alta"
     ],
     "rotacion": [
@@ -149,8 +149,8 @@
       "alta"
     ],
     "pluralismo": [
-      3,
-      "Reglamento V ACE: el CCE se elige por listas abiertas que compiten con un sistema de reparto (DesBorda), además de candidaturas individuales. No hay corrientes reconocidas con derechos.",
+      2,
+      "Reglamento V ACE: el Consejo Ciudadano se elige con DesBorda, listas abiertas con voto preferencial en el que entran «quienes hayan obtenido más puntos», sin reserva de puestos para la minoría; hay candidaturas y documentos alternativos que compiten. No hay corrientes reconocidas.",
       "media"
     ],
     "autonomia_base": [
@@ -170,7 +170,7 @@
     ],
     "capacidad_ejecutiva": [
       3,
-      "Art. 25: el Consejo de Coordinación «asumirá las decisiones políticas inmediatas», pero los pactos de gobierno o de investidura los aprueba la Asamblea Ciudadana (art. 22).",
+      "Documento Organizativo V ACE: la Secretaría General preside el Consejo de Coordinación (arts. 24-25), que «asumirá las decisiones políticas inmediatas» en coherencia con lo acordado por la Asamblea y el Consejo Ciudadano; los pactos de gobierno o investidura los aprueba la Asamblea Ciudadana (art. 22).",
       "alta"
     ],
     "freq_soberano_meses": [
@@ -190,7 +190,7 @@
     ],
     "estructura_federal": [
       2,
-      "Autonomías y Círculos con poco poder propio.",
+      "Documento Organizativo V ACE: hay asambleas y consejos municipales y autonómicos, pero los Círculos solo son de pleno derecho cuando los activa el Consejo Ciudadano Autonómico en coordinación con el Estatal, por dos años (art. 5), y la Asamblea estatal fija los criterios de los pactos territoriales (art. 22): poco poder propio.",
       "media"
     ],
     "coste_coordinacion": [

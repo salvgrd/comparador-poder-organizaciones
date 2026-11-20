@@ -1,6 +1,6 @@
 import type { Handle } from 'remix/component'
 
-import { FAMILIAS, GRUPO_LABEL, UNIDADES_TAMANO, VARS, type Grupo } from '../../lib/codebook.ts'
+import { FAMILIAS, GRUPO_LABEL, REGLA_CIMA, UNIDADES_TAMANO, VARS, type Grupo } from '../../lib/codebook.ts'
 import { fmtN, type OrgConIndices } from '../../lib/metrics.ts'
 import type { Codigo, Confianza, Org } from '../../lib/types.ts'
 import { routes } from '../../routes.ts'
@@ -127,9 +127,8 @@ export function RevisionPage(handle: Handle<{ o: OrgConIndices }>) {
           <div class="panel prose">
             <h3>2. Órganos y quién elige a quién</h3>
             <p>
-              De esto se calcula cuántos «saltos» hay entre la afiliación y la dirección. La cima es el órgano que fija
-              la posición de la organización entre congresos. Comprueba sobre todo quién elige a cada órgano y si la
-              cima es la correcta.
+              De esto se calcula cuántos «saltos» hay entre la afiliación y la dirección. {REGLA_CIMA} Comprueba
+              sobre todo quién elige a cada órgano y si la cima es la correcta.
             </p>
             <table class="rv-org">
               <thead>
@@ -200,6 +199,7 @@ export function RevisionPage(handle: Handle<{ o: OrgConIndices }>) {
                           </li>
                         ))}
                       </ul>
+                      {v.nota ? <p class="muted">{v.nota}</p> : null}
                       <p>{c ? `Por qué: ${c[1]}` : 'Sin codificar.'}</p>
                       <Check />
                     </div>

@@ -114,8 +114,8 @@
     ],
     "revocabilidad": [
       2,
-      "Ley 11/2019 de Cooperativas de Euskadi, art. 46.2: la asamblea general puede destituir al consejo rector en cualquier momento (con 2/3 si no figura en el orden del día). La revocación de los órganos corporativos (Comisión Permanente, Presidencia del Consejo General) no está verificada.",
-      "media"
+      "Sin fuente verificable: las normas corporativas (Congreso, Comisión Permanente, Consejo General) no son públicas; no consta quién revoca la Presidencia del Consejo General. Se mantiene 2 (la Comisión Permanente que la designa) como hipótesis.",
+      "baja"
     ],
     "rotacion": [
       1,
@@ -139,7 +139,7 @@
     ],
     "pluralismo": [
       2,
-      "Sin fuente verificable: Consejo Social como contrapeso (la Ley 11/2019 lo prevé como órgano potestativo).",
+      "Sin fuente verificable: no constan elecciones competitivas ni cauces para minorías en los órganos corporativos (máximo 2 por la nota).",
       "baja"
     ],
     "autonomia_base": [
@@ -159,7 +159,7 @@
     ],
     "capacidad_ejecutiva": [
       3,
-      "Sin fuente verificable: la Presidencia del Consejo General dirige la estrategia y sus decisiones obligan a divisiones y cooperativas, pero el plan de gestión y el presupuesto los aprueba la Comisión Permanente, ante la que responde.",
+      "Sin fuente verificable: la Ley 11/2019, art. 154.1, permite a la cabeza de grupo emitir instrucciones de obligado cumplimiento, pero no consta qué órgano de MONDRAGON las emite ni con qué ratificación. Se mantiene 3 como hipótesis.",
       "baja"
     ],
     "freq_soberano_meses": [
@@ -179,8 +179,8 @@
     ],
     "estructura_federal": [
       3,
-      "Grupo de cooperativas.",
-      "alta"
+      "Ley 11/2019, art. 154: grupo de cooperativas con asamblea propia, que deciden su incorporación (art. 154.6), pero la cabeza de grupo emite instrucciones obligatorias y puede fijar normas estatutarias comunes (art. 154.5.a).",
+      "media"
     ],
     "coste_coordinacion": [
       4,

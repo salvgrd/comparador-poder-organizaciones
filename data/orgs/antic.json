@@ -87,7 +87,7 @@
     ],
     "revocabilidad": [
       2,
-      "Sin fuente verificable: a verificar.",
+      "Sin fuente verificable: no hay estatutos públicos; no consta quién revoca al Secretariado ni con qué trámite. Se mantiene 2 (revocación por el órgano delegado que lo elige) como hipótesis.",
       "baja"
     ],
     "rotacion": [
@@ -112,7 +112,7 @@
     ],
     "pluralismo": [
       4,
-      "Sin fuente verificable: derecho de tendencia.",
+      "Sin fuente verificable: el derecho de tendencia con representación proporcional no consta en ninguna fuente de la ficha (web, Organigrama, Documento político del IV Congreso, Wikipedia).",
       "baja"
     ],
     "autonomia_base": [
@@ -132,7 +132,7 @@
     ],
     "capacidad_ejecutiva": [
       3,
-      "Sin fuente verificable: el secretariado opera entre reuniones de la dirección.",
+      "Sin fuente verificable: no hay estatutos públicos; se mantiene 3 (el Secretariado decidiría entre reuniones de la dirección estatal) como hipótesis.",
       "baja"
     ],
     "freq_soberano_meses": [
@@ -152,8 +152,8 @@
     ],
     "estructura_federal": [
       3,
-      "Colectivos territoriales federales y confederales, con Asamblea Estatal y Coordinadora Confederal (organigrama).",
-      "media"
+      "Anticapitalistas — web: «se estructura confederalmente en organizaciones territoriales, asambleas locales y áreas». No consta si el centro aprueba las nuevas unidades, condición para distinguir 3 de 4.",
+      "baja"
     ],
     "coste_coordinacion": [
       3,

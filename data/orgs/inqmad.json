@@ -129,7 +129,7 @@
     ],
     "revocabilidad": [
       2,
-      "Sin fuente verificable: no consta un procedimiento de revocación: el Reglamento de Régimen Interno (2026) y los estatutos no son públicos.",
+      "Sin fuente verificable: no consta cómo se revoca al Grupo de Coordinación: el Reglamento de Régimen Interno (2026) y los estatutos no son públicos. Se mantiene 2 como hipótesis.",
       "baja"
     ],
     "rotacion": [
@@ -154,7 +154,7 @@
     ],
     "pluralismo": [
       2,
-      "Sin fuente verificable: no consta ningún mecanismo formal para minorías; las normas no son públicas.",
+      "Sin fuente verificable: no consta ningún mecanismo formal para minorías ni elecciones competitivas (máximo 2 por la nota); las normas no son públicas.",
       "baja"
     ],
     "autonomia_base": [
@@ -174,7 +174,7 @@
     ],
     "capacidad_ejecutiva": [
       2,
-      "El Grupo de Coordinación «vela por que los acuerdos prosperen»: ejecuta, no consta que decida.",
+      "Cómo nos organizamos: el Grupo de Coordinación es uno de los «órganos decisorios», pero su función es poner en común lo que ocurre en cada espacio y velar «por que los acuerdos alcanzados prosperen»: ejecuta, no consta que fije posiciones.",
       "media"
     ],
     "freq_soberano_meses": [
@@ -194,8 +194,8 @@
     ],
     "estructura_federal": [
       3,
-      "Matriz de secciones territoriales y por propietario + Grupo de Coordinación por delegación; integrada en una Confederación estatal.",
-      "media"
+      "Cómo nos organizamos y Organigrama detallado (2025): matriz de secciones territoriales (nodos) y por propietario, con asambleas de bloque y Grupo de Coordinación por delegación. No consta quién aprueba los nuevos nodos, condición para distinguir 2, 3 y 4.",
+      "baja"
     ],
     "coste_coordinacion": [
       2,

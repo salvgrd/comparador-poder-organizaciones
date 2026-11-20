@@ -90,8 +90,8 @@
       "baja"
     ],
     "revocabilidad": [
-      4,
-      "Sin fuente verificable: autoridades revocables por la asamblea.",
+      0,
+      "Sin fuente verificable: ninguna fuente describe la revocación de la Comandancia General (la cima). El «mandar obedeciendo» y la sujeción a la asamblea del pueblo (El Universal, 2023) se refieren a los gobiernos autónomos civiles. Sin mandato fijo conocido, se codifica 0.",
       "baja"
     ],
     "rotacion": [
@@ -116,7 +116,7 @@
     ],
     "pluralismo": [
       1,
-      "Sin fuente verificable: organización político-militar; poco espacio para corrientes.",
+      "Sin fuente verificable: organización político-militar sin elecciones internas competitivas conocidas (máximo 2 por la nota); no consta ningún cauce para minorías.",
       "baja"
     ],
     "autonomia_base": [
@@ -136,7 +136,7 @@
     ],
     "capacidad_ejecutiva": [
       3,
-      "La reestructuración de 2023 la anunció el EZLN en comunicados de noviembre y diciembre (Grupo Animal, 2024); las decisiones grandes se someten en principio a consulta de los pueblos.",
+      "Sin fuente verificable: no hay norma publicada sobre las facultades de la Comandancia General. La reestructuración de 2023 la anunció el EZLN tras un proceso de autocrítica con las bases (Grupo Animal, 2024); se mantiene 3 como hipótesis.",
       "baja"
     ],
     "freq_soberano_meses": [
@@ -156,7 +156,7 @@
     ],
     "estructura_federal": [
       4,
-      "Modular por comunidades.",
+      "Hay un GAL en cada comunidad, sujeto a la asamblea del pueblo, y los GAL convocan según sus necesidades los CGAZ, que «no son autoridades» (El Universal, 2023); las ACGAZ dependen de los CGAZ, «lo más chiquito» (Grupo Animal, 2024).",
       "media"
     ],
     "coste_coordinacion": [

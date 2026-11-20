@@ -147,8 +147,8 @@
       "alta"
     ],
     "revocabilidad": [
-      2,
-      "Los Estatutos no regulan la revocación del SP; lo elige el Congreso o, excepcionalmente, un Pleno Confederal (art. 49), que puede sustituirlo sin trámite reforzado.",
+      1,
+      "Estatutos y Reglamento (XIX Congreso): no regulan la revocación del Secretariado Permanente. Lo elige el Congreso cada cuatro años y, «excepcionalmente», un Pleno Confederal (arts. 35, 36 y 49); fuera de plazo solo cabe un congreso o pleno extraordinario a petición de un tercio de los sindicatos.",
       "media"
     ],
     "rotacion": [
@@ -173,7 +173,7 @@
     ],
     "pluralismo": [
       2,
-      "SP elegido secretaría por secretaría, «resultando elegida la más votada» (Reglamento de Congresos, art. 27): sin reparto proporcional. Hay votos particulares con el aval del 5 % y no se reconocen tendencias.",
+      "Reglamento de Congresos, art. 27: el Secretariado se elige secretaría por secretaría, «resultando elegida la más votada», sin reparto proporcional; hay votos particulares con el aval del 5 % (Reglamento, art. 22). No se reconocen tendencias.",
       "alta"
     ],
     "autonomia_base": [
@@ -193,7 +193,7 @@
     ],
     "capacidad_ejecutiva": [
       2,
-      "El SP coordina; el Comité Confederal se reúne cada 2 meses.",
+      "Estatutos (XIX Congreso), art. 47: el Secretariado Permanente es el «máximo órgano de gestión» y coordina el trabajo del Comité Confederal para que se cumplan los acuerdos; las decisiones son del Comité Confederal (art. 45, cada dos meses según el art. 46) y de los Plenos.",
       "alta"
     ],
     "freq_soberano_meses": [
@@ -212,8 +212,8 @@
       "alta"
     ],
     "estructura_federal": [
-      4,
-      "Federalismo territorial y sectorial.",
+      3,
+      "Estatutos (XIX Congreso): confederación de sindicatos autónomos (arts. 8-9), pero la adhesión de un sindicato la decide la Federación Local o Confederación Territorial y la resuelve de forma definitiva el Comité Confederal, que le otorga el código de incorporación (art. 14).",
       "alta"
     ],
     "coste_coordinacion": [
