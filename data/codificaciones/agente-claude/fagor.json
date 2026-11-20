@@ -1,0 +1,184 @@
+{
+  "org_id": "fagor",
+  "codificador": {
+    "id": "agente-claude",
+    "tipo": "ia",
+    "nombre": "Claude (subagente a ciegas)",
+    "modelo": "claude-opus-5-5"
+  },
+  "fecha": "2026-11-20",
+  "a_ciegas": true,
+  "notas_ceguera": "Subagente sin acceso al repositorio; recibió solo los anclajes actuales con sus notas, REGLA_FORMAL y REGLA_CIMA copiados de codebook.ts, las instrucciones del README de codificaciones, el nombre de la organización, el momento codificado (2007-2012) y los títulos y URL de las fuentes de la ficha. Cada código cita una fuente abierta en la sesión o se marca «Sin fuente verificable».",
+  "fuentes_consultadas": [
+    {
+      "t": "Basterretxea, Cornforth y Heras-Saizarbitoria 2022, preprint EID (copia web.archive.org)",
+      "u": "http://web.archive.org/web/20250611123312/https://oro.open.ac.uk/69303/1/EID%20preprint%20Corporate%20Governance%20failure%20of%20cooperatives,%202020.pdf",
+      "lista_inicial": true,
+      "leida": false
+    },
+    {
+      "t": "Basterretxea et al. 2022, preprint en ORO (original, 403)",
+      "u": "https://oro.open.ac.uk/69303/1/EID%20preprint%20Corporate%20Governance%20failure%20of%20cooperatives,%202020.pdf",
+      "lista_inicial": false,
+      "leida": false
+    },
+    {
+      "t": "Basterretxea et al. 2022, resumen en IDEAS/RePEc",
+      "u": "https://ideas.repec.org/a/sae/ecoind/v43y2022i1p362-387.html",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "Errasti, Bretos y Etxezarreta 2016, APCE 87(3), resumen en IDEAS/RePEc",
+      "u": "https://ideas.repec.org/a/bla/annpce/v87y2016i3p433-456.html",
+      "lista_inicial": true,
+      "leida": true
+    },
+    {
+      "t": "Errasti et al. 2016, texto completo en Zaguan (403)",
+      "u": "https://zaguan.unizar.es/record/77089/files/texto_completo.pdf",
+      "lista_inicial": false,
+      "leida": false
+    },
+    {
+      "t": "Errasti 2013, REVESCO 113, resumen en IDEAS/RePEc",
+      "u": "https://ideas.repec.org/a/ucm/reveco/y2013i113p30-60.html",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "UPV/EHU Campusa, resumen de Basterretxea, Heras-Saizarbitoria y Lertxundi (HRM, 2018)",
+      "u": "https://www.ehu.eus/en/web/campusa-magazine/-/human-resources-policies-influenced-the-failure-of-fagor-electrodomesticos",
+      "lista_inicial": true,
+      "leida": true
+    },
+    {
+      "t": "Ley 4/1993 de Cooperativas de Euskadi (BOE, texto consolidado)",
+      "u": "https://www.boe.es/buscar/act.php?id=BOE-A-2012-2011",
+      "lista_inicial": true,
+      "leida": true
+    },
+    {
+      "t": "Arenaza Bengoa y Arando, CLEO Rutgers (copia web.archive.org)",
+      "u": "http://web.archive.org/web/20260612121020/https://cleo.rutgers.edu/articles/inter-cooperation-mechanisms-in-mondragon-managing-the-crisis-of-fagor-electrodomesticos/",
+      "lista_inicial": true,
+      "leida": false
+    },
+    {
+      "t": "Arenaza Bengoa y Arando, CLEO Rutgers (página original; solo ficha, sin el PDF)",
+      "u": "https://cleo.rutgers.edu/articles/inter-cooperation-mechanisms-in-mondragon-managing-the-crisis-of-fagor-electrodomesticos/",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "Valencia Plaza (EFE 2023), Diez años de la caída de Fagor Electrodomésticos",
+      "u": "https://valenciaplaza.com/valenciaplaza/diez-anos-caida-fagor-electrodomesticos-cronologia-quiebra",
+      "lista_inicial": true,
+      "leida": true
+    },
+    {
+      "t": "Alimarket 2012, Los socios del Grupo Fagor aprueban un nuevo ajuste de anticipos",
+      "u": "https://www.alimarket.es/electro/noticia_amp/95713/los-socios-del-grupo-fagor-aprueban-un-nuevo-ajuste-de-anticipos",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "Alimarket 2012, Se confirman los cambios directivos en Fagor",
+      "u": "https://www.alimarket.es/electro/noticia_amp/101052/se-confirman-los-cambios-directivos-en-fagor",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "Donostitik, Absentismo, fichaje de familiares y un liderazgo débil, claves en la caída de Fagor Electrodomésticos",
+      "u": "https://www.donostitik.com/absentismo-fichaje-de-familiares-y-un-liderazgo-debil-claves-en-la-caida-de-fagor-electrodomesticos/",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "elDiario.es 2023, Diez años de la quiebra de Fagor Electrodomésticos",
+      "u": "https://www.eldiario.es/euskadi/diez-anos-quiebra-fagor-electrodomesticos-tambaleo-esencia-cooperativismo-vasco_1_10612926.html",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "Fagor (grupo), Governing bodies (estructura actual del Grupo Fagor, no de la cooperativa)",
+      "u": "https://www.fagor.eus/en/governing-bodies/",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "Corporate Rebels, Lessons from the Mondragón Cooperative Movement",
+      "u": "https://corporate-rebels.com/blog/lessons-from-the-mondragon-cooperative-movement",
+      "lista_inicial": false,
+      "leida": true
+    }
+  ],
+  "codigos": {
+    "mandato": [
+      0,
+      "No consta Asamblea de Delegados (posible solo si los estatutos la prevén, Ley 4/1993 art. 38.1, https://www.boe.es/buscar/act.php?id=BOE-A-2012-2011); las decisiones se votan por los socios directamente en asamblea (p. ej. 90 % de aprobación del recorte de anticipos en 2012, Alimarket, https://www.alimarket.es/electro/noticia_amp/95713/los-socios-del-grupo-fagor-aprueban-un-nuevo-ajuste-de-anticipos). Voto directo sin delegados = 0; no he podido leer los estatutos de Fagor para descartar juntas preparatorias.",
+      "baja"
+    ],
+    "revocabilidad": [
+      3,
+      "Cima = Consejo Rector. La Asamblea General (todos los socios) revoca a los administradores por votación secreta (Ley 4/1993 art. 31.3.a) por mayoría si está en el orden del día, o en cualquier sesión aunque no figure con 2/3 de los votos (art. 44.2), https://www.boe.es/buscar/act.php?id=BOE-A-2012-2011. Entre 1 y 3: fuera de la asamblea ordinaria, convocar una extraordinaria exige el 20 % de los votos (art. 33.3), lo que es trámite reforzado; elijo 3 porque la vía ordinaria anual y la revocación sin orden del día existen.",
+      "media"
+    ],
+    "rotacion": [
+      1,
+      "Ley 4/1993 art. 44.1: mandato estatutario de 2 a 5 años con reelección posible, y art. 45.3: reelección indefinida salvo que los estatutos digan otra cosa (https://www.boe.es/buscar/act.php?id=BOE-A-2012-2011). No he leído los estatutos de Fagor para ver un tope propio; codifico prorrogable sin tope.",
+      "media"
+    ],
+    "profesionalizacion": [
+      3,
+      "Sin fuente verificable: la Ley 4/1993 art. 43 deja la retribución de los consejeros a estatutos o Asamblea (https://www.boe.es/buscar/act.php?id=BOE-A-2012-2011) y no he podido leer los estatutos de Fagor. El Consejo Rector lo forman socios trabajadores, pero la gestión diaria la lleva una gerencia profesional remunerada (director general, Alimarket, https://www.alimarket.es/electro/noticia_amp/101052/se-confirman-los-cambios-directivos-en-fagor). Entre 1 y 4.",
+      "baja"
+    ],
+    "eleccion_direccion": [
+      4,
+      "El Consejo Rector lo elige la Asamblea General de todos los socios por el mayor número de votos en votación secreta (Ley 4/1993 arts. 31.3.a y 41.3, https://www.boe.es/buscar/act.php?id=BOE-A-2012-2011), y es revocable (art. 44.2); el presidente lo elige el propio Consejo salvo que los estatutos digan otra cosa (art. 45.2). La gerencia la nombra el Consejo Rector (Corporate Rebels, https://corporate-rebels.com/blog/lessons-from-the-mondragon-cooperative-movement). Sería 3 si Fagor usara Asamblea de Delegados, cosa que no consta.",
+      "media"
+    ],
+    "agenda_base": [
+      1,
+      "Convocan y fijan el orden del día los administradores (Ley 4/1993 art. 33.1); los socios con más del 10 % de los votos pueden añadir puntos, que no pueden posponerse (art. 33.4), y el 20 % puede pedir asamblea extraordinaria con su orden del día (art. 33.3), https://www.boe.es/buscar/act.php?id=BOE-A-2012-2011. Entre 1 y 2: la base puede añadir puntos, pero con umbral.",
+      "media"
+    ],
+    "pluralismo": [
+      2,
+      "Hay elecciones competitivas al Consejo Rector por el mayor número de votos (Ley 4/1993 art. 41.3, https://www.boe.es/buscar/act.php?id=BOE-A-2012-2011), un sistema mayoritario sin garantía de puestos para la minoría ni corrientes reconocidas. Codifico 2 (la minoría solo puede expresarse con propuestas y votos en asamblea); no he visto los estatutos de Fagor.",
+      "baja"
+    ],
+    "autonomia_base": [
+      1,
+      "Las secciones o plantas de la cooperativa solo tienen representación consultiva a través del Consejo Social (Ley 4/1993 art. 54, https://www.boe.es/buscar/act.php?id=BOE-A-2012-2011), y las filiales extranjeras (Fagor-Brandt, Wrozamet/Mastercook) eran empresas filiales sin socios cooperativistas, cuyo encaje en el modelo cooperativo es la pregunta abierta del artículo (Errasti et al. 2016, https://ideas.repec.org/a/bla/annpce/v87y2016i3p433-456.html). Entre 0 y 1.",
+      "baja"
+    ],
+    "brecha_formal_real": [
+      2,
+      "El Consejo Social, formalmente consultivo, presionó en 2006 hasta lograr la destitución del director general Mongelos y generó una «jerarquía de dominación inversa» que debilitó a la dirección (Campusa UPV/EHU, https://www.ehu.eus/en/web/campusa-magazine/-/human-resources-policies-influenced-the-failure-of-fagor-electrodomesticos; Donostitik, https://www.donostitik.com/absentismo-fichaje-de-familiares-y-un-liderazgo-debil-claves-en-la-caida-de-fagor-electrodomesticos/). Además, la Asamblea, el Consejo Rector y el Consejo Social tuvieron una capacidad limitada para supervisar a la gerencia (Basterretxea et al. 2022, resumen, https://ideas.repec.org/a/sae/ecoind/v43y2022i1p362-387.html). Entre 2 y 3: el poder se desplaza en dos direcciones (gerencia y Consejo Social), y el decisivo en la crisis fue el Consejo General de Mondragon.",
+      "media"
+    ],
+    "regla_decision": [
+      4,
+      "Los acuerdos se adoptan por más de la mitad de los votos válidamente emitidos, un socio un voto (Ley 4/1993 arts. 35.1 y 36.1, https://www.boe.es/buscar/act.php?id=BOE-A-2012-2011); 2/3 solo para transformación, fusión, escisión o disolución (art. 36.2). No hay paso previo de consenso normado.",
+      "alta"
+    ],
+    "capacidad_ejecutiva": [
+      4,
+      "Los administradores (Consejo Rector) tienen «en exclusiva la gestión y representación de la cooperativa» (Ley 4/1993 art. 40.1), y la Asamblea solo toma acuerdos obligatorios en materias que la ley no atribuye a otro órgano (art. 31.4), https://www.boe.es/buscar/act.php?id=BOE-A-2012-2011. Fuera de las materias reservadas (cuentas, estatutos, nombramientos), el Consejo decide sin ratificación.",
+      "alta"
+    ],
+    "estructura_federal": [
+      1,
+      "Cooperativa matriz única con plantas en el País Vasco y filiales de capital controladas desde la matriz (Fagor-Brandt en Francia, Wrozamet/Mastercook en Polonia), sin órganos soberanos propios (Errasti et al. 2016, https://ideas.repec.org/a/bla/annpce/v87y2016i3p433-456.html; Errasti 2013, https://ideas.repec.org/a/ucm/reveco/y2013i113p30-60.html). Entre 0 y 1: centralista.",
+      "media"
+    ],
+    "coste_coordinacion": [
+      4,
+      "Gestión por un Consejo Rector elegido con gestión exclusiva (Ley 4/1993 art. 40.1, https://www.boe.es/buscar/act.php?id=BOE-A-2012-2011), que delega en una gerencia profesional y en directores-gerentes (art. 41.6). La asamblea de socios se reúne de forma ordinaria una vez al año (art. 33.2).",
+      "media"
+    ]
+  },
+  "notas": "No pude leer los estatutos de Fagor Electrodomésticos ni el texto completo de Basterretxea et al. 2022, de Errasti et al. 2016 ni de Arenaza y Arando: web.archive.org está bloqueado para la herramienta y ORO, Zaguan, Academia y ResearchGate devolvieron 403. La estructura formal se codifica con la Ley 4/1993 de Cooperativas de Euskadi, que estaba vigente en 2007-2012; los estatutos podrían fijar topes de reelección, retribución o una asamblea de delegados distintos. Anclajes ambiguos: (1) REGLA_CIMA: en una cooperativa, el ejecutivo permanente formal es el Consejo Rector, pero la gestión diaria la lleva la gerencia profesional que él nombra; codifiqué el Consejo Rector, y profesionalizacion depende mucho de esta elección. (2) revocabilidad: la base revoca en la asamblea ordinaria, pero una extraordinaria exige el 20 % (umbral reforzado del anclaje 1). (3) mandato: el anclaje 0 junta «libre» y «voto directo sin delegados», que en una asamblea de socios no son lo mismo. (4) autonomia_base y estructura_federal: no está claro qué es la base en una empresa cooperativa (¿socios, secciones o filiales?). (5) brecha_formal_real: la desviación va en dos sentidos (gerencia con ventaja informativa y Consejo Social con veto de hecho), y además el poder decisivo en la crisis de 2013 estaba fuera, en la Corporación Mondragon."
+}

@@ -1,0 +1,136 @@
+{
+  "org_id": "cgt",
+  "codificador": {
+    "id": "agente-claude",
+    "tipo": "ia",
+    "nombre": "Claude (subagente a ciegas)",
+    "modelo": "claude-opus-5-5"
+  },
+  "fecha": "2026-11-20",
+  "a_ciegas": true,
+  "notas_ceguera": "Subagente sin acceso al repositorio; recibió solo los anclajes actuales con sus notas, REGLA_FORMAL y REGLA_CIMA copiados de codebook.ts, las instrucciones del README de codificaciones, el nombre de la organización y los títulos y URL de las fuentes de la ficha. Cada código cita una fuente abierta en la sesión o se marca «Sin fuente verificable». El PDF de estatutos no lo leía WebFetch (binario); se leyó descargándolo de la web y convirtiéndolo a texto en tubería (curl | pdftotext), sin abrir archivos del disco.",
+  "fuentes_consultadas": [
+    {
+      "t": "Estatutos y Reglamento de Congresos de la CGT (XIX Congreso, Zaragoza 2022)",
+      "u": "https://cgt.es/wp-content/uploads/2008/04/Estatutos-CGTactualizados-XIX-congreso-1.pdf",
+      "lista_inicial": true,
+      "leida": true
+    },
+    {
+      "t": "El Salto — CGT renueva su Secretariado Permanente (2022)",
+      "u": "https://www.elsaltodiario.com/cgt/renueva-secretariado-permanente-candidatura-miguel-fadrique",
+      "lista_inicial": true,
+      "leida": true
+    },
+    {
+      "t": "El Salto — La unidad del anarcosindicalismo es acción conjunta (opinión, 2025)",
+      "u": "https://www.elsaltodiario.com/opinion/unidad-del-anarcosindicalismo-es-accion-conjunta",
+      "lista_inicial": true,
+      "leida": true
+    },
+    {
+      "t": "Acuerdos del Pleno Confederal Ordinario de Alicante 2011 (punto «Liberaciones en la CGT»)",
+      "u": "https://cgt.es/wp-content/uploads/2012/03/Acuerdos_Pleno_Alicante_2011_baja.pdf",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "CGT — Manual Señas de Identidad de CGT (Secretaría de Formación)",
+      "u": "https://cgt.es/wp-content/uploads/2008/07/05._MANUAL_SENAS_DE_IDENTIDAD_DE_CGT.pdf",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "CGT Valencia — La CGT por dentro: el anarcosindicalismo en acción",
+      "u": "https://www.cgtvalencia.org/wp-content/uploads/2023/11/LA-CGT-POR-DENTRO.pdf",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "Federación Anarquista — CGT en la encrucijada ante el XX Congreso Confederal",
+      "u": "https://www.federacionanarquista.net/cgt-en-la-encrucijada-ante-el-xx-congreso-confederal",
+      "lista_inicial": false,
+      "leida": false
+    },
+    {
+      "t": "FESIBAC-CGT — Comunicado conjunto de entes de la CGT (2025)",
+      "u": "https://fesibac.org/2025/03/23/comunicado-conjunto-de-entes-de-la-cgt/",
+      "lista_inicial": false,
+      "leida": false
+    },
+    {
+      "t": "CGT — Guía de Acción Sindical",
+      "u": "https://www.inventati.org/ingobernables/textos/anarquistas/Guia_de_Accion_Sindical.pdf",
+      "lista_inicial": false,
+      "leida": false
+    }
+  ],
+  "codigos": {
+    "mandato": [
+      4,
+      "Reglamento de Congresos art. 6 (delegaciones directas de los sindicatos elegidas en su Asamblea) y art. 9 (las delegaciones entregan «la copia de los acuerdos que traigan para cada uno de los puntos del Orden del día», remitidos 5 días antes); Estatutos art. 17 (Asamblea General preceptiva para asistir a Plenos y Congresos) y art. 38 (Pleno Confederal con delegaciones de los Plenos territoriales). https://cgt.es/wp-content/uploads/2008/04/Estatutos-CGTactualizados-XIX-congreso-1.pdf",
+      "alta"
+    ],
+    "revocabilidad": [
+      1,
+      "Entre 0 y 1: los Estatutos no prevén revocar a la Secretaría General ni al Secretariado Permanente; su mandato es de cuatro años (art. 50) y lo elige el Congreso (art. 49). Solo un Congreso Extraordinario, convocable por sindicatos que sumen 1/3 de los votos (Reglamento art. 1; Estatutos art. 35), podría hacerlo, y el Pleno solo elige «excepcionalmente» o por dimisión (arts. 44 y 49). https://cgt.es/wp-content/uploads/2008/04/Estatutos-CGTactualizados-XIX-congreso-1.pdf",
+      "media"
+    ],
+    "rotacion": [
+      3,
+      "Estatutos art. 50: cuatro años de permanencia para el Secretariado Permanente, «incluida la Secretaría General», sin poder «repetirse más de dos mandatos seguidos», o sea un máximo de 8 años. https://cgt.es/wp-content/uploads/2008/04/Estatutos-CGTactualizados-XIX-congreso-1.pdf",
+      "alta"
+    ],
+    "profesionalizacion": [
+      3,
+      "Entre 2 y 3: los Estatutos no regulan la remuneración. El acuerdo del Pleno Confederal de Alicante 2011 («Liberaciones en la CGT») admite liberaciones totales o parciales, a cargo de la Organización o de acuerdos de empresa, y ata la del liberado total «al límite estatutario establecido para la permanencia en un cargo» o a la duración del cometido. https://cgt.es/wp-content/uploads/2012/03/Acuerdos_Pleno_Alicante_2011_baja.pdf",
+      "media"
+    ],
+    "eleccion_direccion": [
+      3,
+      "Entre 2 y 3: elige el Congreso de delegaciones directas de sindicatos que llevan acuerdos de asamblea (Reglamento arts. 6 y 9). Las candidaturas abiertas, propuestas por los sindicatos, se conocen 15 días antes y se votan nominalmente «secretaría por secretaría», resultando elegida la más votada (Reglamento arts. 26-27; Estatutos art. 49). https://cgt.es/wp-content/uploads/2008/04/Estatutos-CGTactualizados-XIX-congreso-1.pdf",
+      "media"
+    ],
+    "agenda_base": [
+      2,
+      "Entre 2 y 3: la Secretaría General envía un orden del día provisional «con arreglo a su criterio», los sindicatos tienen 15 días para modificarlo o proponer puntos nuevos, y el Comité Confederal decide el definitivo, que debe incluir los puntos propuestos por la mayoría de los sindicatos (Reglamento arts. 2 y 4). Cualquier afiliada o sindicato puede presentar ponencias (art. 5), y en el Pleno el orden del día lo elabora el Comité Confederal (Estatutos art. 37). https://cgt.es/wp-content/uploads/2008/04/Estatutos-CGTactualizados-XIX-congreso-1.pdf",
+      "alta"
+    ],
+    "pluralismo": [
+      2,
+      "Hay enmiendas y votos particulares defendidos por el sindicato promotor (Reglamento arts. 20-25; Estatutos art. 43), pero el Secretariado se elige por mayoría secretaría por secretaría, sin proporcionalidad (Reglamento art. 27). La representación de minorías del 30 % solo cabe en ámbitos territoriales (Disp. final tercera), no hay corrientes reconocidas y el art. 32 prohíbe a los cargos manifestar públicamente posiciones contra los acuerdos. https://cgt.es/wp-content/uploads/2008/04/Estatutos-CGTactualizados-XIX-congreso-1.pdf",
+      "alta"
+    ],
+    "autonomia_base": [
+      3,
+      "Estatutos art. 8: los entes tienen «la mayor autonomía posible» sin contradecir Estatutos ni acuerdos generales. El art. 17 hace de la Asamblea del sindicato su máximo órgano y la Disp. final tercera dice que «siempre primará la autonomía de decisión y actuación del Sindicato». No llega a 4 porque el art. 32 permite al Secretariado Permanente y al Comité Confederal cesar cautelarmente a cargos de cualquier nivel. https://cgt.es/wp-content/uploads/2008/04/Estatutos-CGTactualizados-XIX-congreso-1.pdf",
+      "alta"
+    ],
+    "brecha_formal_real": [
+      1,
+      "Estimación con poca base: El Salto (2022) describe una elección competida entre dos candidaturas (52 % frente a 46 %) con renovación completa del Secretariado, coherente con la norma (https://www.elsaltodiario.com/cgt/renueva-secretariado-permanente-candidatura-miguel-fadrique). El acuerdo de Alicante 2011 reconoce el riesgo de mal uso de las liberaciones (https://cgt.es/wp-content/uploads/2012/03/Acuerdos_Pleno_Alicante_2011_baja.pdf). No pude leer las fuentes críticas internas (Federación Anarquista, FESIBAC).",
+      "baja"
+    ],
+    "regla_decision": [
+      3,
+      "Entre 3 y 4: en el Comité Confederal «sólo se recurrirá al uso del voto proporcional cuando se haya demostrado la incapacidad para establecer un acuerdo general de consenso» (Estatutos art. 45). En el Congreso, en cambio, decide la mayoría de los votos emitidos, ponderados por afiliación, salvo 2/3 para reformar Estatutos (Reglamento arts. 8, 24 y 25). https://cgt.es/wp-content/uploads/2008/04/Estatutos-CGTactualizados-XIX-congreso-1.pdf",
+      "alta"
+    ],
+    "capacidad_ejecutiva": [
+      2,
+      "Entre 2 y 3: el Secretariado Permanente es el «máximo órgano de gestión», que «coordina y desarrolla el trabajo del Comité Confederal a fin de que los acuerdos y decisiones de la Organización se lleven a cabo» (Estatutos art. 47), y la Secretaría General tiene la representación legal (art. 51). No le atribuyen fijar posiciones nuevas; eso corresponde a Congreso, Pleno y Comité Confederal (arts. 35, 36 y 45). https://cgt.es/wp-content/uploads/2008/04/Estatutos-CGTactualizados-XIX-congreso-1.pdf",
+      "media"
+    ],
+    "estructura_federal": [
+      3,
+      "Sindicatos con asamblea soberana que se federan en Federaciones Locales, Confederaciones Territoriales y Federaciones Sectoriales de estructura similar (Estatutos arts. 9, 17 y 23). La adhesión de un sindicato nuevo la decide el Secretariado de la Federación Local o Territorial y la resuelve definitivamente la Plenaria del Comité Confederal (art. 14), y las normas de cada ente se adaptan a las generales (arts. 18 y 20). https://cgt.es/wp-content/uploads/2008/04/Estatutos-CGTactualizados-XIX-congreso-1.pdf",
+      "alta"
+    ],
+    "coste_coordinacion": [
+      3,
+      "Hay delegación con continuidad: Congreso cada cuatro años con delegaciones mandatadas, Pleno Confederal al menos cada dos años con delegaciones territoriales, Comité Confederal cada dos meses y un Secretariado Permanente estable (Estatutos arts. 35, 36, 46 y 47). Antes de plenos y congresos hacen falta asambleas de sindicato (art. 17), pero no para cada decisión. https://cgt.es/wp-content/uploads/2008/04/Estatutos-CGTactualizados-XIX-congreso-1.pdf",
+      "media"
+    ]
+  },
+  "notas": "Cima: según REGLA_CIMA la cima es la Secretaría General, porque se vota aparte («secretaría por secretaría», Reglamento art. 27) y abre y representa al Secretariado Permanente; en la práctica las reglas de mandato y rotación son las mismas para todo el Secretariado (art. 50). Anclajes ambiguos: (1) revocabilidad: no hay ninguna cláusula de revocación, y no está claro si un Congreso Extraordinario convocable por 1/3 cuenta como el anclaje 1 cuando no se le atribuye expresamente esa función (0 o 1). (2) eleccion_direccion: un Congreso de delegaciones directas que llevan acuerdos escritos encaja tanto en «Congreso de delegados» (2) como en «pleno con mandato» (3); la nota de revocabilidad sugiere tratarlo como la base. (3) profesionalizacion: los Estatutos callan y las liberaciones existen pero están limitadas en el tiempo; los anclajes 2 y 3 no son excluyentes. (4) regla_decision: el consenso previo rige en el Comité Confederal y la mayoría en el Congreso; no está claro qué órgano codificar. (5) agenda_base: la dirección redacta, la base propone puntos y el Comité Confederal filtra con la obligación de incluir lo que pida la mayoría; queda entre 1, 2 y 3. (6) capacidad_ejecutiva: el Secretariado y el Comité Confederal forman un continuo; si la cima fuera el Comité Confederal, que interpreta los Estatutos por 2/3 hasta el siguiente Pleno, sería 3."
+}

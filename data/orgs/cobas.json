@@ -147,8 +147,8 @@
       "alta"
     ],
     "brecha_formal_real": [
-      1,
-      "Sin fuente verificable: organización pequeña con reglas garantistas. Estimación sin fuente citada.",
+      0,
+      "Sin fuente verificable: organización pequeña con reglas garantistas. Estimación sin fuente citada. Sin fuente, el valor se rebaja un punto (1 → 0).",
       "baja"
     ],
     "regla_decision": [

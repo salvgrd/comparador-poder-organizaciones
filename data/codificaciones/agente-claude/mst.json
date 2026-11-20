@@ -1,0 +1,160 @@
+{
+  "org_id": "mst",
+  "codificador": {
+    "id": "agente-claude",
+    "tipo": "ia",
+    "nombre": "Claude (subagente a ciegas)",
+    "modelo": "claude-opus-5-5"
+  },
+  "fecha": "2026-11-20",
+  "a_ciegas": true,
+  "notas_ceguera": "Subagente sin acceso al repositorio; recibió solo los anclajes actuales con sus notas, REGLA_FORMAL y REGLA_CIMA copiados de codebook.ts, las instrucciones del README de codificaciones, el nombre de la organización y los títulos y URL de las fuentes de la ficha. Cada código cita una fuente abierta en la sesión o se marca «Sin fuente verificable».",
+  "fuentes_consultadas": [
+    {
+      "t": "MST — Nossa organização",
+      "u": "https://mst.org.br/quem-somos/",
+      "lista_inicial": true,
+      "leida": true
+    },
+    {
+      "t": "Grupo Animal — Zapatistas a 30 años (trata del EZLN; no menciona al MST)",
+      "u": "https://grupoanimal.mx/sociedad/zapatistas-30-anos-ezln-poblaciones-chiapas",
+      "lista_inicial": true,
+      "leida": true
+    },
+    {
+      "t": "IHU Unisinos / Instituto Tricontinental — MST, 40: muito além das ocupações (2024)",
+      "u": "https://ihu.unisinos.br/categorias/638581-mst-40-muito-alem-das-ocupacoes",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "Miranda y Cunha — A estrutura organizacional do MST: lógica política e lógica prática, Caderno CRH 26(68), 2013 (SciELO)",
+      "u": "https://www.scielo.br/j/ccrh/a/m5mjPpcTgND4GWp6bjyFzfh/?lang=pt",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "Wikipedia (en) — Landless Workers' Movement (primeros 100.000 caracteres)",
+      "u": "https://en.wikipedia.org/wiki/Landless_Workers%27_Movement",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "Wikipedia (pt) — Movimento dos Trabalhadores Rurais Sem Terra (lectura parcial)",
+      "u": "https://pt.wikipedia.org/wiki/Movimento_dos_Trabalhadores_Rurais_Sem_Terra",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "Brasil de Fato — MST da Paraíba realiza o 34º Encontro Estadual (2024)",
+      "u": "https://brasildefato.com.br/2024/12/17/mst-da-paraiba-realiza-o-34-encontro-estadual-reforma-agraria-popular-reflorestar-para-o-brasil-alimentar/",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "Jus.com.br — Personalidade jurídica do MST (2008; cita las Normas Gerais, caps. X y XIV)",
+      "u": "https://jus.com.br/artigos/11759/personalidade-juridica-do-mst-caminhos-para-sua-responsabilizacao-civil",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "Redalyc — PDF de Miranda y Cunha (2013)",
+      "u": "https://www.redalyc.org/pdf/3476/347632191010.pdf",
+      "lista_inicial": false,
+      "leida": false
+    },
+    {
+      "t": "Fernandes, B. M. — tesis (UNESP/NERA), PDF",
+      "u": "https://fct.unesp.br/Home/Pesquisa/nera/tese_bmf.pdf",
+      "lista_inicial": false,
+      "leida": false
+    },
+    {
+      "t": "Cadernos do CEAS — artículo sobre Navarro y el MST, PDF",
+      "u": "https://portaldeperiodicos.ucsal.br/index.php/cadernosdoceas/article/download/84/65/172",
+      "lista_inicial": false,
+      "leida": false
+    },
+    {
+      "t": "Harnecker — libro sobre el MST, PDF (marxists.org)",
+      "u": "https://www.marxists.org/espanol/harnecker/98479.pdf",
+      "lista_inicial": false,
+      "leida": false
+    },
+    {
+      "t": "CES Coimbra — réplica de Navarro (página de error)",
+      "u": "https://ces.uc.pt/emancipa/research/en/ft/treplica.html",
+      "lista_inicial": false,
+      "leida": false
+    }
+  ],
+  "codigos": {
+    "mandato": [
+      2,
+      "IHU/Tricontinental (2024): las opiniones de los núcleos de base «são levadas por seus coordenadores» y, si no hay consenso, la cuestión «retorna para os núcleos» (https://ihu.unisinos.br/categorias/638581-mst-40-muito-alem-das-ocupacoes). Es un mandato habitual. No encontré norma que lo haga imperativo: las Normas Gerais no se pudieron leer.",
+      "media"
+    ],
+    "revocabilidad": [
+      null,
+      "Sin fuente verificable: ninguna fuente abierta describe cómo se revoca la Direção Nacional. Solo consta que todas las instancias tienen «mandatos de dois anos» (https://ihu.unisinos.br/categorias/638581-mst-40-muito-alem-das-ocupacoes).",
+      "baja"
+    ],
+    "rotacion": [
+      1,
+      "Sin fuente verificable: los mandatos de todas las instancias, incluida la Direção Nacional, duran dos años (https://ihu.unisinos.br/categorias/638581-mst-40-muito-alem-das-ocupacoes), pero no encontré límite de reelección. Wikipedia sitúa a Stédile en la coordinación nacional durante largo tiempo (https://en.wikipedia.org/wiki/Landless_Workers%27_Movement). Entre 0 y 1: lo trato como mandato prorrogable sin tope.",
+      "baja"
+    ],
+    "profesionalizacion": [
+      null,
+      "Sin fuente verificable: ninguna fuente abierta trata la remuneración ni la liberación de dirigentes. Las Normas Gerais (cap. X, Das Finanças, citado en https://jus.com.br/artigos/11759/personalidade-juridica-do-mst-caminhos-para-sua-responsabilizacao-civil) solo hablan de bienes a nombre de ANCA.",
+      "baja"
+    ],
+    "eleccion_direccion": [
+      1,
+      "Según Wikipedia (https://en.wikipedia.org/wiki/Landless_Workers%27_Movement), cada núcleo elige a una mujer y a un hombre, los representantes eligen la instancia regional y esta la estatal. El nivel nacional son unas 60 personas, unas 2 por estado. Son tres niveles o más de elección indirecta. Miranda y Cunha (2013) añaden que la dirección estatal es «indicada pela base» en las instancias de representación (https://www.scielo.br/j/ccrh/a/m5mjPpcTgND4GWp6bjyFzfh/?lang=pt).",
+      "media"
+    ],
+    "agenda_base": [
+      2,
+      "Los núcleos discuten «as necessidades de cada área» (https://mst.org.br/quem-somos/) y sus opiniones suben por los coordinadores (https://ihu.unisinos.br/categorias/638581-mst-40-muito-alem-das-ocupacoes). Ninguna fuente dice quién fija el orden del día del Congreso o del Encontro Nacional, así que es una estimación de régimen mixto.",
+      "baja"
+    ],
+    "pluralismo": [
+      1,
+      "Según IHU/Tricontinental (https://ihu.unisinos.br/categorias/638581-mst-40-muito-alem-das-ocupacoes), se vota raramente, se busca el consenso y la «Disciplina é este cumprimento das decisões coletivas». No consta ningún cauce para minorías ni ninguna elección competitiva, por lo que el máximo sería 2. Entre 1 y 2: la norma de disciplina pesa más.",
+      "baja"
+    ],
+    "autonomia_base": [
+      2,
+      "Miranda y Cunha (2013, nota 1, https://www.scielo.br/j/ccrh/a/m5mjPpcTgND4GWp6bjyFzfh/?lang=pt): el modelo de 2003 es nacional, pero «ficou a critério dos Estados» adoptarlo, y cada estado organiza sus brigadas según su realidad. En cambio, el Congreso Nacional es el «maior espaço de decisões» (https://mst.org.br/quem-somos/) y rige la disciplina de las decisiones colectivas. Lo resultante es autonomía relativa.",
+      "media"
+    ],
+    "brecha_formal_real": [
+      2,
+      "Miranda y Cunha (2013, https://www.scielo.br/j/ccrh/a/m5mjPpcTgND4GWp6bjyFzfh/?lang=pt) ven una separación entre la estructura formal y el cuerpo social que solo se compensa en rituales como la mística, y hallan «desigualdades no exercício de poder». Wikipedia habla de un «dispersed group of some 15 leaders» (https://en.wikipedia.org/wiki/Landless_Workers%27_Movement). Entre 2 y 3: la desviación es documentada pero moderada.",
+      "media"
+    ],
+    "regla_decision": [
+      2,
+      "IHU/Tricontinental (https://ihu.unisinos.br/categorias/638581-mst-40-muito-alem-das-ocupacoes): «Raramente há votações no MST, e o mais comum é procurar construir consensos». Sin consenso, la cuestión vuelve a los núcleos. Miranda y Cunha recogen una «votação geral» en asamblea (https://www.scielo.br/j/ccrh/a/m5mjPpcTgND4GWp6bjyFzfh/?lang=pt). Entre 1 y 2: el voto existe como reserva.",
+      "media"
+    ],
+    "capacidad_ejecutiva": [
+      3,
+      "El Congreso se reúne cada unos cinco años y el Encontro Nacional cada dos, para evaluar y actualizar lo deliberado (https://mst.org.br/quem-somos/). Entre ambos actúa la dirección nacional, que por ejemplo coordinó las candidaturas de 2022 (https://pt.wikipedia.org/wiki/Movimento_dos_Trabalhadores_Rurais_Sem_Terra). No encontré norma sobre ratificación. Entre 3 y 4.",
+      "baja"
+    ],
+    "estructura_federal": [
+      3,
+      "La estructura de núcleos y coordinaciones paritarias «se repete em nível regional, estadual e nacional» (https://mst.org.br/quem-somos/). El modelo organizativo, sin embargo, lo define el centro y los estados deciden si lo adoptan (Miranda y Cunha 2013, https://www.scielo.br/j/ccrh/a/m5mjPpcTgND4GWp6bjyFzfh/?lang=pt). No consta que cada nivel tenga una asamblea soberana.",
+      "media"
+    ],
+    "coste_coordinacion": [
+      3,
+      "Hay delegación en cadena (núcleo, brigada, estado, nación) con coordinaciones colectivas de mandato bienal (https://ihu.unisinos.br/categorias/638581-mst-40-muito-alem-das-ocupacoes) y sectores permanentes de formación, finanzas, etc. (https://mst.org.br/quem-somos/). Las decisiones no pasan por asamblea directa.",
+      "media"
+    ]
+  },
+  "notas": "El MST no tiene personalidad jurídica ni estatutos públicos. Sus Normas Gerais solo aparecen citadas de forma parcial (caps. X y XIV), así que la REGLA_FORMAL tuvo que apoyarse en descripciones del propio movimiento y en fuentes secundarias. Cima: la Direção/Coordenação Nacional, colectiva y sin presidente («O MST não possui e nunca possuiu uma figura de Presidente»). Anclajes ambiguos: rotacion (hay mandatos bienales pero no se sabe si hay límite de reelección; entre 0 y 1); eleccion_direccion (la elección indirecta a tres o más niveles da 1, aunque en cada nivel elija un colectivo de base: 1 o 2); pluralismo (sin fracciones formalmente prohibidas pero con disciplina de consenso; entre 1 y 2); regla_decision (consenso, con voto ocasional; entre 1 y 2); capacidad_ejecutiva (no hay norma pública sobre ratificación; entre 3 y 4); estructura_federal (la estructura se replica en todos los niveles, pero el modelo lo fija el centro y los estados lo adoptan voluntariamente; entre 2 y 3). revocabilidad y profesionalizacion quedan en null por falta de fuentes; varios PDF académicos (Fernandes, Harnecker, Cadernos do CEAS) no se pudieron leer."
+}

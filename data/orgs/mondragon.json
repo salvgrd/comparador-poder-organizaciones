@@ -83,6 +83,7 @@
       "n": "Comisión Permanente",
       "nivel": 5,
       "tipo": "delegados",
+      "cima": true,
       "elegido_por": [
         "cong"
       ]
@@ -92,7 +93,6 @@
       "n": "Consejo General / Presidencia corporativa",
       "nivel": 6,
       "tipo": "ejecutivo",
-      "cima": true,
       "elegido_por": [
         "cp"
       ]
@@ -114,22 +114,22 @@
     ],
     "revocabilidad": [
       2,
-      "Sin fuente verificable: las normas corporativas (Congreso, Comisión Permanente, Consejo General) no son públicas; no consta quién revoca la Presidencia del Consejo General. Se mantiene 2 (la Comisión Permanente que la designa) como hipótesis.",
+      "La Comisión Permanente (la cima) «gobierna por delegación del Congreso Cooperativo» (web de MONDRAGON, Comisión Permanente), que forman 650 delegados de las cooperativas (web, Congreso Cooperativo); el Consejo General, por debajo, elabora y aplica las estrategias (web, Consejo General). Se trata como el consejo rector de una cooperativa de segundo grado (Ley 11/2019, arts. 149.2 y 151), con el Congreso como su asamblea. La equivalencia es una inferencia: los estatutos de MONDRAGON no son públicos. Por ley, la asamblea puede destituir a los administradores en cualquier sesión, con dos tercios si el punto no está en el orden del día (art. 46.2), y se reúne al menos una vez por ejercicio (art. 35.2). Los congresistas no llevan mandato imperativo normado: órgano delegado que se reúne al menos una vez al año, sin trámite reforzado.",
       "baja"
     ],
     "rotacion": [
       1,
-      "Sin fuente verificable: la Comisión Permanente tendría mandatos de 4 años con renovación por mitades según Bakaikoa et al. (2004), estudio no localizado; no consta límite de reelección para ella ni para la Presidencia del Consejo General. En las cooperativas, la ley permite reelegir al consejo rector por iguales plazos (art. 46.1).",
+      "La Comisión Permanente (la cima) «gobierna por delegación del Congreso Cooperativo» (web de MONDRAGON, Comisión Permanente), que forman 650 delegados de las cooperativas (web, Congreso Cooperativo); el Consejo General, por debajo, elabora y aplica las estrategias (web, Consejo General). Se trata como el consejo rector de una cooperativa de segundo grado (Ley 11/2019, arts. 149.2 y 151), con el Congreso como su asamblea. La equivalencia es una inferencia: los estatutos de MONDRAGON no son públicos. Ley 11/2019, arts. 46.1 y 47.5: mandatos de dos a cinco años, reelegibles indefinidamente salvo que los estatutos digan lo contrario: prorrogable sin tope conocido.",
       "baja"
     ],
     "profesionalizacion": [
-      1,
-      "Sin fuente verificable: gerencia profesional.",
+      2,
+      "La Comisión Permanente (la cima) «gobierna por delegación del Congreso Cooperativo» (web de MONDRAGON, Comisión Permanente), que forman 650 delegados de las cooperativas (web, Congreso Cooperativo); el Consejo General, por debajo, elabora y aplica las estrategias (web, Consejo General). Se trata como el consejo rector de una cooperativa de segundo grado (Ley 11/2019, arts. 149.2 y 151), con el Congreso como su asamblea. La equivalencia es una inferencia: los estatutos de MONDRAGON no son públicos. Ley 11/2019, art. 45.1: el cargo de consejero es gratuito salvo que los estatutos autoricen expresamente su remuneración; la dirección se apodera aparte (art. 43.6) y no puede formar parte del consejo (art. 44.1.d). Cima no remunerada por defecto y una dirección corporativa profesional por debajo: solo algunos cargos liberados.",
       "baja"
     ],
     "eleccion_direccion": [
-      1,
-      "Sin fuente verificable: indirecta a varios niveles: asambleas → consejos rectores → agrupaciones → Comisión Permanente, que designa a la Presidencia del Consejo General. Las normas del Congreso de MONDRAGON no se han leído.",
+      2,
+      "La Comisión Permanente (la cima) «gobierna por delegación del Congreso Cooperativo» (web de MONDRAGON, Comisión Permanente), que forman 650 delegados de las cooperativas (web, Congreso Cooperativo); el Consejo General, por debajo, elabora y aplica las estrategias (web, Consejo General). Se trata como el consejo rector de una cooperativa de segundo grado (Ley 11/2019, arts. 149.2 y 151), con el Congreso como su asamblea. La equivalencia es una inferencia: los estatutos de MONDRAGON no son públicos. La elige el Congreso de delegados de las cooperativas (Ley 11/2019, art. 43.3, por el art. 151). El art. 149.2 permite también que las entidades socias se agrupen para designar consejeros, lo que añadiría un nivel.",
       "baja"
     ],
     "agenda_base": [
@@ -148,8 +148,8 @@
       "alta"
     ],
     "brecha_formal_real": [
-      3,
-      "Sin fuente verificable: tecnocracia gerencial: la información y las propuestas vienen de las gerencias, los gerentes se proponen en cascada y la participación en las Juntas es baja; los trabajadores de las filiales no son socios. Se citaban fuentes académicas que no están en la ficha.",
+      2,
+      "Sin fuente verificable: tecnocracia gerencial: la información y las propuestas vienen de las gerencias, los gerentes se proponen en cascada y la participación en las Juntas es baja; los trabajadores de las filiales no son socios. Se citaban fuentes académicas que no están en la ficha. Sin fuente, el valor se rebaja un punto (3 → 2).",
       "baja"
     ],
     "regla_decision": [
@@ -159,7 +159,7 @@
     ],
     "capacidad_ejecutiva": [
       3,
-      "Sin fuente verificable: la Ley 11/2019, art. 154.1, permite a la cabeza de grupo emitir instrucciones de obligado cumplimiento, pero no consta qué órgano de MONDRAGON las emite ni con qué ratificación. Se mantiene 3 como hipótesis.",
+      "La Comisión Permanente (la cima) «gobierna por delegación del Congreso Cooperativo» (web de MONDRAGON, Comisión Permanente), que forman 650 delegados de las cooperativas (web, Congreso Cooperativo); el Consejo General, por debajo, elabora y aplica las estrategias (web, Consejo General). Se trata como el consejo rector de una cooperativa de segundo grado (Ley 11/2019, arts. 149.2 y 151), con el Congreso como su asamblea. La equivalencia es una inferencia: los estatutos de MONDRAGON no son públicos. La Comisión Permanente impulsa y controla la ejecución de las políticas y acuerdos del Congreso, que fija los criterios estratégicos (web, Comisión Permanente y Congreso Cooperativo). Por ley, el consejo rector tiene la gestión y las facultades no reservadas (arts. 42.1 y 149.2), pero el examen de la gestión y las cuentas son de la asamblea (art. 33.3.c) y no se delegan (art. 48.5): decide entre congresos, y lo estratégico y las cuentas pasan por el Congreso.",
       "baja"
     ],
     "freq_soberano_meses": [
@@ -214,6 +214,18 @@
     {
       "t": "Mondragon — Gobierno corporativo",
       "u": "https://www.mondragon-corporation.com/"
+    },
+    {
+      "t": "MONDRAGON — Comisión Permanente (web corporativa, 2010; copia en web.archive.org)",
+      "u": "http://web.archive.org/web/20100216192652/http://www.mondragon-corporation.com:80/CAS/Qui%C3%A9nes-Somos/Estructura-organizativa/Comision-Permanente.aspx"
+    },
+    {
+      "t": "MONDRAGON — Congreso Cooperativo (web corporativa, 2010; copia en web.archive.org)",
+      "u": "http://web.archive.org/web/20100216192659/http://www.mondragon-corporation.com:80/CAS/Qui%C3%A9nes-Somos/Estructura-organizativa/Congreso-Cooperativo.aspx"
+    },
+    {
+      "t": "MONDRAGON — Consejo General (web corporativa, 2010; copia en web.archive.org)",
+      "u": "http://web.archive.org/web/20100216192705/http://www.mondragon-corporation.com:80/CAS/Qui%C3%A9nes-Somos/Estructura-organizativa/Consejo-General.aspx"
     }
   ],
   "confianza": "media"

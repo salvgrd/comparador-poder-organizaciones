@@ -231,25 +231,32 @@ export function MetodoPage(handle: Handle<{ pesos: Pesos; guardado: string | nul
               <ul>
                 <li>La CNT y la CGT están codificadas a partir de sus estatutos vigentes (2022), y el Sindicato de Inquilinas de Madrid a partir de su organigrama oficial (2025). El resto, a partir de fuentes secundarias. Revisa las marcas de confianza: casi un cuarto de los códigos son de confianza baja.</li>
                 <li>
-                  Una sola persona ha codificado todas las fichas. Como control provisional, seis organizaciones (CNT, CCOO,
-                  IWW, Podemos, DAANES y Mondragon) se han recodificado a ciegas con un agente de IA que solo recibió el
-                  libro de códigos vigente, el nombre y las fuentes, y que tuvo que citar para cada código una fuente que
-                  hubiera abierto. Coincidieron exactamente en el 72 % de los códigos y a ±1 punto en el 99 %. El alfa de
-                  Krippendorff ordinal fue 0,88 en las 13 variables manuales y 0,91 en las de control de base. El índice
-                  de control de base cambió de media menos de 3 puntos (7 como máximo, en Podemos) y solo una vez dos
-                  codificaciones se separaron 2 puntos. Revocabilidad, pluralismo, estructura replicable y, sobre todo,
-                  capacidad ejecutiva no llegaban al umbral habitual de 0,667; sus anclajes se han reescrito después, y
-                  la próxima comprobación se hará con otras seis organizaciones para no ajustar los anclajes a estas.
-                  Con seis casos estos valores son muy inciertos y solo sirven para señalar anclajes ambiguos. Además, la
-                  codificación de referencia de la IWW, Mondragon y DAANES se revisó usando las citas de una codificación
-                  anterior del mismo agente; sin esas tres organizaciones el alfa es 0,92, pero con solo tres casos. Un
-                  agente de IA es un control más débil que una segunda persona: usa las mismas fuentes y puede compartir
-                  sesgos de lectura. Hace falta una segunda codificación humana; cualquiera puede hacerla siguiendo{' '}
-                  <code>data/codificaciones/README.md</code>.
+                  Una sola persona ha codificado todas las fichas. Como control provisional, se han recodificado a ciegas
+                  con un agente de IA que solo recibió el libro de códigos vigente, el nombre y las fuentes, y que tuvo
+                  que citar para cada código una fuente que hubiera abierto. Tras reescribir los anclajes de
+                  revocabilidad, pluralismo, estructura replicable y capacidad ejecutiva, la comprobación se repitió con
+                  seis organizaciones distintas de las usadas para ajustarlos (CGT, PSOE, PAH, Fagor, SYRIZA y MST).
+                  Coincidieron exactamente en el 57 % de los códigos y a ±1 punto en el 96 %. El alfa de Krippendorff
+                  ordinal fue 0,77 en las 13 variables manuales y 0,79 en las de control de base, por debajo de lo
+                  obtenido con las seis primeras (0,89): aquel resultado estaba inflado por haber ajustado los anclajes
+                  sobre esos mismos casos. El índice de control de base cambió de media 6 puntos, y 12 o 13 en la CGT y
+                  Fagor. Pluralismo y estructura replicable superan ya el umbral de 0,667; revocabilidad, capacidad
+                  ejecutiva, agenda desde la base y brecha formal-real no. La mayor fuente de desacuerdo era qué órgano
+                  cuenta como cima en cooperativas y movimientos sin ejecutivo; en las cooperativas se ha fijado después
+                  el Consejo Rector. Con seis casos estos valores son muy inciertos y solo sirven para señalar anclajes
+                  ambiguos. Un agente de IA es un control más débil que una segunda persona: usa las mismas fuentes y
+                  puede compartir sesgos de lectura. Hace falta una segunda codificación humana; cualquiera puede
+                  hacerla siguiendo <code>data/codificaciones/README.md</code>.
                 </li>
                 <li>La muestra no es representativa: la mayoría de las organizaciones son del Estado español y de izquierda, hay solo dos cooperativas y solo organizaciones que siguen existiendo. No sirve para sacar medias por familia.</li>
                 <li>Se comparan con la misma escala sindicatos, partidos, una fábrica recuperada y administraciones territoriales con estructura militar (EZLN, DAANES). Compara dentro de cada familia antes de comparar entre familias.</li>
-                <li>Los estatutos describen el poder formal. La variable «brecha formal-real» es un juicio cualitativo, es el código que más mueve el ranking y ninguna organización lo tiene con confianza alta. Conviene contrastarla con datos de rotación, participación y redes.</li>
+                <li>
+                  Los estatutos describen el poder formal. La «brecha formal-real» es un juicio cualitativo y el código
+                  que más mueve el ranking. En 11 organizaciones (Anticapitalistas, CGT, CNT, co.bas, IWW, MONDRAGON,
+                  MST, PAH, PCTE, PSOE y Zanón) no tiene fuente verificable: se marca así, con confianza baja, y su
+                  valor se ha rebajado un punto para no penalizar sin pruebas. Eso sube su control de base; en la CNT,
+                  la brecha queda en 0. Conviene contrastarla con datos de rotación, participación y redes.
+                </li>
                 <li>Varias organizaciones no publican su afiliación (PCTE, Anticapitalistas, CNT, co.bas, Podemos, PSOE): su tamaño es una estimación. El de EZLN y DAANES es población y el del MST, familias; ninguno se puntúa.</li>
                 <li>El tramo de más de 300 afiliaciones del Congreso de la CGT («1 voto por cada 100 o fracción») se ha leído como 7 votos más 1 por cada 100 adicionales, para que la tabla no decrezca.</li>
               </ul>

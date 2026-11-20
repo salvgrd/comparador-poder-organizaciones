@@ -1,0 +1,160 @@
+{
+  "org_id": "psoe",
+  "codificador": {
+    "id": "agente-claude",
+    "tipo": "ia",
+    "nombre": "Claude (subagente a ciegas)",
+    "modelo": "claude-opus-5-5"
+  },
+  "fecha": "2026-11-20",
+  "a_ciegas": true,
+  "notas_ceguera": "Subagente sin acceso al repositorio; recibió solo los anclajes actuales con sus notas, REGLA_FORMAL y REGLA_CIMA copiados de codebook.ts, las instrucciones del README de codificaciones, el nombre de la organización y los títulos y URL de las fuentes de la ficha. Cada código cita una fuente abierta en la sesión o se marca «Sin fuente verificable».",
+  "fuentes_consultadas": [
+    {
+      "t": "PSOE — Estatutos Federales (40º Congreso, 2021) [texto leído a través del extractor r.jina.ai, porque WebFetch directo devolvía el PDF en binario]",
+      "u": "https://www.politicalpartydb.org/wp-content/uploads/2025/06/SPAIN_PSOE_2021.pdf",
+      "lista_inicial": true,
+      "leida": true
+    },
+    {
+      "t": "PSOE — Estatutos Federales 41º Congreso (2024), copia de web.archive.org (bloqueada para la herramienta; el original en psoe.es devolvió una página vacía)",
+      "u": "https://web.archive.org/web/20261008122426/https://www.psoe.es/media-content/2024/12/Estatutos-Federales-41%C2%BA-CF.pdf",
+      "lista_inicial": true,
+      "leida": false
+    },
+    {
+      "t": "PSOE — Estatutos y reglamentos federales (transparencia), copia de web.archive.org (bloqueada; el original devolvió una página vacía)",
+      "u": "https://web.archive.org/web/20260916235233/https://www.psoe.es/transparencia/informacion-politica-organizativa/estatutos-y-reglamentos-federales/",
+      "lista_inicial": true,
+      "leida": false
+    },
+    {
+      "t": "Nueva Tribuna — Nueva Ejecutiva del 41º Congreso (2024)",
+      "u": "https://www.nuevatribuna.es/articulo/actualidad/ejecutiva-psoe/20241201142702233012.html",
+      "lista_inicial": true,
+      "leida": true
+    },
+    {
+      "t": "PSOE — Memoria anual 2025 (cuentas), copia de web.archive.org (bloqueada; el original no devolvió cifras)",
+      "u": "https://web.archive.org/web/20261016222346/https://www.psoe.es/media-content/2026/06/2025-Mermoria-Anual.pdf",
+      "lista_inicial": true,
+      "leida": false
+    },
+    {
+      "t": "ESdiario — El PSOE dispara un 150 % el gasto en retribuir a su cúpula (cifras de la memoria económica 2024-2025)",
+      "u": "https://www.esdiario.com/nacional/260812/195273/crisis-crisis-psoe-dispara-150-gasto-retribuir-cupula.html",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "Vozpópuli — Pedro Sánchez supera los avales (censo de unos 172.000 afiliados)",
+      "u": "https://www.vozpopuli.com/espana/politica/psoe-pedro-sanchez-avales.html",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "Alicante Plaza — El PSOE aprueba sin oposición sus normas internas (Reglamento de 2018)",
+      "u": "https://alicanteplaza.es/alicanteplaza/ElPSOEapruebasinoposicinsusnormasinternasquerefuerzanaSnchezyalamilitancia",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "El Cronista — Investidura: el PSOE está obligado a consultar una coalición con Sumar",
+      "u": "https://www.cronista.com/espana/actualidad-es/investidura-el-psoe-esta-obligado-a-consultar-una-coalicion-con-sumar-pero-no-sobre-pactos-con-junts",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "elDiario.es — Congreso socialista y crítica a la gestión (tribuna)",
+      "u": "https://www.eldiario.es/opinion/tribuna-abierta/congreso-socialista-critica-gestion_129_11882781.html",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "PSOE — Estatutos Federales 2017 (politicalpartydb; PDF ilegible para la herramienta)",
+      "u": "https://www.politicalpartydb.org/wp-content/uploads/2020/11/Spain_PSOE_2017.pdf",
+      "lista_inicial": false,
+      "leida": false
+    },
+    {
+      "t": "PSOE Madrid — Estatutos Federales 41º CF (HTTP 404)",
+      "u": "https://psoemadrid.es/wp-content/uploads/Estatutos-Federales-41o-CF.pdf",
+      "lista_inicial": false,
+      "leida": false
+    },
+    {
+      "t": "PSdeG — Estatutos Federales 40º C (redirige a socialistas.gal, HTTP 404)",
+      "u": "https://socialistas.gal/wp-content/uploads/2024/03/Estatutos-Federales-40C-.pdf",
+      "lista_inicial": false,
+      "leida": false
+    }
+  ],
+  "codigos": {
+    "mandato": [
+      1,
+      "Estatutos Federales 2021, art. 5.2.b: los delegados al Congreso se eligen por voto individual, directo y secreto de la militancia, sin que se norme ningún mandato de su asamblea; solo las enmiendas o ponencias alternativas que logran el 30 % en las convenciones provinciales llegan al Congreso (art. 24.2) (https://www.politicalpartydb.org/wp-content/uploads/2025/06/SPAIN_PSOE_2021.pdf). Entre 0 y 1: el voto es libre, pero la delegación lleva enmiendas acordadas por la base.",
+      "alta"
+    ],
+    "revocabilidad": [
+      1,
+      "Estatutos 2021, art. 6.1.a: la revocación de la Secretaría General elegida en primarias exige que más del 50 % del Comité Federal, en voto secreto y motivado, acuerde iniciarla; después la militancia decide en consulta, en el plazo de un mes, por mayoría de los votos emitidos (https://www.politicalpartydb.org/wp-content/uploads/2025/06/SPAIN_PSOE_2021.pdf). Entre 1 y 3: decide la base, pero solo tras un filtro reforzado de un órgano delegado.",
+      "alta"
+    ],
+    "rotacion": [
+      1,
+      "Estatutos 2021, disposición adicional tercera: ningún cargo orgánico ejecutivo puede ocuparse más de tres mandatos seguidos (con congresos ordinarios cada 3-4 años según el art. 21.6, unos 12 años), salvo la Secretaría General cuando su titular ejerce la Presidencia del Gobierno, de una comunidad autónoma o una alcaldía (https://www.politicalpartydb.org/wp-content/uploads/2025/06/SPAIN_PSOE_2021.pdf). Entre 1 y 2: el tope general es de unos 12 años, pero para la cima en el gobierno se puede prorrogar sin tope.",
+      "alta"
+    ],
+    "profesionalizacion": [
+      0,
+      "La memoria económica, según ESdiario, da una media de 432 trabajadores en 2024 y 422 en 2025, y una partida de «retribuciones a los miembros de la Comisión Ejecutiva Federal con contrato laboral» (https://www.esdiario.com/nacional/260812/195273/crisis-crisis-psoe-dispara-150-gasto-retribuir-cupula.html), frente a unos 172.000 afiliados (https://www.vozpopuli.com/espana/politica/psoe-pedro-sanchez-avales.html): unos 2,5 trabajadores por cada 1.000 afiliados. Los estatutos de 2021 solo exigen «dedicación preferente» a la CEF (art. 35.6) y no prohíben remunerarla (https://www.politicalpartydb.org/wp-content/uploads/2025/06/SPAIN_PSOE_2021.pdf). Entre 0 y 1: no se verificó que toda la dirección cobre.",
+      "media"
+    ],
+    "eleccion_direccion": [
+      2,
+      "Estatutos 2021, art. 5.1.b: la Secretaría General se elige en primarias a doble vuelta por voto directo de la militancia (más del 50 % de los votos válidos, avales del 3 % a nivel federal); la Comisión Ejecutiva la eligen después los delegados del Congreso por sistema mayoritario, a propuesta de esa Secretaría General (https://www.politicalpartydb.org/wp-content/uploads/2025/06/SPAIN_PSOE_2021.pdf). Es un liderazgo unipersonal por voto directo (plebiscitario).",
+      "alta"
+    ],
+    "agenda_base": [
+      1,
+      "Estatutos 2021, art. 24.1: el Comité Federal elabora la ponencia marco y la envía a las agrupaciones; las enmiendas o ponencias alternativas necesitan un 30 % de apoyo en las convenciones provinciales (art. 24.2) o en la comisión (art. 22.5); las iniciativas con el 20 % de las firmas de la militancia son de obligado tratamiento (art. 10.2.l) (https://www.politicalpartydb.org/wp-content/uploads/2025/06/SPAIN_PSOE_2021.pdf).",
+      "alta"
+    ],
+    "pluralismo": [
+      3,
+      "Estatutos 2021, art. 5.2.a: en los comités, la minoría que supere el 20 % de los votos válidos tiene representación proporcional; art. 4: las corrientes de opinión se reconocen solo en el ámbito federal, con autorización del Comité Federal y avales del 5 % de la militancia, sin portavocía, recursos ni representación propias; art. 3.2: «No se permitirá la formación de tendencias organizadas» (https://www.politicalpartydb.org/wp-content/uploads/2025/06/SPAIN_PSOE_2021.pdf). No llega a 4 porque las corrientes no tienen dos de los tres derechos, y la Ejecutiva se elige por sistema mayoritario.",
+      "alta"
+    ],
+    "autonomia_base": [
+      1,
+      "Estatutos 2021, art. 16.2: las agrupaciones actúan con autonomía en su territorio, pero conforme a las resoluciones de los órganos superiores; la CEF puede suspender y dejar sin efecto sus actuaciones (art. 15.1), aprueba las gestoras (art. 6) y puede vetar sus consultas (art. 50.1) (https://www.politicalpartydb.org/wp-content/uploads/2025/06/SPAIN_PSOE_2021.pdf). Entre 1 y 2.",
+      "alta"
+    ],
+    "brecha_formal_real": [
+      2,
+      "La Ejecutiva de 49 miembros propuesta por el secretario general salió con el 90 % de los delegados y unos 9 % de votos en blanco (https://www.nuevatribuna.es/articulo/actualidad/ejecutiva-psoe/20241201142702233012.html); una tribuna crítica señala que el Gobierno controla al partido y no al revés, con ministros al frente de las secretarías de área (https://www.eldiario.es/opinion/tribuna-abierta/congreso-socialista-critica-gestion_129_11882781.html). Se estima una desviación moderada hacia la Secretaría General y el Gobierno, con fuentes escasas y en parte de opinión.",
+      "baja"
+    ],
+    "regla_decision": [
+      4,
+      "Estatutos 2021, art. 28.6: en el Comité Federal «los acuerdos se adoptarán por la mayoría simple de los/as presentes»; la mayoría del Congreso se remite al Reglamento Federal (art. 22.4), y no hay ninguna exigencia previa de consenso (https://www.politicalpartydb.org/wp-content/uploads/2025/06/SPAIN_PSOE_2021.pdf).",
+      "alta"
+    ],
+    "capacidad_ejecutiva": [
+      3,
+      "Estatutos 2021, art. 31: la CEF es «el órgano encargado de aplicar y dirigir la política del Partido», aprueba «todos los documentos políticos» (31.b) y convoca consultas (31.u); pero el Comité Federal define la política entre congresos (27.1.a), le exige responsabilidad política (27.1.c) y recibe su rendición de cuentas anual (arts. 28-29) (https://www.politicalpartydb.org/wp-content/uploads/2025/06/SPAIN_PSOE_2021.pdf). Entre 3 y 4.",
+      "alta"
+    ],
+    "estructura_federal": [
+      3,
+      "Estatutos 2021, art. 14.2: los estatutos de las federaciones «tendrán que ser ratificados por el Comité Federal en el plazo de seis meses» (también el art. 27.1.k); las agrupaciones de distrito requieren el «previo acuerdo favorable» de la CEF (art. 17.2) y las comarcales su autorización (art. 19.2) (https://www.politicalpartydb.org/wp-content/uploads/2025/06/SPAIN_PSOE_2021.pdf).",
+      "alta"
+    ],
+    "coste_coordinacion": [
+      4,
+      "Estatutos 2021: congreso de delegados (art. 21), Comité Federal representativo que se reúne al menos dos veces al año (art. 28) y Ejecutiva permanente que dirige (art. 31) (https://www.politicalpartydb.org/wp-content/uploads/2025/06/SPAIN_PSOE_2021.pdf); a eso se suma un aparato de unos 422 trabajadores según la memoria económica citada por ESdiario (https://www.esdiario.com/nacional/260812/195273/crisis-crisis-psoe-dispara-150-gasto-retribuir-cupula.html).",
+      "alta"
+    ]
+  },
+  "notas": "Los estatutos vigentes del 41º Congreso (2024) no se pudieron leer: web.archive.org está bloqueado para la herramienta y psoe.es devolvía páginas vacías. Por eso todo se codificó con los del 40º Congreso (2021), y algún umbral (por ejemplo, los avales) podría haber cambiado en 2024. Anclajes ambiguos: (1) revocabilidad: la base decide, pero solo si antes lo acuerda más del 50 % del Comité Federal; no está claro si eso es el «trámite reforzado» del anclaje 1 o algo más cercano al 3. (2) rotacion: el límite general de tres mandatos (unos 12 años, anclaje 2) tiene una excepción que deja sin tope a la Secretaría General si está en el Gobierno (anclaje 1). (3) mandato: el voto de los delegados es libre, pero llevan enmiendas aprobadas en convenciones; el anclaje 1 no tiene descripción. (4) eleccion_direccion: hay primarias directas para la Secretaría General y congreso para la Ejecutiva; ambas caen en el anclaje 2. (5) profesionalizacion: no hay datos directos de que toda la dirección cobre; la ratio de aparato supera el umbral. (6) capacidad_ejecutiva: la CEF aprueba documentos políticos sin ratificación, pero por debajo del Comité Federal; está entre 3 y 4."
+}

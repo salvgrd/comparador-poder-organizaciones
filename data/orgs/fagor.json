@@ -68,6 +68,7 @@
       "n": "Consejo Rector",
       "nivel": 2,
       "tipo": "coordinacion",
+      "cima": true,
       "elegido_por": [
         "ag"
       ],
@@ -78,7 +79,6 @@
       "n": "Gerencia / Dirección General",
       "nivel": 3,
       "tipo": "ejecutivo",
-      "cima": true,
       "elegido_por": [
         "cr"
       ],
@@ -110,24 +110,24 @@
       "media"
     ],
     "revocabilidad": [
-      2,
-      "Ley 4/1993, art. 41.6: la dirección-gerencia (la cima) actúa con los poderes que le confiere el Consejo Rector, órgano delegado elegido por la Asamblea (art. 41.3), que la nombra y supervisa (Basterretxea et al. 2022). Sin trámite reforzado.",
+      3,
+      "Ley 4/1993, arts. 31.3.a y 44.2: la Asamblea General de todos los socios nombra y revoca al Consejo Rector (la cima) en votación secreta, y puede destituirlo aunque no figure en el orden del día, con dos tercios de los votos presentes y representados. Si el punto está en el orden del día basta la mayoría ordinaria (art. 36.1), y los socios con más del 10 % de los votos pueden incluirlo (art. 33.4). Fuera de la asamblea ordinaria anual, una extraordinaria exige el 20 % de los votos (art. 33.3): la base, con trámite ordinario en la asamblea anual.",
       "media"
     ],
     "rotacion": [
-      0,
-      "La ley no limita la duración de la dirección y permite reelegir indefinidamente a los consejeros salvo que los estatutos lo impidan (Ley 4/1993, arts. 41.6 y 45.3). Los estatutos de Fagor no son públicos.",
+      1,
+      "Ley 4/1993, arts. 44.1 y 45.3: los consejeros se eligen por el plazo que fijen los estatutos, entre dos y cinco años, y pueden ser reelegidos indefinidamente salvo que los estatutos digan lo contrario. Los estatutos de Fagor no son públicos: prorrogable sin tope conocido.",
       "media"
     ],
     "profesionalizacion": [
-      1,
-      "Dirección profesional con poderes del Consejo Rector (Ley 4/1993, art. 41.6) y comités de nombramientos y retribuciones (Fuente: Basterretxea et al. 2022); el resto son socios trabajadores.",
-      "media"
+      2,
+      "Ley 4/1993, arts. 43, 41.6 y 42.1.d: los estatutos o, en su defecto, la Asamblea pueden remunerar a los consejeros, y el Consejo Rector apodera a directores-gerentes para el tráfico ordinario, que no pueden ser consejeros. La dirección profesional queda por debajo de la cima; si el Consejo Rector cobraba depende de unos estatutos que no son públicos.",
+      "baja"
     ],
     "eleccion_direccion": [
-      3,
-      "El Consejo Rector lo elige la Asamblea de todos los socios por voto secreto (Ley 4/1993, art. 41.3), pero la dirección la nombra el Consejo Rector (Fuente: Basterretxea et al. 2022) y la mayoría de la plantilla no vota.",
-      "media"
+      4,
+      "Ley 4/1993, arts. 31.3.a, 35.1 y 41.3: la Asamblea General de todos los socios, un socio un voto, elige el Consejo Rector (la cima) en votación secreta y puede revocarlo (art. 44.2). Que los trabajadores no socios no voten ya está en el organigrama.",
+      "alta"
     ],
     "agenda_base": [
       1,
@@ -155,8 +155,8 @@
       "alta"
     ],
     "capacidad_ejecutiva": [
-      2,
-      "Ley 4/1993, art. 41.6: los poderes de la dirección-gerencia «solo podrán referirse al tráfico ordinario de la cooperativa»; la gestión y las demás facultades son del Consejo Rector (art. 40) y las decisiones de fondo, de la Asamblea (art. 31).",
+      3,
+      "Ley 4/1993, art. 40.1: el Consejo Rector tiene en exclusiva la gestión y la representación, y todas las facultades no reservadas a otro órgano. Pero la Asamblea examina la gestión y aprueba las cuentas (art. 31.3.c), algo que el Consejo no puede delegar (art. 46.5), y decide los estatutos, las fusiones y toda modificación sustancial (art. 31.3.f-i). Decide entre asambleas y lo de fondo pasa por la Asamblea.",
       "media"
     ],
     "freq_soberano_meses": [
@@ -171,7 +171,7 @@
     ],
     "niveles": [
       2,
-      "Asamblea → Consejo Rector → dirección (Ley 4/1993, arts. 41.3 y 41.6).",
+      "Socias → Asamblea General → Consejo Rector (cima); la gerencia actúa por delegación del Consejo Rector (Ley 4/1993, arts. 40.1, 41.3 y 41.6).",
       "alta"
     ],
     "estructura_federal": [

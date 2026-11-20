@@ -24,7 +24,7 @@ export const REGLA_FORMAL =
 
 /** Qué órgano se marca como «cima» en el organigrama. Las variables que hablan de «la dirección» se refieren a él. */
 export const REGLA_CIMA =
-  'La cima es el órgano ejecutivo permanente de mayor nivel: el que actúa entre reuniones de los órganos colectivos. Si una secretaría general o una presidencia se elige aparte y preside ese órgano, la cima es esa secretaría. Sin ejecutivo, es el órgano de coordinación permanente.'
+  'La cima es el órgano ejecutivo permanente de mayor nivel: el que actúa entre reuniones de los órganos colectivos. Si una secretaría general o una presidencia se elige aparte y preside ese órgano, la cima es esa secretaría. Sin ejecutivo, es el órgano de coordinación permanente. En las cooperativas es el Consejo Rector (o su equivalente en las de segundo grado), aunque delegue la gestión diaria en una gerencia.'
 
 export const VARS: Variable[] = [
   { k: 'mandato', g: 'CB', l: 'Mandato imperativo', a: ['Libre: el delegado vota lo que quiere, o no hay delegados (voto directo sin deliberación previa)', '', 'Mixto, o mandato habitual pero no normado', '', 'Imperativo y normado: lleva acuerdos escritos de su asamblea'] },

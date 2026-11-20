@@ -1,0 +1,118 @@
+{
+  "org_id": "pah",
+  "codificador": {
+    "id": "agente-claude",
+    "tipo": "ia",
+    "nombre": "Claude (subagente a ciegas)",
+    "modelo": "claude-opus-5-5"
+  },
+  "fecha": "2026-11-20",
+  "a_ciegas": true,
+  "notas_ceguera": "Subagente sin acceso al repositorio; recibió solo los anclajes actuales con sus notas, REGLA_FORMAL y REGLA_CIMA copiados de codebook.ts, las instrucciones del README de codificaciones, el nombre de la organización y los títulos y URL de las fuentes de la ficha. Cada código cita una fuente abierta en la sesión o se marca «Sin fuente verificable».",
+  "fuentes_consultadas": [
+    {
+      "t": "PAH — Criterios básicos de funcionamiento de una PAH (líneas rojas, versión 2 de 2022)",
+      "u": "https://afectadosporlahipoteca.com/criterios-basicos-y-protocolos-pah/",
+      "lista_inicial": true,
+      "leida": true
+    },
+    {
+      "t": "PAH — web",
+      "u": "https://afectadosporlahipoteca.com/",
+      "lista_inicial": true,
+      "leida": false
+    },
+    {
+      "t": "Wikipedia (en) — Plataforma de Afectados por la Hipoteca",
+      "u": "https://en.wikipedia.org/wiki/Plataforma_de_Afectados_por_la_Hipoteca",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "Next City — How to organize an assembly-based movement (PAH)",
+      "u": "https://nextcity.org/forefront/view/how-to-organize-an-assembly-based-movement",
+      "lista_inicial": false,
+      "leida": false
+    },
+    {
+      "t": "Arbor (CSIC) — artículo sobre la PAH",
+      "u": "https://arbor.revistas.csic.es/index.php/arbor/article/download/2334/3395/5880",
+      "lista_inicial": false,
+      "leida": false
+    },
+    {
+      "t": "Clivatge (UB) — artículo sobre la PAH (PDF ilegible)",
+      "u": "https://revistes.ub.edu/index.php/clivatge/article/download/10021/12890/16444",
+      "lista_inicial": false,
+      "leida": false
+    }
+  ],
+  "codigos": {
+    "mandato": [
+      2,
+      "Criterios básicos (apdo. «Asambleas estatales y comisiones de trabajo»): cada PAH envía 3-5 portavoces y tiene un voto, y «las personas portavoces deberán informar en sus asambleas sobre los acuerdos», pero no se norma que lleven acuerdos escritos de su asamblea; mandato habitual no normado. https://afectadosporlahipoteca.com/criterios-basicos-y-protocolos-pah/",
+      "media"
+    ],
+    "revocabilidad": [
+      2,
+      "Cima = Comisión Coordinadora Estatal (CCE). Criterios básicos (apdo. «Configuración y funciones de la CCE»): la entrada y salida de miembros «tiene que ser por el hilo estatal a través de la Coordinadora correspondiente» y las faltas reiteradas se elevan a la coordinadora territorial y a la próxima asamblea estatal; no hay procedimiento expreso de revocación. Entre 2 y 3: la sustitución la hace un órgano delegado (coordinadora autonómica) sin trámite reforzado, pero no está regulada como revocación por la base. https://afectadosporlahipoteca.com/criterios-basicos-y-protocolos-pah/",
+      "baja"
+    ],
+    "rotacion": [
+      4,
+      "Criterios básicos: los miembros de la CCE y la portavocía estatal tienen mandato de 1 año más 1 de ratificación (máximo 2 años), con rotación en la salida. https://afectadosporlahipoteca.com/criterios-basicos-y-protocolos-pah/",
+      "alta"
+    ],
+    "profesionalizacion": [
+      4,
+      "Criterios básicos: no prevé ningún cargo remunerado ni liberado; solo regula el reembolso de gastos de desplazamiento y manutención de portavoces estatales con justificantes (billete o 0,20 €/km, dietas tasadas) y establece que el asesoramiento es gratuito. Entre 3 y 4: la no remuneración se deduce del régimen de dietas, no se declara literalmente. https://afectadosporlahipoteca.com/criterios-basicos-y-protocolos-pah/",
+      "media"
+    ],
+    "eleccion_direccion": [
+      2,
+      "Criterios básicos (apdo. CCE): la CCE se compone de 3 personas por cada coordinadora autonómica (o 3 elegidas por acuerdo de las PAH de la comunidad donde no la haya) más 1 por comisión estatal; es elección indirecta por órganos de delegados (PAH local → coordinadora → CCE). La elección de la portavocía estatal figura «A debatir». Entre 1 y 2. https://afectadosporlahipoteca.com/criterios-basicos-y-protocolos-pah/",
+      "media"
+    ],
+    "agenda_base": [
+      2,
+      "Criterios básicos: la CCE «será la encargada de proponer el orden del día inicial de cada asamblea estatal, y recoger e integrar propuestas de modificación al mismo por parte de las PAHs», que lo reciben con 2 semanas de antelación y pueden proponer cambios o temas nuevos. Entre 1 y 3: redacta la coordinadora, pero la base puede añadir temas y el texto dice «integrar». https://afectadosporlahipoteca.com/criterios-basicos-y-protocolos-pah/",
+      "media"
+    ],
+    "pluralismo": [
+      1,
+      "Criterios básicos: no hay elecciones internas competitivas (tope 2), ni corrientes, ni votos particulares regulados; la decisión es por consenso, lo que da cierta capacidad de bloqueo a la minoría, y se exige apartidismo. Entre 1 y 2. https://afectadosporlahipoteca.com/criterios-basicos-y-protocolos-pah/",
+      "baja"
+    ],
+    "autonomia_base": [
+      3,
+      "Criterios básicos: «Cada PAH decide cuál es el modelo organizativo que responde mejor a sus necesidades», se respeta la soberanía de las PAH locales y no se permiten intromisiones en su portavocía, y las expulsiones las avala la asamblea local; pero deben asumir los criterios básicos y su incumplimiento puede llevar a intervención de la asamblea regional. https://afectadosporlahipoteca.com/criterios-basicos-y-protocolos-pah/",
+      "alta"
+    ],
+    "brecha_formal_real": [
+      1,
+      "Sin fuente verificable: no pude abrir estudios académicos sobre el poder real en la PAH (PDF ilegibles o bloqueados). Wikipedia solo indica que Ada Colau fue portavoz hasta 2014 y que la organización es horizontal y asamblearia (https://en.wikipedia.org/wiki/Plataforma_de_Afectados_por_la_Hipoteca); estimo desviación leve por el peso mediático de portavoces históricos.",
+      "baja"
+    ],
+    "regla_decision": [
+      2,
+      "Criterios básicos: en asambleas estatales y comisiones «el consenso es el método fundamental» y la mayoría simple solo es último recurso; en la CCE, para decisiones de gran trascendencia, consenso y si no 2/3, y si no se pospone. Entre 2 y 3: puede leerse como mayoría tras intentar consenso. https://afectadosporlahipoteca.com/criterios-basicos-y-protocolos-pah/",
+      "alta"
+    ],
+    "capacidad_ejecutiva": [
+      3,
+      "Criterios básicos: la CCE se encarga de «temas urgentes que afectan al movimiento y que no pueden esperar» a las asambleas estatales, coordina comisiones y territorios y prepara las asambleas; la asamblea estatal debe «ratificar las actuaciones de la Comisión Coordinadora Estatal». Entre 2 y 3: lo urgente es su función nuclear, no una excepción. https://afectadosporlahipoteca.com/criterios-basicos-y-protocolos-pah/",
+      "media"
+    ],
+    "estructura_federal": [
+      4,
+      "Criterios básicos (protocolo de nuevas PAH): basta asumir los criterios básicos, tener tutelaje de una PAH consolidada y comunicarlo a la lista estatal; no se exige aprobación de la asamblea estatal ni de la CCE. La unidad asamblearia se repite en coordinadoras autonómicas y asamblea estatal. Entre 3 y 4: el tutelaje por una PAH par y la no aceptación automática de escisiones introducen cierto control. https://afectadosporlahipoteca.com/criterios-basicos-y-protocolos-pah/",
+      "media"
+    ],
+    "coste_coordinacion": [
+      2,
+      "Criterios básicos: las decisiones de fondo se toman en asambleas estatales cada 4 meses como máximo con 3-5 portavoces por PAH (y cualquier compañera puede asistir), y existe una CCE permanente con mandatos de 1-2 años para coordinar entre medias. Entre 2 y 3. https://afectadosporlahipoteca.com/criterios-basicos-y-protocolos-pah/",
+      "media"
+    ]
+  },
+  "notas": "Ambigüedades: (1) REGLA_CIMA: no hay ejecutivo propiamente dicho; tomé como cima la Comisión Coordinadora Estatal (órgano de coordinación permanente). La portavocía estatal coral es otra candidata, pero su elección está «A debatir». (2) revocabilidad: el documento no regula la revocación; solo entrada/salida vía coordinadora autonómica y control de asistencia. (3) regla_decision: «consenso con mayoría simple como último recurso» encaja igual en 2 (consenso con votación de reserva) que en 3 (mayoría tras intentar consenso); los anclajes se solapan. (4) capacidad_ejecutiva: la función propia de la CCE es lo urgente con ratificación posterior, lo que choca con la nota de no codificar la excepción de urgencia. (5) pluralismo: en un modelo de consenso sin elecciones competitivas los anclajes (fracciones, cuotas, corrientes) apenas aplican. (6) estructura_federal: el tutelaje entre pares no es aprobación del centro, pero tampoco es alta libre. (7) profesionalizacion: la ausencia de remuneración se deduce del texto, no está declarada."
+}

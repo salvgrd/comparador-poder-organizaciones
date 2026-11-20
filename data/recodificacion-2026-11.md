@@ -539,3 +539,81 @@ Calculado con `/api/orgs.json` y los pesos por defecto, con una copia de antes y
 | PCTE | 12,5 | 24 | 12,5 | 24 | +0,0 |
 
 `npm test`: 22 de 22 pruebas pasan.
+
+## Cuarta pasada: cima de las cooperativas (2026-11-20)
+
+Cambio de regla: en las cooperativas, la cima es el Consejo Rector, o su equivalente en las de segundo grado, aunque delegue la gestión diaria en una gerencia (`REGLA_CIMA`). Hay tres fichas de la familia «cooperativa»: Fagor, MCC y FaSinPat. En las dos primeras se mueve la cima y se recodifican las cinco variables que dependen de ella: rotacion, revocabilidad, eleccion_direccion, capacidad_ejecutiva y profesionalizacion. Se aplica `REGLA_FORMAL`. Fuentes abiertas el 20 de noviembre: la Ley 4/1993 (BOE-A-2012-2011) y la Ley 11/2019 (BOE-A-2020-615), ambas en el BOE, y tres páginas de la web corporativa de MONDRAGON de 2010 (copias en web.archive.org), que se añaden a `fuentes`. No se ha usado `data/codificaciones/` ni se ha tocado `brecha_formal_real`.
+
+### Fagor Electrodomésticos (`fagor`)
+
+Cima: Consejo Rector (antes, la Gerencia / Dirección General). La Ley 4/1993 le da en exclusiva la gestión y la representación (art. 40.1). La gerencia solo tiene poderes para el tráfico ordinario (art. 41.6). Saltos hasta la cima: 3 → 2.
+
+| variable | antes → después | confianza | motivo y fuente |
+|---|---|---|---|
+| revocabilidad | 2 → 3 | media → media | Ley 4/1993, arts. 31.3.a y 44.2: la Asamblea de todos los socios revoca al Consejo Rector en cualquier sesión, con dos tercios si el punto no está en el orden del día y por mayoría ordinaria si lo está (art. 36.1). El 10 % puede añadir el punto (art. 33.4). Para una extraordinaria hace falta el 20 % (art. 33.3): la base, con trámite ordinario en la asamblea anual |
+| rotacion | 0 → 1 | media → media | Ley 4/1993, arts. 44.1 y 45.3: mandatos de 2 a 5 años, reelegibles indefinidamente salvo que los estatutos digan otra cosa. Los estatutos no son públicos. El 0 se refería a la gerencia, que no tiene plazo |
+| profesionalizacion | 1 → 2 | media → baja | Ley 4/1993, arts. 43, 41.6 y 42.1.d: la remuneración de los consejeros la deciden los estatutos o la Asamblea. La gerencia, profesional, queda por debajo de la cima y no puede ser consejera |
+| eleccion_direccion | 3 → 4 | media → alta | Ley 4/1993, arts. 31.3.a, 35.1 y 41.3: la Asamblea de todos los socios elige el Consejo Rector, un socio un voto, en votación secreta. Los no socios ya están en el organigrama |
+| capacidad_ejecutiva | 2 → 3 | media → media | Ley 4/1993, art. 40.1: gestión y facultades residuales. La Asamblea examina la gestión y aprueba las cuentas (art. 31.3.c), algo indelegable (art. 46.5), y decide estatutos, fusiones y cambios sustanciales (art. 31.3.f-i): decide entre asambleas y lo de fondo pasa por la Asamblea |
+
+### MCC (`mondragon`)
+
+Cima: Comisión Permanente (antes, el Consejo General / Presidencia corporativa). Según la web corporativa, «gobierna por delegación del Congreso Cooperativo» e impulsa y controla la ejecución de sus acuerdos. El Congreso, formado por 650 delegados de las cooperativas, fija los criterios estratégicos. El Consejo General «elabora y aplica» las estrategias, es decir, hace de dirección. Se trata la Comisión Permanente como el consejo rector de una cooperativa de segundo grado (Ley 11/2019, arts. 149.2 y 151), con el Congreso como su asamblea. Esa equivalencia es una inferencia, porque los estatutos de MONDRAGON no son públicos; por eso todos los códigos tienen confianza baja. El órgano ya existía en el organigrama y no se ha añadido ninguno. Saltos hasta la cima: 4 → 3.
+
+Fuentes añadidas a la ficha:
+- Comisión Permanente: http://web.archive.org/web/20100216192652/http://www.mondragon-corporation.com:80/CAS/Qui%C3%A9nes-Somos/Estructura-organizativa/Comision-Permanente.aspx
+- Congreso Cooperativo: http://web.archive.org/web/20100216192659/http://www.mondragon-corporation.com:80/CAS/Qui%C3%A9nes-Somos/Estructura-organizativa/Congreso-Cooperativo.aspx
+- Consejo General: http://web.archive.org/web/20100216192705/http://www.mondragon-corporation.com:80/CAS/Qui%C3%A9nes-Somos/Estructura-organizativa/Consejo-General.aspx
+
+| variable | antes → después | confianza | motivo y fuente |
+|---|---|---|---|
+| revocabilidad | 2 → 2 | baja → baja | Pasa de «Sin fuente verificable» a tener fuente. Ley 11/2019, arts. 46.2 y 35.2: la asamblea (el Congreso) destituye en cualquier sesión, con dos tercios si el punto no está en el orden del día, y se reúne al menos una vez por ejercicio. Los congresistas no llevan mandato imperativo normado: órgano delegado anual, sin trámite reforzado |
+| rotacion | 1 → 1 | baja → baja | Pasa a tener fuente. Ley 11/2019, arts. 46.1 y 47.5: mandatos de 2 a 5 años, reelegibles indefinidamente salvo que los estatutos digan otra cosa |
+| profesionalizacion | 1 → 2 | baja → baja | Ley 11/2019, art. 45.1: el cargo de consejero es gratuito salvo autorización expresa de los estatutos. La dirección se apodera aparte (art. 43.6) y no puede ser consejera (art. 44.1.d): solo algunos cargos liberados |
+| eleccion_direccion | 1 → 2 | baja → baja | Web, Comisión Permanente y Congreso Cooperativo, y Ley 11/2019, art. 43.3 (por el art. 151): la elige el Congreso de delegados. El 1 se refería a la Presidencia del Consejo General, que designa la Comisión Permanente |
+| capacidad_ejecutiva | 3 → 3 | baja → baja | Pasa a tener fuente. Web, Comisión Permanente: gobierna por delegación y controla la ejecución. Ley 11/2019, arts. 42.1, 149.2, 33.3.c y 48.5: gestión y facultades residuales; las cuentas y el examen de la gestión son de la asamblea, y la estrategia es del Congreso |
+
+### FaSinPat (`zanon`)
+
+Sin cambios. La cima ya es «Coordinación general / consejo de la cooperativa», que elige la asamblea, y sus códigos ya se refieren a ella. Wikipedia, la única fuente de la ficha, no describe el consejo de la cooperativa, y la ley argentina de cooperativas no está en `fuentes`.
+
+### Casos dudosos
+
+- Fagor, revocabilidad: fuera de la asamblea anual, revocar exige pedir una extraordinaria con el 20 % de los votos (art. 33.3), que es el umbral del anclaje 1. Se codifica 3 porque en la asamblea ordinaria anual la revocación no necesita umbral (art. 44.2), igual que en SdL.
+- Fagor, capacidad_ejecutiva: la Ley 4/1993 reserva a la Asamblea las cuentas y los cambios sustanciales, pero no el plan anual. Que el plan pasara por la Asamblea depende de unos estatutos que no son públicos.
+- Fagor y MCC, profesionalizacion: el valor 2 depende de si los estatutos remuneran al consejo. En Fagor, la ley de 1993 deja la decisión abierta (art. 43). En MCC, la ley de 2019 lo hace gratuito por defecto (art. 45.1), lo que podría dar un 3 o un 4.
+- MCC: la equivalencia Congreso = asamblea y Comisión Permanente = consejo rector se deduce de la descripción de la web corporativa de 2010 y del régimen de las cooperativas de segundo grado. No consta que MONDRAGON S. Coop. se rija así en sus estatutos. Además, el art. 149.2 permite que las cooperativas se agrupen para designar consejeros, lo que bajaría eleccion_direccion a 1.
+- El código manual `niveles` de Fagor («Asamblea → Consejo Rector → dirección») y de MCC no se ha tocado. Los saltos se calculan desde el organigrama, así que no afecta al cálculo.
+
+### Control de base (CB) y puesto, antes y después
+
+Calculado con `/api/orgs.json` y los pesos por defecto, con una copia de antes y otra de después de esta pasada. Puesto: 1 = más control; los empates comparten puesto.
+
+| organización | CB antes | puesto antes | CB después | puesto después | Δ CB |
+|---|---|---|---|---|---|
+| CNT | 91,7 | 1 | 91,7 | 1 | +0,0 |
+| FaSinPat | 68,2 | 2 | 68,2 | 2 | +0,0 |
+| IWW | 68,1 | 3 | 68,1 | 3 | +0,0 |
+| PAH | 63,1 | 4 | 63,1 | 4 | +0,0 |
+| SO | 60,0 | 5 | 60,0 | 5 | +0,0 |
+| OWS | 53,9 | 6 | 53,9 | 6 | +0,0 |
+| co.bas | 47,8 | 7 | 47,8 | 7 | +0,0 |
+| CGT | 47,4 | 8 | 47,4 | 8 | +0,0 |
+| Anticapitalistas | 43,9 | 9 | 43,9 | 9 | +0,0 |
+| SI Madrid | 39,6 | 10 | 39,6 | 10 | +0,0 |
+| NSZZ Solidarność | 35,8 | 11 | 35,8 | 11 | +0,0 |
+| SdL | 35,7 | 12 | 35,7 | 12 | +0,0 |
+| EZLN | 33,0 | 13 | 33,0 | 13 | +0,0 |
+| MCC | 25,2 | 17 | 29,6 | 14 | +4,4 |
+| MST | 29,3 | 14 | 29,3 | 15 | +0,0 |
+| DAANES | 28,0 | 15 | 28,0 | 16 | +0,0 |
+| Fagor Electrodomésticos | 19,5 | 22 | 27,8 | 17 | +8,3 |
+| PCE | 27,1 | 16 | 27,1 | 18 | +0,0 |
+| CCOO | 22,9 | 18 | 22,9 | 19 | +0,0 |
+| PSOE | 22,9 | 18 | 22,9 | 19 | +0,0 |
+| PT | 22,6 | 20 | 22,6 | 21 | +0,0 |
+| SYRIZA | 22,3 | 21 | 22,3 | 22 | +0,0 |
+| PCTE | 14,6 | 23 | 14,6 | 23 | +0,0 |
+| Podemos | 13,2 | 24 | 13,2 | 24 | +0,0 |
+
+`npm test`: 22 de 22 pruebas pasan.

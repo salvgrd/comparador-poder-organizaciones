@@ -1,0 +1,142 @@
+{
+  "org_id": "syriza",
+  "codificador": {
+    "id": "agente-claude",
+    "tipo": "ia",
+    "nombre": "Claude (subagente a ciegas)",
+    "modelo": "claude-opus-5-5"
+  },
+  "fecha": "2026-11-20",
+  "a_ciegas": true,
+  "notas_ceguera": "Subagente sin acceso al repositorio; recibió solo los anclajes actuales con sus notas, REGLA_FORMAL y REGLA_CIMA copiados de codebook.ts, las instrucciones del README de codificaciones, el nombre de la organización, el momento codificado (estatutos de 2013 hasta 2015) y los títulos y URL de las fuentes de la ficha. Cada código cita una fuente abierta en la sesión o se marca «Sin fuente verificable».",
+  "fuentes_consultadas": [
+    {
+      "t": "Estatutos 2013 — SYRIZA, Καταστατικό del congreso fundacional (julio de 2013), Political Party Database",
+      "u": "https://www.politicalpartydb.org/wp-content/uploads/Statutes/Greece/Greece-Syriza-2013.pdf",
+      "lista_inicial": true,
+      "leida": false
+    },
+    {
+      "t": "Ta Nea (1-VIII-2013), «Δημοσιεύτηκε το τελικό κείμενο του καταστατικού του ΣΥΡΙΖΑ» (texto íntegro del estatuto 2013, arts. 1-32 y disposiciones transitorias)",
+      "u": "https://www.tanea.gr/2013/08/01/politics/dimosieytike-to-teliko-keimeno-toy-katastatikoy-toy-syriza/",
+      "lista_inicial": false,
+      "leida": true
+    },
+    {
+      "t": "LINKS, congreso 2013 — P. F. Soares y Y. Bournous",
+      "u": "https://links.org.au/node/3446",
+      "lista_inicial": true,
+      "leida": true
+    },
+    {
+      "t": "Kouvelakis 2013 — International Viewpoint, «Nine + one remarks on Syriza after its founding congress»",
+      "u": "https://internationalviewpoint.org/Nine-one-remarks-on-Syriza-after-its-founding-congress",
+      "lista_inicial": true,
+      "leida": true
+    },
+    {
+      "t": "IV, «Majority of Syriza CC reject agreement» (15-VII-2015)",
+      "u": "https://internationalviewpoint.org/Majority-of-Syriza-CC-reject-agreement",
+      "lista_inicial": true,
+      "leida": true
+    },
+    {
+      "t": "Jacobin — S. Kouvelakis, «Cracks in the Deal?» (15-VII-2015)",
+      "u": "https://jacobin.com/2015/07/syriza-debt-tsipras-left-platform-kouvelakis/",
+      "lista_inicial": true,
+      "leida": true
+    },
+    {
+      "t": "Green Left — K. Smith, «SYRIZA central committee members resign...» (30-VIII-2015)",
+      "u": "https://greenleft.org.au/node/59890",
+      "lista_inicial": true,
+      "leida": true
+    },
+    {
+      "t": "To Vima — «SYRIZA in crisis ahead of elections – Party secretary Koronakis resigns» (25-VIII-2015)",
+      "u": "https://tovima.gr/2015/08/25/international/syriza-in-crisis-ahead-of-elections-party-secretary-koronakis-resigns",
+      "lista_inicial": true,
+      "leida": true
+    },
+    {
+      "t": "SYRIZA, historia oficial — «From an electoral alliance to a single party» (web.archive.org)",
+      "u": "http://web.archive.org/web/20190501102847/https://www.syriza.gr/page/about-syriza.html",
+      "lista_inicial": true,
+      "leida": false
+    },
+    {
+      "t": "Kamini.gr — «Το καταστατικό του ΣυΡιζΑ» (página truncada, sin texto del estatuto)",
+      "u": "https://www.kamini.gr/to-katastatiko-toy-syriza/",
+      "lista_inicial": false,
+      "leida": false
+    }
+  ],
+  "codigos": {
+    "mandato": [
+      0,
+      "El estatuto 2013 (texto en Ta Nea, art. 30) solo dice que los delegados se eligen «με μυστική ψηφοφορία» por los órganos correspondientes; no hay mandato imperativo ni obligación de llevar acuerdos de la asamblea; el congreso fundacional reunió unos 3.430 delegados que votaron libremente (LINKS). https://www.tanea.gr/2013/08/01/politics/dimosieytike-to-teliko-keimeno-toy-katastatikoy-toy-syriza/ ; https://links.org.au/node/3446",
+      "media"
+    ],
+    "revocabilidad": [
+      1,
+      "Cima = Πολιτική Γραμματεία (art. 13), elegida por el Comité Central, sin cláusula expresa de revocación; para el presidente, el art. 14 prevé que la retirada de confianza del CC por «50% +1» de sus miembros lleve a congreso extraordinario, y el art. 15 permite convocarlo por el 15 % de los miembros u OM que sumen un cuarto (umbral ≥ 20 % o congreso extraordinario). Entre 0 y 2: el CC (órgano delegado que se reúne cada tres meses) puede reelegir la PG, pero no hay revocación normada. https://www.tanea.gr/2013/08/01/politics/dimosieytike-to-teliko-keimeno-toy-katastatikoy-toy-syriza/",
+      "media"
+    ],
+    "rotacion": [
+      3,
+      "Art. 13: los miembros del CC pueden estar en la Πολιτική Γραμματεία «μέχρι 2 συνεχόμενες θητείες» y volver tras una pausa; con congresos cada tres años (art. 14) eso son unos 6 años, entre 3 y 4. El presidente no tiene límite (el art. 23 exime al «εκάστοτε επικεφαλής» del tope para diputados); si la cima fuera la presidencia sería 0. https://www.tanea.gr/2013/08/01/politics/dimosieytike-to-teliko-keimeno-toy-katastatikoy-toy-syriza/",
+      "media"
+    ],
+    "profesionalizacion": [
+      2,
+      "Art. 29: el CC elabora «αναλυτικό μισθολόγιο για όσους έχουν επαγγελματική σχέση με το κόμμα» y quienes ocupan cargos remunerados entregan todas sus retribuciones a la caja del partido y cobran un sueldo fijado; art. 27 limita al 25 % los cargos de gobierno remunerados en cada órgano; las disposiciones transitorias prevén planificar la «επαγγελματική υποστήριξη». No hay norma de cargos no remunerados; tamaño del aparato no verificado. https://www.tanea.gr/2013/08/01/politics/dimosieytike-to-teliko-keimeno-toy-katastatikoy-toy-syriza/",
+      "media"
+    ],
+    "eleccion_direccion": [
+      1,
+      "La base elige delegados (art. 30), el congreso elige el CC (art. 14) y el CC elige la Πολιτική Γραμματεία y su secretario (art. 13): elección indirecta a tres niveles. El presidente lo elige el congreso de delegados (art. 14 deja al congreso decidir el «αντιπροσωπευτικό σώμα»; en 2013 lo eligieron los delegados con 74 %, LINKS/Kouvelakis), lo que daría 2 si la cima fuera la presidencia. https://www.tanea.gr/2013/08/01/politics/dimosieytike-to-teliko-keimeno-toy-katastatikoy-toy-syriza/ ; https://links.org.au/node/3446",
+      "media"
+    ],
+    "agenda_base": [
+      2,
+      "Art. 14: el CC prepara «τα προσυνεδριακά κείμενα» y organiza el proceso precongresual, pero el art. 30 permite textos-plataforma redactados «από τους ενδιαφερόμενους» que circulan en las OM, y el art. 17 permite al 15 % de los miembros pedir un referéndum interno (vinculante con participación del 50 %+1); en 2013 se votaron enmiendas de la Plataforma de Izquierda (LINKS). Entre 1 y 2. https://www.tanea.gr/2013/08/01/politics/dimosieytike-to-teliko-keimeno-toy-katastatikoy-toy-syriza/ ; https://links.org.au/node/3446",
+      "media"
+    ],
+    "pluralismo": [
+      3,
+      "Art. 30: elección «με το σύστημα της απλής αναλογικής» con posibilidad de listas separadas (en 2013 la Plataforma de Izquierda obtuvo 60 de 201 escaños, LINKS); art. 21 reconoce las tendencias y publica sus plataformas en los medios del partido, pero dice que «δεν είναι μόνιμο σχήμα» y no pueden tener estructura ni disciplina propias. Entre 3 y 4: hay portavocía mediante la publicación, pero no recursos ni estructura reconocidos. https://www.tanea.gr/2013/08/01/politics/dimosieytike-to-teliko-keimeno-toy-katastatikoy-toy-syriza/ ; https://internationalviewpoint.org/Nine-one-remarks-on-Syriza-after-its-founding-congress",
+      "alta"
+    ],
+    "autonomia_base": [
+      2,
+      "Art. 8: «Οι ΟΜ αποτελούν το κόμμα στο χώρο τους» y fijan posición sobre asuntos locales y centrales en su ámbito, con órganos anuales propios; pero los miembros deben aplicar la línea y las decisiones del partido (art. 6; la minoría puede abstenerse de aplicarlas, art. 5) y la creación de una OM la decide la Comisión Prefectural o el CC. https://www.tanea.gr/2013/08/01/politics/dimosieytike-to-teliko-keimeno-toy-katastatikoy-toy-syriza/",
+      "alta"
+    ],
+    "brecha_formal_real": [
+      3,
+      "Formalmente el CC es el «ανώτερο πολιτικό όργανο» (art. 13) y el presidente actúa dentro de sus decisiones (art. 14), pero en julio de 2015 la mayoría del CC (108-109 de 201) rechazó el acuerdo sin efecto (IV; Jacobin), y Tsipras convocó elecciones «without consulting the central committee» e ignoró su decisión de celebrar una conferencia extraordinaria (Green Left; To Vima, dimisión del secretario Koronakis). Ya en 2013 Kouvelakis lo describe como partido electoral «welded around its leader». Entre 3 y 4. https://greenleft.org.au/node/59890 ; https://tovima.gr/2015/08/25/international/syriza-in-crisis-ahead-of-elections-party-secretary-koronakis-resigns ; https://jacobin.com/2015/07/syriza-debt-tsipras-left-platform-kouvelakis/",
+      "media"
+    ],
+    "regla_decision": [
+      3,
+      "Art. 2: el partido «δρα σύμφωνα με τις αποφάσεις της πλειοψηφίας» y busca «προωθητικές συνθέσεις»; el consenso aparece solo para designar coordinadores (arts. 8 y 12) y hay mayorías reforzadas en casos concretos (expulsión 3/4, art. 7; 70 % del CC, arts. 10 y 23). Entre 3 y 4: mayoría con aspiración a síntesis, sin procedimiento de consenso previo. https://www.tanea.gr/2013/08/01/politics/dimosieytike-to-teliko-keimeno-toy-katastatikoy-toy-syriza/",
+      "media"
+    ],
+    "capacidad_ejecutiva": [
+      3,
+      "Art. 13: la Πολιτική Γραμματεία es el órgano ejecutivo que «αντιμετωπίζει τα τρέχοντα θέματα μεταξύ των συνόδων της Κεντρικής Επιτροπής και εισηγείται σ' αυτήν» y le rinde cuentas; el art. 20 le permite aprobar posiciones de los departamentos «αν υπάρχει ανάγκη άμεσης τοποθέτησης». https://www.tanea.gr/2013/08/01/politics/dimosieytike-to-teliko-keimeno-toy-katastatikoy-toy-syriza/",
+      "alta"
+    ],
+    "estructura_federal": [
+      2,
+      "Arts. 8, 10-12: estructura unitaria en niveles (OM, organización prefectural, coordinación regional consultiva y congreso nacional); la creación de una OM la deciden las Comisiones Prefecturales o el CC, y no hay estatutos ni soberanía propios de las unidades. Entre 1 y 2. https://www.tanea.gr/2013/08/01/politics/dimosieytike-to-teliko-keimeno-toy-katastatikoy-toy-syriza/",
+      "media"
+    ],
+    "coste_coordinacion": [
+      4,
+      "Partido de representación: delegados (art. 30), CC trimestral, Πολιτική Γραμματεία permanente (art. 13), departamentos (art. 20) y personal con «επαγγελματική σχέση» y nómina fijada por el CC (art. 29); las asambleas de OM no deciden cada cuestión nacional. Entre 3 y 4: no se pudo verificar el tamaño del aparato. https://www.tanea.gr/2013/08/01/politics/dimosieytike-to-teliko-keimeno-toy-katastatikoy-toy-syriza/",
+      "media"
+    ]
+  },
+  "notas": "El PDF de politicalpartydb llegó como binario (texto vectorizado o comprimido) y no pude leerlo; usé el texto íntegro del estatuto que publicó Ta Nea el 1-VIII-2013 (arts. 1-32). La copia de web.archive.org de la historia oficial no se pudo abrir. Ambigüedades: (1) REGLA_CIMA: el presidente se elige aparte en el congreso, pero el estatuto no dice que presida la Πολιτική Γραμματεία; tomé como cima la PG con su secretario. Si la cima fuera la presidencia: rotacion 0, eleccion_direccion 2 y revocabilidad 1. (2) revocabilidad: los anclajes 0 («por un órgano superior») y 2 («órgano delegado anual») se solapan cuando el CC elige y puede sustituir a la PG. (3) rotacion: dos mandatos de tres años son unos 6 años, entre los anclajes de 8 y de 4. (4) pluralismo 3/4: las tendencias tienen reconocimiento y difusión de plataformas, pero el estatuto les prohíbe estructura propia. (5) regla_decision 3/4: el art. 2 dice mayoría y «síntesis» sin procedimiento de consenso. (6) coste_coordinacion 3/4: el tamaño del aparato no consta."
+}

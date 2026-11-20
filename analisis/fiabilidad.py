@@ -16,8 +16,9 @@ la lógica de la aplicación (app/lib/metrics.ts, vía node analisis/indices.ts)
 Admite N codificadores y cobertura parcial: una organización entra en la variable si al menos dos
 codificadores le dieron un valor no nulo.
 
-Uso:  cd analisis && uv run fiabilidad.py [--boot 2000] [--test]
+Uso:  cd analisis && uv run fiabilidad.py [--boot 2000] [--orgs cgt,psoe,...] [--test]
 Salida: analisis/resultados/fiabilidad.md y analisis/resultados/fiabilidad_largo.csv
+        (con --orgs: fiabilidad_orgs.md y fiabilidad_orgs_largo.csv, para no pisar el informe completo)
 """
 
 from __future__ import annotations
@@ -233,7 +234,10 @@ def main() -> None:
     ap.add_argument("--boot", type=int, default=2000, help="réplicas bootstrap (0 = sin intervalo)")
     ap.add_argument("--semilla", type=int, default=1)
     ap.add_argument("--test", action="store_true", help="solo comprobar la implementación del alfa")
+    ap.add_argument("--orgs", default="", help="restringir el cálculo a estas organizaciones (ids separados por comas)")
     args = ap.parse_args()
+    filtro = {o.strip() for o in args.orgs.split(",") if o.strip()}
+    sufijo = "_orgs" if filtro else ""
     autotest()
     if args.test:
         return
@@ -244,9 +248,11 @@ def main() -> None:
     grupo = {v["k"]: v.get("g", "") for v in vars_}
     fichas, cod, meta, avisos = cargar(manuales)
     coders = sorted({c for c, _ in cod}, key=lambda c: (c != REF, c))
-    orgs_por_coder = {c: sorted(o for cc, o in cod if cc == c) for c in coders}
+    orgs_por_coder = {c: sorted(o for cc, o in cod if cc == c and (not filtro or o in filtro)) for c in coders}
     # Organizaciones con al menos un codificador además de la referencia
-    orgs = sorted({o for c, o in cod if c != REF})
+    orgs = sorted({o for c, o in cod if c != REF and (not filtro or o in filtro)})
+    if filtro - set(orgs):
+        avisos.append(f"--orgs: sin codificación independiente para {', '.join(sorted(filtro - set(orgs)))}")
     rng = random.Random(args.semilla)
 
     def unidades(k: str, solo: list[str] | None = None) -> list[list[int]]:
@@ -270,6 +276,8 @@ def main() -> None:
     L: list[str] = []
     L.append("# Fiabilidad entre codificadores\n")
     L.append("Generado por `analisis/fiabilidad.py`. No editar a mano.\n")
+    if filtro:
+        L.append(f"Restringido con `--orgs` a: {', '.join(sorted(filtro))}.\n")
     L.append("## Codificadores\n")
     L.append("| codificador | tipo | organizaciones | a ciegas |")
     L.append("|---|---|---|---|")
@@ -287,7 +295,7 @@ def main() -> None:
     if not orgs:
         L.append("No hay codificaciones independientes todavía.")
         SALIDA.mkdir(exist_ok=True)
-        (SALIDA / "fiabilidad.md").write_text("\n".join(L) + "\n", encoding="utf8")
+        (SALIDA / f"fiabilidad{sufijo}.md").write_text("\n".join(L) + "\n", encoding="utf8")
         print("\n".join(L))
         return
 
@@ -424,8 +432,8 @@ def main() -> None:
         L.append("")
 
     SALIDA.mkdir(exist_ok=True)
-    (SALIDA / "fiabilidad.md").write_text("\n".join(L) + "\n", encoding="utf8")
-    with open(SALIDA / "fiabilidad_largo.csv", "w", newline="", encoding="utf8") as fh:
+    (SALIDA / f"fiabilidad{sufijo}.md").write_text("\n".join(L) + "\n", encoding="utf8")
+    with open(SALIDA / f"fiabilidad{sufijo}_largo.csv", "w", newline="", encoding="utf8") as fh:
         w = csv.writer(fh)
         w.writerow(["org", "variable", "codificador", "valor", "confianza", "justificacion"])
         for (c, o), cods in sorted(cod.items()):
@@ -436,7 +444,7 @@ def main() -> None:
                 if isinstance(v, list):
                     w.writerow([o, k, c, valor(v), v[2] if len(v) > 2 else "", v[1] if len(v) > 1 else ""])
     print("\n".join(L))
-    print(f"\nEscrito {SALIDA / 'fiabilidad.md'} y {SALIDA / 'fiabilidad_largo.csv'}", file=sys.stderr)
+    print(f"\nEscrito {SALIDA / f'fiabilidad{sufijo}.md'} y {SALIDA / f'fiabilidad{sufijo}_largo.csv'}", file=sys.stderr)
 
 
 if __name__ == "__main__":
