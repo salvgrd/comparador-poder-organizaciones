@@ -7,7 +7,7 @@
   "fundacion": 2017,
   "tamano": [
     5000,
-    "Varios miles de afiliadas; cifra no verificada.",
+    "Sin fuente verificable: varios miles de afiliadas; cifra no verificada.",
     "baja"
   ],
   "corriente": "Sindicalismo de vivienda con fuerte incidencia legislativa",
@@ -80,38 +80,38 @@
   "codigos": {
     "mandato": [
       2,
-      "Mandato informal.",
+      "Sin fuente verificable: los Estatutos no regulan delegaciones ni mandato: la Asamblea General reúne a todas las afiliadas (art. 8).",
       "baja"
     ],
     "revocabilidad": [
-      2,
-      "No verificado.",
-      "baja"
+      3,
+      "Estatuts (2022), arts. 9.b y 15.2.d: la Asamblea General de todas las afiliadas elige y puede separar a la Junta Directiva; para hacerlo fuera de la asamblea ordinaria hace falta que la convoque la Junta o que lo pida el 10 % (arts. 10.2 y 12.2). La revocación del equipo de portavoces no está regulada aparte.",
+      "media"
     ],
     "rotacion": [
-      2,
-      "Portavocías estables durante años.",
-      "baja"
+      1,
+      "Estatuts, art. 15.1: la Junta Directiva tiene mandatos de cinco años y puede ser reelegida sin límite; no consta límite para el equipo de portavoces.",
+      "media"
     ],
     "profesionalizacion": [
       2,
-      "Parte del trabajo técnico profesionalizado.",
-      "baja"
+      "Los cargos de la Junta son gratuitos (art. 14.4), pero la Junta puede contratar personal (art. 16.g) y las cuotas pagan a las «alliberades» (página de Transparència).",
+      "media"
     ],
     "eleccion_direccion": [
-      2,
-      "Asamblea; no verificado.",
-      "baja"
+      4,
+      "La Asamblea General de todas las afiliadas elige a la Junta Directiva (art. 14.2) y vota cada año el equipo de portavoces (página de Transparència), y puede separarlos (art. 9.b).",
+      "media"
     ],
     "agenda_base": [
       2,
-      "Agenda legislativa marcada desde la coordinación.",
-      "baja"
+      "La Junta convoca la Asamblea con el orden del día (art. 11.1) y el 10 % de las socias puede pedir que se incluyan puntos (art. 12.2); la Asamblea solo acuerda sobre lo que está en el orden del día.",
+      "media"
     ],
     "pluralismo": [
       2,
-      "No verificado.",
-      "baja"
+      "Art. 13.3: si hay varias candidaturas a la Junta, gana la de mayoría simple o relativa; no hay reparto proporcional ni corrientes reconocidas.",
+      "media"
     ],
     "autonomia_base": [
       3,
@@ -120,27 +120,27 @@
     ],
     "brecha_formal_real": [
       3,
-      "Peso alto de la portavocía en la negociación institucional.",
+      "Asamblearia en lo formal, pero el sindicato negocia con los partidos la letra de las leyes (El Salto, 2023) a través de su comisión de contenidos y del equipo de portavoces (Transparència). La permanencia de la portavocía durante años no tiene fuente verificable. Estimación.",
       "baja"
     ],
     "regla_decision": [
-      3,
-      "Mayoría o consenso en asamblea.",
-      "baja"
+      4,
+      "Estatuts, art. 13.2: la Asamblea decide por mayoría simple; la Junta, también por mayoría simple (art. 18.3).",
+      "media"
     ],
     "capacidad_ejecutiva": [
       3,
-      "Capacidad real de negociar con el Parlament y el Gobierno.",
+      "Art. 16: la Junta dirige y administra, y puede resolver provisionalmente lo no previsto dando cuenta en la siguiente Asamblea (art. 16.m).",
       "media"
     ],
     "freq_soberano_meses": [
-      3,
-      "No verificado.",
-      "baja"
+      12,
+      "Estatuts, art. 10.1: la Asamblea General ordinaria se reúne al menos una vez al año (la web la describe como anual).",
+      "alta"
     ],
     "freq_intermedio_meses": [
       0.5,
-      "Secciones con reuniones frecuentes.",
+      "Sin fuente verificable: secciones con reuniones frecuentes. La única frecuencia normada es la de la Junta Directiva, al menos una vez por trimestre (art. 17.1).",
       "baja"
     ],
     "niveles": [
@@ -170,6 +170,14 @@
     }
   ],
   "fuentes": [
+    {
+      "t": "Sindicat de Llogateres — Estatuts (2022, diligenciados por el Registre d'associacions)",
+      "u": "https://sindicatdellogateres.org/wp-content/uploads/2022/10/estatuts-2022-diligenciats.pdf"
+    },
+    {
+      "t": "Sindicat de Llogateres — Transparència (espais de governança)",
+      "u": "https://sindicatdellogateres.org/transparencia/"
+    },
     {
       "t": "El Salto — Sindicat de Llogateres: la lucha inquilina renace",
       "u": "https://www.elsaltodiario.com/vivienda/sindicat-llogaters-lucha-inquilina-renace-80-anos-despues"

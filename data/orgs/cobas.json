@@ -1,0 +1,219 @@
+{
+  "id": "cobas",
+  "siglas": "co.bas",
+  "nombre": "Sindicato de Comisiones de Base",
+  "familia": "sindicato",
+  "pais": "Estado español",
+  "fundacion": 2006,
+  "tamano": [
+    1500,
+    "Sin fuente verificable: no publica afiliación. Estimación.",
+    "baja"
+  ],
+  "corriente": "Sindicalismo de clase asambleario, surgido del sector crítico de CCOO",
+  "autogestionada": true,
+  "resumen": "Sindicato asambleario sin liberados ni subvenciones. Su base son las Comisiones de Base y las Secciones Sindicales, soberanas en su ámbito. Un Congreso cada 4 años elige una Coordinadora Estatal de 13 personas que decide por consenso y, si no lo hay, por mayoría simple. Ningún cargo puede firmar acuerdos importantes sin consulta vinculante con las trabajadoras afectadas. Ningún sector o territorio puede tener más del 35% de los cargos.",
+  "poder_formal": "Congreso y, entre congresos, la Coordinadora Estatal (13 personas).",
+  "poder_real": "Coordinadora Estatal y secciones sindicales fuertes (logística, Telefónica). La consulta vinculante a las afectadas limita a las direcciones en la negociación.",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Afiliación",
+      "nivel": 0,
+      "tipo": "base"
+    },
+    {
+      "id": "cb",
+      "n": "Comisiones de Base",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Al menos 3 afiliados; soberanas, con asamblea general mínimo cada 2 años (art. 13)."
+    },
+    {
+      "id": "ss",
+      "n": "Secciones sindicales",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Representación en la empresa; soberanas en su ámbito (art. 14)."
+    },
+    {
+      "id": "prov",
+      "n": "Coordinadoras territoriales (provincial y autonómica)",
+      "nivel": 2,
+      "tipo": "coordinacion",
+      "elegido_por": [
+        "af"
+      ],
+      "decide": "Consenso; si no, mayoría simple",
+      "desc": "Designadas por la asamblea de afiliación de su ámbito (art. 18 bis)."
+    },
+    {
+      "id": "cong",
+      "n": "Congreso Estatal",
+      "nivel": 3,
+      "tipo": "soberano",
+      "elegido_por": [
+        "prov"
+      ],
+      "freq": "Cada 4 años; extraordinario por mayoría de la Coordinadora o por más del 25% de la afiliación",
+      "decide": "Una persona un voto con proporcionalidad territorial; 2/3 para fusión",
+      "desc": "Delegaciones territoriales (art. 16-17)."
+    },
+    {
+      "id": "gar",
+      "n": "Comisión de Garantías Democráticas",
+      "nivel": 4,
+      "tipo": "garantias",
+      "elegido_por": [
+        "cong"
+      ]
+    },
+    {
+      "id": "ce",
+      "n": "Coordinadora Estatal",
+      "nivel": 4,
+      "tipo": "coordinacion",
+      "elegido_por": [
+        "cong"
+      ],
+      "decide": "Consenso; si no, mayoría simple de sus miembros",
+      "desc": "13 personas; máximo órgano entre congresos; designada y revocada por el Congreso (art. 18)."
+    },
+    {
+      "id": "cd",
+      "n": "Coordinadores/as delegados/as",
+      "nivel": 5,
+      "tipo": "ejecutivo",
+      "cima": true,
+      "elegido_por": [
+        "ce"
+      ],
+      "desc": "Representación legal y pública; elegidos y revocados por la Coordinadora Estatal entre sus miembros (art. 19)."
+    }
+  ],
+  "reglas": {
+    "metodo": "Consenso y, si no es posible, mayoría simple (art. 18).",
+    "ponderacion": "Una persona un voto con proporcionalidad territorial en el Congreso.",
+    "mandato": "Consulta vinculante obligatoria a las trabajadoras afectadas antes de firmar acuerdos importantes (art. 6c).",
+    "cargos": "Sin liberados: toda delegada vinculada a un puesto de trabajo y con rotación de tareas (art. 10). Mandatos de hasta 4 años.",
+    "reforma": "Congreso; 2/3 para fusión o disolución.",
+    "minorias": "Ningún sector o territorio puede tener más del 35% de los cargos de un órgano (art. 15)."
+  },
+  "codigos": {
+    "mandato": [
+      2,
+      "Art. 6: ningún cargo puede firmar acuerdos importantes (convenios, acuerdos con empresas) sin consulta vinculante a las trabajadoras afectadas; no hay mandato imperativo general para las delegaciones.",
+      "alta"
+    ],
+    "revocabilidad": [
+      2,
+      "Art. 18: la Coordinadora Estatal es «designada y revocada por el Congreso»; art. 19: la Coordinadora elige y revoca a los coordinadores delegados (la cima). Sin trámite reforzado ni revocación por la base.",
+      "alta"
+    ],
+    "rotacion": [
+      1,
+      "Art. 19: los coordinadores delegados duran entre congresos, con un máximo de 4 años por mandato, sin límite de reelección.",
+      "alta"
+    ],
+    "profesionalizacion": [
+      4,
+      "Art. 10: el sindicato no tendrá liberados sindicales y toda delegada debe estar vinculada a un puesto de trabajo y rotar en las tareas sindicales.",
+      "alta"
+    ],
+    "eleccion_direccion": [
+      2,
+      "Coordinadora Estatal elegida en Congreso de delegaciones.",
+      "alta"
+    ],
+    "agenda_base": [
+      2,
+      "Art. 16: la Coordinadora Estatal convoca el Congreso con el orden del día; la afiliación puede formular propuestas (art. 9) y pedir congreso extraordinario con el 25 %, pero no hay vía reglada para incluir puntos.",
+      "media"
+    ],
+    "pluralismo": [
+      2,
+      "Los Estatutos no regulan tendencias, listas ni votos particulares; la única garantía es el tope del 35 % de cargos por sector o territorio (art. 15).",
+      "media"
+    ],
+    "autonomia_base": [
+      3,
+      "Comisiones de Base y secciones soberanas dentro de las directrices generales.",
+      "alta"
+    ],
+    "brecha_formal_real": [
+      1,
+      "Sin fuente verificable: organización pequeña con reglas garantistas. Estimación sin fuente citada.",
+      "baja"
+    ],
+    "regla_decision": [
+      3,
+      "Art. 18: la Coordinadora Estatal decide por consenso y, si no es posible, por mayoría simple.",
+      "alta"
+    ],
+    "capacidad_ejecutiva": [
+      2,
+      "Coordinadores delegados para la representación; decisiones en la Coordinadora.",
+      "media"
+    ],
+    "freq_soberano_meses": [
+      48,
+      "Art. 16: Congreso ordinario una vez cada cuatro años.",
+      "alta"
+    ],
+    "freq_intermedio_meses": [
+      3,
+      "Sin fuente verificable: los Estatutos no fijan la frecuencia de la Coordinadora Estatal.",
+      "baja"
+    ],
+    "niveles": [
+      3,
+      "Comisión → coordinadora territorial → Congreso.",
+      "media"
+    ],
+    "estructura_federal": [
+      3,
+      "Territorial y sectorial, con topes de concentración.",
+      "media"
+    ],
+    "coste_coordinacion": [
+      2,
+      "Sin aparato liberado.",
+      "media"
+    ]
+  },
+  "problemas": [
+    {
+      "t": "democratico",
+      "x": "Punto fuerte: la consulta vinculante a las trabajadoras afectadas (no solo a la afiliación) antes de firmar acuerdos traslada la decisión al conflicto concreto."
+    },
+    {
+      "t": "democratico",
+      "x": "Punto fuerte: el tope del 35% de cargos por sector o territorio impide que una sección grande capture los órganos, un problema que la CGT no limita."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "Sin liberados, la carga sindical recae en voluntarios con jornada completa; el crecimiento en grandes empresas (Telefónica, logística) tensiona ese modelo."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "co.bas — Estatutos (V Congreso, octubre de 2023)",
+      "u": "https://www.cobas.es/documentos-vo-congreso/estatutos-del-sindicato-de-las-comisiones-de-base/"
+    },
+    {
+      "t": "co.bas — Quiénes somos",
+      "u": "https://www.cobas.es/quienes_somos/"
+    },
+    {
+      "t": "Wikipedia — Comisiones de Base",
+      "u": "https://es.wikipedia.org/wiki/Comisiones_de_Base"
+    }
+  ],
+  "confianza": "alta"
+}

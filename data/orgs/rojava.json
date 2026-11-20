@@ -1,0 +1,235 @@
+{
+  "id": "rojava",
+  "siglas": "DAANES",
+  "nombre": "Administración Autónoma Democrática del Norte y Este de Siria (Rojava)",
+  "familia": "movimiento",
+  "pais": "Norte y este de Siria · integrada en el Estado sirio en agosto de 2026",
+  "fundacion": 2014,
+  "tamano": [
+    4600000,
+    "Población gobernada estimada en 2024 (Wikipedia), antes de la ofensiva de 2026. Es población, no militancia.",
+    "media"
+  ],
+  "tamano_unidad": "poblacion",
+  "corriente": "Confederalismo democrático (Öcalan); comunalismo, paridad de género, economía cooperativa",
+  "autogestionada": true,
+  "resumen": "Autogobierno regido por el Contrato Social (2014, revisado en 2016 y 2023). Su base son las comunas de calle o aldea, que delegan en consejos de barrio, distrito, ciudad y región, hasta el Consejo Democrático de los Pueblos y un Consejo Ejecutivo. Todos los cargos tienen copresidencia paritaria hombre-mujer y hay cuotas de género. En paralelo, el poder militar de las SDF (YPG/YPJ) y político del PYD. Tras la ofensiva de enero de 2026 y el acuerdo del 30 de enero, se integró en el Estado sirio el 20 de agosto de 2026. La ficha describe la estructura de 2014-2026.",
+  "poder_formal": "Comunas y consejos electos, con copresidencias paritarias; Consejo Democrático de los Pueblos como órgano legislativo.",
+  "poder_real": "El PYD y sus cuadros, y la estructura militar de las SDF. La negociación con Damasco la llevó el mando militar (Mazloum Abdi), no la dirección política.",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Población",
+      "nivel": 0,
+      "tipo": "base"
+    },
+    {
+      "id": "com",
+      "n": "Comunas",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Asamblea de calle o aldea; unas 3.950 en 2025 (sin verificar). Copresidencia paritaria."
+    },
+    {
+      "id": "kongra",
+      "n": "Organizaciones autónomas de mujeres",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Estructuras paralelas de mujeres (Kongra Star) con capacidad propia sobre asuntos de género (no verificado en las fuentes leídas)."
+    },
+    {
+      "id": "barrio",
+      "n": "Consejos de barrio y distrito",
+      "nivel": 2,
+      "tipo": "delegados",
+      "elegido_por": [
+        "com",
+        "kongra"
+      ]
+    },
+    {
+      "id": "canton",
+      "n": "Consejos de ciudad, cantón y región",
+      "nivel": 3,
+      "tipo": "delegados",
+      "elegido_por": [
+        "barrio"
+      ]
+    },
+    {
+      "id": "cdp",
+      "n": "Consejo Democrático de los Pueblos (legislativo)",
+      "nivel": 4,
+      "tipo": "soberano",
+      "elegido_por": [
+        "canton"
+      ],
+      "freq": "Elecciones locales 2015 y 2017; las posteriores se aplazaron",
+      "desc": "Órgano legislativo 2015-2026; 50% de mujeres en 2023."
+    },
+    {
+      "id": "pyd",
+      "n": "PYD / TEV-DEM y cuadros",
+      "nivel": 4,
+      "tipo": "coordinacion",
+      "elegido_por": [],
+      "desc": "Partido dominante y movimiento que articula las comunas. No electo por las instituciones."
+    },
+    {
+      "id": "sdf",
+      "n": "SDF (YPG / YPJ)",
+      "nivel": 4,
+      "tipo": "militar",
+      "elegido_por": [],
+      "desc": "Fuerza armada multiétnica creada en 2015; disuelta formalmente en agosto de 2026."
+    },
+    {
+      "id": "ce",
+      "n": "Consejo Ejecutivo (copresidencia)",
+      "nivel": 5,
+      "tipo": "ejecutivo",
+      "cima": true,
+      "elegido_por": [
+        "cdp"
+      ],
+      "desc": "Copresidencia Îlham Ehmed y Mansur Selum (2018-2026)."
+    }
+  ],
+  "reglas": {
+    "metodo": "Asambleas comunales y consejos por delegación; consenso en lo local, mayoría en los consejos.",
+    "ponderacion": "Cuotas étnicas y de género; en 2023, tres quintos de los representantes municipales por población general y dos quintos por componentes demográficos.",
+    "mandato": "Delegación desde las comunas.",
+    "cargos": "Copresidencia paritaria hombre-mujer en todos los niveles.",
+    "reforma": "Contrato Social (2014, 2016, 2023).",
+    "minorias": "Representación étnica garantizada; oposición kurda (KNC) excluida de hecho."
+  },
+  "codigos": {
+    "mandato": [
+      2,
+      "Contrato Social 2023: no establece mandato imperativo; los arts. 121-122 someten a los electos a la supervisión de quienes los eligieron y permiten retirarles la confianza, según regule la ley.",
+      "media"
+    ],
+    "revocabilidad": [
+      2,
+      "Contrato Social 2023, art. 93: el Consejo Democrático de los Pueblos, que elige a la copresidencia del Consejo Ejecutivo (la cima), puede retirarle la confianza sin trámite reforzado. La revocación desde la base (art. 76, comunas; art. 122) alcanza a las copresidencias comunales y a los representantes, no a la cima.",
+      "media"
+    ],
+    "rotacion": [
+      4,
+      "Contrato Social 2023, art. 78: miembros de los consejos, de los órganos ejecutivos y copresidencias no pueden presentarse al mismo cargo tras dos mandatos consecutivos; el ciclo electoral es de dos años (arts. 78 y 92): 4 años.",
+      "media"
+    ],
+    "profesionalizacion": [
+      2,
+      "Sin fuente verificable: cuadros profesionales del movimiento y unos 50.000 empleados administrativos; la cifra no aparece en las fuentes citadas y el Contrato Social no regula la remuneración de los cargos.",
+      "baja"
+    ],
+    "eleccion_direccion": [
+      2,
+      "Arts. 92-93: el Consejo Democrático de los Pueblos (60 % de elección directa, 40 % elegido dentro de las comunidades y grupos sociales) elige a la copresidencia del ejecutivo por dos tercios.",
+      "media"
+    ],
+    "agenda_base": [
+      2,
+      "Art. 47: subsidiariedad (cada unidad decide sus asuntos); arts. 123-125: referéndums y objeciones de pueblos y cantones. La legislación general parte de los consejos.",
+      "media"
+    ],
+    "pluralismo": [
+      3,
+      "Art. 43: libertad de pensamiento político y de formar partidos; las elecciones son competitivas entre partidos y listas.",
+      "media"
+    ],
+    "autonomia_base": [
+      3,
+      "Arts. 47 y 75: cada unidad administrativa decide sus asuntos y la comuna es lugar de decisión y administración, siempre dentro del Contrato Social (art. 126: el tribunal puede anular decisiones contrarias).",
+      "media"
+    ],
+    "brecha_formal_real": [
+      4,
+      "Las elecciones generales previstas para 2014 y 2018 y las de 2024 se aplazaron y no se celebraron (Wikipedia), y la copresidencia ejecutiva siguió de 2018 a 2026; la negociación con Damasco la llevó el mando militar de las SDF y no la dirección política (ISPI, 2026). El peso del PYD y de los cuadros formados en el PKK se atribuía a Carnegie (2019), pero ese informe no está localizado: esa parte no tiene fuente verificable.",
+      "media"
+    ],
+    "regla_decision": [
+      2,
+      "Art. 78: los consejos funcionan según la «democracia consensual»; en el Consejo Democrático de los Pueblos se vota (dos tercios para las copresidencias, 50 + 1 para la Mesa, art. 92).",
+      "media"
+    ],
+    "capacidad_ejecutiva": [
+      3,
+      "El Consejo Ejecutivo gestiona la administración entre sesiones y responde ante el Consejo Democrático de los Pueblos, que puede retirarle la confianza (art. 93).",
+      "media"
+    ],
+    "freq_soberano_meses": [
+      60,
+      "Ciclo electoral de dos años en la norma (art. 92), pero en la práctica hubo elecciones locales en 2015 y 2017 y las generales se aplazaron una y otra vez (Wikipedia). El valor recoge la práctica.",
+      "baja"
+    ],
+    "freq_intermedio_meses": [
+      3,
+      "Sin fuente verificable: el Contrato Social no fija la frecuencia de reunión de los consejos de distrito y región.",
+      "baja"
+    ],
+    "niveles": [
+      5,
+      "Comuna → barrio → ciudad/cantón → región → Consejo.",
+      "media"
+    ],
+    "estructura_federal": [
+      4,
+      "Confederalismo modular de comunas a regiones.",
+      "media"
+    ],
+    "coste_coordinacion": [
+      2,
+      "Muchos niveles de consejos.",
+      "baja"
+    ]
+  },
+  "problemas": [
+    {
+      "t": "democratico",
+      "x": "Doble poder, como en el EZLN pero a escala de millones: una estructura comunal con paridad muy avanzada convive con un partido dominante y un mando militar que decidieron lo estratégico, incluida la integración en Siria."
+    },
+    {
+      "t": "democratico",
+      "x": "Las elecciones generales se aplazaron una y otra vez; la legitimidad se apoyó en la guerra y en la comuna local, no en el voto a escala regional."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "La comuna como unidad de tamaño fijo escaló a millones de personas y a territorios árabes, pero la deserción del componente árabe de las SDF en 2026 mostró que la adhesión no era homogénea."
+    },
+    {
+      "t": "agilidad",
+      "x": "Ágil en lo militar y en lo local; lento y opaco en lo intermedio. Integrada en el Estado sirio el 20 de agosto de 2026: no consta qué ocurre con comunas y consejos."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Wikipedia — Democratic Autonomous Administration of North and East Syria",
+      "u": "https://en.wikipedia.org/wiki/Democratic_Autonomous_Administration_of_North_and_East_Syria"
+    },
+    {
+      "t": "ISPI — From Autonomy to Integration: Northeastern Syria after Assad (2026)",
+      "u": "https://www.ispionline.it/en/publication/from-autonomy-to-integration-northeastern-syria-after-assad-239443"
+    },
+    {
+      "t": "Wikipedia — Constitution of the DAANES (Contrato Social)",
+      "u": "https://en.wikipedia.org/wiki/Constitution_of_the_Democratic_Autonomous_Administration_of_North_and_East_Syria"
+    },
+    {
+      "t": "Wikipedia — 2026 northeastern Syria offensive",
+      "u": "https://en.wikipedia.org/wiki/2026_northeastern_Syria_offensive"
+    },
+    {
+      "t": "DAANES — Contrato Social (2023), traducción del Rojava Information Center",
+      "u": "https://rojavainformationcenter.org/2023/12/aanes-social-contract-2023-edition"
+    }
+  ],
+  "confianza": "media"
+}

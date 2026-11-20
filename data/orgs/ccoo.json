@@ -7,7 +7,7 @@
   "fundacion": 1976,
   "tamano": [
     1000000,
-    "En torno a un millón de afiliadas según la propia organización.",
+    "En torno a un millón de personas afiliadas según la propia organización (Europa Press, diciembre de 2025).",
     "media"
   ],
   "corriente": "Sindicalismo de clase sociopolítico, representativo y de concertación",
@@ -131,34 +131,34 @@
       "media"
     ],
     "revocabilidad": [
-      1,
-      "La revocación solo es posible por el órgano que elige, con procedimiento reforzado.",
-      "baja"
+      2,
+      "Estatutos (11º Congreso), art. 11.1: los integrantes de los órganos «podrán ser revocados por los órganos que las eligieron», sin umbral ni plazo reforzado.",
+      "alta"
     ],
     "rotacion": [
       2,
-      "Límite de mandatos en la Secretaría General (hasta 3 × 4 años).",
+      "Estatutos, art. 32.g: la Secretaría General no puede ser elegida más de tres mandatos (Congreso cada 4 años, art. 27.b.1); art. 31.a.3: el mismo tope para la Ejecutiva.",
       "media"
     ],
     "profesionalizacion": [
-      1,
-      "Gran aparato de liberados, técnicos y estructura financiada en parte por la participación institucional.",
+      0,
+      "Los Estatutos regulan el personal sindicalista retribuido de los cargos electos y las ejecutivas (art. 48) y el personal técnico (arts. 31.c.3 y 47); con un millón de afiliadas, el aparato supera con holgura una liberada por cada mil (estimación).",
       "media"
     ],
     "eleccion_direccion": [
       1,
-      "Elección en cascada a 3-4 niveles; candidatura única habitual (96,1% en 2025).",
+      "Elección en cascada a 3-4 niveles (sección, federación/territorio, Congreso Confederal) y el art. 11.4 prescribe como criterio preferente la «candidatura única y cerrada».",
       "alta"
     ],
     "agenda_base": [
       1,
-      "Ponencias redactadas por la dirección y enmendadas desde abajo.",
+      "Estatutos (13º Congreso), art. 29: el Consejo Confederal aprueba las ponencias que sirven de base y las normas del congreso; las asambleas presentan enmiendas (art. 27.3).",
       "media"
     ],
     "pluralismo": [
-      2,
-      "Representación proporcional de listas y sectores críticos reconocidos, aunque minoritarios.",
-      "media"
+      3,
+      "Art. 11.4: si no hay lista única compiten listas avaladas por el 10 % con reparto proporcional. Art. 12: corrientes sindicales reconocidas con acceso a medios, pero sin portavoces en los órganos ni disciplina de voto.",
+      "alta"
     ],
     "autonomia_base": [
       2,
@@ -167,27 +167,27 @@
     ],
     "brecha_formal_real": [
       2,
-      "El poder institucional (concertación, comités) supera al de la afiliación.",
+      "Los estatutos permiten listas proporcionales y corrientes, pero en la práctica dominan la unanimidad pactada y la candidatura única (Sordo, 96,1 % en 2025). El poder institucional (concertación, comités) pesa más que la afiliación. Estimación con prensa.",
       "media"
     ],
     "regla_decision": [
       4,
-      "Mayoría simple; la dirección decide entre congresos.",
+      "Art. 27.4: los acuerdos del congreso se adoptan por mayoría simple; la dirección decide entre congresos.",
       "media"
     ],
     "capacidad_ejecutiva": [
-      4,
-      "La Ejecutiva firma acuerdos y convoca movilizaciones sin consulta vinculante.",
-      "media"
+      3,
+      "Art. 31.c.1: la Ejecutiva asegura la dirección permanente y decide las cuestiones urgentes entre reuniones del Consejo Confederal, ante el que responde (art. 31.b.6).",
+      "alta"
     ],
     "freq_soberano_meses": [
       48,
-      "Congreso cada 4 años.",
+      "Art. 27.b.1: el Consejo Confederal convoca el congreso ordinario cada cuatro años.",
       "alta"
     ],
     "freq_intermedio_meses": [
       4,
-      "Consejo Confederal varias veces al año.",
+      "Art. 29.b.1: el Consejo Confederal se reúne al menos tres veces al año.",
       "media"
     ],
     "niveles": [
@@ -226,12 +226,24 @@
   ],
   "fuentes": [
     {
+      "t": "CCOO — Estatutos 11º Congreso Confederal (2017)",
+      "u": "https://www.ccoo.es/58f7e0e162eb9e89f66d40a25eed2cf3000001.pdf"
+    },
+    {
+      "t": "CCOO — Estatutos 13º Congreso Confederal (2025)",
+      "u": "https://13congreso.ccoo.es/d12866caab53ed21159ed47677dc7470000001.pdf"
+    },
+    {
       "t": "CCOO — Composición de la Ejecutiva Confederal (13º Congreso)",
       "u": "https://docpublicos.ccoo.es/cendoc/071684EjecutivaConfederal13Congreso.pdf"
     },
     {
       "t": "Europa Press/Bolsamanía — Reelección con el 96,1% (2025)",
       "u": "https://www.bolsamania.com/noticias/economia/economia--amp-ccoo-reelige-a-unai-sordo-como-secretario-general-con-el-961-de-los-votos-para-su-ultimo-mandato--20076654.html"
+    },
+    {
+      "t": "Europa Press/Bolsamanía — CCOO y el millón de personas afiliadas (2025)",
+      "u": "https://www.bolsamania.com/noticias_amp/economia/economia--ccoo-refuerza-su-autofinanciacion-y-plantea-un-fondo-para-fortalecer-las-movilizaciones-y-huelgas-en-2026--21329319.html"
     }
   ],
   "confianza": "media"

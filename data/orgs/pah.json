@@ -7,9 +7,10 @@
   "fundacion": 2009,
   "tamano": [
     10000,
-    "Sin afiliación formal; unas 200 asambleas locales en su momento álgido. Estimación de personas activas.",
+    "Sin fuente verificable: sin afiliación formal; unas 200 asambleas locales en su momento álgido. Estimación de personas activas.",
     "baja"
   ],
+  "tamano_unidad": "activistas",
   "corriente": "Movimiento asambleario por la vivienda; apoyo mutuo y desobediencia civil",
   "autogestionada": true,
   "resumen": "Red de asambleas locales autónomas que comparten nombre, principios y métodos (asesoría colectiva, stop desahucios, obra social). Se coordinan en encuentros estatales y grupos de trabajo. Decisión por consenso.",
@@ -83,68 +84,68 @@
   "codigos": {
     "mandato": [
       3,
-      "Representación de acuerdos locales en encuentros.",
+      "Criterios básicos: las PAHs reciben el orden del día de la asamblea estatal con dos semanas de antelación «para poder llevarlo debatido», cada PAH tiene un voto y sus portavoces transmiten lo acordado en asamblea.",
       "media"
     ],
     "revocabilidad": [
       3,
-      "Responsabilidades rotativas y retirables.",
-      "media"
+      "Sin fuente verificable: responsabilidades rotativas y retirables. Los Criterios básicos dicen que las portavocías las elige y renueva la asamblea y que las PAHs piden la entrada y salida de la Coordinadora Estatal, pero no regulan la revocación.",
+      "baja"
     ],
     "rotacion": [
-      3,
-      "Rotación como principio.",
+      4,
+      "Criterios básicos: la Comisión de Coordinación Estatal tiene mandatos de 1 año + 1 (máximo 2, con ratificación tras el primero) y rotación escalonada; los miembros de las comisiones estatales rotan «siempre que sea posible».",
       "media"
     ],
     "profesionalizacion": [
       4,
-      "Voluntaria.",
-      "media"
+      "Criterios básicos: la PAH funciona sin ánimo de lucro, el asesoramiento es siempre gratuito y se rechazan donaciones de partidos y sindicatos. No consta una norma expresa sobre cargos no remunerados.",
+      "baja"
     ],
     "eleccion_direccion": [
-      3,
-      "No hay dirección; coordinación elegida en encuentros.",
+      2,
+      "Criterios básicos: la Comisión de Coordinación Estatal la forman 3 personas por cada coordinadora autonómica (o elegidas por las PAHs de la comunidad) y 1 por cada comisión estatal; no la elige la asamblea estatal: elección por órganos de delegados.",
       "media"
     ],
     "agenda_base": [
       4,
-      "Agenda local.",
+      "Criterios básicos: las asambleas estatales definen las líneas «a propuesta de las PAHs locales»; la Coordinadora Estatal propone el orden del día inicial y debe recoger e integrar las propuestas de modificación de las PAHs.",
       "media"
     ],
     "pluralismo": [
       2,
-      "El consenso protege a las minorías, pero empuja la disidencia hacia la salida.",
+      "El consenso da a la minoría capacidad de bloqueo; no hay listas ni corrientes.",
       "media"
     ],
     "autonomia_base": [
       4,
-      "Asambleas plenamente autónomas.",
+      "Criterios básicos: no se permiten intromisiones en la autonomía local de cada PAH; las expulsiones las avala la asamblea local.",
       "alta"
     ],
     "brecha_formal_real": [
       2,
-      "Las portavocías mediáticas concentraron visibilidad (2010-2015).",
-      "media"
+      "Sin fuente verificable: las portavocías mediáticas concentraron visibilidad (2010-2015) y la disidencia suele resolverse saliendo de la asamblea. Estimación sin prensa citada.",
+      "baja"
     ],
     "regla_decision": [
-      1,
-      "Consenso.",
-      "media"
+      2,
+      "Criterios básicos: consenso como método fundamental y votación por mayoría simple como último recurso; las decisiones públicas de gran trascendencia necesitan 2/3 si no hay consenso.",
+      "alta"
     ],
     "capacidad_ejecutiva": [
-      0,
-      "Sin ejecutivo estatal.",
+      3,
+      "Criterios básicos: la Comisión de Coordinación Estatal se encarga de los temas urgentes que no pueden esperar a la asamblea estatal, que ratifica después sus actuaciones.",
       "media"
     ],
     "freq_soberano_meses": [
       0.25,
-      "Asamblea local semanal.",
-      "media"
+      "Sin fuente verificable: asamblea local semanal.",
+      "baja"
     ],
     "freq_intermedio_meses": [
-      6,
-      "Encuentros estatales esporádicos.",
-      "baja"
+      4,
+      "Criterios básicos: asambleas estatales con un intervalo máximo de 4 meses; la Coordinadora Estatal se reúne cada quince días.",
+      "alta"
     ],
     "niveles": [
       2,
@@ -177,6 +178,10 @@
     }
   ],
   "fuentes": [
+    {
+      "t": "PAH — Criterios básicos de funcionamiento de una PAH (líneas rojas, versión 2 de 2022)",
+      "u": "https://afectadosporlahipoteca.com/criterios-basicos-y-protocolos-pah/"
+    },
     {
       "t": "PAH — web",
       "u": "https://afectadosporlahipoteca.com/"

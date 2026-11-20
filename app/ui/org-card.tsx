@@ -1,7 +1,7 @@
 import type { Handle } from 'remix/component'
 
-import { FAMILIAS, TIPO_PROBLEMA } from '../lib/codebook.ts'
-import { fmt, type OrgConIndices } from '../lib/metrics.ts'
+import { FAMILIAS, TIPO_PROBLEMA, coberturaFuentes, etiquetaEstado } from '../lib/codebook.ts'
+import { bandaTexto, type OrgConIndices } from '../lib/metrics.ts'
 import { routes } from '../routes.ts'
 import { OrgChart } from './charts.tsx'
 
@@ -30,13 +30,18 @@ export function OrgCard(handle: Handle<{ o: OrgConIndices }>) {
         </h3>
         <div class="sub">
           {o.nombre} <span class={`pill ${o.confianza}`}>confianza {o.confianza}</span>
+          {etiquetaEstado(o) ? <span class="tag estado">{etiquetaEstado(o)}</span> : null}
         </div>
-        <div class="idx">
-          <div><b>{fmt(i.cb)}</b><span>Control de base</span></div>
-          <div><b>{fmt(i.ag)}</b><span>Agilidad</span></div>
-          <div><b>{fmt(i.es)}</b><span>Escala</span></div>
-          <div><b>{i.hops ?? '—'}</b><span>Saltos</span></div>
-        </div>
+        <dl class="idx-list">
+          <div><dt>Control de base</dt><dd>{bandaTexto(i.cb, i.ic.cb)}</dd></div>
+          <div><dt>Agilidad</dt><dd>{bandaTexto(i.ag, i.ic.ag)}</dd></div>
+          <div><dt>Códigos con fuente</dt><dd>{coberturaFuentes(o).con}/{coberturaFuentes(o).total}</dd></div>
+          <div><dt>Escalabilidad</dt><dd>{bandaTexto(i.es, i.ic.es)}</dd></div>
+          <div><dt>Riesgo oligárquico</dt><dd>{bandaTexto(i.olig, i.ic.olig)}</dd></div>
+        </dl>
+        <p class="sub" style={{ margin: '4px 0 0' }}>
+          Bandas: bajo (0-33), medio (33-67), alto (67-100). «medio–alto» = el intervalo del 90 % cruza el corte.
+        </p>
         {o.resumen ? <p style={{ margin: '12px 0 0' }}>{o.resumen}</p> : null}
         <dl class="power">
           <dt class="eyebrow">Poder formal</dt>

@@ -5,3 +5,5 @@ tmp/
 analisis/.venv/
 analisis/__marimo__/
 __pycache__/
+.direnv/
+revision-pdf/

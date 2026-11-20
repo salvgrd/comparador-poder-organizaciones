@@ -1,0 +1,247 @@
+{
+  "id": "podemos",
+  "siglas": "Podemos",
+  "nombre": "Podemos",
+  "familia": "partido",
+  "pais": "Estado español",
+  "fundacion": 2014,
+  "tamano": [
+    50000,
+    "No publica militancia con cuota. En la V Asamblea Ciudadana Estatal (abril de 2025) se emitieron 27.172 votos (acta de resultados); el número de inscritos es mayor. Estimación.",
+    "baja"
+  ],
+  "corriente": "Izquierda populista; democracia digital directa",
+  "autogestionada": false,
+  "resumen": "Estructura de democracia directa digital: la Asamblea Ciudadana Estatal la forman todas las personas inscritas, vota por internet y elige directamente la Secretaría General, el Consejo Ciudadano Estatal (98 electos con el sistema DesBorda de listas abiertas) y la Comisión de Garantías. Los Círculos son la unidad de base, pero su peso orgánico es pequeño: eligen 6 de los ~120 miembros del Consejo Ciudadano.",
+  "poder_formal": "Asamblea Ciudadana Estatal (todas las personas inscritas), con decisiones vinculantes.",
+  "poder_real": "La Secretaría General: propone el Consejo de Coordinación y las responsables de secretarías, convoca consultas y, con su equipo técnico, fija el orden del día de la Asamblea. Hiperliderazgo con legitimación plebiscitaria.",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Personas inscritas / militantes",
+      "nivel": 0,
+      "tipo": "base",
+      "desc": "Militante: inscrita en un Círculo, con identidad verificada y al corriente de pago."
+    },
+    {
+      "id": "circ",
+      "n": "Círculos",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Municipales, comarcales (máx. 50 militantes) o sectoriales; mínimo 3 militantes."
+    },
+    {
+      "id": "red",
+      "n": "Redes de Círculos y enlaces",
+      "nivel": 2,
+      "tipo": "delegados",
+      "elegido_por": [
+        "circ"
+      ],
+      "desc": "Los enlaces de los Círculos eligen 6 miembros del Consejo Ciudadano Estatal."
+    },
+    {
+      "id": "aut",
+      "n": "Consejos Ciudadanos y coordinaciones autonómicas",
+      "nivel": 2,
+      "tipo": "delegados",
+      "elegido_por": [
+        "af"
+      ]
+    },
+    {
+      "id": "ace",
+      "n": "Asamblea Ciudadana Estatal",
+      "nivel": 3,
+      "tipo": "soberano",
+      "elegido_por": [
+        "af"
+      ],
+      "decide": "Voto telemático directo; DesBorda para órganos",
+      "freq": "Ordinaria entre 18 meses y 4 años (V Asamblea, 2025)",
+      "desc": "Consultas vinculantes convocables por la Secretaría General, la mayoría absoluta del Consejo Ciudadano o el 25% de inscritos (art. 22). Orden del día del Equipo Técnico nombrado por el Consejo Ciudadano."
+    },
+    {
+      "id": "cce",
+      "n": "Consejo Ciudadano Estatal",
+      "nivel": 4,
+      "tipo": "delegados",
+      "elegido_por": [
+        "ace",
+        "aut",
+        "red"
+      ],
+      "freq": "Como máximo cada 3 meses",
+      "decide": "Mayoría simple de presentes; quórum 20% de la parte electa",
+      "desc": "Secretaría General + 17 coordinadores autonómicos + 98 electos en Asamblea + 6 por los Círculos + exterior (art. 23)."
+    },
+    {
+      "id": "gar",
+      "n": "Comisión de Garantías Democráticas",
+      "nivel": 4,
+      "tipo": "garantias",
+      "elegido_por": [
+        "ace"
+      ]
+    },
+    {
+      "id": "ccoord",
+      "n": "Consejo de Coordinación Estatal",
+      "nivel": 5,
+      "tipo": "ejecutivo",
+      "elegido_por": [
+        "cce"
+      ],
+      "desc": "Nombrado por el Consejo Ciudadano a propuesta de la Secretaría General (art. 23, 25)."
+    },
+    {
+      "id": "sg",
+      "n": "Secretaría General",
+      "nivel": 6,
+      "tipo": "ejecutivo",
+      "cima": true,
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Sufragio libre y directo de la Asamblea Ciudadana; debe encabezar una lista al Consejo Ciudadano. Revocable por consulta (art. 24, 26)."
+    }
+  ],
+  "reglas": {
+    "metodo": "Votaciones telemáticas directas de todas las personas inscritas; mayoría simple en órganos.",
+    "ponderacion": "Una persona inscrita, un voto.",
+    "mandato": "Libre.",
+    "cargos": "No consta limitación de mandatos en el Documento Organizativo de 2025.",
+    "reforma": "Asamblea Ciudadana Estatal.",
+    "minorias": "DesBorda con listas abiertas; candidaturas a la Secretaría General vinculadas a listas al Consejo Ciudadano. Las corrientes críticas han acabado saliendo (Errejón 2019, Anticapitalistas 2020)."
+  },
+  "codigos": {
+    "mandato": [
+      0,
+      "Sin delegación: voto individual directo.",
+      "alta"
+    ],
+    "revocabilidad": [
+      2,
+      "Documento Organizativo 2025, art. 26: revoca la base (la Asamblea Ciudadana, todas las inscritas), que es quien elige a la SG y al CCE (sería un 3), con trámite reforzado: solo pasados 18 meses, a petición del 25 % y una sola consulta por mandato (menos 1).",
+      "alta"
+    ],
+    "rotacion": [
+      1,
+      "El Documento Organizativo no limita los mandatos (art. 22); el Documento Ético (2025) fija 8 años para cargos públicos e internos, prorrogables excepcionalmente a 12 y, más allá, con consulta a las inscritas: prorrogable sin tope.",
+      "alta"
+    ],
+    "profesionalizacion": [
+      1,
+      "El Documento Ético (2025) prevé retribución, con limitación salarial y donación al partido, para cargos electos e internos: dirección remunerada. El tamaño del aparato técnico no consta en fuentes públicas.",
+      "media"
+    ],
+    "eleccion_direccion": [
+      2,
+      "Secretaría General y Consejo Ciudadano por voto directo de las inscritas (art. 22); en el Reglamento V ACE la candidata a la SG va vinculada a una lista para el Consejo y se vota con el sistema DesBorda, sin deliberación vinculante previa: elección plebiscitaria de un liderazgo unipersonal.",
+      "alta"
+    ],
+    "agenda_base": [
+      1,
+      "Art. 22: el orden del día de la Asamblea lo elabora el Equipo Técnico nombrado por el Consejo Ciudadano; la convocatoria de consultas desde abajo exige el 25 % de las inscritas.",
+      "alta"
+    ],
+    "pluralismo": [
+      3,
+      "Reglamento V ACE: el CCE se elige por listas abiertas que compiten con un sistema de reparto (DesBorda), además de candidaturas individuales. No hay corrientes reconocidas con derechos.",
+      "media"
+    ],
+    "autonomia_base": [
+      1,
+      "Art. 23: los Círculos eligen 6 miembros del Consejo Ciudadano Estatal, que puede convocar de forma extraordinaria asambleas de nivel territorial inferior.",
+      "alta"
+    ],
+    "brecha_formal_real": [
+      4,
+      "Democracia directa formal con hiperliderazgo real: quien convoca y formula las consultas controla el resultado; en la V ACE (2025) hubo una sola candidatura a la Secretaría General (acta de resultados); las corrientes críticas acabaron fuera (Errejón en 2019, según 20 Minutos; Anticapitalistas en 2020, según Público). Estimación con prensa y documentos propios.",
+      "media"
+    ],
+    "regla_decision": [
+      4,
+      "Mayoría simple.",
+      "alta"
+    ],
+    "capacidad_ejecutiva": [
+      3,
+      "Art. 25: el Consejo de Coordinación «asumirá las decisiones políticas inmediatas», pero los pactos de gobierno o de investidura los aprueba la Asamblea Ciudadana (art. 22).",
+      "alta"
+    ],
+    "freq_soberano_meses": [
+      36,
+      "Art. 22: Asamblea ordinaria no antes de 18 meses ni más de 4 años después de la anterior.",
+      "alta"
+    ],
+    "freq_intermedio_meses": [
+      3,
+      "Art. 23: no pueden pasar más de tres meses entre dos reuniones del Consejo Ciudadano Estatal, salvo en periodo electoral.",
+      "alta"
+    ],
+    "niveles": [
+      1,
+      "Voto directo telemático.",
+      "alta"
+    ],
+    "estructura_federal": [
+      2,
+      "Autonomías y Círculos con poco poder propio.",
+      "media"
+    ],
+    "coste_coordinacion": [
+      4,
+      "El voto por internet tiene un coste marginal casi nulo.",
+      "alta"
+    ]
+  },
+  "problemas": [
+    {
+      "t": "democratico",
+      "x": "Plebiscitarismo: la democracia directa digital sin deliberación intermedia da el poder a quien formula la pregunta y fija el calendario. Las votaciones ratifican a la dirección con mayorías amplias."
+    },
+    {
+      "t": "democratico",
+      "x": "El umbral del 25% de inscritos para convocar consultas o revocatorios desde abajo es prácticamente inalcanzable sin el aparato."
+    },
+    {
+      "t": "democratico",
+      "x": "Los Círculos, la parte deliberativa y presencial, eligen solo 6 de los ~120 miembros del Consejo Ciudadano: la deliberación local no se traduce en poder."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "El voto telemático escala sin coste, pero la participación cae con el tiempo y quedan los más fieles a la dirección. Las disidencias se resolvieron por escisión."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Podemos — Documento Organizativo V Asamblea Ciudadana Estatal (2025)",
+      "u": "https://podemos.info/wp-content/uploads/2025/04/Documento-Organizativo-V-ACE.pdf"
+    },
+    {
+      "t": "Podemos — Reglamento V Asamblea Ciudadana Estatal (2025)",
+      "u": "https://podemos.info/wp-content/uploads/2025/03/Reglamento-V-ACE.pdf"
+    },
+    {
+      "t": "Podemos — Documento Ético V Asamblea Ciudadana Estatal (2025)",
+      "u": "https://podemos.info/wp-content/uploads/2025/04/Documento-Etico-V-ACE.pdf"
+    },
+    {
+      "t": "Podemos — Resultados de la V Asamblea Ciudadana Estatal (2025)",
+      "u": "https://podemos.info/wp-content/uploads/2025/04/Resultados-V-ACE-2025.pdf"
+    },
+    {
+      "t": "Público — Anticapitalistas ratifica su salida de Podemos (2020)",
+      "u": "https://www.publico.es/politica/anticapitalistas-ratifica-salida-criticas-direccion-iglesias.html"
+    },
+    {
+      "t": "20 Minutos — Errejón se desliga de Podemos para ir con Más Madrid (2019)",
+      "u": "https://www.20minutos.es/noticia/3539078/0/mas-madrid-claves-nacimiento-plataforma-politica/"
+    }
+  ],
+  "confianza": "alta"
+}

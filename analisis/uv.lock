@@ -19,7 +19,7 @@ wheels = [
 ]
 
 [[package]]
-name = "analisis-poder-obrero"
+name = "analisis-poder-de-base"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

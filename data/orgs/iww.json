@@ -7,7 +7,7 @@
   "fundacion": 1905,
   "tamano": [
     7000,
-    "Unos miles de miembros. Estimación.",
+    "Sin fuente verificable: unos miles de miembros. Estimación.",
     "baja"
   ],
   "corriente": "Sindicalismo revolucionario industrial («One Big Union»)",
@@ -82,39 +82,39 @@
   },
   "codigos": {
     "mandato": [
-      2,
-      "Delegados instruidos por sus ramas.",
+      3,
+      "Constitución (2025), art. VI sec. 3(e): las ramas deciden el mandato de sus delegados y les dan instrucciones escritas, aunque pueden instruirles para representar toda la gama de opiniones.",
       "media"
     ],
     "revocabilidad": [
       3,
-      "Recall por referéndum.",
+      "Art. IX sec. 3: los cargos de la Administración General son revocables por referéndum, que puede iniciar la GEB o una petición del 5 % de la membresía (art. IX sec. 2(a)).",
       "media"
     ],
     "rotacion": [
       4,
-      "Mandatos de 1 año con límites.",
+      "Art. III sec. 2-3: mandatos de 1 año, con un máximo de tres seguidos para el GST y la GEB (después, 2 y 5 años fuera), salvo que no haya suficientes candidaturas.",
       "media"
     ],
     "profesionalizacion": [
-      4,
-      "Muy pocos cargos pagados.",
+      3,
+      "Bylaws, art. VIII: evitar el personal pagado, sin organizadores asalariados permanentes; puestos pagados temporales y ligados a campañas. La GEB fija los salarios del personal (art. III sec. 2(b)).",
       "media"
     ],
     "eleccion_direccion": [
       4,
-      "Voto directo de toda la membresía.",
+      "Art. III sec. 3: el GST y los siete miembros de la GEB los elige por referéndum toda la membresía.",
       "media"
     ],
     "agenda_base": [
       3,
-      "Iniciativa de referéndum desde las ramas.",
+      "Art. IX sec. 2: un referéndum puede iniciarlo la GEB o una petición del 5 % de la membresía, y todas las propuestas presentadas en forma entran en la papeleta anual.",
       "media"
     ],
     "pluralismo": [
-      3,
-      "Competencia abierta.",
-      "baja"
+      2,
+      "No se prohíben fracciones y el art. III sec. 4(b) garantiza la libertad de criticar a los cargos en el GOB, pero el GEB se elige por voto en bloque (los 7 más votados), sin reparto proporcional, y no hay corrientes reconocidas.",
+      "media"
     ],
     "autonomia_base": [
       3,
@@ -123,8 +123,8 @@
     ],
     "brecha_formal_real": [
       2,
-      "Con baja participación, los activistas deciden los referendos.",
-      "media"
+      "Sin fuente verificable: con baja participación en los referendos, las ramas y activistas más implicados deciden; se habla de faccionalismo informal y de conflictos con GEB acusados de excederse, pero no hay fuente secundaria citada.",
+      "baja"
     ],
     "regla_decision": [
       4,
@@ -132,18 +132,18 @@
       "media"
     ],
     "capacidad_ejecutiva": [
-      2,
-      "GEB limitada y renovada cada año.",
+      3,
+      "Art. III sec. 5: el GEB tiene la «general supervision over all affairs» entre convenciones, controla las publicaciones y concede cartas; responde ante la Convención y el referéndum.",
       "media"
     ],
     "freq_soberano_meses": [
       12,
-      "Referéndum y Convención anuales.",
+      "Art. VI sec. 1(a): Convención General cada año; papeleta de referéndum anual (art. IX sec. 2(b)).",
       "media"
     ],
     "freq_intermedio_meses": [
       1,
-      "GEB con reuniones frecuentes.",
+      "Sin fuente verificable: la GEB se reúne a convocatoria de su presidencia o por mayoría (art. III sec. 5(f)); la Constitución no fija la frecuencia.",
       "baja"
     ],
     "niveles": [
@@ -174,8 +174,12 @@
   ],
   "fuentes": [
     {
-      "t": "IWW — Constitution",
-      "u": "https://www.iww.org/constitution/"
+      "t": "IWW — Constitution, Bylaws and International Guiding Principles (2025)",
+      "u": "https://www.iww.org/wp-content/uploads/2025/03/2025-Constitution-ByLaws-and-International-Guiding-Principles-.pdf"
+    },
+    {
+      "t": "IWW — Constitution (página; copia de web.archive.org, la original responde 403)",
+      "u": "https://web.archive.org/web/20251122143217/https://www.iww.org/constitution/"
     }
   ],
   "confianza": "baja"

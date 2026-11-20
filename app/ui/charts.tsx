@@ -1,7 +1,7 @@
 import type { Handle } from 'remix/component'
 
 import { FAMILIAS, VARS } from '../lib/codebook.ts'
-import { fmt, fmtN, type OrgConIndices } from '../lib/metrics.ts'
+import { bandaTexto, fmt, fmtIC, fmtN, type OrgConIndices } from '../lib/metrics.ts'
 import type { Org } from '../lib/types.ts'
 import { routes } from '../routes.ts'
 
@@ -10,27 +10,41 @@ export function FamLegend() {
     <div class="legend">
       {Object.entries(FAMILIAS).map(([k, f]) => (
         <span>
-          <i class={`fam ${k}`} style={{ background: f.color }}></i>
+          <i class={`fam ${k}`} style={{ background: f.color, transform: k === 'cooperativa' ? 'rotate(45deg) scale(.85)' : undefined, borderRadius: k === 'cooperativa' ? '1px' : undefined }}></i>
           {f.label}
         </span>
       ))}
+      <span>
+        <svg width="16" height="14" aria-hidden="true">
+          <circle cx="8" cy="7" r="5" fill="none" stroke="var(--muted)" stroke-width="1.5" />
+        </svg>
+        tamaño no comparable (población, familias)
+      </span>
     </div>
   )
 }
 
-/** Dispersión control de base (x) frente a agilidad (y); tamaño = escala. */
+/**
+ * Dispersión control de base (x) frente a agilidad (y). El tamaño del punto es la membresía en escala
+ * logarítmica; hueco si el tamaño no es de membresía. Los ejes se leen por bandas (bajo / medio / alto).
+ */
 export function Scatter(handle: Handle<{ orgs: OrgConIndices[] }>) {
   return () => {
-    let W = 720
-    let H = 470
-    let m = { l: 52, r: 20, t: 18, b: 46 }
+    let W = 980
+    let H = 520
+    let m = { l: 72, r: 20, t: 18, b: 46 }
     let X = (x: number) => m.l + (x / 100) * (W - m.l - m.r)
     let Y = (y: number) => H - m.b - (y / 100) * (H - m.t - m.b)
-    let ticks = [0, 25, 50, 75, 100]
+    let cortes = [0, 100 / 3, 200 / 3, 100]
+    let bandas = [
+      { l: 'bajo', c: 100 / 6 },
+      { l: 'medio', c: 50 },
+      { l: 'alto', c: 500 / 6 },
+    ]
 
     let pts = handle.props.orgs
       .filter((o) => o.indices.cb != null && o.indices.ag != null)
-      .map((o) => ({ o, x: X(o.indices.cb!), y: Y(o.indices.ag!), r: 5 + 2.2 * (o.indices.tamanoS ?? 0) }))
+      .map((o) => ({ o, x: X(o.indices.cb!), y: Y(o.indices.ag!), r: 5 + 2.2 * (o.indices.tamanoS ?? 0), hueco: o.indices.tamanoS == null }))
       .sort((a, b) => b.r - a.r)
 
     let placed: { x: number; y: number }[] = []
@@ -49,11 +63,12 @@ export function Scatter(handle: Handle<{ orgs: OrgConIndices[] }>) {
       }
       placed.push({ x: lx, y: ly })
       let i = p.o.indices
+      let fill = p.hueco ? 'var(--surface)' : color
       return (
         <a href={routes.organizaciones.show.href({ id: p.o.id })}>
           <g>
             <title>
-              {`${p.o.nombre}\nControl de base ${fmt(i.cb)} · Agilidad ${fmt(i.ag)}\nEscala ${fmtN(p.o.tamano?.[0])} · Saltos ${i.hops ?? '—'}`}
+              {`${p.o.nombre}\nControl de base ${fmt(i.cb)} (${fmtIC(i.ic.cb)}), banda ${bandaTexto(i.cb, i.ic.cb)}\nAgilidad ${fmt(i.ag)} (${fmtIC(i.ic.ag)}), banda ${bandaTexto(i.ag, i.ic.ag)}\nTamaño ${fmtN(p.o.tamano?.[0])} · Saltos ${i.hops ?? '—'}`}
             </title>
             {p.o.familia === 'cooperativa' ? (
               <rect
@@ -62,13 +77,13 @@ export function Scatter(handle: Handle<{ orgs: OrgConIndices[] }>) {
                 width={p.r * 1.6}
                 height={p.r * 1.6}
                 transform={`rotate(45 ${p.x} ${p.y})`}
-                fill={color}
+                fill={fill}
                 fill-opacity="0.85"
-                stroke="var(--surface)"
+                stroke={p.hueco ? color : 'var(--surface)'}
                 stroke-width="2"
               />
             ) : (
-              <circle cx={p.x} cy={p.y} r={p.r} fill={color} fill-opacity="0.85" stroke="var(--surface)" stroke-width="2" />
+              <circle cx={p.x} cy={p.y} r={p.r} fill={fill} fill-opacity="0.85" stroke={p.hueco ? color : 'var(--surface)'} stroke-width="2" />
             )}
             <circle cx={p.x} cy={p.y} r={Math.max(p.r, 12)} fill="transparent" />
             <text x={lx} y={ly} text-anchor={anchor} class="scatter-label">
@@ -82,7 +97,7 @@ export function Scatter(handle: Handle<{ orgs: OrgConIndices[] }>) {
     return (
       <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ minWidth: '520px' }} role="img" aria-label="Control de base frente a agilidad">
         <g class="grid">
-          {ticks.map((t) => (
+          {cortes.map((t) => (
             <>
               <line x1={X(t)} x2={X(t)} y1={Y(0)} y2={Y(100)} />
               <line x1={X(0)} x2={X(100)} y1={Y(t)} y2={Y(t)} />
@@ -90,10 +105,10 @@ export function Scatter(handle: Handle<{ orgs: OrgConIndices[] }>) {
           ))}
         </g>
         <g class="axis">
-          {ticks.map((t) => (
+          {bandas.map((b) => (
             <>
-              <text x={X(t)} y={H - m.b + 16} text-anchor="middle">{t}</text>
-              <text x={m.l - 8} y={Y(t) + 4} text-anchor="end">{t}</text>
+              <text x={X(b.c)} y={H - m.b + 16} text-anchor="middle">{b.l}</text>
+              <text x={m.l - 8} y={Y(b.c) + 4} text-anchor="end">{b.l}</text>
             </>
           ))}
           <text x={(X(0) + X(100)) / 2} y={H - 8} text-anchor="middle" class="axis-title">
@@ -233,15 +248,25 @@ export function Mark(handle: Handle<{ i: number; size?: number }>) {
 export function DotPlot(handle: Handle<{ orgs: OrgConIndices[] }>) {
   return () => {
     let sel = handle.props.orgs
-    let filas: { l: string; max: number; get: (o: OrgConIndices) => number | null; neg?: boolean; just?: (o: OrgConIndices) => string }[] = [
-      { l: 'Control de base (0-100)', max: 100, get: (o) => o.indices.cb },
-      { l: 'Agilidad (0-100)', max: 100, get: (o) => o.indices.ag },
-      { l: 'Escalabilidad (0-100)', max: 100, get: (o) => o.indices.es },
-      { l: 'Riesgo oligárquico (0-100)', max: 100, get: (o) => o.indices.olig },
+    type Fila = {
+      l: string
+      max: number
+      get: (o: OrgConIndices) => number | null
+      ic?: (o: OrgConIndices) => [number, number] | null
+      alto?: string
+      just?: (o: OrgConIndices) => string
+    }
+    let filas: Fila[] = [
+      { l: 'Control de base (0-100)', max: 100, get: (o) => o.indices.cb, ic: (o) => o.indices.ic.cb },
+      { l: 'Agilidad (0-100)', max: 100, get: (o) => o.indices.ag, ic: (o) => o.indices.ic.ag },
+      { l: 'Agilidad vía base (0-100)', max: 100, get: (o) => o.indices.agb, ic: (o) => o.indices.ic.agb },
+      { l: 'Agilidad vía dirección (0-100)', max: 100, get: (o) => o.indices.ce, ic: (o) => o.indices.ic.ce },
+      { l: 'Escalabilidad (0-100)', max: 100, get: (o) => o.indices.es, ic: (o) => o.indices.ic.es },
+      { l: 'Riesgo oligárquico (0-100)', max: 100, get: (o) => o.indices.olig, ic: (o) => o.indices.ic.olig, alto: 'alto = peor' },
       ...VARS.map((v) => ({
         l: v.l,
         max: 4,
-        neg: v.neg,
+        alto: v.alto,
         get: (o: OrgConIndices) => o.indices.val(v.k),
         just: (o: OrgConIndices) => o.codigos[v.k]?.[1] ?? '',
       })),
@@ -263,7 +288,7 @@ export function DotPlot(handle: Handle<{ orgs: OrgConIndices[] }>) {
             <div class="dot-row">
               <span>
                 {f.l}
-                {f.neg ? <span class="sub"> (alto = peor)</span> : null}
+                {f.alto ? <span class="sub"> ({f.alto})</span> : null}
               </span>
               <div style={{ position: 'relative', height: '22px' }}>
                 <svg viewBox={`0 0 ${w} 22`} width="100%" height="22" preserveAspectRatio="none" style={{ overflow: 'visible' }}>
@@ -273,12 +298,24 @@ export function DotPlot(handle: Handle<{ orgs: OrgConIndices[] }>) {
                   ))}
                 </svg>
                 {sel.map((o, i) => {
+                  let ic = f.ic?.(o)
+                  if (!ic) return null
+                  let pos = (x: number) => ((pad + (x / f.max) * (w - 2 * pad)) / w) * 100
+                  return (
+                    <span
+                      class="dm-range"
+                      style={{ left: `${pos(ic[0])}%`, width: `${Math.max(0.5, pos(ic[1]) - pos(ic[0]))}%`, top: `${7 + i * 3}px`, background: SLOT[i] }}
+                    ></span>
+                  )
+                })}
+                {sel.map((o, i) => {
                   let v = f.get(o)
                   if (v == null) return null
                   let pct = ((pad + (v / f.max) * (w - 2 * pad)) / w) * 100
-                  let shown = f.max === 100 ? fmt(v) : Number.isInteger(v) ? String(v) : v.toFixed(1)
+                  let ic = f.ic?.(o)
+                  let shown = f.max === 100 ? `${fmt(v)} (${fmtIC(ic)})` : Number.isInteger(v) ? String(v) : v.toFixed(1)
                   return (
-                    <span class="dm" style={{ left: `calc(${pct}% - 8px)` }} title={`${o.siglas}: ${shown}/${f.max}${f.just ? `\n${f.just(o)}` : ''}`}>
+                    <span class="dm" style={{ left: `calc(${pct}% - 8px)` }} title={`${o.siglas}: ${shown}${f.max === 100 ? '' : `/${f.max}`}${f.just ? `\n${f.just(o)}` : ''}`}>
                       <Mark i={i} />
                     </span>
                   )
@@ -298,7 +335,7 @@ export interface CaraHexagono {
   ref: number | null
 }
 
-/** Hexágono (radar de 6 ejes, escala 0-4) con la media de todas las organizaciones como referencia. */
+/** Hexágono (radar de 6 ejes, escala 0-4) con la media de las demás organizaciones como referencia. */
 export function Hexagon(handle: Handle<{ caras: CaraHexagono[]; nombre: string }>) {
   return () => {
     let { caras, nombre } = handle.props
@@ -310,7 +347,12 @@ export function Hexagon(handle: Handle<{ caras: CaraHexagono[]; nombre: string }
     let n = caras.length
     let ang = (i: number) => -Math.PI / 2 + (i * 2 * Math.PI) / n
     let pt = (i: number, v: number) => [cx + Math.cos(ang(i)) * (R * v) / 4, cy + Math.sin(ang(i)) * (R * v) / 4] as const
-    let poly = (vals: (number | null)[]) => vals.map((v, i) => pt(i, v ?? 0).join(',')).join(' ')
+    /** Los ejes sin dato se saltan: dibujarlos en 0 los haría pasar por el peor valor. */
+    let poly = (vals: (number | null)[]) =>
+      vals
+        .map((v, i) => (v == null ? null : pt(i, v).join(',')))
+        .filter(Boolean)
+        .join(' ')
 
     return (
       <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ maxWidth: `${W}px`, display: 'block', margin: '0 auto' }} role="img" aria-label={`Hexágono de características de ${nombre}`}>
@@ -335,7 +377,7 @@ export function Hexagon(handle: Handle<{ caras: CaraHexagono[]; nombre: string }
           let [x, y] = pt(i, c.v)
           return (
             <circle cx={x} cy={y} r="4.5" fill="var(--accent)" stroke="var(--surface)" stroke-width="2">
-              <title>{`${c.l}: ${c.v.toFixed(1)}/4 (media de todas: ${c.ref?.toFixed(1) ?? '—'})`}</title>
+              <title>{`${c.l}: ${c.v.toFixed(1)}/4 (media de las demás: ${c.ref?.toFixed(1) ?? '—'})`}</title>
             </circle>
           )
         })}
@@ -348,7 +390,7 @@ export function Hexagon(handle: Handle<{ caras: CaraHexagono[]; nombre: string }
             <text x={x} y={y + dy} text-anchor={anchor} class="hex-label">
               <tspan x={x} class="hex-name">{c.l}</tspan>
               <tspan x={x} dy="15" class="hex-value">
-                {c.v == null ? '—' : c.v.toFixed(1)}
+                {c.v == null ? 'sin dato' : c.v.toFixed(1)}
               </tspan>
             </text>
           )
@@ -357,3 +399,4 @@ export function Hexagon(handle: Handle<{ caras: CaraHexagono[]; nombre: string }
     )
   }
 }
+

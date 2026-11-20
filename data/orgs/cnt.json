@@ -7,7 +7,7 @@
   "fundacion": 1910,
   "tamano": [
     5000,
-    "Unos miles de afiliadas; la CNT no publica cifras consolidadas. Estimación.",
+    "Sin fuente verificable: unos miles de afiliadas; la CNT no publica cifras consolidadas. Estimación.",
     "baja"
   ],
   "corriente": "Anarcosindicalismo (sección de la CIT desde 2018)",
@@ -163,12 +163,12 @@
     ],
     "rotacion": [
       4,
-      "Mandatos de 2 años con una prórroga máxima de 2.",
+      "Art. 105 b: mandatos de 2 años con una prórroga máxima de otros 2.",
       "alta"
     ],
     "profesionalizacion": [
       4,
-      "Cargos no remunerados; incompatibles con cobrar del sindicato. Sin delegados de comité de empresa.",
+      "Art. 105 a, g y h: los cargos de los secretariados no se remuneran y no puede ocuparlos quien cobre del sindicato. Art. 6: la CNT rechaza los comités de empresa.",
       "alta"
     ],
     "eleccion_direccion": [
@@ -193,13 +193,13 @@
     ],
     "brecha_formal_real": [
       1,
-      "Organización pequeña con estatutos muy garantistas; el poder informal reside en los núcleos militantes locales.",
-      "media"
+      "Sin fuente verificable: organización pequeña con estatutos muy garantistas; el poder informal reside en los núcleos militantes locales. Estimación sin fuente citada.",
+      "baja"
     ],
     "regla_decision": [
       3,
-      "Mayoría simple ponderada, pero tras consenso/refundición obligatoria en cada punto.",
-      "alta"
+      "Art. 62: acuerdos por mayoría simple con voto ponderado; arts. 76-79: cada punto se acuerda por consenso, refundición o votación, y cualquier delegación puede pedir una comisión de refundición. El intento de consenso es el cauce previsto, no un requisito.",
+      "media"
     ],
     "capacidad_ejecutiva": [
       1,
@@ -208,13 +208,13 @@
     ],
     "freq_soberano_meses": [
       48,
-      "Congreso cada 4 años.",
+      "Art. 93: Congreso cada cuatro años.",
       "alta"
     ],
     "freq_intermedio_meses": [
       6,
-      "Plenos Confederales ordinarios varias veces por ciclo; la convocatoria exige 30 días + asambleas previas.",
-      "media"
+      "Sin fuente verificable: la Normativa no fija la periodicidad de los Plenos Confederales: solo exige 30 días de convocatoria (art. 65) y que la cuota se fije anualmente en Pleno Confederal (art. 136), lo que implica al menos uno al año.",
+      "baja"
     ],
     "niveles": [
       3,

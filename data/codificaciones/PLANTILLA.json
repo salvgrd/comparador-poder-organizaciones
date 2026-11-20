@@ -1,0 +1,31 @@
+{
+  "org_id": "",
+  "codificador": {
+    "id": "",
+    "tipo": "humano",
+    "nombre": "",
+    "modelo": null
+  },
+  "fecha": "AAAA-MM-DD",
+  "a_ciegas": true,
+  "notas_ceguera": "Qué has visto de la codificación de referencia antes de codificar (nada, si fue a ciegas).",
+  "fuentes_consultadas": [
+    { "t": "título de la fuente", "u": "https://…", "lista_inicial": true }
+  ],
+  "codigos": {
+    "mandato": [null, "", ""],
+    "revocabilidad": [null, "", ""],
+    "rotacion": [null, "", ""],
+    "profesionalizacion": [null, "", ""],
+    "eleccion_direccion": [null, "", ""],
+    "agenda_base": [null, "", ""],
+    "pluralismo": [null, "", ""],
+    "autonomia_base": [null, "", ""],
+    "brecha_formal_real": [null, "", ""],
+    "regla_decision": [null, "", ""],
+    "capacidad_ejecutiva": [null, "", ""],
+    "estructura_federal": [null, "", ""],
+    "coste_coordinacion": [null, "", ""]
+  },
+  "notas": ""
+}

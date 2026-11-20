@@ -7,9 +7,10 @@
   "fundacion": 1984,
   "tamano": [
     450000,
-    "Unas 450.000 familias asentadas y decenas de miles acampadas (cifras del propio MST).",
+    "«Cerca de 450 mil famílias» que conquistaron la tierra, organizadas en 24 estados (MST, Quem somos). Cifra del propio MST; no incluye las acampadas.",
     "media"
   ],
+  "tamano_unidad": "familias",
   "corriente": "Movimiento campesino de masas; principios organizativos de dirección colectiva",
   "autogestionada": true,
   "resumen": "Pirámide de instancias con base en los núcleos de familias (10-30 familias, con coordinación paritaria hombre-mujer). Por encima, brigadas, coordinaciones regionales y estatales y una Coordinación y Dirección Nacional colectiva, sin presidente. Sectores temáticos transversales (producción, educación, género, salud). Principios: dirección colectiva, división de tareas, disciplina, crítica y autocrítica, vínculo con la base.",
@@ -123,72 +124,72 @@
   "codigos": {
     "mandato": [
       2,
-      "La coordinación representa a su núcleo, sin mandato formal estricto.",
-      "media"
+      "Sin fuente verificable: la coordinación representa a su núcleo, sin mandato formal estricto. No hay estatuto público.",
+      "baja"
     ],
     "revocabilidad": [
-      3,
-      "Coordinaciones de núcleo sustituibles por las familias.",
-      "media"
+      2,
+      "Sin fuente verificable: no hay estatuto público; la Dirección Nacional la elegiría el Encuentro o Congreso Nacional, que puede sustituirla. La sustitución por las familias vale para la coordinación de núcleo, no para la cima.",
+      "baja"
     ],
     "rotacion": [
-      2,
-      "Rotación en la base; continuidad en la cúpula.",
-      "media"
+      1,
+      "Sin fuente verificable: instancias colectivas con mandatos de dos años según Tricontinental, pero esa fuente no está localizada; sin límite de reelección conocido.",
+      "baja"
     ],
     "profesionalizacion": [
       2,
-      "Militantes liberados sostenidos por el movimiento y las cooperativas.",
-      "media"
+      "Sin fuente verificable: militantes liberados sostenidos por el movimiento y las cooperativas.",
+      "baja"
     ],
     "eleccion_direccion": [
-      2,
-      "Indirecta a 4-5 saltos, aunque con raíz en núcleos reales.",
+      1,
+      "Indirecta a varios niveles: los núcleos eligen la coordinación del asentamiento o campamento y «la misma estructura se repite» a nivel regional, estatal y nacional (MST, Quem somos).",
       "media"
     ],
     "agenda_base": [
       2,
-      "Las líneas se preparan desde la dirección y se debaten en la base.",
-      "media"
+      "Sin fuente verificable: las líneas se preparan desde la dirección y se debaten en la base.",
+      "baja"
     ],
     "pluralismo": [
       1,
-      "Unidad y disciplina.",
-      "media"
+      "Sin fuente verificable: unidad y disciplina.",
+      "baja"
     ],
     "autonomia_base": [
       3,
-      "Asentamientos y cooperativas con autogestión productiva.",
+      "Los núcleos de cada asentamiento y campamento discuten sus necesidades y eligen su coordinación (MST, Quem somos); autogestión productiva en cooperativas.",
       "media"
     ],
     "brecha_formal_real": [
       3,
-      "La formación de cuadros y los liderazgos históricos concentran la estrategia.",
-      "media"
+      "Sin fuente verificable: los liderazgos históricos y la formación de cuadros concentran la estrategia, y la cúpula se mantiene décadas pese a los mandatos de dos años. No hay fuente secundaria citada.",
+      "baja"
     ],
     "regla_decision": [
       3,
-      "Unidad buscada; votación posible.",
+      "En las asambleas de campamentos y asentamientos, y en las instancias nacionales, todas tienen derecho a voto (MST, Quem somos); se busca la unidad.",
       "media"
     ],
     "capacidad_ejecutiva": [
       3,
-      "La Dirección Nacional coordina ocupaciones y campañas a escala nacional.",
-      "media"
+      "Sin fuente verificable: la Dirección Nacional coordina ocupaciones y campañas a escala nacional.",
+      "baja"
     ],
     "freq_soberano_meses": [
-      72,
-      "Congreso cada 5-7 años.",
+      60,
+      "Congresos Nacionales «en media cada cinco años» y Encuentro Nacional cada dos (MST, Quem somos).",
       "media"
     ],
     "freq_intermedio_meses": [
       6,
-      "Coordinación Nacional varias veces al año.",
+      "Sin fuente verificable: coordinación Nacional varias veces al año.",
       "baja"
     ],
     "niveles": [
       5,
-      "Núcleo → brigada → región → estado → nacional.",
+      "Núcleo → asentamiento o campamento → región → estado → nacional (MST, Quem somos).",
       "media"
     ],
     "estructura_federal": [
@@ -222,7 +223,7 @@
       "u": "https://mst.org.br/quem-somos/"
     },
     {
-      "t": "Grupo Animal — Zapatistas y MST: contexto (referencia cruzada)",
+      "t": "Grupo Animal — Zapatistas a 30 años (2024; trata del EZLN, no del MST)",
       "u": "https://grupoanimal.mx/sociedad/zapatistas-30-anos-ezln-poblaciones-chiapas"
     }
   ],

@@ -7,7 +7,7 @@
   "fundacion": 2008,
   "tamano": [
     2000,
-    "Militancia no publicada. Estimación.",
+    "Sin fuente verificable: militancia no publicada. Estimación.",
     "baja"
   ],
   "corriente": "Marxismo revolucionario, tradición de la IV Internacional. Fue corriente de Podemos hasta 2020.",
@@ -82,77 +82,77 @@
   "codigos": {
     "mandato": [
       1,
-      "Mandato libre.",
+      "Sin fuente verificable: mandato libre.",
       "baja"
     ],
     "revocabilidad": [
       2,
-      "A verificar.",
+      "Sin fuente verificable: a verificar.",
       "baja"
     ],
     "rotacion": [
-      2,
-      "A verificar.",
+      1,
+      "Sin fuente verificable: no consta en ninguna norma pública un límite de mandatos para el Secretariado; a verificar en los estatutos.",
       "baja"
     ],
     "profesionalizacion": [
       3,
-      "Pocos liberados orgánicos; cargos públicos con limitación salarial.",
+      "Sin fuente verificable: pocos liberados orgánicos; cargos públicos con limitación salarial.",
       "baja"
     ],
     "eleccion_direccion": [
       2,
-      "Indirecta, con proporcionalidad entre documentos.",
+      "Sin fuente verificable: indirecta, con proporcionalidad entre documentos.",
       "baja"
     ],
     "agenda_base": [
       2,
-      "Documentos alternativos posibles.",
+      "Sin fuente verificable: documentos alternativos posibles.",
       "baja"
     ],
     "pluralismo": [
       4,
-      "Derecho de tendencia.",
-      "media"
+      "Sin fuente verificable: derecho de tendencia.",
+      "baja"
     ],
     "autonomia_base": [
       3,
-      "Federal, con autonomía territorial fuerte.",
-      "media"
+      "Federal, con colectivos federales y confederales (organigrama); el grado de autonomía no consta en normas públicas.",
+      "baja"
     ],
     "brecha_formal_real": [
       2,
-      "Las figuras públicas pesan más que la estructura.",
-      "media"
+      "Sin fuente verificable: las figuras públicas pesan más que la estructura.",
+      "baja"
     ],
     "regla_decision": [
       4,
-      "Mayoría.",
-      "media"
+      "Sin fuente verificable: mayoría.",
+      "baja"
     ],
     "capacidad_ejecutiva": [
       3,
-      "El secretariado opera entre reuniones de la dirección.",
+      "Sin fuente verificable: el secretariado opera entre reuniones de la dirección.",
       "baja"
     ],
     "freq_soberano_meses": [
-      36,
-      "A verificar.",
+      48,
+      "III Congreso a finales de 2021 (Wikipedia) y documento del IV Congreso publicado en enero de 2026: unos cuatro años entre congresos. Los estatutos no son públicos.",
       "baja"
     ],
     "freq_intermedio_meses": [
       3,
-      "A verificar.",
+      "Sin fuente verificable: a verificar.",
       "baja"
     ],
     "niveles": [
       3,
-      "Núcleo → Conferencia → dirección.",
+      "Sin fuente verificable: núcleo → Conferencia → dirección.",
       "baja"
     ],
     "estructura_federal": [
       3,
-      "Federal.",
+      "Colectivos territoriales federales y confederales, con Asamblea Estatal y Coordinadora Confederal (organigrama).",
       "media"
     ],
     "coste_coordinacion": [
@@ -179,6 +179,22 @@
     {
       "t": "Anticapitalistas — web",
       "u": "https://www.anticapitalistas.org/"
+    },
+    {
+      "t": "Anticapitalistas — Organigrama",
+      "u": "https://www.anticapitalistas.org/organigrama/"
+    },
+    {
+      "t": "Anticapitalistas — Documento político del IV Congreso (2026)",
+      "u": "https://www.anticapitalistas.org/documentos/documento-politico-del-iv-congreso-de-anticapitalistas/"
+    },
+    {
+      "t": "Wikipedia — Izquierda Anticapitalista",
+      "u": "https://es.wikipedia.org/wiki/Izquierda_Anticapitalista"
+    },
+    {
+      "t": "Público — Anticapitalistas ratifica su salida de Podemos (2020)",
+      "u": "https://www.publico.es/politica/anticapitalistas-ratifica-salida-criticas-direccion-iglesias.html"
     }
   ],
   "confianza": "baja"

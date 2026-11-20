@@ -1,0 +1,223 @@
+{
+  "id": "cic",
+  "siglas": "CIC",
+  "nombre": "Cooperativa Integral Catalana",
+  "familia": "cooperativa",
+  "pais": "Cataluña",
+  "fundacion": 2010,
+  "tamano": [
+    3100,
+    "Unos 600 socios autoocupados que usan la cobertura legal y fiscal y más de 2.500 personas en la ecored de intercambio lanzada por la CIC (2.634 en 2017); el núcleo son unas diez comisiones (Fuente: Dafermos 2017, trabajo de campo de marzo a mayo de 2016).",
+    "media"
+  ],
+  "corriente": "«Revolución integral»; anticapitalismo y autogestión postcapitalista",
+  "autogestionada": true,
+  "estado": {
+    "situacion": "inactiva",
+    "tipos": [
+      "colapso_escala",
+      "fragmentacion"
+    ],
+    "causa": "Mal documentada. Hacia 2015-2016 la CIC intentó descentralizarse: en mayo de 2016 la Asamblea Permanente dejó de pagar la renta básica de la comisión XCTIT, que pasó a proyecto financieramente autónomo (Fuente: Dafermos 2017), y un participante cuenta que la descentralización de 2015 creó subcentros pero redujo la eficacia y la asistencia a las asambleas (Fuente: P2P Foundation Wiki). En julio de 2015 hubo quejas por la subida de la cuota de los autoocupados (Fuente: Acta AP 19-VII-2015). El fundador, Enric Duran, vive en la clandestinidad fuera del país desde 2013 (Fuente: Dafermos 2017). La P2P Foundation la describe como una red que «parece ya no existir como entidad integrada», aunque varias subredes siguen (Fuente: P2P Foundation Wiki). La web oficial solo publicó cuatro entradas en 2023 y una en enero de 2026 (Fuente: web oficial). No he encontrado un estudio del final.",
+    "momento_codificado": "2016, según el estudio etnográfico de Dafermos, poco antes de la fragmentación."
+  },
+  "resumen": "Red cooperativa sin personalidad jurídica propia: ha creado entidades legales que dan cobertura a los autoocupados para facturar, a cambio de una cuota trimestral (Fuente: Dafermos 2017). El núcleo son unas diez comisiones (Coordinación, Acogida, Gestión Económica, Jurídica, Informática…), cuyos miembros cobran una «renta básica» de la CIC; las coordina una Asamblea Permanente mensual por consenso (Fuente: Dafermos 2017). Cada proyecto, comisión, ecored o grupo local decide lo suyo respetando los acuerdos comunes (Fuente: CIC, Toma de decisiones).",
+  "poder_formal": "Asambleas abiertas a cualquiera, socio o no, que deciden por consenso: la Asamblea Permanente y las jornadas asamblearias, estas últimas «soberanas» (Fuente: CIC, Toma de decisiones; CIC, Participación asamblearia).",
+  "poder_real": "El núcleo de comisiones con renta básica y, hasta 2013, el fundador Enric Duran, que «definió su visión, reclutó a nuevos miembros, organizó sus comisiones» (Fuente: Dafermos 2017). La Comisión de Coordinación prepara el orden del día de la Asamblea con los temas que presentan las comisiones, y la renta básica de cada persona se pacta con Coordinación y Gestión Económica (Fuente: Dafermos 2017). Los socios autoocupados, la mayoría de la base que paga, apenas participan (Fuente: Dafermos 2017).",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Socios y participantes",
+      "nivel": 0,
+      "tipo": "base",
+      "desc": "Autoocupados, miembros de ecoredes y proyectos asociados (Fuente: Dafermos 2017). Las asambleas están abiertas también a no socios (Fuente: CIC, Toma de decisiones)."
+    },
+    {
+      "id": "eco",
+      "n": "Ecoredes y núcleos locales",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Más de cuarenta redes locales de intercambio con moneda social (eco) en Cataluña, que deciden sus propios asuntos (Fuente: Dafermos 2017; CIC, Toma de decisiones)."
+    },
+    {
+      "id": "jorn",
+      "n": "Jornadas asamblearias",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ],
+      "freq": "Mensual según el documento de funcionamiento de 2013 (Fuente: CIC, Participación asamblearia)",
+      "desc": "Itinerantes, en el campo catalán, para los debates de fondo; el documento de funcionamiento las declara «soberanas» (Fuente: Dafermos 2017; CIC, Toma de decisiones)."
+    },
+    {
+      "id": "com",
+      "n": "Comisiones (unas 10)",
+      "nivel": 2,
+      "tipo": "tecnico",
+      "elegido_por": [
+        "ap"
+      ],
+      "freq": "Variable; la de Coordinación, semanal (Fuente: Dafermos 2017)",
+      "desc": "Unas diez comisiones temáticas que trabajan con gran autonomía; sus miembros cobran una renta básica de hasta 765 € y 135 ecos al mes (Fuente: Dafermos 2017). Las tareas que salen de la Asamblea Permanente las asume una persona, un grupo o una comisión (Fuente: CIC, Toma de decisiones)."
+    },
+    {
+      "id": "ap",
+      "n": "Asamblea Permanente",
+      "nivel": 1,
+      "tipo": "soberano",
+      "elegido_por": [
+        "af",
+        "com"
+      ],
+      "decide": "Consenso",
+      "freq": "Mensual (Fuente: Dafermos 2017; CIC, Participación asamblearia)",
+      "desc": "Abierta; como mínimo, un miembro de cada comisión y un representante de cada núcleo local (Fuente: CIC, Participación asamblearia). En la práctica deciden sobre todo los miembros de las comisiones (Fuente: Dafermos 2017)."
+    },
+    {
+      "id": "coord",
+      "n": "Comisión de Coordinación",
+      "nivel": 2,
+      "tipo": "coordinacion",
+      "cima": true,
+      "elegido_por": [
+        "ap"
+      ],
+      "desc": "Tres miembros y dos colaboradores (facilitación y psicología) que se reúnen cada semana. Coordina y evalúa las comisiones y prepara el orden del día de la Asamblea (Fuente: Dafermos 2017)."
+    }
+  ],
+  "reglas": {
+    "metodo": "Consenso; si no lo hay, la propuesta se reformula hasta alcanzarlo (Fuente: CIC, Toma de decisiones).",
+    "ponderacion": "Asamblea abierta: una persona, una voz, sea o no socia (Fuente: CIC, Toma de decisiones).",
+    "mandato": "Representantes de comisiones y núcleos locales en la Asamblea Permanente, sin mandato regulado (Fuente: CIC, Participación asamblearia).",
+    "cargos": "Los documentos de funcionamiento no prevén cargos electos ni límites; las tareas las asume una persona, un grupo o una comisión (Fuente: CIC, Toma de decisiones).",
+    "reforma": "Por consenso en asamblea; «todos los acuerdos previos son revocables» (Fuente: CIC, Toma de decisiones).",
+    "minorias": "Consenso «eliminando de esta manera las minorías y las mayorías» (Fuente: CIC, Toma de decisiones); no hay tendencias."
+  },
+  "codigos": {
+    "mandato": [
+      2,
+      "La Asamblea Permanente es directa y abierta, con al menos un miembro de cada comisión y un representante de cada núcleo local, sin mandato regulado (Fuente: CIC, Participación asamblearia).",
+      "media"
+    ],
+    "revocabilidad": [
+      2,
+      "«Todos los acuerdos previos son revocables» por la asamblea (Fuente: CIC, Toma de decisiones), y la Asamblea puede reorganizar comisiones: en mayo de 2016 retiró la renta básica a XCTIT (Fuente: Dafermos 2017). No hay revocación individual reglada.",
+      "media"
+    ],
+    "rotacion": [
+      0,
+      "Los documentos de funcionamiento no establecen límites de permanencia en las comisiones ni en Coordinación (Fuente: CIC, Toma de decisiones).",
+      "media"
+    ],
+    "profesionalizacion": [
+      2,
+      "Los miembros de las comisiones cobran una renta básica de la CIC, de hasta 765 € y 135 ecos al mes (Fuente: Dafermos 2017), con asignaciones revisadas en la Asamblea Permanente (Fuente: Acta AP 19-VII-2015): algunos cargos liberados.",
+      "media"
+    ],
+    "eleccion_direccion": [
+      3,
+      "Sin fuente verificable: no consta cómo se elige ni valida la Comisión de Coordinación; la asamblea abierta es el órgano de decisión (Fuente: CIC, Toma de decisiones).",
+      "baja"
+    ],
+    "agenda_base": [
+      3,
+      "Cualquier socio puede añadir un punto al orden del día (Fuente: CIC, Toma de decisiones), pero lo prepara la Comisión de Coordinación con los temas que envían las comisiones (Fuente: Dafermos 2017).",
+      "media"
+    ],
+    "pluralismo": [
+      2,
+      "Consenso, que da a cualquier persona capacidad de bloquear, y sin tendencias (Fuente: CIC, Toma de decisiones).",
+      "media"
+    ],
+    "autonomia_base": [
+      4,
+      "Cada proyecto, comisión, ecored o grupo local toma sus propias decisiones respetando los acuerdos comunes (Fuente: CIC, Toma de decisiones); proyectos como Calafou o MaCUS funcionan con plena autonomía (Fuente: Dafermos 2017).",
+      "alta"
+    ],
+    "brecha_formal_real": [
+      3,
+      "Formalmente decide una asamblea abierta. En la práctica, en la Asamblea Permanente deciden sobre todo los miembros de las comisiones, que cobran renta básica (Fuente: Dafermos 2017). Hasta 2013 el fundador, Enric Duran, definía la visión, reclutaba y organizaba las comisiones, y los ~600 socios autoocupados, que pagan, apenas participan (Fuente: Dafermos 2017).",
+      "media"
+    ],
+    "regla_decision": [
+      1,
+      "Consenso; si no se alcanza, la propuesta se reformula (Fuente: CIC, Toma de decisiones).",
+      "alta"
+    ],
+    "capacidad_ejecutiva": [
+      2,
+      "Las tareas que salen de la Asamblea Permanente las asume una persona, un grupo o una comisión, que decide en su ámbito respetando los acuerdos comunes (Fuente: CIC, Toma de decisiones).",
+      "media"
+    ],
+    "freq_soberano_meses": [
+      1,
+      "Asamblea Permanente mensual (Fuente: Dafermos 2017; CIC, Participación asamblearia); en 2014 la web la situaba cada 15 días aproximadamente (Fuente: CIC, Toma de decisiones).",
+      "alta"
+    ],
+    "freq_intermedio_meses": [
+      0.25,
+      "La Comisión de Coordinación se reúne cada semana (Fuente: Dafermos 2017).",
+      "media"
+    ],
+    "niveles": [
+      1,
+      "La Asamblea Permanente es directa y abierta (Fuente: CIC, Toma de decisiones).",
+      "alta"
+    ],
+    "estructura_federal": [
+      2,
+      "Red descentralizada de comisiones, ecoredes y proyectos autónomos sin un órgano federal (Fuente: Dafermos 2017); la descentralización de 2015 creó dos o tres subcentros (Fuente: P2P Foundation Wiki).",
+      "media"
+    ],
+    "coste_coordinacion": [
+      1,
+      "Lo que afecta a toda la CIC se debate en las asambleas permanentes y las jornadas asamblearias, por consenso (Fuente: CIC, Toma de decisiones).",
+      "media"
+    ]
+  },
+  "problemas": [
+    {
+      "t": "democratico",
+      "x": "Separación entre un núcleo militante con renta básica que decide y unos autoocupados que pagan cuota a cambio de cobertura fiscal y no participan en los procesos colectivos (Fuente: Dafermos 2017); en 2015 un autoocupado señalaba que muchos tenían una implicación y un conocimiento de la CIC «mínimos o inexistentes» (Fuente: Acta AP 19-VII-2015)."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "La asamblea mensual de consenso tuvo que resolver a la vez el déficit, las subidas de cuotas y el sistema de asignaciones de las comisiones (Fuente: Acta AP 19-VII-2015)."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "Dependencia de un fundador carismático: desde su salida en 2013 la organización quedó en manos de las comisiones (Fuente: Dafermos 2017)."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Dafermos 2017 — G. Dafermos, «The Catalan Integral Cooperative: an organizational study of a post-capitalist cooperative», P2P Foundation y Robin Hood Coop (2017)",
+      "u": "https://geo.coop/sites/default/files/the-catalan-integral-cooperative.pdf"
+    },
+    {
+      "t": "CIC, Toma de decisiones — documento de funcionamiento en la web oficial (2014, copia en web.archive.org)",
+      "u": "http://web.archive.org/web/20140309090006/http://cooperativa.cat:80/es/que-es-la-cic-4/toma-de-decisiones/"
+    },
+    {
+      "t": "CIC, Participación asamblearia — documento de funcionamiento en la web oficial (2013, copia en web.archive.org)",
+      "u": "http://web.archive.org/web/20130713131052/http://cooperativa.cat:80/es/que-es-la-cic-3/toma-de-decisiones/participacion-asamblearia/"
+    },
+    {
+      "t": "Acta AP 19-VII-2015 — CIC, Acta de la Asamblea Permanente de economía, 19-VII-2015",
+      "u": "https://cooperativa.cat/wp-content/uploads/2015/07/19072015_Acta_assemblea_permanent_CIC_economia.pdf"
+    },
+    {
+      "t": "P2P Foundation Wiki — Catalan Integral Cooperative (estado actual, sin fecha)",
+      "u": "https://wiki.p2pfoundation.net/Catalan_Integrated_Cooperative"
+    },
+    {
+      "t": "Web oficial — Cooperativa Integral Catalana",
+      "u": "https://cooperativa.cat/"
+    }
+  ],
+  "confianza": "baja"
+}

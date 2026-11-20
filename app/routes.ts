@@ -7,8 +7,10 @@ export const routes = route({
   calculadora: get('/calculadora'),
   metodo: get('/metodo'),
   pesos: form('/metodo/pesos'),
+  revision: get('/revision'),
   organizaciones: {
     show: get('/organizaciones/:id'),
+    revision: get('/organizaciones/:id/revision'),
   },
   apiOrgs: get('/api/orgs.json'),
 })

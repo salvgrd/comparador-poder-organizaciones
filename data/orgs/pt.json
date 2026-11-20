@@ -1,0 +1,263 @@
+{
+  "id": "pt",
+  "siglas": "PT",
+  "nombre": "Partido dos Trabalhadores (estructura de 2001-2002)",
+  "familia": "partido",
+  "pais": "Brasil",
+  "fundacion": 1980,
+  "tamano": [
+    860000,
+    "Más de 860.000 afiliados a comienzos de 2001, tras una campaña de afiliación y recadastramiento; en el PED de 2001 votaron 227.000 (Fuente: Meneguello y Amaral).",
+    "alta"
+  ],
+  "corriente": "Partido de masas surgido del «nuevo sindicalismo», con parlamentarios de la izquierda del MDB, grupos trotskistas y movimientos populares ligados a la Teología de la Liberación (Fuente: Meneguello y Amaral)",
+  "autogestionada": false,
+  "estado": {
+    "situacion": "burocratizada",
+    "tipos": [
+      "institucionalizacion",
+      "captura_direccion"
+    ],
+    "desde": 1995,
+    "causa": "De partido de núcleos de base a partido electoral profesionalizado. Ya en 1993 la mayoría de los delegados al VII Encuentro atribuía a los núcleos una importancia efectiva mínima (Fuente: Novaes). La corriente moderada (Articulação, después Campo Majoritário) controló la dirección de 1984 a 1993 y de nuevo desde 1995 (Fuente: Meneguello y Amaral). Ya en el gobierno (2003), el partido expulsó a parlamentarios contrarios a la reforma de pensiones, origen del PSOL, y la adaptación al poder llevó a la «autonomización de las lideranzas, aislando al ejecutivo partidario del control de los cuerpos de base»; la crisis del mensalão (2005) agravó la crisis organizativa (Fuente: Meneguello y Amaral). Los mismos autores matizan el grado: en el PED de 2005 votaron más afiliados que en 2001, «un significativo vigor de participación de base».",
+    "momento_codificado": "Estatuto de 2001 y PED de 2001, justo antes de llegar al gobierno federal (2002)."
+  },
+  "resumen": "El PT nace en 1980 con una innovación frente a la ley de partidos de 1979: los núcleos de base, mecanismo de democracia participativa (Fuente: Meneguello y Amaral). En los años noventa el poder se ordena por tendencias: en el PED de 2001 se presentaron seis listas que agrupaban 20 tendencias (Fuente: Meneguello y Amaral). El estatuto de 2001 crea el Proceso de Elecciones Directas (PED): los afiliados al corriente de pago eligen por voto directo y secreto los directorios, sus presidentes y los delegados a los encuentros municipales (Estatuto 2001, art. 35). El primer PED se celebró el 16 de septiembre de 2001 (Fuente: FPA, Trajetórias).",
+  "poder_formal": "Los encuentros de delegados, que deliberan programa, estrategia, táctica y alianzas, y la afiliación, que elige por voto directo a las direcciones (Estatuto 2001, arts. 19 y 35). Entre encuentros, el Directorio Nacional y su Comisión Ejecutiva (arts. 109-112).",
+  "poder_real": "La corriente mayoritaria: en 2001 el Campo Majoritário obtuvo el 51,6 % del Directorio Nacional y José Dirceu fue reelegido presidente con el 55,5 % (Fuente: Meneguello y Amaral). Las alianzas de 2002 las decidió el Directorio Nacional con una autorización genérica del XII Encuentro (Fuente: Meneguello y Amaral). Desde 2003, el poder se desplaza al gobierno y a las lideranzas, que se autonomizan del control de la base (Fuente: Meneguello y Amaral).",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Afiliados",
+      "nivel": 0,
+      "tipo": "base",
+      "desc": "Votan en el PED con al menos un año de afiliación y al corriente de pago (Estatuto 2001, arts. 17 § 2 y 26)."
+    },
+    {
+      "id": "nuc",
+      "n": "Núcleos de base",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Grupos de al menos nueve afiliados por barrio, trabajo, movimiento o tema (Estatuto 2001, art. 58). Organizan la acción política según la orientación de las instancias, opinan sobre lo que se les somete y pueden convocar al Directorio Municipal; no deciden (art. 59). Ya en 1993 la mayoría de los delegados les daba una importancia efectiva mínima (Fuente: Novaes)."
+    },
+    {
+      "id": "dm",
+      "n": "Directorios municipales y zonales",
+      "nivel": 1,
+      "tipo": "delegados",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Elegidos en el PED por listas con reparto proporcional, con el presidente en votación separada (Estatuto 2001, arts. 22 y 35). El Directorio Municipal se reúne cada mes (art. 76)."
+    },
+    {
+      "id": "em",
+      "n": "Encuentros municipales y estatales",
+      "nivel": 1,
+      "tipo": "delegados",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "El Encuentro Municipal lo forman los delegados elegidos por voto directo; elige los delegados al Encuentro Estatal, que a su vez elige los del Nacional (Estatuto 2001, arts. 71, 72, 94 y 105)."
+    },
+    {
+      "id": "en",
+      "n": "Encuentro / Congreso Nacional",
+      "nivel": 2,
+      "tipo": "soberano",
+      "elegido_por": [
+        "em"
+      ],
+      "decide": "Mayoría simple (Estatuto 2001, art. 17 § 1); textos de base de las listas de delegados (art. 24)",
+      "freq": "Sin periodicidad fija: según el calendario del Directorio Nacional (Estatuto 2001, arts. 41 y 106). Entre 1980 y 2001 hubo 14 encuentros nacionales y congresos en 1991 y 1999 (Fuente: FPA, Trajetórias).",
+      "desc": "Lo forman los delegados elegidos en los encuentros estatales (Estatuto 2001, art. 105). Aprueba planes y directrices, elige candidatos presidenciales y puede reformar el estatuto (arts. 106 y 246)."
+    },
+    {
+      "id": "dn",
+      "n": "Directorio Nacional",
+      "nivel": 3,
+      "tipo": "delegados",
+      "elegido_por": [
+        "af"
+      ],
+      "decide": "Mayoría",
+      "desc": "Hasta 81 miembros más el presidente y los líderes de las bancadas del Senado y la Cámara (Estatuto 2001, art. 108). Elegido por voto directo en el PED, por listas con reparto proporcional (arts. 22 y 35)."
+    },
+    {
+      "id": "cen",
+      "n": "Comisión Ejecutiva Nacional",
+      "nivel": 4,
+      "tipo": "ejecutivo",
+      "elegido_por": [
+        "dn"
+      ],
+      "desc": "Elegida por el Directorio entre sus miembros, hasta un tercio de ellos (Estatuto 2001, art. 30). Ejecuta las deliberaciones del Directorio y lo convoca (art. 112)."
+    },
+    {
+      "id": "banc",
+      "n": "Bancadas parlamentarias y cargos de gobierno",
+      "nivel": 4,
+      "tipo": "ejecutivo",
+      "desc": "Subordinadas a las instancias de dirección: el mandato pertenece al partido (Estatuto 2001, arts. 63, 66 y 69). Gobierno federal desde 2003 (Fuente: Meneguello y Amaral)."
+    },
+    {
+      "id": "pres",
+      "n": "Presidencia Nacional",
+      "nivel": 5,
+      "tipo": "ejecutivo",
+      "cima": true,
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Por voto directo en el PED, con segunda vuelta si nadie supera el 50 % (Estatuto 2001, arts. 35 y 39). Dirceu, 2001: 113.713 votos, 55,5 % (Fuente: Meneguello y Amaral)."
+    }
+  ],
+  "reglas": {
+    "metodo": "Mayoría simple de los presentes (Estatuto 2001, art. 17 § 1); elección directa de direcciones y presidentes (PED) con segunda vuelta para la presidencia (arts. 35 y 39). Plebiscito o referéndum vinculante a petición del 20 % de los afiliados (art. 62).",
+    "ponderacion": "Un afiliado al corriente de pago, un voto (Estatuto 2001, arts. 17 § 2, 26 y 35). La proporción de delegados a los encuentros la fija el Directorio Nacional (art. 45).",
+    "mandato": "Delegados elegidos por listas con tesis, sin mandato imperativo (Estatuto 2001, arts. 23-24). El mandato parlamentario pertenece al partido y la bancada se somete a las instancias (arts. 66-67); en 2003 se expulsó a cuatro parlamentarios (Fuente: Meneguello y Amaral).",
+    "cargos": "Mandatos de 3 años (Estatuto 2001, art. 21). Nadie puede estar más de tres mandatos seguidos en una misma Comisión Ejecutiva ni dos seguidos en el mismo cargo (art. 31).",
+    "reforma": "Encuentro Nacional por mayoría de sus delegados, sobre un proyecto de una comisión designada por la Ejecutiva Nacional y enmendable por los directorios (Estatuto 2001, art. 246).",
+    "minorias": "Derecho permanente a organizarse en tendencias registradas, con boletines internos y finanzas propias, pero sin expresión pública, sedes propias ni relaciones internacionales; se prohíben las fracciones (Estatuto 2001, arts. 233-239). Reparto proporcional en todas las elecciones con varias listas (art. 22). En 1987 el 5.º Encuentro reguló las tendencias contra los grupos trotskistas, y Causa Operária y Convergência Socialista fueron expulsadas en 1990 y 1992 (Fuente: Meneguello y Amaral)."
+  },
+  "codigos": {
+    "mandato": [
+      0,
+      "Las direcciones se eligen por voto directo, sin delegación (Estatuto 2001, art. 35), y los delegados a los encuentros se eligen por listas con tesis, sin instrucciones vinculantes (arts. 23-24).",
+      "alta"
+    ],
+    "revocabilidad": [
+      0,
+      "No hay revocatorio por la base. Solo el directorio superior puede destituir una Comisión Ejecutiva o disolver un Directorio, por mayoría absoluta y por violación del estatuto o indisciplina (Estatuto 2001, art. 230); el Encuentro puede disolver el Directorio correspondiente en los casos previstos (arts. 72 y 106).",
+      "alta"
+    ],
+    "rotacion": [
+      3,
+      "Mandatos de 3 años (Estatuto 2001, art. 21) y como máximo dos mandatos seguidos en el mismo cargo de una Comisión Ejecutiva (art. 31): 6 años para la presidencia, entre los anclajes de 4 y 8 años.",
+      "alta"
+    ],
+    "profesionalizacion": [
+      1,
+      "Sin fuente verificable: el estatuto no regula si la dirección es remunerada; solo obliga a los cargos públicos y de confianza a cotizar al partido un porcentaje de su sueldo (Estatuto 2001, arts. 171-173). Entre los delegados, el 3 % eran dirigentes profesionalizados del PT en 1997 y en 2006 (Fuente: Meneguello y Amaral), dato que no mide la dirección.",
+      "baja"
+    ],
+    "eleccion_direccion": [
+      2,
+      "Presidente por voto directo en votación separada (plebiscitario) y Directorio Nacional por listas proporcionales en el PED, sin deliberación vinculante previa (Estatuto 2001, arts. 22, 35 y 39).",
+      "alta"
+    ],
+    "agenda_base": [
+      2,
+      "El Directorio Nacional fija el calendario y la pauta general de los encuentros y la del congreso (Estatuto 2001, arts. 41 y 120), pero cualquier lista de delegados presenta tesis y el texto base es el de la lista más votada (art. 24). El 20 % de los afiliados puede forzar un plebiscito o referéndum (art. 62).",
+      "alta"
+    ],
+    "pluralismo": [
+      4,
+      "Tendencias reconocidas con derecho permanente, registro, boletines internos y finanzas propias (Estatuto 2001, arts. 233, 236 y 237) y reparto proporcional en todas las elecciones con varias listas (art. 22). En el límite: se les prohíbe la expresión pública, las sedes y las relaciones internacionales (arts. 233, 235, 236 y 239).",
+      "media"
+    ],
+    "autonomia_base": [
+      1,
+      "Las instancias inferiores se subordinan a las superiores (Estatuto 2001, art. 17), que pueden intervenirlas, por ejemplo para impedir coaliciones contrarias a lo decidido arriba (arts. 18 y 229), o disolverlas (art. 230). Los núcleos no deciden (art. 59).",
+      "alta"
+    ],
+    "brecha_formal_real": [
+      3,
+      "Democracia interna formal muy desarrollada (PED, tendencias proporcionales), pero el poder real se desplaza. Primero, a la corriente mayoritaria, que controló la dirección de 1984 a 1993 y desde 1995 (Fuente: Meneguello y Amaral). Después, desde 2003, al gobierno: la adaptación al poder llevó a la «autonomización de las lideranzas, aislando al ejecutivo partidario del control de los cuerpos de base» (Fuente: Meneguello y Amaral). Los núcleos perdieron peso sin cambio estatutario (Fuente: Novaes). Los mismos autores ven todavía «un significativo vigor de participación de base» en el PED de 2005.",
+      "media"
+    ],
+    "regla_decision": [
+      4,
+      "Mayoría simple de los presentes (Estatuto 2001, art. 17 § 1).",
+      "alta"
+    ],
+    "capacidad_ejecutiva": [
+      3,
+      "La Comisión Ejecutiva Nacional ejecuta las deliberaciones del Directorio (Estatuto 2001, art. 112), pero puede decidir junto con la bancada el «fechamento de questão» que obliga a los parlamentarios (art. 67) y convoca el Encuentro para elegir candidatos (art. 106).",
+      "media"
+    ],
+    "freq_soberano_meses": [
+      36,
+      "El estatuto no fija la periodicidad del Encuentro Nacional: lo convoca el Directorio según su calendario (Estatuto 2001, arts. 41 y 106). Se toma el ciclo de los mandatos de 3 años (art. 21). En la práctica hubo 14 encuentros nacionales entre 1980 y 2001 (Fuente: FPA, Trajetórias).",
+      "media"
+    ],
+    "freq_intermedio_meses": [
+      1,
+      "El Directorio Municipal se reúne cada mes (Estatuto 2001, art. 76), y el estatuto aplica esas normas al estatal y al nacional (arts. 102, 103, 109 y 113). Frecuencia por remisión, no expresa para el Directorio Nacional.",
+      "media"
+    ],
+    "niveles": [
+      1,
+      "Elección directa de la dirección nacional y de su presidente en el PED (Estatuto 2001, art. 35).",
+      "alta"
+    ],
+    "estructura_federal": [
+      3,
+      "Estructura replicable: directorios zonales, municipales, estatales y nacional con las mismas instancias (Estatuto 2001, arts. 16, 98 y 109) y setoriales por área en todos los niveles (arts. 121-126). Subordinación jerárquica, no federal (art. 17). Organizado en 4.016 municipios en 2001 (Fuente: Meneguello y Amaral).",
+      "alta"
+    ],
+    "coste_coordinacion": [
+      4,
+      "Representación y aparato: directorios electos con reuniones mensuales y ejecutivas cada 15 días (Estatuto 2001, arts. 76 y 80) y voto directo cada 3 años (art. 21).",
+      "alta"
+    ]
+  },
+  "crisis_crecimiento": [
+    {
+      "anio": 1987,
+      "x": "El 5.º Encuentro aprueba una resolución que regula las tendencias para frenar a los grupos trotskistas organizados; Causa Operária y Convergência Socialista son expulsadas en 1990 y 1992.",
+      "fuente": "https://lac.web.ox.ac.uk/sites/default/files/lac/documents/media/bsp-02-08_amaral_o.pdf"
+    },
+    {
+      "anio": 2001,
+      "tamano": 860000,
+      "x": "Con más de 860.000 afiliados, el nuevo estatuto lleva al voto directo (PED) la elección de las direcciones y los presidentes de todos los niveles.",
+      "fuente": "https://lac.web.ox.ac.uk/sites/default/files/lac/documents/media/bsp-02-08_amaral_o.pdf"
+    },
+    {
+      "anio": 2005,
+      "x": "Crisis del mensalão: en el PED de 2005 se critica la excesiva independencia del núcleo dirigente que mandaba desde 1995, y el Campo Majoritário pierde la mayoría automática.",
+      "fuente": "https://lac.web.ox.ac.uk/sites/default/files/lac/documents/media/bsp-02-08_amaral_o.pdf"
+    }
+  ],
+  "problemas": [
+    {
+      "t": "democratico",
+      "x": "Los núcleos de base, la unidad deliberativa, no tenían poder de decisión en el estatuto (Estatuto 2001, art. 59), y ya en 1993 los delegados les daban una importancia mínima (Fuente: Novaes). Perdieron peso sin que nada en la estructura lo registrara."
+    },
+    {
+      "t": "democratico",
+      "x": "El PED amplió la participación (227.000 votantes en 2001, 314.692 en la primera vuelta de 2005; Fuente: Meneguello y Amaral), pero en forma plebiscitaria: se elige a dirigentes y listas, no se mandata (Estatuto 2001, art. 35)."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "Al llegar al gobierno, la relación gobierno/partido definió las disputas internas: el partido expulsó a los parlamentarios contrarios a la reforma de pensiones de 2003 para garantizar la base del gobierno (Fuente: Meneguello y Amaral)."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Estatuto 2001 — Estatuto do Partido dos Trabalhadores, aprobado por el Directorio Nacional el 11-III-2001 (Political Party Database)",
+      "u": "https://www.politicalpartydb.org/wp-content/uploads/2017/02/Brazil_Workers-Party_2001.pdf"
+    },
+    {
+      "t": "Meneguello y Amaral — «Ainda novidade: uma revisão das transformações do Partido dos Trabalhadores no Brasil», Oxford BSP 02-08 (2008)",
+      "u": "https://lac.web.ox.ac.uk/sites/default/files/lac/documents/media/bsp-02-08_amaral_o.pdf"
+    },
+    {
+      "t": "Novaes — C. A. M. Novaes, «PT: dilemas da burocratização», Novos Estudos CEBRAP 35 (1993)",
+      "u": "https://novosestudos.com.br/wp-content/uploads/2017/05/15_pt_dilemas.pdf.zip"
+    },
+    {
+      "t": "FPA, Trajetórias — Fundação Perseu Abramo, Trajetórias, cap. 20 (2003), sobre la democracia interna y el PED de 2001",
+      "u": "https://siac.fpabramo.org.br/uploads/acervo/Livro_Trajetorias_FPA_Cap20_2003.pdf"
+    },
+    {
+      "t": "PT Notícias n.º 105 (julio-agosto de 2001), lanzamiento del PED",
+      "u": "https://siac.fpabramo.org.br/uploads/acervo/J_PT_NOTICIAS_2001_0105.pdf"
+    }
+  ],
+  "confianza": "media"
+}

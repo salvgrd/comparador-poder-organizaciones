@@ -12,7 +12,7 @@ export interface DocumentProps {
   seccion?: Seccion
 }
 
-const APP = 'Cartografía del poder obrero'
+const APP = 'Cartografía del poder de base'
 
 const NAV: { s: Seccion; label: string; href: string }[] = [
   { s: 'panorama', label: 'Panorama', href: routes.home.href() },
@@ -52,7 +52,7 @@ export function Document(handle: Handle<DocumentProps>) {
             <div class="wrap">
               <div class="brand">
                 <h1>
-                  Cartografía del <span>poder</span> obrero
+                  Cartografía del <span>poder</span> de base
                 </h1>
                 <p>
                   Dónde reside el poder en sindicatos, partidos y movimientos autogestionados.

@@ -1,0 +1,232 @@
+{
+  "id": "pce",
+  "siglas": "PCE",
+  "nombre": "Partido Comunista de España",
+  "familia": "partido",
+  "pais": "Estado español",
+  "fundacion": 1921,
+  "tamano": [
+    7700,
+    "Unos 7.713 afiliados en 2022 y menos de 8.000 en 2026 según una columna crítica (El Común). Cifra no oficial.",
+    "baja"
+  ],
+  "corriente": "Comunismo eurocomunista / marxista; integrado en IU y Sumar",
+  "autogestionada": false,
+  "resumen": "Estructura de partido comunista con Congreso, Comité Central (órgano superior entre congresos, hasta 100 miembros, al menos 6 reuniones al año), Comisión Política (quincenal, como máximo el 30% del CC) y Secretariado. La Secretaría General la eligen los miembros electos en el Congreso y la ratifica el Comité Central. Hay competencia real entre corrientes: en 2022 la dirección ganó con el 54% y en 2026 sus documentos se aprobaron con el 56%.",
+  "poder_formal": "Congreso (XXII: 12-13 de diciembre de 2026, Córdoba) y, entre congresos, el Comité Central.",
+  "poder_real": "Comisión Política y Secretaría General, que redactan los documentos congresuales. El Comité Central saliente elige 25 de los 500 delegados del Congreso.",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Militancia",
+      "nivel": 0,
+      "tipo": "base"
+    },
+    {
+      "id": "agr",
+      "n": "Agrupaciones de base",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ]
+    },
+    {
+      "id": "terr",
+      "n": "Organizaciones de nación o región (incl. PSUC Viu)",
+      "nivel": 2,
+      "tipo": "delegados",
+      "elegido_por": [
+        "agr"
+      ],
+      "desc": "Eligen 467 delegados al Congreso (2 fijos + según cotizantes) y un cupo del Comité Central que pueden revocar (art. 61)."
+    },
+    {
+      "id": "cong",
+      "n": "Congreso",
+      "nivel": 3,
+      "tipo": "soberano",
+      "elegido_por": [
+        "terr"
+      ],
+      "freq": "XXI en 2022; XXII en diciembre de 2026",
+      "decide": "Mayoría",
+      "desc": "500 delegados: 467 territoriales, 25 del Comité Central saliente y 8 de la UJCE."
+    },
+    {
+      "id": "cc",
+      "n": "Comité Central",
+      "nivel": 4,
+      "tipo": "delegados",
+      "elegido_por": [
+        "cong",
+        "terr"
+      ],
+      "freq": "Al menos 6 veces al año",
+      "desc": "Hasta 100 miembros, con paridad y lista cremallera (arts. 59-62)."
+    },
+    {
+      "id": "cp",
+      "n": "Comisión Política",
+      "nivel": 5,
+      "tipo": "coordinacion",
+      "elegido_por": [
+        "cc"
+      ],
+      "freq": "Quincenal",
+      "desc": "Elegida por el Comité Central entre sus miembros; como máximo el 30% del CC."
+    },
+    {
+      "id": "sec",
+      "n": "Secretariado",
+      "nivel": 6,
+      "tipo": "ejecutivo",
+      "elegido_por": [
+        "cc"
+      ],
+      "desc": "Funcionamiento diario (art. 65)."
+    },
+    {
+      "id": "sg",
+      "n": "Secretaría General",
+      "nivel": 7,
+      "tipo": "ejecutivo",
+      "cima": true,
+      "elegido_por": [
+        "cong"
+      ],
+      "desc": "Elegida por los miembros electos en el Congreso y ratificada por mayoría simple del Comité Central (art. 66)."
+    }
+  ],
+  "reglas": {
+    "metodo": "Mayoría en Congreso y en el Pleno del Comité Central.",
+    "ponderacion": "Delegados según la media de cotizantes de cada organización territorial.",
+    "mandato": "Libre; las delegaciones territoriales fijan posiciones antes del Congreso.",
+    "cargos": "No consta limitación de mandatos.",
+    "reforma": "Congreso.",
+    "minorias": "Corrientes de hecho que compiten (candidatura crítica con el 46% en 2022). Paridad en el Comité Central."
+  },
+  "codigos": {
+    "mandato": [
+      1,
+      "Delegaciones territoriales fijan posiciones, sin mandato formal.",
+      "media"
+    ],
+    "revocabilidad": [
+      1,
+      "Estatutos (XX Congreso), art. 19.3: revoca el órgano que eligió, a petición del 40 % de sus miembros y una sola vez al año por persona.",
+      "alta"
+    ],
+    "rotacion": [
+      1,
+      "Art. 20.2: no más de tres mandatos consecutivos en cargos internos, pero se puede optar a más con el 65 % del órgano: prorrogable sin tope.",
+      "alta"
+    ],
+    "profesionalizacion": [
+      2,
+      "Art. 80: algunos militantes tienen plena dedicación con salario y contrato ligado al mandato; art. 26: los comités deben estar formados en su mayoría por cuadros no liberados.",
+      "alta"
+    ],
+    "eleccion_direccion": [
+      2,
+      "Congreso de delegados con candidaturas competitivas.",
+      "media"
+    ],
+    "agenda_base": [
+      1,
+      "Art. 27.2 y 27.6: el comité correspondiente aprueba los documentos y solo esos textos pueden enmendarse; las enmiendas minoritarias pasan con el 25 % (35 % en el Congreso).",
+      "alta"
+    ],
+    "pluralismo": [
+      2,
+      "Arts. 18.7 y 23: prohibidas las corrientes y fracciones, salvo plataformas de opinión para los congresos (art. 53). Hay enmiendas de minoría (art. 27) y listas proporcionales para las delegaciones (art. 27.7, 55.4).",
+      "alta"
+    ],
+    "autonomia_base": [
+      2,
+      "Organizaciones de nación con autonomía relativa (PSUC Viu).",
+      "media"
+    ],
+    "brecha_formal_real": [
+      2,
+      "Pese a la prohibición de corrientes, compiten bloques de hecho (54/46 en 2022, 56/44 en 2026); la Comisión Política y la Secretaría General controlan los documentos y la organización del Congreso (El Común, opinión). Estimación con prensa.",
+      "baja"
+    ],
+    "regla_decision": [
+      4,
+      "Art. 18.7: los acuerdos se toman por mayoría y la minoría debe aplicarlos.",
+      "alta"
+    ],
+    "capacidad_ejecutiva": [
+      3,
+      "Art. 64: la Comisión Política asegura la dirección entre reuniones del Comité Central, ante el que responde; se reúne dos veces al mes.",
+      "alta"
+    ],
+    "freq_soberano_meses": [
+      48,
+      "XXI Congreso en 2022 y XXII en diciembre de 2026 (Público).",
+      "alta"
+    ],
+    "freq_intermedio_meses": [
+      2,
+      "Art. 62.1: el Comité Central se reúne al menos seis veces al año.",
+      "alta"
+    ],
+    "niveles": [
+      3,
+      "Agrupación → organización territorial → Congreso.",
+      "media"
+    ],
+    "estructura_federal": [
+      2,
+      "Organización estatal con organizaciones de nación.",
+      "media"
+    ],
+    "coste_coordinacion": [
+      3,
+      "Moderado.",
+      "baja"
+    ]
+  },
+  "problemas": [
+    {
+      "t": "democratico",
+      "x": "El Comité Central saliente elige delegados del Congreso que lo renueva: un mecanismo de autoperpetuación, aunque minoritario (25 de 500)."
+    },
+    {
+      "t": "democratico",
+      "x": "Una dirección que gana con el 54-56% y redacta los documentos de partida: la minoría tiene casi la mitad de los votos y poco control de la agenda."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "Militancia en descenso y doble pertenencia (IU, Sumar): las decisiones de gobierno se toman en coaliciones donde el PCE es una parte."
+    },
+    {
+      "t": "agilidad",
+      "x": "Comisión Política quincenal y Comité Central frecuente dan buena capacidad de reacción."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "PCE — Estatutos XX Congreso (2018)",
+      "u": "https://www.pce.es/media/uploads/2018/11/02/eb5f16e9ae2544d8886cc7067a7d4fc5.pdf"
+    },
+    {
+      "t": "PCE — Comité Central",
+      "u": "https://www.pce.es/comitecentral/"
+    },
+    {
+      "t": "Público — El PCE celebrará su XXII Congreso (2026)",
+      "u": "https://www.publico.es/politica/pce-celebrara-xxii-congreso-dias-12-13-diciembre-bajo-lema-ganar-futuro-comun.html"
+    },
+    {
+      "t": "El Común — ¿Hacia un XXII Congreso de escaparate en el PCE? (opinión)",
+      "u": "https://elcomun.es/2026/05/02/hacia-un-xxii-congreso-de-escaparate-en-el-pce/"
+    },
+    {
+      "t": "PCE — XXI Congreso (2022)",
+      "u": "https://www.pce.es/xxi-congreso/"
+    }
+  ],
+  "confianza": "media"
+}

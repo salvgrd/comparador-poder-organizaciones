@@ -1,4 +1,4 @@
-# Cartografía del poder obrero
+# Cartografía del poder de base
 
 Comparador de la estructura orgánica y de los métodos de decisión de sindicatos, partidos y movimientos:
 dónde reside el poder, y qué problemas de democracia, escalabilidad y agilidad tiene cada organización.
@@ -26,7 +26,8 @@ npm run typecheck
 npm start          # modo producción
 ```
 
-En NixOS, sin instalar nada: `nix shell nixpkgs#nodejs_24 -c npm run dev`.
+Con Nix, `flake.nix` define el entorno (Node 26, uv y Python): `nix develop -c npm run dev`, o
+`direnv allow` una vez para cargarlo al entrar en el directorio (`.envrc` hace `use flake`).
 
 Páginas: `/` panorama, `/comparar?ids=cnt,cgt`, `/organizaciones/<id>`, `/calculadora`, `/metodo`.
 Los datos con los índices calculados se sirven en `/api/orgs.json`.
@@ -58,7 +59,7 @@ y que la cima del organigrama es alcanzable desde la base.
     "revocabilidad": [], "rotacion": [], "profesionalizacion": [], "eleccion_direccion": [],
     "agenda_base": [], "pluralismo": [], "autonomia_base": [], "brecha_formal_real": [],
     "regla_decision": [], "capacidad_ejecutiva": [], "estructura_federal": [], "coste_coordinacion": [],
-    "freq_soberano_meses": [48, "", ""], "freq_intermedio_meses": [6, "", ""], "niveles": [3, "", ""]
+    "freq_soberano_meses": [48, "", ""], "freq_intermedio_meses": [6, "", ""]
   },
   "problemas": [{ "t": "democratico|escalabilidad|agilidad", "x": "…" }],
   "fuentes": [{ "t": "título", "u": "https://…" }],
@@ -84,5 +85,5 @@ uv run marimo run poder.py    # lo abre como app de solo lectura, sin código
 El cuaderno incluye la tabla larga de variables, los índices con pesos ajustables, la robustez del
 ranking ante pesos aleatorios, PCA y agrupamiento, y análisis de redes de cada organigrama.
 
-En NixOS, los paquetes con extensiones en C (numpy) necesitan `libstdc++` y `zlib`; activa
-`programs.nix-ld` o exporta `LD_LIBRARY_PATH` con esas librerías antes de `uv run`.
+En NixOS, los paquetes con extensiones en C (numpy) necesitan `libstdc++` y `zlib`; `nix develop`
+ya los pone en `LD_LIBRARY_PATH` y hace que uv use el Python de nixpkgs.

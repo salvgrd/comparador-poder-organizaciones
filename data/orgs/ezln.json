@@ -7,9 +7,10 @@
   "fundacion": 1983,
   "tamano": [
     150000,
-    "Bases de apoyo no censadas; estimaciones muy variables. Orden de magnitud.",
+    "Sin fuente verificable: bases de apoyo no censadas; estimaciones muy variables. Orden de magnitud.",
     "baja"
   ],
+  "tamano_unidad": "poblacion",
   "corriente": "Neozapatismo; autonomía indígena, «mandar obedeciendo»",
   "autogestionada": true,
   "resumen": "Dos estructuras paralelas. Una político-militar: el Comité Clandestino Revolucionario Indígena–Comandancia General (CCRI-CG), con vocería pública. Otra de autogobierno civil: en 2023 se eliminaron los MAREZ (municipios autónomos) y las Juntas de Buen Gobierno y se creó una «pirámide invertida» con los Gobiernos Autónomos Locales (GAL) de cada comunidad como núcleo, los Colectivos de GAL (CGAZ, cientos) y las Asambleas de Colectivos (ACGAZ) a escala de zona. Cargos rotativos, no remunerados y revocables.",
@@ -85,72 +86,72 @@
   "codigos": {
     "mandato": [
       4,
-      "Mandar obedeciendo.",
-      "media"
+      "Sin fuente verificable: mandar obedeciendo. Las fuentes citadas dicen que GAL y CGAZ están «sujetos a la asamblea del pueblo» (El Universal), pero no describen un mandato imperativo.",
+      "baja"
     ],
     "revocabilidad": [
       4,
-      "Autoridades revocables por la asamblea.",
-      "media"
+      "Sin fuente verificable: autoridades revocables por la asamblea.",
+      "baja"
     ],
     "rotacion": [
-      4,
-      "Cargos rotativos civiles (pero no en el CCRI-CG).",
-      "media"
+      0,
+      "Sin fuente verificable: la cima es la CCRI-Comandancia General, sin mandato fijo ni límite. La rotación de los cargos civiles (las antiguas JBG eran rotativas, según Grupo Animal) no alcanza a la Comandancia.",
+      "baja"
     ],
     "profesionalizacion": [
       4,
-      "Cargos civiles no remunerados.",
-      "media"
+      "Sin fuente verificable: cargos civiles no remunerados.",
+      "baja"
     ],
     "eleccion_direccion": [
       2,
-      "Lo civil se elige en asamblea; la Comandancia no se renueva por elección.",
-      "media"
+      "Lo civil se organiza en asamblea: GAL en cada comunidad, sujetos a la asamblea del pueblo (El Universal, 2023); la Comandancia no se renueva por elección (no hay fuente que describa un mecanismo de elección).",
+      "baja"
     ],
     "agenda_base": [
       3,
-      "Consultas a las comunidades.",
+      "Las asambleas de los CGAZ aprueban o rechazan los planes de salud, educación, agroecología, justicia y comercio (El Universal, 2023).",
       "media"
     ],
     "pluralismo": [
       1,
-      "Organización político-militar; poco espacio para corrientes.",
-      "media"
+      "Sin fuente verificable: organización político-militar; poco espacio para corrientes.",
+      "baja"
     ],
     "autonomia_base": [
       4,
-      "Pirámide invertida: el GAL es el núcleo.",
+      "Pirámide invertida: el GAL es «el núcleo de toda la autonomía» y los CGAZ y ACGAZ «no tienen autoridad» porque dependen de lo más pequeño (El Universal, 2023; Grupo Animal, 2024).",
       "media"
     ],
     "brecha_formal_real": [
       3,
-      "La estrategia y las reformas estructurales salen de la Comandancia.",
-      "media"
+      "La estrategia y las reformas estructurales salen de la estructura político-militar: la reestructuración de 2023 se anunció por comunicados del EZLN y la presentó la Comandancia General (Grupo Animal, 2024). Estimación.",
+      "baja"
     ],
     "regla_decision": [
       1,
-      "Consenso.",
-      "media"
+      "Sin fuente verificable: consenso.",
+      "baja"
     ],
     "capacidad_ejecutiva": [
-      2,
-      "El mando militar es ágil; lo civil, lento.",
+      3,
+      "La reestructuración de 2023 la anunció el EZLN en comunicados de noviembre y diciembre (Grupo Animal, 2024); las decisiones grandes se someten en principio a consulta de los pueblos.",
       "baja"
     ],
     "freq_soberano_meses": [
       1,
-      "Asambleas comunitarias frecuentes.",
+      "Sin fuente verificable: asambleas comunitarias frecuentes.",
       "baja"
     ],
     "freq_intermedio_meses": [
       6,
-      "CGAZ y ACGAZ según necesidad.",
+      "Sin fuente verificable: CGAZ y ACGAZ según necesidad.",
       "baja"
     ],
     "niveles": [
       3,
-      "Comunidad → CGAZ → ACGAZ.",
+      "Comunidad (GAL) → CGAZ → ACGAZ (El Universal, 2023; Grupo Animal, 2024).",
       "media"
     ],
     "estructura_federal": [
@@ -186,6 +187,10 @@
     {
       "t": "Enlace Zapatista (comunicados)",
       "u": "https://enlacezapatista.ezln.org.mx/"
+    },
+    {
+      "t": "Grupo Animal — Zapatistas acuerdan gestionar tierras con otras poblaciones (2024)",
+      "u": "https://grupoanimal.mx/sociedad/zapatistas-30-anos-ezln-poblaciones-chiapas"
     }
   ],
   "confianza": "media"

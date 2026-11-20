@@ -1,0 +1,230 @@
+{
+  "id": "occupy",
+  "siglas": "OWS",
+  "nombre": "Occupy Wall Street — Asamblea General de Nueva York (2011)",
+  "familia": "movimiento",
+  "pais": "EE. UU. (Nueva York)",
+  "fundacion": 2011,
+  "tamano": [
+    300,
+    "Asistencia a la Asamblea General en el momento codificado: la creación del Consejo de Portavoces se aprobó por 280 votos contra 17 (Fuente: Dissent, Wolfe). Las manifestaciones reunieron a muchas más personas; no hay censo de participantes.",
+    "baja"
+  ],
+  "tamano_unidad": "activistas",
+  "corriente": "Horizontalismo; consenso de inspiración anarquista y de los movimientos de plazas",
+  "autogestionada": true,
+  "estado": {
+    "situacion": "disuelta",
+    "tipos": [
+      "colapso_escala",
+      "represion"
+    ],
+    "desde": 2012,
+    "causa": "El desalojo de Zuccotti Park el 15 de noviembre de 2011 acabó con la acampada, y tras él el movimiento se disipó en gran parte (Fuente: Wikipedia, OWS). Ya antes, la Asamblea General no daba abasto con las necesidades operativas de los grupos, la asistencia fluctuaba cada noche y no había rendición de cuentas del gasto (Fuente: Propuesta de estructura NYCGA). Tras el desalojo, la Asamblea se dividió entre activistas y acampados sin techo, y una participante bloqueó repetidamente el Consejo de Portavoces (Fuente: The Nation). Siguieron proyectos sueltos como Occupy Sandy (Fuente: Wikipedia, OWS).",
+    "momento_codificado": "Finales de octubre y primeros de noviembre de 2011, con la Asamblea General diaria y el recién creado Consejo de Portavoces (Spokes Council)."
+  },
+  "resumen": "La Asamblea General de Nueva York (NYCGA) se reunía en Zuccotti Park, abierta a cualquier persona y con consenso modificado: un bloqueo cae si nueve décimas partes votan en contra (Fuente: Dissent, Wolfe). El trabajo lo hacían más de 70 grupos de trabajo (Fuente: Wikipedia, OWS) y caucus de colectivos marginados. A finales de octubre de 2011 la Asamblea aprobó un Consejo de Portavoces de grupos operativos y caucus, con portavoces rotatorios, que asumió la logística y el presupuesto (Fuente: Propuesta de estructura NYCGA; Dissent, Wolfe).",
+  "poder_formal": "La Asamblea General, abierta a cualquier persona, por consenso modificado, que conserva lo político y puede disolver el Consejo de Portavoces; este decide la logística y los presupuestos (Fuente: Propuesta de estructura NYCGA).",
+  "poder_real": "Los grupos con recursos y continuidad, como Finanzas, acusado por otros grupos de estar «sentado sobre un millón de dólares», y Facilitación, que llegaba con el orden del día ya preparado (Fuente: The Nation), más un núcleo informal de organizadores que dirigían grupos de trabajo y acciones y veían la Asamblea como «más performance que foro de decisión» (Fuente: Naked Capitalism). Los acampados más precarios pesaban en los bloqueos, pero no en la ejecución (Fuente: The Nation).",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Participantes",
+      "nivel": 0,
+      "tipo": "base",
+      "desc": "Cualquier persona presente; no hay afiliación (Fuente: Dissent, Wolfe)."
+    },
+    {
+      "id": "gt",
+      "n": "Grupos de trabajo y caucus",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Más de 70 grupos de trabajo (Fuente: Wikipedia, OWS): logística, cocina, legal, prensa, acción directa, finanzas… Los grupos operativos son abiertos y los caucus agrupan a colectivos marginados (Fuente: Propuesta de estructura NYCGA)."
+    },
+    {
+      "id": "fin",
+      "n": "Grupo de Finanzas",
+      "nivel": 2,
+      "tipo": "tecnico",
+      "elegido_por": [
+        "gt"
+      ],
+      "desc": "Gestionaba las donaciones; los gastos los asignaban la Asamblea y el Consejo de Portavoces (Fuente: The Nation)."
+    },
+    {
+      "id": "ga",
+      "n": "Asamblea General de Nueva York (NYCGA)",
+      "nivel": 1,
+      "tipo": "soberano",
+      "elegido_por": [
+        "af"
+      ],
+      "decide": "Consenso modificado: un bloqueo cae si el 90% lo rechaza",
+      "freq": "Martes, jueves, sábados y domingos desde la creación del Consejo de Portavoces (Fuente: Propuesta de estructura NYCGA)",
+      "desc": "Dinamizada por el grupo de Facilitación (Fuente: The Nation). Conserva las decisiones sobre la representación de OWS, sus principios y su relación con el movimiento Occupy (Fuente: Propuesta de estructura NYCGA)."
+    },
+    {
+      "id": "spokes",
+      "n": "Consejo de Portavoces (Spokes Council)",
+      "nivel": 2,
+      "tipo": "coordinacion",
+      "cima": true,
+      "elegido_por": [
+        "gt"
+      ],
+      "decide": "Consenso modificado: una propuesta se rechaza si vota en contra al menos el 10 %; propuestas y bloqueos los traen los grupos (Fuente: Propuesta de estructura NYCGA)",
+      "freq": "Lunes, miércoles y viernes (Fuente: Propuesta de estructura NYCGA)",
+      "desc": "Un portavoz por grupo operativo o caucus, que rota en cada sesión, puede ser revocado por su grupo en cualquier momento y «no tiene autoridad». Decide logística, presupuestos y admisión de grupos; la Asamblea conserva lo político (Fuente: Propuesta de estructura NYCGA)."
+    }
+  ],
+  "reglas": {
+    "metodo": "Consenso modificado: un bloqueo cae si nueve décimas partes votan en contra (Fuente: Dissent, Wolfe); en el Consejo de Portavoces basta el 10 % para rechazar (Fuente: Propuesta de estructura NYCGA).",
+    "ponderacion": "Una persona presente, una voz; en el Consejo de Portavoces, un portavoz por grupo (Fuente: Propuesta de estructura NYCGA).",
+    "mandato": "Los portavoces debaten cada punto con su grupo, transmiten la diversidad de posiciones y no deciden por sí mismos (Fuente: Propuesta de estructura NYCGA).",
+    "cargos": "No hay cargos; los portavoces rotan en cada sesión (Fuente: Propuesta de estructura NYCGA).",
+    "reforma": "La Asamblea General; el Consejo de Portavoces solo puede reformar su propio funcionamiento sin alterar los poderes de la Asamblea (Fuente: Propuesta de estructura NYCGA).",
+    "minorias": "Bloqueo, y los caucus pueden aplazar una propuesta hasta la siguiente sesión (Fuente: Propuesta de estructura NYCGA); sin representación proporcional."
+  },
+  "codigos": {
+    "mandato": [
+      3,
+      "El acuerdo del Consejo de Portavoces establece que los portavoces «no tienen autoridad» ni deciden: debaten cada punto con su grupo, sentado detrás, y transmiten la diversidad de posiciones; propuestas y bloqueos los traen los grupos (Fuente: Propuesta de estructura NYCGA). No exige acuerdos escritos.",
+      "alta"
+    ],
+    "revocabilidad": [
+      4,
+      "Los portavoces pueden ser revocados por su grupo en cualquier momento (Fuente: Propuesta de estructura NYCGA).",
+      "alta"
+    ],
+    "rotacion": [
+      4,
+      "Los portavoces rotan en cada sesión (Fuente: Propuesta de estructura NYCGA).",
+      "alta"
+    ],
+    "profesionalizacion": [
+      3,
+      "Sin fuente verificable: los acuerdos consultados no crean cargos remunerados ni los prohíben (Fuente: Propuesta de estructura NYCGA).",
+      "baja"
+    ],
+    "eleccion_direccion": [
+      4,
+      "Asamblea general abierta a cualquier persona (Fuente: Dissent, Wolfe); el Consejo de Portavoces lo forman portavoces rotatorios de los grupos (Fuente: Propuesta de estructura NYCGA).",
+      "alta"
+    ],
+    "agenda_base": [
+      4,
+      "Cualquiera puede presentar una propuesta a la Asamblea (Fuente: Dissent, Wolfe), y cualquier grupo al Consejo de Portavoces (Fuente: Propuesta de estructura NYCGA).",
+      "alta"
+    ],
+    "pluralismo": [
+      2,
+      "El bloqueo y el derecho de los caucus a aplazar propuestas son cauces normados de la minoría; no hay listas ni corrientes (Fuente: Propuesta de estructura NYCGA).",
+      "alta"
+    ],
+    "autonomia_base": [
+      4,
+      "Los grupos de movimiento son autónomos y los caucus, autodeterminados; los grupos operativos solo pueden ser expulsados por perturbar el proceso o violar los Principios de Solidaridad (Fuente: Propuesta de estructura NYCGA).",
+      "alta"
+    ],
+    "brecha_formal_real": [
+      3,
+      "Formalmente decidía una asamblea abierta. En la práctica pesaban grupos con recursos y continuidad: Finanzas, acusado de estar «sentado sobre un millón de dólares», y Facilitación, que llegaba con el orden del día preparado, con choques entre acampados y activistas (Fuente: The Nation). Un núcleo de organizadores que dirigía grupos y acciones veía la Asamblea como «más performance que foro de decisión» desde las primeras semanas (Fuente: Naked Capitalism).",
+      "media"
+    ],
+    "regla_decision": [
+      2,
+      "Consenso con votación de reserva: el bloqueo cae con nueve décimas partes (Fuente: Dissent, Wolfe; Propuesta de estructura NYCGA).",
+      "alta"
+    ],
+    "capacidad_ejecutiva": [
+      1,
+      "No hay ejecutivo: los portavoces «no tienen autoridad» y el Consejo decide en sesión (Fuente: Propuesta de estructura NYCGA). La Asamblea delegó a veces en el comité de acción directa la preparación de acciones secretas (Fuente: Wikipedia, Asamblea general de Occupy).",
+      "media"
+    ],
+    "freq_soberano_meses": [
+      0.06,
+      "Asamblea General cuatro noches por semana desde la creación del Consejo de Portavoces (Fuente: Propuesta de estructura NYCGA).",
+      "alta"
+    ],
+    "freq_intermedio_meses": [
+      0.08,
+      "Consejo de Portavoces tres noches por semana (Fuente: Propuesta de estructura NYCGA).",
+      "alta"
+    ],
+    "niveles": [
+      1,
+      "La Asamblea es directa y abierta (Fuente: Dissent, Wolfe).",
+      "alta"
+    ],
+    "estructura_federal": [
+      1,
+      "Una sola unidad local: la NYCGA era la asamblea de Zuccotti Park y las asambleas de Occupy adoptaron formas distintas en cada lugar (Fuente: Wikipedia, Asamblea general de Occupy). Sin fuente verificable sobre una federación formal con otras ocupaciones.",
+      "media"
+    ],
+    "coste_coordinacion": [
+      1,
+      "La Asamblea directa conserva lo político, y en el Consejo de Portavoces cada punto se debate dentro de cada grupo antes de decidir (Fuente: Propuesta de estructura NYCGA).",
+      "alta"
+    ]
+  },
+  "crisis_crecimiento": [
+    {
+      "anio": 2011,
+      "tamano": 300,
+      "x": "A las pocas semanas la Asamblea General no da abasto con la logística y el presupuesto, la asistencia fluctúa y no hay rendición de cuentas del gasto. El grupo de Estructura propone el Consejo de Portavoces, que la Asamblea aprueba a finales de octubre por 280 votos contra 17, con disidentes que temían más fragmentación.",
+      "fuente": "http://web.archive.org/web/20250616122404/https://www.dissentmagazine.org/online_articles/after-the-scream-occupy-wall-street-reforms-itself/"
+    }
+  ],
+  "problemas": [
+    {
+      "t": "escalabilidad",
+      "x": "La asistencia a la Asamblea fluctuaba de noche en noche, lo que hacía difícil tomar decisiones informadas y coherentes, y las decisiones tardaban tanto que no quedaba tiempo para las necesidades de los grupos (Fuente: Propuesta de estructura NYCGA); con el 90 % de consenso, una minoría intransigente podía bloquear (Fuente: Overland, Maisano)."
+    },
+    {
+      "t": "democratico",
+      "x": "Sin estructura formal, el poder pasa a quienes tienen tiempo, contactos y control de los recursos: un participante interno califica de «farsa» la ausencia de líderes (Fuente: Naked Capitalism), y otros grupos acusaban a Finanzas de restringir el acceso al dinero (Fuente: The Nation)."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "El órgano soberano dependía de un espacio ocupado: tras el desalojo del 15 de noviembre el movimiento se disipó en gran parte (Fuente: Wikipedia, OWS)."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Propuesta de estructura NYCGA — Structure Working Group, «OWS Structure Proposal», propuesta del Consejo de Portavoces para la Asamblea del 28-X-2011 (nycga.net, copia en web.archive.org)",
+      "u": "http://web.archive.org/web/20130310081745/http://www.nycga.net/2011/10/27/draft-proposal-for-fri-1028-general-assembly-structure/"
+    },
+    {
+      "t": "Dissent, Wolfe — M. Wolfe, «After the Scream: Occupy Wall Street Reforms Itself» (15-XI-2011; copia en web.archive.org)",
+      "u": "http://web.archive.org/web/20250616122404/https://www.dissentmagazine.org/online_articles/after-the-scream-occupy-wall-street-reforms-itself/"
+    },
+    {
+      "t": "The Nation — «The Fracturing of Occupy Wall Street»",
+      "u": "https://www.thenation.com/article/archive/fracturing-occupy-wall-street/"
+    },
+    {
+      "t": "Overland, Maisano — debate Maharawal / Maisano sobre la estructura de OWS",
+      "u": "https://overland.org.au/?p=20065"
+    },
+    {
+      "t": "Naked Capitalism — «What Really Caused the Implosion of the Occupy Movement» (testimonio interno, 2015; copia en web.archive.org)",
+      "u": "http://web.archive.org/web/20251112055754/https://www.nakedcapitalism.com/2015/12/what-really-caused-the-implosion-of-the-occupy-movement-an-insiders-view.html"
+    },
+    {
+      "t": "Wikipedia, OWS — «Occupy Wall Street»",
+      "u": "https://en.wikipedia.org/wiki/Occupy_Wall_Street"
+    },
+    {
+      "t": "Wikipedia, Asamblea general de Occupy — «General assembly (Occupy movement)»",
+      "u": "https://en.wikipedia.org/wiki/General_assembly_(Occupy_movement)"
+    },
+    {
+      "t": "Dissent — D. Plotke, «Occupy Wall Street, Flash Movements, and American Politics» (copia en web.archive.org)",
+      "u": "http://web.archive.org/web/20260927022131/https://dissentmagazine.org/online_articles/occupy-wall-street-flash-movements-and-american-politics/"
+    }
+  ],
+  "confianza": "media"
+}

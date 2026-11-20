@@ -3,6 +3,7 @@ import { createController } from 'remix/router'
 import { assets } from '../assets.ts'
 import { getOrgs } from '../data/orgs.ts'
 import { leerPesos } from '../data/pesos.ts'
+import { conFuentes, esFracaso } from '../lib/codebook.ts'
 import { conIndices } from '../lib/metrics.ts'
 import { UNIDADES_EJEMPLO } from '../lib/voting.ts'
 import { routes } from '../routes.ts'
@@ -10,6 +11,7 @@ import { CLAVES_ORDEN, type ClaveOrden } from '../ui/tables.tsx'
 import { CalculadoraPage } from './calculadora-page.tsx'
 import { CompararPage } from './comparar-page.tsx'
 import { MetodoPage } from './metodo-page.tsx'
+import { RevisionIndexPage } from './organizaciones/revision-page.tsx'
 import { PanoramaPage } from './panorama-page.tsx'
 
 const MAX_COMPARAR = 3
@@ -21,11 +23,16 @@ export default createController(routes, {
     },
 
     async home(context) {
-      let orgs = conIndices(await getOrgs(), await leerPesos(context.request))
       let q = context.url.searchParams
+      let todas = await getOrgs()
+      let filtro = { activas: q.get('activas') === '1', fuentes: q.get('fuentes') === '1' }
+      let nFracasos = todas.filter(esFracaso).length
+      let nSinFuentes = todas.filter((o) => !conFuentes(o)).length
+      let elegidas = todas.filter((o) => (!filtro.activas || !esFracaso(o)) && (!filtro.fuentes || conFuentes(o)))
+      let orgs = conIndices(elegidas, await leerPesos(context.request))
       let orden = (CLAVES_ORDEN as string[]).includes(q.get('orden') ?? '') ? (q.get('orden') as ClaveOrden) : 'cb'
       let dir: 1 | -1 = q.get('dir') === 'asc' ? 1 : -1
-      return context.render(<PanoramaPage orgs={orgs} orden={orden} dir={dir} />)
+      return context.render(<PanoramaPage orgs={orgs} orden={orden} dir={dir} filtro={filtro} nFracasos={nFracasos} nSinFuentes={nSinFuentes} />)
     },
 
     async comparar(context) {
@@ -47,6 +54,10 @@ export default createController(routes, {
       return context.render(<MetodoPage pesos={pesos} guardado={guardado} />)
     },
 
+    async revision(context) {
+      return context.render(<RevisionIndexPage orgs={await getOrgs()} />)
+    },
+
     async apiOrgs(context) {
       let orgs = conIndices(await getOrgs(), await leerPesos(context.request))
       return Response.json({
@@ -57,6 +68,8 @@ export default createController(routes, {
             control_base: indices.cb,
             control_base_bruto: indices.cbBruto,
             agilidad: indices.ag,
+            agilidad_via_base: indices.agb,
+            agilidad_via_direccion: indices.ce,
             escalabilidad: indices.es,
             riesgo_oligarquico: indices.olig,
             saltos: indices.hops,

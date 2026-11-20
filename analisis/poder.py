@@ -126,17 +126,31 @@ def _(CB_KEYS, math, nx):
     def _clamp(x, a, b):
         return max(a, min(b, x))
 
+    UNIDADES_COMPARABLES = {"afiliacion", "trabajadoras", "activistas"}
+
+    def _freq(m):
+        if m is None:
+            return None
+        return 4 if m <= 0.25 else 3 if m <= 2 else 2 if m <= 6 else 1 if m <= 12 else 0
+
+    def _proximidad(h, mandato, revoc):
+        ctrl = [x for x in (mandato, revoc) if x is not None]
+        if h is None or not ctrl:
+            return None
+        c = sum(ctrl) / (4 * len(ctrl))
+        return 4 * c ** max(1, h)
+
     def valores(o):
-        """Valores 0-4 de todas las variables, incluidas las calculadas."""
+        """Valores 0-4 de todas las variables, incluidas las calculadas. Misma lógica que app/lib/metrics.ts."""
         c = {k: v[0] for k, v in o["codigos"].items()}
         h = saltos(o)
-        m = c.get("freq_intermedio_meses")
-        n = c.get("niveles")
         t = o.get("tamano", [None])[0]
-        c["proximidad"] = None if h is None else _clamp(5 - h, 0, 4)
-        c["freq_intermedio"] = None if m is None else (4 if m <= 0.5 else 3 if m <= 2 else 2 if m <= 6 else 1 if m <= 12 else 0)
-        c["niveles_s"] = None if n is None else _clamp(5 - n, 0, 4)
-        c["tamano_s"] = None if not t else _clamp(math.log10(t) - 2, 0, 4)
+        comparable = o.get("tamano_unidad", "afiliacion") in UNIDADES_COMPARABLES
+        c["proximidad"] = _proximidad(h, c.get("mandato"), c.get("revocabilidad"))
+        c["freq_intermedio"] = _freq(c.get("freq_intermedio_meses"))
+        c["freq_soberano"] = _freq(c.get("freq_soberano_meses"))
+        c["niveles_s"] = None if h is None else _clamp(5 - h, 0, 4)
+        c["tamano_s"] = _clamp(math.log10(t) - 2, 0, 4) if t and comparable else None
         c["saltos"] = h
         return c
 
@@ -144,19 +158,29 @@ def _(CB_KEYS, math, nx):
         v = valores(o)
         num = sum(pesos[k] * v[k] for k in CB_KEYS if v.get(k) is not None)
         den = sum(pesos[k] for k in CB_KEYS if v.get(k) is not None)
-        brecha = v.get("brecha_formal_real", 0)
-        cb = num / den * 25 * (1 - 0.5 * brecha / 4) if den else None
+        brecha = v.get("brecha_formal_real")
+        cb = num / den * 25 * (1 - 0.5 * brecha / 4) if den and brecha is not None else None
 
         def media(ks):
             xs = [v[k] for k in ks if v.get(k) is not None]
             return sum(xs) / len(xs) * 25 if xs else None
 
-        tam = v["tamano_s"] or 0
-        olig = ((4 - v["profesionalizacion"]) + (4 - v["rotacion"]) + (4 - v["eleccion_direccion"]) + brecha) / 16 * (0.5 + 0.5 * tam / 4) * 100
+        olig_vars = [v.get(k) for k in ("profesionalizacion", "rotacion", "eleccion_direccion")]
+        tam = v["tamano_s"]
+        olig = (
+            None
+            if None in olig_vars or brecha is None or tam is None
+            else (sum(4 - x for x in olig_vars) + brecha) / 16 * (0.5 + 0.5 * tam / 4) * 100
+        )
+        via_base = media(["freq_intermedio", "freq_soberano", "niveles_s"])
+        via_direccion = media(["regla_decision", "capacidad_ejecutiva"])
         return {
             "control_base": cb,
-            "agilidad": media(["regla_decision", "capacidad_ejecutiva", "freq_intermedio", "niveles_s"]),
-            "escalabilidad": media(["estructura_federal", "coste_coordinacion", "tamano_s"]),
+            # Agilidad = media de sus dos vías: órganos colectivos rápidos o una dirección que decide sola.
+            "agilidad": None if via_base is None or via_direccion is None else (via_base + via_direccion) / 2,
+            "agilidad_via_base": via_base,
+            "centralizacion_ejecutiva": via_direccion,
+            "escalabilidad": media(["estructura_federal", "coste_coordinacion"]),
             "riesgo_oligarquico": olig,
             "saltos": v["saltos"],
         }
@@ -186,7 +210,7 @@ def _(alt, mo, tabla):
         _base.mark_circle(opacity=0.85).encode(
             color=alt.Color("familia", title="Familia"),
             size=alt.Size("tamano", scale=alt.Scale(type="log"), legend=None),
-            tooltip=["siglas", "control_base", "agilidad", "escalabilidad", "saltos"],
+            tooltip=["siglas", "control_base", "agilidad", "agilidad_via_base", "centralizacion_ejecutiva", "escalabilidad", "saltos"],
         )
         + _base.mark_text(align="left", dx=8).encode(text="siglas")
     ).properties(width=560, height=380, title="Control de base frente a agilidad")
@@ -199,7 +223,9 @@ def _(mo):
     mo.md(r"""
     ## 3. ¿Es robusto el ranking?
 
-    Los pesos son una decisión política, no un dato. Esta celda genera miles de combinaciones de pesos al azar (distribución de Dirichlet) y mira en qué puesto queda cada organización en control de base. Si el rango de puestos es estrecho, la conclusión no depende de los pesos elegidos.
+    Los pesos son una decisión política, no un dato. Esta celda genera miles de combinaciones de pesos al azar (distribución de Dirichlet, media 1 por variable; puede dar pesos mayores que el máximo de 3 de la app) y mira en qué puesto queda cada organización en control de base. Si el rango de puestos es estrecho, la conclusión no depende de los pesos elegidos.
+
+    Esto mide la sensibilidad a los **pesos**. La incertidumbre de los **códigos** (según su confianza) la calcula la app y la publica en `/api/orgs.json` como `intervalos_90`.
     """)
     return
 
@@ -217,8 +243,10 @@ def _(CB_KEYS, indices, n_sim, np, orgs, pl):
     _filas = []
     for _sim in range(n_sim.value):
         _w = dict(zip(CB_KEYS, _rng.dirichlet(np.ones(len(CB_KEYS))) * len(CB_KEYS)))
-        _cb = sorted(((indices(o, _w)["control_base"], o["siglas"]) for o in orgs), reverse=True)
-        _filas += [{"sim": _sim, "siglas": s, "puesto": i + 1} for i, (_, s) in enumerate(_cb)]
+        _cb = {o["siglas"]: indices(o, _w)["control_base"] for o in orgs}
+        _cb = {s: x for s, x in _cb.items() if x is not None}
+        # Los empates comparten el mejor puesto, como en la app.
+        _filas += [{"sim": _sim, "siglas": s, "puesto": 1 + sum(y > x + 1e-9 for y in _cb.values())} for s, x in _cb.items()]
     robustez = (
         pl.DataFrame(_filas)
         .group_by("siglas")
@@ -239,7 +267,9 @@ def _(mo):
     mo.md(r"""
     ## 4. Tipologías: ¿qué organizaciones se parecen?
 
-    Componentes principales (PCA) sobre las 16 variables 0-4, y agrupamiento k-means. Sirve para ver si las familias formales (sindicato, partido, movimiento) coinciden con los tipos reales de estructura de poder.
+    Componentes principales (PCA) sobre las variables 0-4, y agrupamiento k-means. Sirve para ver si las familias formales (sindicato, partido, movimiento) coinciden con los tipos reales de estructura de poder.
+
+    Con unas 19 organizaciones y 17 variables, es exploratorio: los grupos cambian con poco que cambien los datos. Los datos que faltan se imputan con la media de la variable, no con 0.
     """)
     return
 
@@ -259,10 +289,11 @@ def _(alt, k_ui, mo, np, orgs, pl, valores):
     VARS = [
         "mandato", "revocabilidad", "rotacion", "profesionalizacion", "eleccion_direccion",
         "agenda_base", "pluralismo", "autonomia_base", "proximidad", "brecha_formal_real",
-        "regla_decision", "capacidad_ejecutiva", "freq_intermedio", "niveles_s",
+        "regla_decision", "capacidad_ejecutiva", "freq_intermedio", "freq_soberano", "niveles_s",
         "estructura_federal", "coste_coordinacion", "tamano_s",
     ]
-    _X = np.array([[valores(o).get(k) or 0 for k in VARS] for o in orgs], dtype=float)
+    _X = np.array([[valores(o).get(k) for k in VARS] for o in orgs], dtype=float)
+    _X = np.where(np.isnan(_X), np.nanmean(_X, axis=0), _X)
     _X = (_X - _X.mean(0)) / (_X.std(0) + 1e-9)
     _pca = PCA(n_components=2).fit(_X)
     _xy = _pca.transform(_X)

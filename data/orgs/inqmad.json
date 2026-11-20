@@ -124,22 +124,22 @@
   "codigos": {
     "mandato": [
       2,
-      "Delegadas de bloque y del Grupo de Coordinación representan a su espacio; no consta si con mandato imperativo.",
-      "media"
+      "Sin fuente verificable: delegadas de bloque y del Grupo de Coordinación representan a su espacio (organigrama); no consta si con mandato imperativo: el Reglamento de Régimen Interno (2026) y los estatutos no son públicos.",
+      "baja"
     ],
     "revocabilidad": [
       2,
-      "No consta un procedimiento de revocación.",
+      "Sin fuente verificable: no consta un procedimiento de revocación: el Reglamento de Régimen Interno (2026) y los estatutos no son públicos.",
       "baja"
     ],
     "rotacion": [
-      2,
-      "No constan límites de mandato.",
+      1,
+      "Sin fuente verificable: no constan límites de mandato: el Reglamento de Régimen Interno (2026) y los estatutos no son públicos.",
       "baja"
     ],
     "profesionalizacion": [
       2,
-      "Hay compañeras remuneradas (subida salarial aprobada en 2026); la mayoría del trabajo es militante.",
+      "Hay compañeras remuneradas: la Asamblea de 2026 aprobó su subida salarial (resumen de la Asamblea) y las cuotas pagan a las personas contratadas (Transparencia); la mayoría del trabajo es militante.",
       "media"
     ],
     "eleccion_direccion": [
@@ -154,7 +154,7 @@
     ],
     "pluralismo": [
       2,
-      "Sin mecanismo formal para minorías.",
+      "Sin fuente verificable: no consta ningún mecanismo formal para minorías; las normas no son públicas.",
       "baja"
     ],
     "autonomia_base": [
@@ -169,7 +169,7 @@
     ],
     "regla_decision": [
       2,
-      "Método no publicado; la tradición asamblearia apunta a búsqueda de consenso.",
+      "Sin fuente verificable: método no publicado; la tradición asamblearia apunta a búsqueda de consenso.",
       "baja"
     ],
     "capacidad_ejecutiva": [
@@ -233,6 +233,10 @@
     {
       "t": "Sindicato de Inquilinas — Cómo nos organizamos (organigrama, noviembre 2025)",
       "u": "https://inquilinato.org/el-sindicato/como-nos-organizamos/"
+    },
+    {
+      "t": "Sindicato de Inquilinas — Organigrama detallado (PDF, noviembre 2025)",
+      "u": "https://inquilinato.org/wp-content/uploads/2025/11/20251127_Organigrama-pdf.pdf"
     },
     {
       "t": "Sindicato de Inquilinas — Primera Asamblea Anual de Afiliadas (2024)",

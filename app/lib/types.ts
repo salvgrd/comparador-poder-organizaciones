@@ -1,3 +1,5 @@
+import type { UnidadTamano } from './codebook.ts'
+
 export type Confianza = 'alta' | 'media' | 'baja'
 export type Familia = 'sindicato' | 'movimiento' | 'partido' | 'cooperativa'
 export type TipoOrgano =
@@ -27,6 +29,29 @@ export interface Organo {
   desc?: string
 }
 
+export type Situacion = 'activa' | 'disuelta' | 'escindida' | 'burocratizada' | 'inactiva'
+export type TipoFracaso =
+  | 'escision'
+  | 'colapso_escala'
+  | 'captura_direccion'
+  | 'institucionalizacion'
+  | 'degeneracion'
+  | 'colapso_economico'
+  | 'represion'
+  | 'fragmentacion'
+  | 'desmovilizacion'
+
+export interface Estado {
+  situacion: Situacion
+  /** El primero es el principal. */
+  tipos: TipoFracaso[]
+  /** Año del fracaso o del inicio de la deriva. */
+  desde?: number
+  causa: string
+  /** Qué momento describe la ficha: en los casos fracasados, el de mayor tamaño o justo antes del fracaso. */
+  momento_codificado: string
+}
+
 export interface Problema {
   t: 'democratico' | 'escalabilidad' | 'agilidad'
   x: string
@@ -40,6 +65,15 @@ export interface Org {
   pais?: string
   fundacion?: number
   tamano?: [number, string, Confianza]
+  /** Qué cuenta «tamano». Por defecto, afiliación. */
+  tamano_unidad?: UnidadTamano
+  /**
+   * Crisis o reformas forzadas por el crecimiento: el tamaño en que la estructura dejó de funcionar.
+   * Es la medida directa de escalabilidad; todavía no puntúa (hacen falta datos de más organizaciones).
+   */
+  crisis_crecimiento?: { anio: number; tamano?: number; x: string; fuente?: string }[]
+  /** Sin este campo, la organización está activa. */
+  estado?: Estado
   corriente?: string
   autogestionada?: boolean
   resumen?: string

@@ -1,0 +1,221 @@
+{
+  "id": "sol15m",
+  "siglas": "15M Madrid",
+  "nombre": "Movimiento 15M en Madrid: Asamblea de Sol y Asamblea Popular de Madrid (2011)",
+  "familia": "movimiento",
+  "pais": "Estado español (Madrid)",
+  "fundacion": 2011,
+  "tamano": [
+    10000,
+    "Las asambleas de Sol reunieron a decenas de miles de personas en mayo de 2011. En junio había asambleas en más de cien barrios y pueblos (41 barrios de la capital ya el 28 de mayo), con decenas a cientos de personas cada una. Estimación de personas activas en otoño de 2011.",
+    "baja"
+  ],
+  "tamano_unidad": "activistas",
+  "corriente": "Asamblearismo de plaza; horizontalidad y consenso",
+  "autogestionada": true,
+  "estado": {
+    "situacion": "inactiva",
+    "tipos": [
+      "colapso_escala",
+      "desmovilizacion"
+    ],
+    "desde": 2012,
+    "causa": "La desvinculación empieza al levantar la acampada (12 de junio de 2011) y se acelera tras las elecciones de noviembre. Los motivos que daban los participantes: hartazgo por la lentitud del proceso asambleario, falta de objetivos programáticos, pocos mecanismos para integrar a recién llegados y fragmentación entre Sol, barrio, comisiones y grupos. La Asamblea de Sol y la Asamblea Popular de Madrid pierden el papel central en 2012. La energía pasa a organizaciones sectoriales (Mareas, PAH) y, en 2014, a Podemos.",
+    "momento_codificado": "Junio-noviembre de 2011, tras descentralizar en asambleas de barrio coordinadas con Sol."
+  },
+  "resumen": "Tras la acampada de Sol (15 de mayo a 12 de junio de 2011), el movimiento se descentraliza en asambleas populares de barrio y pueblo, que se reúnen los sábados. Envían portavoces con los consensos de su barrio a la asamblea de Sol de los domingos y a la coordinación interbarrial, la Asamblea Popular de Madrid. Las comisiones y grupos de trabajo de Sol se mantienen como estructura temática paralela.",
+  "poder_formal": "Las asambleas de barrio, por consenso; la coordinación solo agrega lo consensuado.",
+  "poder_real": "Las personas con más disponibilidad de tiempo, en comisiones y en la facilitación. El movimiento no tenía capacidad de decidir nada vinculante a escala de ciudad, y las propuestas se perdían en la fragmentación entre niveles.",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Participantes",
+      "nivel": 0,
+      "tipo": "base",
+      "desc": "Abierto; no hay afiliación."
+    },
+    {
+      "id": "ab",
+      "n": "Asambleas populares de barrio y pueblo",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ],
+      "decide": "Consenso",
+      "freq": "Semanal (sábados)",
+      "desc": "Más de un centenar en junio de 2011. Grupos de trabajo locales (vivienda, sanidad, economía)."
+    },
+    {
+      "id": "com",
+      "n": "Comisiones y grupos de trabajo de Sol",
+      "nivel": 1,
+      "tipo": "sectorial",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Análisis, Política, Economía, Feminismos, Legal, Comunicación… Abiertas."
+    },
+    {
+      "id": "ags",
+      "n": "Asamblea General de Sol",
+      "nivel": 1,
+      "tipo": "soberano",
+      "elegido_por": [
+        "af",
+        "ab"
+      ],
+      "decide": "Consenso",
+      "freq": "Diaria durante la acampada; semanal (domingos) después",
+      "desc": "Abierta a cualquier persona; los portavoces de los barrios trasladan sus consensos."
+    },
+    {
+      "id": "apm",
+      "n": "Asamblea Popular de Madrid (coordinación interbarrial)",
+      "nivel": 2,
+      "tipo": "coordinacion",
+      "cima": true,
+      "elegido_por": [
+        "ab"
+      ],
+      "decide": "Consenso de portavoces con mandato",
+      "freq": "Periódica (frecuencia exacta no verificada)",
+      "desc": "Portavoces rotatorios de las asambleas de barrio y pueblo; coordinación sin poder propio."
+    }
+  ],
+  "reglas": {
+    "metodo": "Consenso en todos los niveles; sin votación de reserva generalizada.",
+    "ponderacion": "Una persona, una voz en asamblea; un portavoz por asamblea en la coordinación.",
+    "mandato": "Los portavoces trasladan consensos de su asamblea, no opiniones propias.",
+    "cargos": "No hay cargos; portavocías y facilitación rotatorias.",
+    "reforma": "Por consenso.",
+    "minorias": "Bloqueo; no hay tendencias. Las personas que llegaban con siglas sufrían rechazo."
+  },
+  "codigos": {
+    "mandato": [
+      3,
+      "Según los acuerdos de funcionamiento de Sol, los portavoces trasladan los consensos de su asamblea y no representan a nadie; no hay acuerdos escritos obligatorios.",
+      "baja"
+    ],
+    "revocabilidad": [
+      4,
+      "Portavocías rotatorias por acuerdo, sustituibles en cada sesión.",
+      "baja"
+    ],
+    "rotacion": [
+      4,
+      "Rotación de portavocías y facilitación por acuerdo.",
+      "baja"
+    ],
+    "profesionalizacion": [
+      3,
+      "El principio de que «nadie representa» excluye cargos, pero no hay una prohibición escrita de remuneración verificada.",
+      "baja"
+    ],
+    "eleccion_direccion": [
+      3,
+      "Coordinación de portavoces con mandato de asamblea.",
+      "media"
+    ],
+    "agenda_base": [
+      4,
+      "Todo lo que propone una asamblea entra.",
+      "media"
+    ],
+    "pluralismo": [
+      2,
+      "Bloqueo y debate, sin tendencias; rechazo a las siglas.",
+      "media"
+    ],
+    "autonomia_base": [
+      4,
+      "Asambleas de barrio plenamente autónomas.",
+      "alta"
+    ],
+    "brecha_formal_real": [
+      2,
+      "Las asambleas de barrio decidían en lo formal. En la práctica pesaban quienes tenían tiempo para estar en varios espacios (comisiones de Sol, facilitación). Las decisiones se perdían entre niveles fragmentados, y quienes llegaban con siglas sufrían rechazo informal. Sin aparato ni cúpula, la brecha es moderada: el fracaso fue de desvinculación más que de captura.",
+      "media"
+    ],
+    "regla_decision": [
+      1,
+      "Consenso.",
+      "alta"
+    ],
+    "capacidad_ejecutiva": [
+      0,
+      "No hay ejecutivo.",
+      "alta"
+    ],
+    "freq_soberano_meses": [
+      0.25,
+      "Asambleas semanales.",
+      "alta"
+    ],
+    "freq_intermedio_meses": [
+      0.5,
+      "Coordinación interbarrial periódica; frecuencia no verificada.",
+      "baja"
+    ],
+    "niveles": [
+      2,
+      "Barrio → coordinación interbarrial.",
+      "media"
+    ],
+    "estructura_federal": [
+      3,
+      "Federación de asambleas de barrio replicable, pero sin capacidad de decisión agregada.",
+      "media"
+    ],
+    "coste_coordinacion": [
+      1,
+      "Cada decisión común exige consenso en cada asamblea.",
+      "alta"
+    ]
+  },
+  "crisis_crecimiento": [
+    {
+      "anio": 2011,
+      "tamano": 10000,
+      "x": "Al levantar la acampada y pasar a los barrios empieza la desvinculación: «hartazgo ante la lentitud y complejidad del proceso asambleario» y «fragmentación participativa entre asamblea de Sol, asamblea de barrio, comisiones, grupos de trabajo».",
+      "fuente": "https://recyt.fecyt.es/index.php/encrucijadas/article/view/80866/50422"
+    }
+  ],
+  "problemas": [
+    {
+      "t": "agilidad",
+      "x": "El consenso en cada asamblea y luego entre portavoces hace casi imposible fijar posición común a escala de ciudad en plazos útiles."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "Federar no basta: sin un órgano agregado capaz de decidir por mayoría, la estructura de barrios multiplica las reuniones sin multiplicar la capacidad de acción."
+    },
+    {
+      "t": "democratico",
+      "x": "La participación exige tiempo presencial semanal en varios espacios: quienes no aguantan el ritmo se desvinculan y la asamblea queda en manos de quien tiene más disponibilidad."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "D. Herranz, C. López Carrasco y V. Muñoz-Reja (Comisión de Análisis Sol 15M) — «Cómo funcionaba y por qué dejó de funcionar el 15M», Encrucijadas 19 (2020)",
+      "u": "https://recyt.fecyt.es/index.php/encrucijadas/article/view/80866/50422"
+    },
+    {
+      "t": "Público — «El viaje del 15-M a la periferia»",
+      "u": "https://www.publico.es/politica/viaje-del-15-m-periferia.html"
+    },
+    {
+      "t": "Página/12 — crónica de las asambleas de barrio de Madrid (25-V-2011)",
+      "u": "https://www.pagina12.com.ar/diario/elmundo/subnotas/168810-53812-2011-05-25.html"
+    },
+    {
+      "t": "La Jornada — «Indignados dejan la Puerta del Sol…» (13-VI-2011)",
+      "u": "https://www.jornada.com.mx/2011/06/13/mundo/026n1mun"
+    },
+    {
+      "t": "E. García López — etnografía de una asamblea de barrio del 15M (Lavapiés), Universidad de Murcia",
+      "u": "https://digitum.um.es/digitum/bitstream/10201/58713/1/n8-7-la-construccion-social-del-activismo.pdf"
+    }
+  ],
+  "confianza": "baja"
+}

@@ -1,0 +1,252 @@
+{
+  "id": "cnt1979",
+  "siglas": "CNT (1977-1979)",
+  "nombre": "Confederación Nacional del Trabajo en la Transición, hasta la escisión del V Congreso",
+  "familia": "sindicato",
+  "pais": "Estado español",
+  "fundacion": 1910,
+  "tamano": [
+    85000,
+    "Las cifras varían mucho. Unos 85.000 cotizantes y hasta 300.000 adheridos (Sheen y Williams, 1980); unos 250.000 en otoño de 1978 según Gómez Casas, y unos 30.000 en el V Congreso (diciembre de 1979). Uso los cotizantes.",
+    "baja"
+  ],
+  "corriente": "Anarcosindicalismo (AIT), con fuerte influencia de la FAI y del exilio de Toulouse",
+  "autogestionada": true,
+  "estado": {
+    "situacion": "escindida",
+    "tipos": [
+      "escision",
+      "colapso_escala"
+    ],
+    "desde": 1979,
+    "causa": "La reconstrucción de 1976-77 trae una afiliación masiva, joven y heterogénea. Tres conflictos se cruzan: participar o no en las elecciones sindicales del nuevo modelo de comités de empresa; el «paralelismo» (acusaciones de grupos organizados dentro del sindicato, frente a la doble militancia privilegiada de la FAI), y el Caso Scala (enero de 1978), un montaje con infiltración policial que criminaliza al sindicato. El V Congreso (Casa de Campo, diciembre de 1979; unos 740-770 delegados de 320-350 sindicatos) termina con abandono de delegaciones e impugnaciones. Los impugnadores forman la CNT-Congreso de Valencia (1980), que será la CGT (1989). Las dos sobreviven con una fracción de la afiliación de 1978.",
+    "momento_codificado": "1977-1979, entre la reconstrucción y el V Congreso."
+  },
+  "resumen": "Los estatutos de 1979 heredan los acuerdos de 1936: sindicatos únicos de ramo autónomos, federaciones locales y regionales, Plenos Nacionales de Regionales y Congreso, con mandato imperativo y cargos no remunerados. La estructura es casi la de la CNT actual (véase la ficha cnt), pero con una afiliación cien veces mayor, sin cuadros formados y con un núcleo del exilio y de la FAI que se atribuía la custodia de los principios.",
+  "poder_formal": "Asambleas de sindicato, que mandatan a sus delegaciones en plenos y congreso.",
+  "poder_real": "Disputado. Por un lado, los núcleos de militancia histórica (exilio y FAI), con capacidad de impugnar credenciales y expulsar a grupos acusados de «paralelismo». Por otro, los sindicatos grandes de Cataluña y Madrid, más pragmáticos. Según una crónica de la época, el Secretario General salido del V Congreso lo eligieron 45 de los 350 sindicatos presentes al principio.",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Afiliación",
+      "nivel": 0,
+      "tipo": "base"
+    },
+    {
+      "id": "sind",
+      "n": "Asamblea del Sindicato Único / de Oficios Varios",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ],
+      "decide": "Mayoría; 1 afiliado = 1 voto",
+      "desc": "Autónomo; mandata a sus delegaciones."
+    },
+    {
+      "id": "fl",
+      "n": "Federación Local",
+      "nivel": 2,
+      "tipo": "delegados",
+      "elegido_por": [
+        "sind"
+      ]
+    },
+    {
+      "id": "pr",
+      "n": "Pleno Regional y Comité Regional",
+      "nivel": 2,
+      "tipo": "delegados",
+      "elegido_por": [
+        "sind"
+      ]
+    },
+    {
+      "id": "pnr",
+      "n": "Pleno Nacional de Regionales",
+      "nivel": 3,
+      "tipo": "delegados",
+      "elegido_por": [
+        "pr"
+      ],
+      "freq": "Varias veces al año en 1977-79",
+      "desc": "Máxima instancia entre congresos; fue el escenario de los choques por las elecciones sindicales."
+    },
+    {
+      "id": "cong",
+      "n": "V Congreso Confederal",
+      "nivel": 3,
+      "tipo": "soberano",
+      "elegido_por": [
+        "sind"
+      ],
+      "decide": "Mayoría de sindicatos con voto ponderado; comisión de credenciales",
+      "freq": "El primero en España desde 1936 (diciembre de 1979)",
+      "desc": "Unos 740-770 delegados. Mantuvo el rechazo a las elecciones sindicales y la relación privilegiada con la FAI."
+    },
+    {
+      "id": "fai",
+      "n": "FAI y núcleo del exilio (informal)",
+      "nivel": 2,
+      "tipo": "coordinacion",
+      "desc": "Grupos de afinidad con doble militancia reconocida, sin elección por ningún órgano de la CNT. Influencia decisiva en credenciales, prensa y expulsiones."
+    },
+    {
+      "id": "cn",
+      "n": "Comité Nacional / Secretariado General",
+      "nivel": 4,
+      "tipo": "ejecutivo",
+      "cima": true,
+      "elegido_por": [
+        "cong",
+        "pnr"
+      ],
+      "desc": "No remunerado, revocable por el Pleno."
+    }
+  ],
+  "reglas": {
+    "metodo": "Mayoría de sindicatos con mandato de asamblea.",
+    "ponderacion": "Voto por sindicato, ponderado por afiliación (detalle de 1979 no verificado).",
+    "mandato": "Imperativo.",
+    "cargos": "No remunerados, revocables.",
+    "reforma": "Congreso.",
+    "minorias": "Expulsión o desfederación de sindicatos y grupos acusados de «paralelismo» (Askatasuna, grupos de Puigcerver, editores de Solidaridad Obrera)."
+  },
+  "codigos": {
+    "mandato": [
+      4,
+      "Delegaciones con acuerdos de asamblea.",
+      "alta"
+    ],
+    "revocabilidad": [
+      4,
+      "Cargos revocables por la asamblea o el pleno.",
+      "alta"
+    ],
+    "rotacion": [
+      3,
+      "Límites de reelección de los estatutos de 1979 no verificados; la tradición confederal fija mandatos cortos.",
+      "baja"
+    ],
+    "profesionalizacion": [
+      4,
+      "Cargos no remunerados según los acuerdos confederales.",
+      "media"
+    ],
+    "eleccion_direccion": [
+      3,
+      "Comité Nacional elegido en Congreso o Pleno con mandato.",
+      "media"
+    ],
+    "agenda_base": [
+      3,
+      "Los sindicatos proponen el orden del día; la comisión de credenciales y los comités pueden filtrar. Reglas de 1979 no verificadas.",
+      "baja"
+    ],
+    "pluralismo": [
+      2,
+      "Votos particulares en ponencias; no hay tendencias ni listas. La doble militancia de la FAI no está normada en los estatutos.",
+      "baja"
+    ],
+    "autonomia_base": [
+      4,
+      "Sindicatos plenamente autónomos por estatuto.",
+      "media"
+    ],
+    "brecha_formal_real": [
+      3,
+      "Núcleo del fracaso. Formalmente, federalismo de abajo arriba. En la práctica, un núcleo informal (FAI y exilio de Toulouse) sin elección por ningún órgano controlaba credenciales, prensa (Solidaridad Obrera) y expulsiones de grupos acusados de «paralelismo» (Askatasuna, grupo de Puigcerver). En el V Congreso el Secretario General salió elegido, según una crónica de la época, por 45 de los 350 sindicatos presentes al inicio. Fuentes militantes y poco académicas.",
+      "baja"
+    ],
+    "regla_decision": [
+      3,
+      "Mayoría tras intentar el acuerdo.",
+      "media"
+    ],
+    "capacidad_ejecutiva": [
+      1,
+      "El Comité Nacional solo gestiona.",
+      "alta"
+    ],
+    "freq_soberano_meses": [
+      48,
+      "Periodicidad estatutaria no verificada; de hecho, un solo congreso en el periodo.",
+      "baja"
+    ],
+    "freq_intermedio_meses": [
+      3,
+      "Plenos Nacionales de Regionales frecuentes en 1977-79.",
+      "baja"
+    ],
+    "niveles": [
+      3,
+      "Sindicato → Pleno Regional → Pleno Nacional.",
+      "alta"
+    ],
+    "estructura_federal": [
+      4,
+      "Federalismo replicable.",
+      "alta"
+    ],
+    "coste_coordinacion": [
+      1,
+      "Cada posición nacional exige asambleas en todos los sindicatos.",
+      "alta"
+    ]
+  },
+  "crisis_crecimiento": [
+    {
+      "anio": 1978,
+      "tamano": 250000,
+      "x": "Con una afiliación masiva y sin cuadros, las asambleas de sindicato y los plenos se convierten en campo de batalla entre corrientes. Caso Scala (enero de 1978).",
+      "fuente": "https://libcom.org/article/end-cnt-crumbles"
+    },
+    {
+      "anio": 1979,
+      "tamano": 30000,
+      "x": "V Congreso: impugnaciones de credenciales, abandono de delegaciones (entre ellas Aragón) y escisión de los impugnadores.",
+      "fuente": "https://libcom.org/article/end-cnt-crumbles"
+    }
+  ],
+  "problemas": [
+    {
+      "t": "escalabilidad",
+      "x": "Es el mismo diseño de la ficha cnt. A 100.000-250.000 afiliados no se rompió por agilidad, sino porque no tenía forma de procesar un desacuerdo estratégico (elecciones sindicales) sin expulsar: la autonomía fuerte con mandato en bloque resuelve los conflictos por salida."
+    },
+    {
+      "t": "democratico",
+      "x": "Un núcleo informal fuera de la estructura (FAI y exilio) se reservó la custodia de los principios: la brecha formal-real de las organizaciones horizontales."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "Crecimiento muy rápido sin formación de cuadros, y un Estado que infiltraba y criminalizaba (Scala). La afiliación cayó a la décima parte en un año."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "T. Sheen y B. Williams — «Is this the end?: as the CNT crumbles», Libertarian Communist n.º 8 (1980), en libcom",
+      "u": "https://libcom.org/article/end-cnt-crumbles"
+    },
+    {
+      "t": "Libcom — hilo «The CNT in the 70s and 80s: the transition, the 5th congress and the CNT-CGT split» (bibliografía)",
+      "u": "https://libcom.org/comment/590903"
+    },
+    {
+      "t": "H. González Pérez — TFM sobre la escisión de la CNT en Asturias-León, Universidad de Oviedo",
+      "u": "https://digibuo.uniovi.es/dspace/bitstream/handle/10651/19147/TFM_GonzalezPerezHector.pdf"
+    },
+    {
+      "t": "Fundación Juan March (Archivo Linz) — documentación del V Congreso",
+      "u": "https://digital.march.es/fedora/objects/linz:R-61613/datastreams/OBJ/content"
+    },
+    {
+      "t": "Wikipedia — General Confederation of Labour (Spain)",
+      "u": "https://en.wikipedia.org/wiki/General_Confederation_of_Labour_(Spain)"
+    },
+    {
+      "t": "Wikipedia — José Bondía",
+      "u": "https://en.wikipedia.org/wiki/Jos%C3%A9_Bond%C3%ADa"
+    }
+  ],
+  "confianza": "baja"
+}

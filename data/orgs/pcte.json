@@ -7,7 +7,7 @@
   "fundacion": 2017,
   "tamano": [
     1000,
-    "El partido no publica su militancia. Estimación de orden de magnitud.",
+    "Sin fuente verificable: el partido no publica su militancia. Estimación de orden de magnitud.",
     "baja"
   ],
   "corriente": "Marxismo-leninismo; centralismo democrático. Surge de la ruptura del PCPE (2017).",
@@ -102,77 +102,77 @@
   "codigos": {
     "mandato": [
       0,
-      "Delegados libres sujetos a disciplina.",
-      "media"
+      "Sin fuente verificable: delegados libres sujetos a disciplina.",
+      "baja"
     ],
     "revocabilidad": [
       1,
-      "Revocación por órganos superiores, no por la base.",
-      "media"
+      "Sin fuente verificable: revocación por órganos superiores, no por la base.",
+      "baja"
     ],
     "rotacion": [
       1,
-      "Sin límites conocidos.",
+      "Sin fuente verificable: sin límites conocidos.",
       "baja"
     ],
     "profesionalizacion": [
       2,
-      "Pocos cuadros liberados por tamaño.",
+      "Sin fuente verificable: pocos cuadros liberados por tamaño.",
       "baja"
     ],
     "eleccion_direccion": [
       1,
-      "Indirecta en dos saltos: Congreso → CC → BP/SG.",
-      "media"
+      "Sin fuente verificable: indirecta en dos saltos: Congreso → CC → BP/SG.",
+      "baja"
     ],
     "agenda_base": [
       1,
-      "Tesis elaboradas por el CC saliente.",
-      "media"
+      "Sin fuente verificable: tesis elaboradas por el CC saliente.",
+      "baja"
     ],
     "pluralismo": [
       0,
-      "Fracciones prohibidas.",
-      "media"
+      "Sin fuente verificable: fracciones prohibidas.",
+      "baja"
     ],
     "autonomia_base": [
       0,
-      "Subordinación de las instancias inferiores.",
-      "media"
+      "Sin fuente verificable: subordinación de las instancias inferiores.",
+      "baja"
     ],
     "brecha_formal_real": [
       2,
-      "La cooptación y la dirección de los órganos superiores tienden a perpetuar a la dirección.",
+      "Sin fuente verificable: la cooptación y la dirección de los órganos superiores tienden a perpetuar a la dirección.",
       "baja"
     ],
     "regla_decision": [
       4,
-      "Mayoría + disciplina.",
-      "media"
+      "Sin fuente verificable: mayoría + disciplina.",
+      "baja"
     ],
     "capacidad_ejecutiva": [
-      4,
-      "El Buró Político decide entre reuniones del CC.",
-      "media"
+      3,
+      "Sin fuente verificable: centralismo democrático (web del partido): el Buró Político dirigiría entre reuniones del Comité Central, ante el que responde. Los estatutos (modificados en el III Congreso, 2025) no son públicos.",
+      "baja"
     ],
     "freq_soberano_meses": [
       48,
-      "Ciclo congresual de varios años.",
+      "Sin fuente verificable: ciclo congresual de varios años.",
       "baja"
     ],
     "freq_intermedio_meses": [
       3,
-      "Comité Central periódico.",
+      "Sin fuente verificable: Comité Central periódico.",
       "baja"
     ],
     "niveles": [
       3,
-      "Célula → comité → Congreso.",
-      "media"
+      "Sin fuente verificable: célula → comité → Congreso.",
+      "baja"
     ],
     "estructura_federal": [
       1,
-      "Centralista.",
+      "Centralista: el partido se organiza según el centralismo democrático (página Conócenos).",
       "media"
     ],
     "coste_coordinacion": [
@@ -201,8 +201,12 @@
       "u": "https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2025/12/16175740/Resolucion_Politica_IIICongreso_VM.pdf"
     },
     {
-      "t": "Wikipedia — Communist Party of the Workers of Spain",
-      "u": "https://en.wikipedia.org/wiki/Communist_Party_of_the_Workers_of_Spain"
+      "t": "Wikipedia — Workers' Communist Party of Spain",
+      "u": "https://en.wikipedia.org/wiki/Workers%27_Communist_Party_of_Spain"
+    },
+    {
+      "t": "PCTE — Conócenos (organización según el centralismo democrático)",
+      "u": "https://www.pcte.es/conocenos/"
     }
   ],
   "confianza": "media"

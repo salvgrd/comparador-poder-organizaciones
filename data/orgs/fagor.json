@@ -1,0 +1,247 @@
+{
+  "id": "fagor",
+  "siglas": "Fagor Electrodomésticos",
+  "nombre": "Fagor Electrodomésticos S. Coop. (Grupo Mondragon)",
+  "familia": "cooperativa",
+  "pais": "Euskadi (filiales en Francia, Polonia, Marruecos, China)",
+  "fundacion": 1956,
+  "tamano": [
+    5600,
+    "5.600 empleos en 2013, de los que 1.800 en las cinco plantas vascas; la cooperativa tenía 1.736 socios trabajadores (Fuente: Valencia Plaza). En su máximo, en 2006, el grupo empleaba a 10.543 personas en 18 plantas de seis países; a los trabajadores de las filiales extranjeras no se les ofreció ser socios (Fuente: Basterretxea et al. 2022).",
+    "alta"
+  ],
+  "tamano_unidad": "trabajadoras",
+  "corriente": "Cooperativismo de Mondragon: fundada en 1956 por cinco antiguos alumnos de la escuela técnica de Mondragón, ayudó a crear muchas de las cooperativas del grupo (Fuente: Basterretxea et al. 2022)",
+  "autogestionada": true,
+  "estado": {
+    "situacion": "disuelta",
+    "tipos": [
+      "colapso_economico",
+      "degeneracion"
+    ],
+    "desde": 2013,
+    "causa": "Concurso de acreedores el 13 de noviembre de 2013, tras negarle la Corporación Mondragon nuevos fondos (Fuente: Valencia Plaza). Influyeron la crisis inmobiliaria española y la deuda contraída para comprar Brandt y financiar las filiales (Fuente: Basterretxea et al. 2022). La literatura señala también fallos de gobierno. 1) Degeneración: la mayoría de la plantilla, en las filiales, no era socia (Fuente: Valencia Plaza; Basterretxea et al. 2022). 2) «Jerarquía de dominación invertida»: tras el cese del director general en 2006 por presión del Consejo Social, se aplazaron las decisiones impopulares, y los socios votaban más como trabajadores que como propietarios (Fuente: UPV/EHU Campusa).",
+    "momento_codificado": "2007-2012, con la expansión multinacional consolidada y antes del concurso."
+  },
+  "resumen": "En 2013 era la mayor cooperativa industrial de trabajo asociado del mundo y la cooperativa emblemática de Mondragon (Fuente: Basterretxea et al. 2022). Socios trabajadores con un voto cada uno en la Asamblea General, que elige el Consejo Rector; el Consejo Rector nombra y supervisa la dirección, y un Consejo Social de miembros elegidos por fábricas y secciones canaliza las demandas de los socios como trabajadores (Fuente: Basterretxea et al. 2022). La expansión se hizo comprando empresas en el extranjero (Wrozamet en 1999, Brandt en 2005) cuyos trabajadores no se hicieron socios (Fuente: Basterretxea et al. 2022).",
+  "poder_formal": "Asamblea General de socios (un socio, un voto), que nombra y revoca al Consejo Rector y aprueba cuentas y cambios sustanciales (Ley 4/1993, arts. 31 y 35). El Consejo Rector gestiona y representa a la cooperativa (art. 40).",
+  "poder_real": "La dirección, ante un Consejo Rector cuyos miembros, según los propios entrevistados, no podían evaluar sus propuestas y las aprobaban por confianza (Fuente: Basterretxea et al. 2022). En la última etapa, un Consejo Social con poder «muy por encima de su papel formal», capaz de parar proyectos: los autores hablan de una «jerarquía de dominación invertida» que retrasó los ajustes (Fuente: Basterretxea et al. 2022; UPV/EHU Campusa).",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Socios trabajadores",
+      "nivel": 0,
+      "tipo": "base",
+      "desc": "Un voto por socio con independencia de su aportación (Ley 4/1993, art. 35); 1.736 socios trabajadores en 2013 (Fuente: Valencia Plaza)."
+    },
+    {
+      "id": "nosoc",
+      "n": "Trabajadores de filiales y eventuales no socios",
+      "nivel": 0,
+      "tipo": "base",
+      "desc": "Más de dos tercios de la plantilla en 2013 (5.600 empleos frente a 1.736 socios; Fuente: Valencia Plaza), sin voto en la cooperativa."
+    },
+    {
+      "id": "ag",
+      "n": "Asamblea General",
+      "nivel": 1,
+      "tipo": "soberano",
+      "elegido_por": [
+        "af"
+      ],
+      "decide": "Mayoría de los votos emitidos; un socio, un voto (Ley 4/1993, arts. 35-36)",
+      "freq": "Anual ordinaria, en los seis meses siguientes al cierre del ejercicio (Ley 4/1993, art. 33.2)",
+      "desc": "Aprueba el plan anual y las cuentas, reparte excedentes, decide fusiones y adquisiciones y elige el Consejo Rector (Fuente: Basterretxea et al. 2022; Ley 4/1993, art. 31)."
+    },
+    {
+      "id": "cs",
+      "n": "Consejo Social",
+      "nivel": 1,
+      "tipo": "delegados",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Entre 40 y 60 miembros según el reglamento interno, elegidos por fábricas y secciones (Fuente: Basterretxea et al. 2022). Por ley, órgano de información, asesoramiento y consulta en lo laboral (Ley 4/1993, art. 54); de hecho, con poder muy superior a su papel formal (Fuente: Basterretxea et al. 2022)."
+    },
+    {
+      "id": "cr",
+      "n": "Consejo Rector",
+      "nivel": 2,
+      "tipo": "coordinacion",
+      "elegido_por": [
+        "ag"
+      ],
+      "desc": "12 miembros elegidos por la Asamblea General para cuatro años; nombra y supervisa a la dirección y prepara los planes anuales (Fuente: Basterretxea et al. 2022)."
+    },
+    {
+      "id": "ger",
+      "n": "Gerencia / Dirección General",
+      "nivel": 3,
+      "tipo": "ejecutivo",
+      "cima": true,
+      "elegido_por": [
+        "cr"
+      ],
+      "desc": "Dirección nombrada y supervisada por el Consejo Rector (Fuente: Basterretxea et al. 2022), con poderes para el tráfico ordinario (Ley 4/1993, art. 41.6)."
+    },
+    {
+      "id": "fil",
+      "n": "Dirección de las filiales (Fagor Brandt, Wrozamet…)",
+      "nivel": 4,
+      "tipo": "ejecutivo",
+      "elegido_por": [
+        "ger"
+      ],
+      "desc": "Sociedades mercantiles controladas por la cooperativa (Fagor-Brandt, Wrozamet y otras), sin órganos cooperativos (Fuente: Errasti et al. 2016; Basterretxea et al. 2022)."
+    }
+  ],
+  "reglas": {
+    "metodo": "Mayoría de los votos emitidos en la Asamblea General (Ley 4/1993, art. 36) y de los asistentes en el Consejo Rector, que necesita dos tercios para cerrar o trasladar un centro (art. 46.3).",
+    "ponderacion": "Un socio, un voto (Ley 4/1993, art. 35); los no socios no votan.",
+    "mandato": "Libre. El Consejo Social comunica las decisiones de la dirección hacia abajo y lleva las quejas hacia arriba, sin acuerdos vinculantes (Fuente: Basterretxea et al. 2022).",
+    "cargos": "Consejo Rector elegido para cuatro años (Fuente: Basterretxea et al. 2022); la ley permite reelegir indefinidamente salvo que los estatutos lo impidan (Ley 4/1993, arts. 44-45). Los estatutos de Fagor no son públicos.",
+    "reforma": "Asamblea General (Ley 4/1993, art. 31.3).",
+    "minorias": "Sin tendencias. En la práctica, la mitad de los consejeros salía de candidatos propuestos por el Consejo Rector y la otra mitad de los propuestos por el Consejo Social (Fuente: Basterretxea et al. 2022). El 10 % de los votos puede añadir puntos al orden del día (Ley 4/1993, art. 33.4)."
+  },
+  "codigos": {
+    "mandato": [
+      1,
+      "No hay delegados en la Asamblea (un socio, un voto; Ley 4/1993, art. 35). El Consejo Rector actúa con mandato libre y los miembros del Consejo Social representan a su sección sin acuerdos vinculantes (Fuente: Basterretxea et al. 2022).",
+      "media"
+    ],
+    "revocabilidad": [
+      2,
+      "La cima (la dirección) la nombra y supervisa el Consejo Rector (Fuente: Basterretxea et al. 2022), que puede revocar sus poderes. A su vez, la Asamblea puede destituir en cualquier momento al Consejo Rector, incluso sin estar en el orden del día, con dos tercios (Ley 4/1993, arts. 31.3 y 44.2).",
+      "media"
+    ],
+    "rotacion": [
+      0,
+      "La ley no limita la duración de la dirección y permite reelegir indefinidamente a los consejeros salvo que los estatutos lo impidan (Ley 4/1993, arts. 41.6 y 45.3). Los estatutos de Fagor no son públicos.",
+      "media"
+    ],
+    "profesionalizacion": [
+      1,
+      "Dirección profesional con poderes del Consejo Rector (Ley 4/1993, art. 41.6) y comités de nombramientos y retribuciones (Fuente: Basterretxea et al. 2022); el resto son socios trabajadores.",
+      "media"
+    ],
+    "eleccion_direccion": [
+      3,
+      "El Consejo Rector lo elige la Asamblea de todos los socios por voto secreto (Ley 4/1993, art. 41.3), pero la dirección la nombra el Consejo Rector (Fuente: Basterretxea et al. 2022) y la mayoría de la plantilla no vota.",
+      "media"
+    ],
+    "agenda_base": [
+      1,
+      "La Asamblea la convocan los administradores (Ley 4/1993, art. 33.1); los socios con el 10 % de los votos pueden añadir puntos y con el 20 % pedir una extraordinaria (art. 33.3-33.4).",
+      "alta"
+    ],
+    "pluralismo": [
+      2,
+      "Consejeros elegidos por mayoría en votación secreta, sin listas proporcionales ni corrientes (Ley 4/1993, art. 41.3); las minorías del 10 % o el 20 % pueden incluir puntos o forzar una asamblea (art. 33).",
+      "media"
+    ],
+    "autonomia_base": [
+      1,
+      "Empresa única: las secciones no tienen órganos de decisión y las filiales son sociedades mercantiles sin órganos cooperativos (Fuente: Basterretxea et al. 2022; Errasti et al. 2016).",
+      "alta"
+    ],
+    "brecha_formal_real": [
+      3,
+      "En dos direcciones. Formalmente, los socios controlan vía Asamblea y Consejo Rector. En la práctica, la mayoría del Consejo Rector no podía evaluar las propuestas de la dirección y las aprobaba por confianza; la compra de Brandt, con fuerte endeudamiento, la propuso la dirección y la aprobó el 82 % de la Asamblea (Fuente: Basterretxea et al. 2022). Al final, el Consejo Social, consultivo por ley, actuó como veto de hecho: el director general fue cesado en 2006 por su presión, lo que generó una «jerarquía de dominación invertida» que retrasó los ajustes (Fuente: UPV/EHU Campusa; Basterretxea et al. 2022). Que dos tercios de la plantilla no fueran socios es formal y ya está en el organigrama.",
+      "media"
+    ],
+    "regla_decision": [
+      4,
+      "Mayoría de los votos emitidos en la Asamblea y de los asistentes en el Consejo Rector (Ley 4/1993, arts. 36 y 46.3).",
+      "alta"
+    ],
+    "capacidad_ejecutiva": [
+      3,
+      "El Consejo Rector tiene la gestión y todas las facultades no reservadas a la Asamblea (Ley 4/1993, art. 40), y la dirección, poderes para el tráfico ordinario (art. 41.6); cuentas, fusiones y cambios sustanciales los aprueba la Asamblea (art. 31.3).",
+      "alta"
+    ],
+    "freq_soberano_meses": [
+      12,
+      "Asamblea General ordinaria anual (Ley 4/1993, art. 33.2).",
+      "alta"
+    ],
+    "freq_intermedio_meses": [
+      1,
+      "Sin fuente verificable: la ley deja el funcionamiento del Consejo Rector a los estatutos (Ley 4/1993, art. 46.1) y los de Fagor no son públicos.",
+      "baja"
+    ],
+    "niveles": [
+      2,
+      "Asamblea → Consejo Rector → dirección (Ley 4/1993, arts. 41.3 y 41.6).",
+      "alta"
+    ],
+    "estructura_federal": [
+      1,
+      "Una cooperativa matriz con filiales capitalistas: el modelo no se replicó al crecer (Fuente: Basterretxea et al. 2022; Errasti et al. 2016).",
+      "alta"
+    ],
+    "coste_coordinacion": [
+      4,
+      "Representación y aparato: el Consejo Rector gestiona y la dirección lleva el tráfico ordinario (Ley 4/1993, arts. 40 y 41.6).",
+      "media"
+    ]
+  },
+  "crisis_crecimiento": [
+    {
+      "anio": 2005,
+      "x": "Compra de Brandt (Francia), con 4.700 empleados, tras la de Wrozamet (Polonia) en 1999: la expansión se hace con filiales mercantiles y la mayoría del empleo queda fuera de la cooperativa.",
+      "fuente": "http://web.archive.org/web/20250611123312/https://oro.open.ac.uk/69303/1/EID%20preprint%20Corporate%20Governance%20failure%20of%20cooperatives,%202020.pdf"
+    },
+    {
+      "anio": 2006,
+      "x": "Cese del director general por presión del Consejo Social. Los autores lo sitúan como origen de una «jerarquía de dominación invertida» que aplaza los ajustes.",
+      "fuente": "https://www.ehu.eus/en/web/campusa-magazine/-/human-resources-policies-influenced-the-failure-of-fagor-electrodomesticos"
+    },
+    {
+      "anio": 2013,
+      "tamano": 5600,
+      "x": "Concurso de acreedores (13 de noviembre); la Corporación Mondragon niega nuevos fondos por no ver viable el futuro de la empresa.",
+      "fuente": "https://valenciaplaza.com/valenciaplaza/diez-anos-caida-fagor-electrodomesticos-cronologia-quiebra"
+    }
+  ],
+  "problemas": [
+    {
+      "t": "democratico",
+      "x": "Crecer comprando sociedades mercantiles creó una cooperativa de minoría: en 2013 los socios eran menos de un tercio de quienes trabajaban para ella (Fuente: Valencia Plaza)."
+    },
+    {
+      "t": "democratico",
+      "x": "Contraejemplo incómodo para el proyecto: según Basterretxea, Heras-Saizarbitoria y otros, el poder de veto de la base como trabajadora (Consejo Social), sin información ni responsabilidad como propietaria, contribuyó a paralizar decisiones (Fuente: UPV/EHU Campusa; Basterretxea et al. 2022). Control de base no es lo mismo que control de base informado."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "La Asamblea de más de 3.000 socios decidía también cuestiones estratégicas de una multinacional, y los entrevistados la consideran «ingobernable» a ese tamaño (Fuente: Basterretxea et al. 2022). Con la deuda de la expansión, la Corporación Mondragon no aportó más fondos (Fuente: Valencia Plaza)."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Basterretxea et al. 2022 — I. Basterretxea, C. Cornforth e I. Heras-Saizarbitoria, «Corporate governance as a key aspect in the failure of worker cooperatives», Economic and Industrial Democracy 43(1), 2022 (preprint de Open Research Online, copia en web.archive.org)",
+      "u": "http://web.archive.org/web/20250611123312/https://oro.open.ac.uk/69303/1/EID%20preprint%20Corporate%20Governance%20failure%20of%20cooperatives,%202020.pdf"
+    },
+    {
+      "t": "Errasti et al. 2016 — A. Errasti, I. Bretos y E. Etxezarreta, «What do Mondragon coopitalist multinationals look like? The rise and fall of Fagor Electrodomésticos S. Coop. and its European subsidiaries», APCE 87(3), 2016 (resumen en IDEAS/RePEc)",
+      "u": "https://ideas.repec.org/a/bla/annpce/v87y2016i3p433-456.html"
+    },
+    {
+      "t": "UPV/EHU Campusa — resumen de Basterretxea, Heras-Saizarbitoria y Lertxundi (HRM, 2018)",
+      "u": "https://www.ehu.eus/en/web/campusa-magazine/-/human-resources-policies-influenced-the-failure-of-fagor-electrodomesticos"
+    },
+    {
+      "t": "Ley 4/1993 — Ley 4/1993, de 24 de junio, de Cooperativas de Euskadi (BOE, texto consolidado)",
+      "u": "https://www.boe.es/buscar/act.php?id=BOE-A-2012-2011"
+    },
+    {
+      "t": "I. Arenaza Bengoa y S. Arando — «Inter-cooperation mechanisms in Mondragon: managing the crisis of Fagor Electrodomésticos» (CLEO, Rutgers; copia en web.archive.org)",
+      "u": "http://web.archive.org/web/20260612121020/https://cleo.rutgers.edu/articles/inter-cooperation-mechanisms-in-mondragon-managing-the-crisis-of-fagor-electrodomesticos/"
+    },
+    {
+      "t": "Valencia Plaza — «Diez años de la caída de Fagor Electrodomésticos: cronología de una quiebra» (EFE, 2023)",
+      "u": "https://valenciaplaza.com/valenciaplaza/diez-anos-caida-fagor-electrodomesticos-cronologia-quiebra"
+    }
+  ],
+  "confianza": "media"
+}

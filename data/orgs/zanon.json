@@ -7,9 +7,10 @@
   "fundacion": 2001,
   "tamano": [
     400,
-    "Unos 400 trabajadores.",
+    "Unos 400 trabajadores (ficha de Wikipedia, «empleados ~400»); 450 puestos en 2014 según el mismo artículo.",
     "media"
   ],
+  "tamano_unidad": "trabajadoras",
   "corriente": "Fábrica recuperada bajo control obrero",
   "autogestionada": true,
   "resumen": "Fábrica de cerámica ocupada y autogestionada desde 2001, cooperativa desde 2005 y expropiada en 2009. La asamblea general de trabajadores es soberana. Coordinadores por sector, elegidos y rotativos. Igualdad salarial durante largos periodos. Muy usada como caso de estudio de la democracia directa en el lugar de trabajo.",
@@ -73,77 +74,77 @@
   "codigos": {
     "mandato": [
       3,
-      "Mandato de sector.",
-      "media"
+      "Sin fuente verificable: mandato de sector.",
+      "baja"
     ],
     "revocabilidad": [
       4,
-      "Revocables.",
-      "media"
+      "Sin fuente verificable: revocables.",
+      "baja"
     ],
     "rotacion": [
       3,
-      "Rotación de coordinadores.",
-      "media"
+      "Sin fuente verificable: rotación de coordinadores.",
+      "baja"
     ],
     "profesionalizacion": [
       3,
-      "Sin gerencia externa.",
-      "media"
+      "Sin fuente verificable: sin gerencia externa.",
+      "baja"
     ],
     "eleccion_direccion": [
       4,
-      "La asamblea elige directamente.",
-      "media"
+      "Sin fuente verificable: la asamblea elige directamente.",
+      "baja"
     ],
     "agenda_base": [
       4,
-      "Asamblea.",
-      "media"
+      "Sin fuente verificable: asamblea.",
+      "baja"
     ],
     "pluralismo": [
       2,
-      "No consta.",
+      "Sin fuente verificable: no consta.",
       "baja"
     ],
     "autonomia_base": [
       2,
-      "Los sectores dependen de la asamblea general.",
+      "Sin fuente verificable: los sectores dependen de la asamblea general.",
       "baja"
     ],
     "brecha_formal_real": [
       2,
-      "Liderazgos del proceso de recuperación.",
+      "Sin fuente verificable: liderazgos del proceso de recuperación.",
       "baja"
     ],
     "regla_decision": [
       3,
-      "Mayoría.",
-      "media"
+      "Sin fuente verificable: mayoría.",
+      "baja"
     ],
     "capacidad_ejecutiva": [
       2,
-      "Coordinación limitada.",
+      "Sin fuente verificable: coordinación limitada.",
       "baja"
     ],
     "freq_soberano_meses": [
       1,
-      "Asambleas periódicas.",
+      "Sin fuente verificable: asambleas periódicas.",
       "baja"
     ],
     "freq_intermedio_meses": [
       0.25,
-      "Reuniones de sector frecuentes.",
+      "Sin fuente verificable: reuniones de sector frecuentes.",
       "baja"
     ],
     "niveles": [
       1,
-      "Directo.",
-      "media"
+      "Sin fuente verificable: directo.",
+      "baja"
     ],
     "estructura_federal": [
       1,
-      "Una sola unidad productiva.",
+      "Una sola unidad productiva: la fábrica de Neuquén (Wikipedia).",
       "media"
     ],
     "coste_coordinacion": [

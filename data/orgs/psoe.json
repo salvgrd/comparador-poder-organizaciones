@@ -1,0 +1,258 @@
+{
+  "id": "psoe",
+  "siglas": "PSOE",
+  "nombre": "Partido Socialista Obrero Español",
+  "familia": "partido",
+  "pais": "Estado español",
+  "fundacion": 1879,
+  "tamano": [
+    147648,
+    "147.648 afiliados al final de 2025 (148.470 al inicio), según la memoria anual de cuentas del PSOE.",
+    "alta"
+  ],
+  "corriente": "Socialdemocracia",
+  "autogestionada": false,
+  "resumen": "Partido de masas con estructura federal: agrupaciones municipales, federaciones provinciales y regionales, Congreso Federal, Comité Federal y Comisión Ejecutiva Federal. Desde 2014-2017 combina esa estructura de delegación con dos mecanismos plebiscitarios: la Secretaría General se elige por primarias directas a doble vuelta, y los pactos de gobierno o investidura se someten obligatoriamente a consulta de la militancia.",
+  "poder_formal": "Congreso Federal y, entre congresos, el Comité Federal. La Secretaría General tiene legitimidad directa de la militancia.",
+  "poder_real": "La Secretaría General y su Ejecutiva, reforzadas por el control del Gobierno y de las listas electorales. Las primarias desplazaron poder de los barones territoriales y del Comité Federal hacia el líder, que dialoga directamente con la militancia.",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Militancia",
+      "nivel": 0,
+      "tipo": "base"
+    },
+    {
+      "id": "agr",
+      "n": "Agrupaciones municipales",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ]
+    },
+    {
+      "id": "cons",
+      "n": "Consultas a la militancia",
+      "nivel": 1,
+      "tipo": "soberano",
+      "elegido_por": [
+        "af"
+      ],
+      "decide": "Mayoría de votos emitidos",
+      "desc": "Obligatorias sobre acuerdos de Gobierno o investiduras (art. 50.2, Estatutos 40º Congreso). Otras requieren autorización de la ejecutiva superior, que puede oponerse."
+    },
+    {
+      "id": "prov",
+      "n": "Federaciones provinciales e insulares",
+      "nivel": 2,
+      "tipo": "delegados",
+      "elegido_por": [
+        "agr"
+      ]
+    },
+    {
+      "id": "reg",
+      "n": "Federaciones regionales y de nacionalidad",
+      "nivel": 3,
+      "tipo": "delegados",
+      "elegido_por": [
+        "prov"
+      ]
+    },
+    {
+      "id": "cong",
+      "n": "Congreso Federal",
+      "nivel": 4,
+      "tipo": "soberano",
+      "elegido_por": [
+        "prov"
+      ],
+      "decide": "Voto individual y público de los delegados (art. 23)",
+      "freq": "41º Congreso: Sevilla, 2024"
+    },
+    {
+      "id": "cf",
+      "n": "Comité Federal",
+      "nivel": 5,
+      "tipo": "delegados",
+      "elegido_por": [
+        "cong",
+        "reg"
+      ],
+      "desc": "Máximo órgano entre congresos. Puede iniciar la revocación de la Secretaría General (más del 50%), que luego debe aprobar la militancia."
+    },
+    {
+      "id": "cpf",
+      "n": "Consejo de Política Federal",
+      "nivel": 5,
+      "tipo": "coordinacion",
+      "elegido_por": [
+        "reg"
+      ],
+      "desc": "Coordinación con los secretarios generales territoriales."
+    },
+    {
+      "id": "gar",
+      "n": "Comisión Federal de Ética y Garantías",
+      "nivel": 5,
+      "tipo": "garantias",
+      "elegido_por": [
+        "cong"
+      ],
+      "desc": "Listas completas, cerradas y bloqueadas, voto mayoritario (art. 23.3)."
+    },
+    {
+      "id": "cef",
+      "n": "Comisión Ejecutiva Federal",
+      "nivel": 6,
+      "tipo": "ejecutivo",
+      "elegido_por": [
+        "cong"
+      ],
+      "desc": "Se elige en el Congreso sobre la propuesta de la Secretaría General."
+    },
+    {
+      "id": "sg",
+      "n": "Secretaría General",
+      "nivel": 7,
+      "tipo": "ejecutivo",
+      "cima": true,
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Primarias a doble vuelta con voto directo de la militancia; avales mínimos del 3% del censo (art. 5)."
+    }
+  ],
+  "reglas": {
+    "metodo": "Democracia representativa de delegados en congresos, más primarias y consultas plebiscitarias.",
+    "ponderacion": "Delegados proporcionales a la militancia de cada federación.",
+    "mandato": "Libre. Voto individual y público de los delegados.",
+    "cargos": "Sin limitación de mandatos para la Secretaría General.",
+    "reforma": "Congreso Federal.",
+    "minorias": "Corrientes de opinión reconocidas que requieren aprobación del Comité Federal (art. 4). Ejecutiva elegida por mayoría sobre lista."
+  },
+  "codigos": {
+    "mandato": [
+      0,
+      "Estatutos Federales (40º y 41º Congreso), art. 23.1: los delegados votan resoluciones y gestión mediante voto individual y público, sin mandato.",
+      "alta"
+    ],
+    "revocabilidad": [
+      2,
+      "Art. 6.1.a (40º y 41º Congreso): la revocación de la Secretaría General la inicia el Comité Federal por más del 50 % y la ratifica la militancia en consulta.",
+      "alta"
+    ],
+    "rotacion": [
+      1,
+      "Estatutos Federales: ningún cargo ejecutivo más de tres mandatos consecutivos, salvo la Secretaría General cuando preside el Gobierno (disposición adicional 3ª en el 40º Congreso; art. 3.9 en el 41º): prorrogable sin tope.",
+      "alta"
+    ],
+    "profesionalizacion": [
+      0,
+      "Aparato amplio y miles de cargos públicos remunerados.",
+      "alta"
+    ],
+    "eleccion_direccion": [
+      2,
+      "Secretaría General por primarias directas a doble vuelta: liderazgo unipersonal plebiscitario, sin mandato ni revocación por la base. La Comisión Ejecutiva la propone la propia SG al Congreso.",
+      "alta"
+    ],
+    "agenda_base": [
+      1,
+      "Art. 50.1: las consultas territoriales necesitan autorización de la ejecutiva superior y la Ejecutiva Federal puede oponerse.",
+      "alta"
+    ],
+    "pluralismo": [
+      3,
+      "Art. 5.2.a: en los comités, la lista minoritaria que supere el 20 % obtiene representación proporcional. Art. 4: corrientes de opinión reconocidas (con autorización del Comité Federal), sin representación orgánica; prohibidas las tendencias organizadas (art. 3.2). La Ejecutiva se elige por mayoría (art. 5.1.b.ii).",
+      "alta"
+    ],
+    "autonomia_base": [
+      1,
+      "Federaciones con autonomía relativa; la Ejecutiva Federal puede oponerse a consultas territoriales.",
+      "alta"
+    ],
+    "brecha_formal_real": [
+      3,
+      "Sin fuente verificable: el liderazgo concentra el poder a través del Gobierno y la confección de listas; el Comité Federal pierde peso y las corrientes no pesan en la práctica. Se decía «estimación con prensa», pero la ficha no cita prensa que lo sostenga.",
+      "baja"
+    ],
+    "regla_decision": [
+      4,
+      "Mayoría.",
+      "alta"
+    ],
+    "capacidad_ejecutiva": [
+      3,
+      "La Ejecutiva Federal dirige entre reuniones del Comité Federal y fija la posición, pero los acuerdos de gobierno y de investidura se someten a consulta obligatoria de la militancia (art. 50.2).",
+      "media"
+    ],
+    "freq_soberano_meses": [
+      48,
+      "Art. 21.6: el Congreso se reúne entre el tercer y el cuarto año desde el anterior.",
+      "alta"
+    ],
+    "freq_intermedio_meses": [
+      6,
+      "Art. 28.1: el Comité Federal se reúne al menos dos veces al año.",
+      "alta"
+    ],
+    "niveles": [
+      4,
+      "Agrupación → provincia → región → Congreso; la Secretaría General, en cambio, a un salto.",
+      "alta"
+    ],
+    "estructura_federal": [
+      3,
+      "Federal, probada a escala de masas.",
+      "alta"
+    ],
+    "coste_coordinacion": [
+      4,
+      "Bajo: delegación y aparato profesional.",
+      "alta"
+    ]
+  },
+  "problemas": [
+    {
+      "t": "democratico",
+      "x": "Democracia plebiscitaria: la militancia elige al líder y ratifica pactos, pero no fija la agenda. Las primarias debilitaron a los órganos intermedios (Comité Federal) que podían contrapesar al líder; tras 2017 el líder se apoya directamente en la base."
+    },
+    {
+      "t": "democratico",
+      "x": "Sin límite de mandatos y con control de las listas electorales, la dirección distribuye los cargos públicos de los que dependen materialmente muchos militantes: la vía clásica de Michels."
+    },
+    {
+      "t": "agilidad",
+      "x": "Muy ágil: la Ejecutiva decide; la consulta obligatoria sobre pactos se organiza en días."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "Escala sin problemas; la participación real de la militancia se concentra en primarias y consultas puntuales."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "PSOE — Estatutos Federales (40º Congreso, 2021)",
+      "u": "https://www.politicalpartydb.org/wp-content/uploads/2025/06/SPAIN_PSOE_2021.pdf"
+    },
+    {
+      "t": "PSOE — Estatutos Federales 41º Congreso (2024), copia de web.archive.org",
+      "u": "https://web.archive.org/web/20261008122426/https://www.psoe.es/media-content/2024/12/Estatutos-Federales-41%C2%BA-CF.pdf"
+    },
+    {
+      "t": "PSOE — Estatutos y reglamentos federales (transparencia), copia de web.archive.org",
+      "u": "https://web.archive.org/web/20260916235233/https://www.psoe.es/transparencia/informacion-politica-organizativa/estatutos-y-reglamentos-federales/"
+    },
+    {
+      "t": "Nueva Tribuna — Nueva Ejecutiva del 41º Congreso (2024)",
+      "u": "https://www.nuevatribuna.es/articulo/actualidad/ejecutiva-psoe/20241201142702233012.html"
+    },
+    {
+      "t": "PSOE — Memoria anual 2025 (cuentas), copia de web.archive.org",
+      "u": "https://web.archive.org/web/20261016222346/https://www.psoe.es/media-content/2026/06/2025-Mermoria-Anual.pdf"
+    }
+  ],
+  "confianza": "media"
+}

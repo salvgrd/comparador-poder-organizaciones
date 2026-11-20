@@ -1,0 +1,267 @@
+{
+  "id": "syriza",
+  "siglas": "SYRIZA",
+  "nombre": "Coalición de la Izquierda Radical (partido unificado, 2013-2015)",
+  "familia": "partido",
+  "pais": "Grecia",
+  "fundacion": 2013,
+  "tamano": [
+    35000,
+    "Unos 35.000 miembros en julio de 2013, tras duplicarse en pocos meses (Fuente: Kouvelakis 2013). El partido no publicó censos auditados.",
+    "media"
+  ],
+  "corriente": "Izquierda radical plural (ex-Synaspismos, maoístas, trotskistas, ecologistas)",
+  "autogestionada": false,
+  "estado": {
+    "situacion": "burocratizada",
+    "tipos": [
+      "captura_direccion",
+      "institucionalizacion",
+      "escision"
+    ],
+    "desde": 2015,
+    "causa": "Ya en el gobierno (desde enero de 2015), la dirección aceptó en julio de 2015 un nuevo memorándum pese al «no» del referéndum del 5 de julio; 108 de los 201 miembros del Comité Central firmaron una declaración de rechazo (Fuente: IV, mayoría del CC; 109 según Jacobin). En agosto, Tsipras dimitió y convocó elecciones anticipadas sin pasar por los órganos y sin atender la decisión del Comité Central de convocar una conferencia extraordinaria (Fuente: Green Left; To Vima). Dimitieron el secretario del Comité Central, Tasos Koronakis (Fuente: To Vima), y 53 miembros del Comité Central; la Plataforma de Izquierda y 25 diputados formaron Unidad Popular (Fuente: Green Left).",
+    "momento_codificado": "Estatutos del congreso fundacional (julio de 2013), vigentes hasta la crisis del verano de 2015."
+  },
+  "resumen": "Coalición convertida en partido único en el congreso fundacional de julio de 2013 (Fuente: SYRIZA, historia oficial). Tiene tres niveles: Organizaciones de Miembros (OM, de al menos 8 personas, por barrio o centro de trabajo), Organización de Prefectura y Congreso, cada 3 años (Estatutos 2013, arts. 8, 10 y 14). En 2013 votaron 3.430 delegados elegidos por las OM; el congreso eligió un Comité Central de 201 miembros por listas en competencia y, en voto separado, al presidente (Fuente: LINKS, congreso 2013).",
+  "poder_formal": "Congreso trienal y, entre congresos, el Comité Central de 201 miembros, que se reúne cada 3 meses y elige el Secretariado Político (Estatutos 2013, arts. 13 y 14). El presidente «actúa en el marco de las decisiones del Comité Central» (art. 14.4).",
+  "poder_real": "El presidente, elegido por el congreso y no por el Comité Central (Fuente: LINKS, congreso 2013), solo responde ante este por una moción del 50 % + 1 que obliga a convocar congreso (Estatutos 2013, art. 14.4). Ya en 2013 Kouvelakis advertía que las decisiones de la dirección desde 2012 llevaban «inevitablemente» a un partido electoral «soldado en torno a su líder» (Fuente: Kouvelakis 2013). En el verano de 2015 el gobierno decidió contra la mayoría del Comité Central (Fuente: IV, mayoría del CC) y convocó elecciones sin pasar por los órganos (Fuente: To Vima).",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Miembros",
+      "nivel": 0,
+      "tipo": "base",
+      "desc": "Con cuota al día para votar (Estatutos 2013, art. 29.1); los simpatizantes pueden asistir a las asambleas y opinar (art. 9)."
+    },
+    {
+      "id": "om",
+      "n": "Organizaciones de Miembros (OM)",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Asambleas de barrio o centro de trabajo, de al menos 8 miembros; se recomienda dividirlas por encima de 150. Asamblea mensual y comité coordinador anual. Eligen delegados al congreso (Estatutos 2013, art. 8)."
+    },
+    {
+      "id": "ne",
+      "n": "Conferencia y Comité de Prefectura",
+      "nivel": 2,
+      "tipo": "delegados",
+      "elegido_por": [
+        "om"
+      ],
+      "freq": "Comité al menos cada 2 meses; conferencia cada 2 años (Estatutos 2013, arts. 11 y 19)",
+      "desc": "Elige a los candidatos a diputado tras consultar a las OM; el Comité Central puede modificar sus listas por el 70 % y da la aprobación final (Estatutos 2013, arts. 11 y 23.1)."
+    },
+    {
+      "id": "cong",
+      "n": "Congreso ordinario",
+      "nivel": 2,
+      "tipo": "soberano",
+      "elegido_por": [
+        "om"
+      ],
+      "decide": "Mayoría; Comité Central por listas con reparto proporcional simple (Estatutos 2013, art. 30.6)",
+      "freq": "Cada 3 años (art. 14)",
+      "desc": "En 2013 se inscribieron 3.430 delegados (Fuente: LINKS, congreso 2013). Hay además congreso extraordinario y «congreso permanente», convocables por el Comité Central, por OM que representen 1/4 de los miembros o por el 15 % de los miembros (Estatutos 2013, arts. 15-16)."
+    },
+    {
+      "id": "ce",
+      "n": "Comité Central",
+      "nivel": 3,
+      "tipo": "delegados",
+      "elegido_por": [
+        "cong"
+      ],
+      "decide": "Mayoría; 70 % para reestructurar la organización en el periodo de transición y para modificar las candidaturas (Estatutos 2013, arts. 10.5 y 23.1)",
+      "freq": "Cada 3 meses (art. 13.7)",
+      "desc": "201 miembros; en 2013, lista unitaria 135 escaños y Plataforma de Izquierda 60 (Fuente: LINKS, congreso 2013). Renovación mínima del 30 % en cada congreso (Estatutos 2013, art. 13.11)."
+    },
+    {
+      "id": "pg",
+      "n": "Secretariado Político y Secretario",
+      "nivel": 4,
+      "tipo": "ejecutivo",
+      "elegido_por": [
+        "ce"
+      ],
+      "desc": "Órgano ejecutivo del Comité Central: aplica sus decisiones y lleva los asuntos corrientes entre sesiones; como máximo dos mandatos consecutivos (Estatutos 2013, art. 13.3)."
+    },
+    {
+      "id": "ko",
+      "n": "Grupo parlamentario (y gobierno desde enero de 2015)",
+      "nivel": 4,
+      "tipo": "ejecutivo",
+      "elegido_por": [
+        "ne",
+        "ce"
+      ],
+      "desc": "Actúa en el marco de las decisiones del Comité Central, que aprueba su reglamento y decide las sanciones (Estatutos 2013, arts. 23.5 y 26.2); la participación en el gobierno sigue las orientaciones de los órganos (art. 27.2). Gobierno desde enero de 2015 (Fuente: Green Left)."
+    },
+    {
+      "id": "pres",
+      "n": "Presidente",
+      "nivel": 5,
+      "tipo": "ejecutivo",
+      "cima": true,
+      "elegido_por": [
+        "cong"
+      ],
+      "desc": "Tsipras, elegido en 2013 por los delegados con el 74 % (Fuente: LINKS, congreso 2013). Preside el grupo parlamentario si es diputado y está exento del límite de diez años de mandato parlamentario (Estatutos 2013, arts. 14.4 y 23.4)."
+    }
+  ],
+  "reglas": {
+    "metodo": "Mayoría (Estatutos 2013, art. 2.2); mayorías del 70 % para reestructurar la organización y para modificar las listas electorales (arts. 10.5 y 23.1).",
+    "ponderacion": "Delegados al congreso según el criterio que fija el Comité Central saliente (Estatutos 2013, arts. 14.5 y 30.5).",
+    "mandato": "Libre. Las decisiones del Comité Central se discuten en las OM y sus conclusiones «se ponen en conocimiento» del Comité (Estatutos 2013, art. 13.1); en la «deliberación de miembros» deciden al final los órganos (art. 18.6).",
+    "cargos": "Secretariado Político, máximo 2 mandatos consecutivos (Estatutos 2013, art. 13.3); diputados, máximo 10 años acumulados salvo el líder (art. 23.4); prohibido acumular dos cargos electos (art. 23.6).",
+    "reforma": "Congreso (Estatutos 2013, art. 32).",
+    "minorias": "Tendencias reconocidas, con plataformas publicadas en los medios del partido (Estatutos 2013, art. 21); listas separadas con reparto proporcional simple, aunque el partido «anima a la lista única» (art. 30.6). La Plataforma de Izquierda obtuvo el 30,15 % en 2013 (Fuente: LINKS, congreso 2013)."
+  },
+  "codigos": {
+    "mandato": [
+      1,
+      "Delegados libres, elegidos por las OM (Estatutos 2013, arts. 8.13 y 30.3). El estatuto prevé que las OM debatan las decisiones del Comité Central y voten sobre los asuntos importantes que este les someta (art. 13.1 y 13.15) y una «deliberación de miembros» de 15 días cuyo resultado solo se «tiene en cuenta» (art. 18).",
+      "alta"
+    ],
+    "revocabilidad": [
+      1,
+      "El presidente no puede ser revocado directamente: una moción del 50 % + 1 del Comité Central solo obliga a convocar congreso extraordinario (Estatutos 2013, art. 14.4). El 15 % de los miembros puede exigir congreso extraordinario o referéndum interno (arts. 15 y 17).",
+      "alta"
+    ],
+    "rotacion": [
+      0,
+      "Sin límite para la cima: el líder está exento del tope de 10 años de diputado (Estatutos 2013, art. 23.4) y el estatuto no limita los mandatos del presidente. Solo el Secretariado Político tiene un máximo de 2 mandatos consecutivos (art. 13.3).",
+      "alta"
+    ],
+    "profesionalizacion": [
+      2,
+      "El Comité Central fija una escala salarial para quienes tienen relación profesional con el partido, y los cargos públicos le entregan sus retribuciones y cobran el sueldo del partido (Estatutos 2013, art. 29.3). Los cargos de gobierno remunerados no pueden pasar del 25 % de cada órgano (art. 27.5). No establece que la dirección sea remunerada.",
+      "media"
+    ],
+    "eleccion_direccion": [
+      2,
+      "El estatuto deja a cada congreso decidir qué cuerpo elige al presidente (Estatutos 2013, art. 14.3); en 2013 el congreso optó por la elección directa por los delegados (Fuente: LINKS, congreso 2013; Kouvelakis 2013). No lo elige el Comité Central, ante el que no responde salvo por la moción del art. 14.4.",
+      "alta"
+    ],
+    "agenda_base": [
+      1,
+      "El Comité Central convoca el congreso, organiza el proceso precongresual, redacta los textos y fija la representación (Estatutos 2013, art. 14.5). La iniciativa desde abajo exige el 15 % de los miembros u OM que representen 1/4 (arts. 15-18).",
+      "alta"
+    ],
+    "pluralismo": [
+      4,
+      "Tendencias reconocidas, con derecho a publicar sus plataformas en los medios del partido y a expresarse en público (Estatutos 2013, art. 21), y listas separadas con reparto proporcional simple, también para los órganos ejecutivos (art. 30.6).",
+      "alta"
+    ],
+    "autonomia_base": [
+      2,
+      "Las OM son el partido en su ámbito y deciden lo necesario para su acción (Estatutos 2013, art. 8.6), pero el partido es «política y organizativamente unitario» (art. 21.1) y la creación de OM la aprueba el nivel superior (art. 8.4-8.5).",
+      "alta"
+    ],
+    "brecha_formal_real": [
+      4,
+      "Núcleo del fracaso. Ya en 2013 Kouvelakis advertía que las decisiones de la dirección desde 2012 (congresos precipitados, redes personales en torno a cuadros y diputados) llevaban «inevitablemente» a un partido electoral con la vida interna atrofiada, «soldado en torno a su líder» (Fuente: Kouvelakis 2013). En julio de 2015 el gobierno aceptó el tercer memorándum contra el referéndum y contra la mayoría del Comité Central (108-109 de 201) (Fuente: IV, mayoría del CC). Después convocó elecciones sin debate interno y sin atender la decisión del Comité Central de convocar una conferencia extraordinaria (Fuente: To Vima; Green Left). Las cláusulas de subordinación del gobierno y del grupo parlamentario al partido (Estatutos 2013, arts. 26-27) no se aplicaron.",
+      "alta"
+    ],
+    "regla_decision": [
+      4,
+      "Mayoría (Estatutos 2013, art. 2.2).",
+      "alta"
+    ],
+    "capacidad_ejecutiva": [
+      3,
+      "El presidente «actúa en el marco de las decisiones del Comité Central» y el Secretariado Político lleva los asuntos corrientes entre sesiones (Estatutos 2013, arts. 13.3 y 14.4); este puede aprobar posiciones si hace falta pronunciarse de inmediato (art. 20.3). La participación en el gobierno se somete a las orientaciones de los órganos (art. 27.2).",
+      "alta"
+    ],
+    "freq_soberano_meses": [
+      36,
+      "Congreso cada 3 años (Estatutos 2013, art. 14.1).",
+      "alta"
+    ],
+    "freq_intermedio_meses": [
+      3,
+      "Comité Central cada 3 meses (Estatutos 2013, art. 13.7).",
+      "alta"
+    ],
+    "niveles": [
+      2,
+      "OM → congreso, que elige Comité Central y presidente (Estatutos 2013, arts. 8.13, 14.2 y 30.3).",
+      "alta"
+    ],
+    "estructura_federal": [
+      2,
+      "Tres niveles con poca autonomía intermedia; la estructura de las grandes ciudades y de las islas la decide el Comité Central (Estatutos 2013, art. 10.4).",
+      "media"
+    ],
+    "coste_coordinacion": [
+      3,
+      "Delegación con continuidad: OM con asamblea mensual, comités de prefectura cada 2 meses y Comité Central cada 3 meses (Estatutos 2013, arts. 8.14, 11.2 y 13.7).",
+      "media"
+    ]
+  },
+  "crisis_crecimiento": [
+    {
+      "anio": 2012,
+      "x": "SYRIZA sube al 27 % en las elecciones de junio de 2012 (Fuente: SYRIZA, historia oficial). Desde el otoño de 2012 la dirección promueve la «ampliación»: la afiliación se duplica en meses hasta 35.000, con muchos «miembros pasivos»; Kouvelakis advierte que eso lleva a un partido electoral «soldado en torno a su líder».",
+      "fuente": "https://internationalviewpoint.org/Nine-one-remarks-on-Syriza-after-its-founding-congress"
+    },
+    {
+      "anio": 2015,
+      "tamano": 35000,
+      "x": "Memorándum aceptado contra el referéndum y contra la mayoría del Comité Central; elecciones anticipadas sin atender la decisión del Comité Central de convocar una conferencia extraordinaria; escisión de Unidad Popular.",
+      "fuente": "https://greenleft.org.au/node/59890"
+    }
+  ],
+  "problemas": [
+    {
+      "t": "democratico",
+      "x": "Elegir al presidente directamente en el congreso lo hace independiente del Comité Central (Fuente: LINKS, congreso 2013). La única sanción (50 % + 1 obliga a convocar congreso; Estatutos 2013, art. 14.4) es lenta, y en 2015 la esquivó la convocatoria de elecciones (Fuente: To Vima)."
+    },
+    {
+      "t": "democratico",
+      "x": "El estatuto subordina el grupo parlamentario y la participación en el gobierno a los órganos (Estatutos 2013, arts. 26-27), pero sin ningún mecanismo coercitivo. Al llegar al gobierno esas cláusulas quedaron en papel (Fuente: Green Left)."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "Un partido de 35.000 miembros (Fuente: Kouvelakis 2013) con el 27 % de los votos (Fuente: SYRIZA, historia oficial) y, desde 2015, el gobierno: la base militante no tenía cómo contrapesar a un electorado y a un aparato de Estado que legitimaban directamente al líder."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Estatutos 2013 — SYRIZA, Καταστατικό del congreso fundacional (julio de 2013), en Political Party Database",
+      "u": "https://www.politicalpartydb.org/wp-content/uploads/Statutes/Greece/Greece-Syriza-2013.pdf"
+    },
+    {
+      "t": "LINKS, congreso 2013 — P. F. Soares y Y. Bournous, crónica y resultados del congreso fundacional (julio de 2013)",
+      "u": "https://links.org.au/node/3446"
+    },
+    {
+      "t": "Kouvelakis 2013 — International Viewpoint, S. Kouvelakis, «Nine + one remarks on Syriza after its founding congress»",
+      "u": "https://internationalviewpoint.org/Nine-one-remarks-on-Syriza-after-its-founding-congress"
+    },
+    {
+      "t": "IV, mayoría del CC — International Viewpoint, «Majority of Syriza CC reject agreement» (15-VII-2015)",
+      "u": "https://internationalviewpoint.org/Majority-of-Syriza-CC-reject-agreement"
+    },
+    {
+      "t": "Jacobin — S. Kouvelakis, «Cracks in the Deal?» (15-VII-2015)",
+      "u": "https://jacobin.com/2015/07/syriza-debt-tsipras-left-platform-kouvelakis/"
+    },
+    {
+      "t": "Green Left — K. Smith, «SYRIZA central committee members resign, new left group to challenge in elections» (30-VIII-2015)",
+      "u": "https://greenleft.org.au/node/59890"
+    },
+    {
+      "t": "To Vima — «SYRIZA in crisis ahead of elections – Party secretary Koronakis resigns» (25-VIII-2015)",
+      "u": "https://tovima.gr/2015/08/25/international/syriza-in-crisis-ahead-of-elections-party-secretary-koronakis-resigns"
+    },
+    {
+      "t": "SYRIZA, historia oficial — «From an electoral alliance to a single party» (copia en web.archive.org)",
+      "u": "http://web.archive.org/web/20190501102847/https://www.syriza.gr/page/about-syriza.html"
+    }
+  ],
+  "confianza": "media"
+}

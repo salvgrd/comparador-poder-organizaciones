@@ -6,10 +6,11 @@
   "pais": "Euskadi",
   "fundacion": 1956,
   "tamano": [
-    70000,
-    "Unas 70.000 personas trabajadoras; una parte no son socias (filiales, sobre todo fuera de Euskadi).",
+    71400,
+    "Plantilla media de 71.415 personas en 2025 (Informe anual 2025). La parte que no es socia (filiales, sobre todo fuera de Euskadi) no consta en esa fuente.",
     "media"
   ],
+  "tamano_unidad": "trabajadoras",
   "corriente": "Cooperativismo de trabajo asociado",
   "autogestionada": true,
   "resumen": "Grupo de cooperativas soberanas. En cada una: Asamblea General (1 socio = 1 voto), Consejo Rector elegido por la Asamblea, Gerencia nombrada por el Consejo Rector y Consejo Social (representa a los socios en temas laborales, consultivo). A escala corporativa: Congreso Cooperativo con delegados de las cooperativas, Comisión Permanente y Consejo General. Las cooperativas pueden irse (Ulma y Orona, 2022).",
@@ -108,38 +109,38 @@
   "codigos": {
     "mandato": [
       1,
-      "Representativo.",
-      "media"
+      "Sin fuente verificable: representativo; los estatutos de las cooperativas y del Congreso no se han leído.",
+      "baja"
     ],
     "revocabilidad": [
       2,
-      "La Asamblea puede cesar al Consejo Rector.",
+      "Ley 11/2019 de Cooperativas de Euskadi, art. 46.2: la asamblea general puede destituir al consejo rector en cualquier momento (con 2/3 si no figura en el orden del día). La revocación de los órganos corporativos (Comisión Permanente, Presidencia del Consejo General) no está verificada.",
       "media"
     ],
     "rotacion": [
-      2,
-      "Renovación parcial periódica.",
-      "media"
+      1,
+      "Sin fuente verificable: la Comisión Permanente tendría mandatos de 4 años con renovación por mitades según Bakaikoa et al. (2004), estudio no localizado; no consta límite de reelección para ella ni para la Presidencia del Consejo General. En las cooperativas, la ley permite reelegir al consejo rector por iguales plazos (art. 46.1).",
+      "baja"
     ],
     "profesionalizacion": [
       1,
-      "Gerencia profesional.",
-      "alta"
+      "Sin fuente verificable: gerencia profesional.",
+      "baja"
     ],
     "eleccion_direccion": [
-      2,
-      "Asamblea → Consejo Rector → Gerencia.",
-      "alta"
+      1,
+      "Sin fuente verificable: indirecta a varios niveles: asambleas → consejos rectores → agrupaciones → Comisión Permanente, que designa a la Presidencia del Consejo General. Las normas del Congreso de MONDRAGON no se han leído.",
+      "baja"
     ],
     "agenda_base": [
       1,
-      "Propuestas preparadas por el Consejo Rector y la Gerencia.",
-      "media"
+      "Sin fuente verificable: propuestas preparadas por el Consejo Rector y la Gerencia.",
+      "baja"
     ],
     "pluralismo": [
       2,
-      "Consejo Social como contrapeso.",
-      "media"
+      "Sin fuente verificable: Consejo Social como contrapeso (la Ley 11/2019 lo prevé como órgano potestativo).",
+      "baja"
     ],
     "autonomia_base": [
       3,
@@ -148,27 +149,27 @@
     ],
     "brecha_formal_real": [
       3,
-      "Tecnocracia gerencial; trabajadores sin voto en filiales.",
-      "media"
+      "Sin fuente verificable: tecnocracia gerencial: la información y las propuestas vienen de las gerencias, los gerentes se proponen en cascada y la participación en las Juntas es baja; los trabajadores de las filiales no son socios. Se citaban fuentes académicas que no están en la ficha.",
+      "baja"
     ],
     "regla_decision": [
       4,
-      "Mayoría.",
+      "Una persona socia, un voto (Informe anual 2025); la asamblea general decide por más de la mitad de los votos válidos (Ley 11/2019, art. 38.1) y el consejo rector, por mayoría de asistentes (art. 48.3).",
       "media"
     ],
     "capacidad_ejecutiva": [
-      4,
-      "La Gerencia opera con amplio margen.",
-      "media"
+      3,
+      "Sin fuente verificable: la Presidencia del Consejo General dirige la estrategia y sus decisiones obligan a divisiones y cooperativas, pero el plan de gestión y el presupuesto los aprueba la Comisión Permanente, ante la que responde.",
+      "baja"
     ],
     "freq_soberano_meses": [
       12,
-      "Asamblea General anual.",
+      "Ley 11/2019, art. 34: asamblea general ordinaria cada ejercicio para aprobar las cuentas.",
       "media"
     ],
     "freq_intermedio_meses": [
       1,
-      "Consejo Rector mensual.",
+      "Sin fuente verificable: Consejo Rector mensual.",
       "baja"
     ],
     "niveles": [
@@ -202,6 +203,14 @@
     }
   ],
   "fuentes": [
+    {
+      "t": "Ley 11/2019, de 20 de diciembre, de Cooperativas de Euskadi (BOE, texto consolidado)",
+      "u": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-615"
+    },
+    {
+      "t": "MONDRAGON — Informe anual 2025",
+      "u": "https://www.mondragon-corporation.com/people/site/assets/files/110675/mondragon-descargable-2025-cas.pdf"
+    },
     {
       "t": "Mondragon — Gobierno corporativo",
       "u": "https://www.mondragon-corporation.com/"

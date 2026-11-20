@@ -1,7 +1,7 @@
 import type { Handle } from 'remix/component'
 
-import { FAMILIAS, HEXAGONO, TIPO_PROBLEMA, VARS } from '../../lib/codebook.ts'
-import { fmt, fmtN, type OrgConIndices } from '../../lib/metrics.ts'
+import { CE_KEYS, FAMILIAS, HEXAGONO, TIPOS_FRACASO, TIPO_PROBLEMA, UNIDADES_TAMANO, VARS, coberturaFuentes, esFracaso, etiquetaEstado } from '../../lib/codebook.ts'
+import { fmtN, fmtPuesto, type OrgConIndices } from '../../lib/metrics.ts'
 import { routes } from '../../routes.ts'
 import { Hexagon, OrgChart, type CaraHexagono } from '../../ui/charts.tsx'
 import { REGLAS } from '../../ui/org-card.tsx'
@@ -18,7 +18,7 @@ export function carasHexagono(o: OrgConIndices, todas: OrgConIndices[]): CaraHex
   return HEXAGONO.map((d) => ({
     l: d.l,
     v: cara(o, d.vars),
-    ref: media(todas.map((x) => cara(x, d.vars))),
+    ref: media(todas.filter((x) => x.id !== o.id).map((x) => cara(x, d.vars))),
   }))
 }
 
@@ -31,10 +31,12 @@ function anclaje(a: string[], val: number): string {
   return antes && despues ? `Entre «${antes}» y «${despues}»` : '—'
 }
 
-/** Grupos de filas de la tabla: las seis caras del hexágono más la brecha formal-real. */
+/** Grupos de filas de la tabla: las seis caras del hexágono, la centralización, la brecha y el tamaño. */
 const GRUPOS = [
   ...HEXAGONO.map((d) => ({ l: d.l, vars: d.vars })),
+  { l: 'Agilidad vía dirección (centralización)', vars: [...CE_KEYS] },
   { l: 'Ajuste: poder real frente a estatutos', vars: ['brecha_formal_real'] },
+  { l: 'Contexto: tamaño (no puntúa en ningún índice salvo el riesgo oligárquico)', vars: ['tamano_s'] },
 ]
 
 function Score(handle: Handle<{ v: number; neg?: boolean }>) {
@@ -61,26 +63,34 @@ export function DetailPage(handle: Handle<{ o: OrgConIndices; todas: OrgConIndic
         <section class="view">
           <p class="crumbs">
             <a href={routes.home.href()}>← Panorama</a> ·{' '}
-            <a href={`${routes.comparar.href()}?ids=${o.id}`}>Comparar con otras</a>
+            <a href={`${routes.comparar.href()}?ids=${o.id}`}>Comparar con otras</a> ·{' '}
+            <a href={routes.organizaciones.revision.href({ id: o.id })}>Ficha para revisar los datos</a>
           </p>
 
           <div class="detail-head">
             <div>
               <div class="eyebrow">
                 {FAMILIAS[o.familia]?.label ?? o.familia} · {o.pais ?? ''} · {o.fundacion ?? ''} · {fmtN(o.tamano?.[0])}{' '}
-                {o.familia === 'partido' ? 'militantes' : 'personas'}
+                {UNIDADES_TAMANO[o.tamano_unidad ?? 'afiliacion'].l}
               </div>
               <h2>{o.siglas}</h2>
               <div class="sub">
                 {o.nombre} <span class={`pill ${o.confianza}`}>confianza {o.confianza}</span>
+                {etiquetaEstado(o) ? <span class="tag estado">{etiquetaEstado(o)}</span> : null}
+                <span class="tag estado">
+                  {coberturaFuentes(o).con}/{coberturaFuentes(o).total} códigos con fuente
+                </span>
               </div>
             </div>
-            <div class="idx" style={{ gridTemplateColumns: 'repeat(5, minmax(84px, 1fr))', marginTop: 0 }}>
-              <div><b>{fmt(i.cb)}</b><span>Control de base</span></div>
-              <div><b>{fmt(i.ag)}</b><span>Agilidad</span></div>
-              <div><b>{fmt(i.es)}</b><span>Escala</span></div>
-              <div><b>{fmt(i.olig)}</b><span>Riesgo oligárq.</span></div>
-              <div><b>{i.hops ?? '—'}</b><span>Saltos</span></div>
+            <div class="idx" style={{ gridTemplateColumns: 'repeat(2, minmax(110px, 1fr))', marginTop: 0 }}>
+              <div>
+                <b>{fmtPuesto(i.puestoCb, i.puestoCbIc)}</b>
+                <span>Puesto en control de base, de {todas.length}</span>
+              </div>
+              <div>
+                <b>{i.hops ?? '—'}</b>
+                <span>Saltos hasta la cima</span>
+              </div>
             </div>
           </div>
 
@@ -90,11 +100,13 @@ export function DetailPage(handle: Handle<{ o: OrgConIndices; todas: OrgConIndic
               <Hexagon caras={carasHexagono(o, todas)} nombre={o.siglas} />
               <div class="hex-legend">
                 <span><i></i>{o.siglas}</span>
-                <span><i class="ref"></i>Media de las {todas.length} organizaciones</span>
+                <span><i class="ref"></i>Media de las otras {todas.length - 1} organizaciones</span>
               </div>
               <p class="notice">
                 Cada cara es la media 0-4 de sus variables (detalle en la tabla de abajo). Más hacia fuera es más
-                control desde la base, más agilidad o más escalabilidad.
+                control desde la base, más rapidez de los órganos colectivos o una estructura más replicable. La centralización
+                ejecutiva no está en el hexágono porque «más» no es mejor ni peor: está en las estadísticas y en la
+                tabla.
               </p>
             </div>
             <div class="panel">
@@ -145,17 +157,13 @@ export function DetailPage(handle: Handle<{ o: OrgConIndices; todas: OrgConIndic
                             <td>
                               <b>{v.l}</b>
                               {v.calc && !v.l.includes('calculada') ? <div class="sub">calculada</div> : null}
-                              {v.neg ? <div class="sub">alto = peor</div> : null}
+                              {v.alto ? <div class="sub">{v.alto}</div> : null}
                             </td>
-                            <td>{val == null ? '—' : <Score v={val} neg={v.neg} />}</td>
+                            <td>{val == null ? '—' : <Score v={val} neg={!!v.alto} />}</td>
                             <td>{val == null ? '' : anclaje(v.a, val)}</td>
                             <td class="just">{v.calc ? justificacion(o, k) : (cod?.[1] ?? '')}</td>
                             <td>
-                              {v.calc ? (
-                                <span class="sub">—</span>
-                              ) : cod ? (
-                                <span class={`pill ${cod[2]}`}>{cod[2]}</span>
-                              ) : null}
+                              {i.conf(k) ? <span class={`pill ${i.conf(k)}`}>{i.conf(k)}</span> : <span class="sub">—</span>}
                             </td>
                           </tr>
                         )
@@ -165,6 +173,45 @@ export function DetailPage(handle: Handle<{ o: OrgConIndices; todas: OrgConIndic
                 </tbody>
               </table>
             </div>
+          </div>
+
+          {esFracaso(o) ? (
+            <div class="panel prose">
+              <h3>Cómo acabó</h3>
+              <p>
+                {o.estado!.tipos.map((t) => (
+                  <span class="tag estado">{TIPOS_FRACASO[t]}</span>
+                ))}
+              </p>
+              <p>{o.estado!.causa}</p>
+              <p class="notice">
+                <b>Momento que describe esta ficha:</b> {o.estado!.momento_codificado}
+              </p>
+            </div>
+          ) : null}
+
+          <div class="panel">
+            <h3>Crisis de crecimiento</h3>
+            <p class="notice" style={{ margin: '0 0 8px' }}>
+              Momentos en que la organización tuvo que reformarse porque su estructura dejó de funcionar al crecer. Es
+              la medida directa de escalabilidad; todavía no puntúa porque faltan datos de casi todas.
+            </p>
+            {o.crisis_crecimiento?.length ? (
+              <ul class="problems">
+                {o.crisis_crecimiento.map((c) => (
+                  <li>
+                    <span class="tag escalabilidad">{c.anio}</span>
+                    <span>
+                      {c.tamano ? `Con unas ${fmtN(c.tamano)} ${UNIDADES_TAMANO[o.tamano_unidad ?? 'afiliacion'].l}: ` : ''}
+                      {c.x}
+                      {c.fuente ? <span class="sub"> ({c.fuente})</span> : null}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p class="sub">Sin datos. Se añaden en el campo «crisis_crecimiento» de la ficha.</p>
+            )}
           </div>
 
           <div class="panel">

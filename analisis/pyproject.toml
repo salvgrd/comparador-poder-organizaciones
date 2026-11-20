@@ -1,5 +1,5 @@
 [project]
-name = "analisis-poder-obrero"
+name = "analisis-poder-de-base"
 version = "0.1.0"
 description = "Análisis de la estructura de poder de organizaciones obreras"
 requires-python = ">=3.12"

@@ -1,0 +1,205 @@
+{
+  "id": "solio",
+  "siglas": "SO",
+  "nombre": "Confederación Sindical Solidaridad Obrera",
+  "familia": "sindicato",
+  "pais": "Estado español",
+  "fundacion": 1990,
+  "tamano": [
+    2000,
+    "«Afiliados = 2000» en la ficha de Wikipedia (sin fecha ni fuente); «sobre 500» en 2010 según Portaloaca.",
+    "baja"
+  ],
+  "corriente": "Anarcosindicalismo; escisión de la CGT (1990), entre CGT y CNT",
+  "autogestionada": true,
+  "resumen": "Pequeña confederación anarcosindicalista surgida en 1990 de la CGT, tras perder el litigio por las siglas CNT. La Asamblea General de cada sindicato toma todas las decisiones y no puede ser suplantada por ningún comité. Se federa en Federaciones Locales, Confederaciones Regionales y un Comité Confederal. Participa en comités de empresa (destaca Metro de Madrid). En 2023 firmó un acuerdo de unidad de acción con CNT y CGT.",
+  "poder_formal": "Asamblea General de cada sindicato; Congreso al menos cada 4 años.",
+  "poder_real": "Asambleas de los sindicatos y su núcleo militante, sobre todo en las secciones con representación en comités de empresa.",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Afiliación",
+      "nivel": 0,
+      "tipo": "base"
+    },
+    {
+      "id": "ss",
+      "n": "Secciones sindicales de empresa u oficio",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ]
+    },
+    {
+      "id": "ag",
+      "n": "Asamblea General del sindicato",
+      "nivel": 1,
+      "tipo": "soberano",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "«En ella se toman todas las decisiones, no pudiendo ser suplantada por ninguna Junta, Comisión o Comité.»"
+    },
+    {
+      "id": "fl",
+      "n": "Federaciones Locales",
+      "nivel": 2,
+      "tipo": "delegados",
+      "elegido_por": [
+        "ag"
+      ]
+    },
+    {
+      "id": "cr",
+      "n": "Confederaciones Regionales",
+      "nivel": 3,
+      "tipo": "delegados",
+      "elegido_por": [
+        "fl"
+      ]
+    },
+    {
+      "id": "cong",
+      "n": "Congreso",
+      "nivel": 4,
+      "tipo": "soberano",
+      "elegido_por": [
+        "ag"
+      ],
+      "freq": "Al menos cada 4 años",
+      "desc": "Delegados elegidos en la Asamblea General de cada sindicato."
+    },
+    {
+      "id": "cc",
+      "n": "Comité Confederal",
+      "nivel": 5,
+      "tipo": "coordinacion",
+      "elegido_por": [
+        "cr"
+      ]
+    },
+    {
+      "id": "sg",
+      "n": "Secretaría General",
+      "nivel": 6,
+      "tipo": "ejecutivo",
+      "cima": true,
+      "elegido_por": [
+        "cong"
+      ],
+      "desc": "Método de elección no consta en las fuentes consultadas."
+    }
+  ],
+  "reglas": {
+    "metodo": "Asambleario y federalista: «nuestro nexo es el pacto libremente establecido».",
+    "ponderacion": "No consta.",
+    "mandato": "Los sindicatos están representados directamente en todos los foros; no existe decisión delegada.",
+    "cargos": "Todos revocables; rotativos siempre que sea posible. Incompatibles con la militancia en partidos.",
+    "reforma": "Congreso.",
+    "minorias": "No consta."
+  },
+  "codigos": {
+    "mandato": [
+      3,
+      "«No existe en este sindicato decisión delegada alguna»: los sindicatos están representados directamente (Wikipedia).",
+      "media"
+    ],
+    "revocabilidad": [
+      4,
+      "«Todos los cargos son revocables» (Portaloaca, 2010), sin precisar quién revoca ni cuándo; los estatutos no se han leído.",
+      "baja"
+    ],
+    "rotacion": [
+      1,
+      "Se procurará que los cargos «sean rotativos siempre que haya posibilidades» (Portaloaca, 2010), sin límite fijo de mandatos.",
+      "baja"
+    ],
+    "profesionalizacion": [
+      3,
+      "Sin fuente verificable: no constan cargos remunerados por el sindicato; hay horas sindicales de comités de empresa (Portaloaca). Estatutos no leídos.",
+      "baja"
+    ],
+    "eleccion_direccion": [
+      2,
+      "Congreso de delegadas elegidas en la asamblea general de cada sindicato (Portaloaca, 2010); el método de elección de cargos no consta.",
+      "baja"
+    ],
+    "agenda_base": [
+      3,
+      "Todas las decisiones se toman en las asambleas generales, que ninguna junta, comisión o comité puede suplantar (Portaloaca, 2010).",
+      "baja"
+    ],
+    "pluralismo": [
+      2,
+      "No constan mecanismos para minorías; quien milite en un partido no puede ocupar cargos (Portaloaca) ni ir en listas sindicales (Wikipedia).",
+      "baja"
+    ],
+    "autonomia_base": [
+      4,
+      "Federalismo de pacto libre.",
+      "media"
+    ],
+    "brecha_formal_real": [
+      1,
+      "Organización pequeña.",
+      "baja"
+    ],
+    "regla_decision": [
+      3,
+      "Sin fuente verificable: no consta el método de votación; tradición asamblearia.",
+      "baja"
+    ],
+    "capacidad_ejecutiva": [
+      1,
+      "Ningún comité puede suplantar a la asamblea (Portaloaca, 2010).",
+      "media"
+    ],
+    "freq_soberano_meses": [
+      48,
+      "Congreso al menos una vez cada cuatro años (Portaloaca, 2010).",
+      "media"
+    ],
+    "freq_intermedio_meses": [
+      3,
+      "Sin fuente verificable: no consta.",
+      "baja"
+    ],
+    "niveles": [
+      3,
+      "Sindicato → federación local → confederación regional → Comité Confederal (Portaloaca, 2010).",
+      "media"
+    ],
+    "estructura_federal": [
+      3,
+      "Federal.",
+      "media"
+    ],
+    "coste_coordinacion": [
+      1,
+      "Toda decisión pasa por asambleas.",
+      "media"
+    ]
+  },
+  "problemas": [
+    {
+      "t": "escalabilidad",
+      "x": "Organización muy pequeña tras sucesivas escisiones; la regla de que ningún comité puede suplantar a la asamblea limita la capacidad de actuar a escala confederal."
+    },
+    {
+      "t": "democratico",
+      "x": "Pocas reglas escritas públicas sobre votación y elección de cargos: el control descansa en la cultura asamblearia más que en procedimientos."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Wikipedia — Confederación Sindical Solidaridad Obrera",
+      "u": "https://es.wikipedia.org/wiki/Confederaci%C3%B3n_Sindical_Solidaridad_Obrera"
+    },
+    {
+      "t": "Portaloaca — Anarcosindicatos españoles IV: Solidaridad Obrera (2010)",
+      "u": "https://www.portaloaca.com/historia/historialibertaria/anarcosindicatos-espanoles-parte-iv-solidaridad-obrera/"
+    }
+  ],
+  "confianza": "baja"
+}

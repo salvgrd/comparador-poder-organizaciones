@@ -1,0 +1,285 @@
+{
+  "id": "solidarnosc",
+  "siglas": "NSZZ Solidarność",
+  "nombre": "Sindicato Autónomo Independiente «Solidaridad» (1980-1981)",
+  "familia": "sindicato",
+  "pais": "Polonia",
+  "fundacion": 1980,
+  "tamano": [
+    9500000,
+    "Unos 10 millones de afiliados en septiembre de 1981, un tercio de la población en edad de trabajar (Fuente: Wikipedia, Solidarity). El I Congreso eligió 896 delegados a razón de 1 por cada 10.000 afiliados, lo que da en torno a 9 millones (Fuente: ES, I KZD). Se toma 9,5 millones.",
+    "media"
+  ],
+  "corriente": "Sindicalismo independiente y movimiento social; programa de la «República Autogestionada» (Samorządna Rzeczpospolita, 1981)",
+  "autogestionada": true,
+  "estado": {
+    "situacion": "burocratizada",
+    "tipos": [
+      "represion",
+      "captura_direccion",
+      "institucionalizacion"
+    ],
+    "desde": 1981,
+    "causa": "Ilegalizada por la ley marcial del 13 de diciembre de 1981 (Fuente: Wikipedia, Solidarity). En la clandestinidad la dirigieron órganos no elegidos por los afiliados: la Comisión Coordinadora Provisional (TKK, 1982), el Consejo Provisional nombrado por Wałęsa (TRS, 1986) y, desde octubre de 1987, la Comisión Ejecutiva Nacional (KKW) presidida por Wałęsa, que apoyó la negociación de la Mesa Redonda y duró hasta el II Congreso de abril de 1990 (Fuente: IPN, KKW). Tras 1989 perdió afiliación, poder organizativo e influencia mientras el país adoptaba el neoliberalismo (Fuente: reseña de Ost); tuvo un brazo electoral propio (AWS, 1996-2001) y unos 680.000 afiliados en 2010 (Fuente: Wikipedia, Solidarity).",
+    "momento_codificado": "Septiembre-diciembre de 1981: estructura del I Congreso Nacional de Delegados (Gdańsk), en el momento de máxima afiliación."
+  },
+  "resumen": "Nace de las huelgas de agosto de 1980. El 17 de septiembre de 1980 los representantes de más de 30 comités fundadores interempresas (MKZ) deciden unificar estatutos y registrar un solo sindicato nacional, coordinado por la Comisión Nacional de Coordinación (KKP) (Fuente: ES, KKP/KK). El estatuto del 22 de septiembre de 1980 lo organiza por territorio y no por oficio: la organización de base es la de empresa, que agrupa a todos los oficios (Estatuto 1980, § 8). En un año llega a cerca de diez millones de afiliados (Fuente: Wikipedia, Solidarity). El I Congreso Nacional de Delegados (Gdańsk, 5-10 de septiembre y 26 de septiembre-7 de octubre de 1981, 896 delegados de 38 regiones) enmienda el estatuto, aprueba el programa y elige al presidente y a la Comisión Nacional (Fuente: ES, I KZD).",
+  "poder_formal": "Congreso Nacional de Delegados, elegido en las asambleas regionales de delegados de forma proporcional a la afiliación, que a su vez elegían las organizaciones de empresa (Estatuto 1980, §§ 18.3 y 22.3). Entre congresos, la Comisión Nacional: la mitad presidentes regionales de oficio y la otra mitad elegida por el congreso (Estatuto 1980, § 19.3). Desde 1981, el presidente lo elige el congreso (Fuente: Historia.org.pl, I KZD).",
+  "poder_real": "Muy repartido en las regiones: el estatuto daba a la junta regional la decisión de huelga (Estatuto 1980, § 33.3) y en 1981 hubo «huelgas salvajes» sin acuerdo de la dirección (Fuente: Polish History, marzo de 1981). En las negociaciones con el Gobierno, en cambio, la cúpula actuaba con gran autonomía: el presidente y sus asesores (Geremek, Kuroń, Mazowiecki) cerraron el acuerdo de Varsovia del 30 de marzo de 1981, que desconvocó la huelga general tras la crisis de Bydgoszcz (Fuente: Polish History, marzo de 1981). La KKP lo aceptó después, con duras críticas al «modo autocrático» del grupo negociador y al peso excesivo de los expertos (Fuente: ES, Kalendarium III-1981).",
+  "organos": [
+    {
+      "id": "af",
+      "n": "Afiliación",
+      "nivel": 0,
+      "tipo": "base",
+      "desc": "Trabajadores de cualquier oficio, organizados en su centro de trabajo; también jubilados y desempleados (Estatuto 1980, §§ 5 y 8)."
+    },
+    {
+      "id": "kz",
+      "n": "Organización de empresa: asamblea y Comisión de Empresa (Komisja Zakładowa)",
+      "nivel": 1,
+      "tipo": "asamblea",
+      "elegido_por": [
+        "af"
+      ],
+      "desc": "Asamblea de afiliados de la empresa; si pasa de 500 afiliados, asamblea de delegados. Elige la comisión de empresa (Estatuto 1980, § 26) y los delegados a la asamblea regional (Estatuto 1980, § 22.3)."
+    },
+    {
+      "id": "wzdr",
+      "n": "Asamblea General de Delegados de la Región (WZDR)",
+      "nivel": 2,
+      "tipo": "delegados",
+      "elegido_por": [
+        "kz"
+      ],
+      "decide": "Mayoría",
+      "desc": "38 regiones en 1981 (Fuente: ES, I KZD). Se reúne cada dos años y elige al presidente y la junta regional y a los delegados al Congreso Nacional (Estatuto 1980, § 22).",
+      "freq": "Cada 2 años (Estatuto 1980, § 22.2)"
+    },
+    {
+      "id": "zr",
+      "n": "Junta Regional y presidente regional (Zarząd Regionu)",
+      "nivel": 3,
+      "tipo": "coordinacion",
+      "elegido_por": [
+        "wzdr"
+      ],
+      "desc": "Representa a la región ante las autoridades y decide las huelgas que no son de una sola empresa (Estatuto 1980, §§ 23 y 33.3)."
+    },
+    {
+      "id": "kzd",
+      "n": "Congreso Nacional de Delegados (KZD)",
+      "nivel": 3,
+      "tipo": "soberano",
+      "elegido_por": [
+        "wzdr"
+      ],
+      "decide": "Mayoría simple; la reforma del estatuto, mayoría absoluta de los delegados y ratificación por la mitad de las juntas regionales (Estatuto 1980, § 18.5). Presidente elegido entre cuatro candidatos (Fuente: ES, I KZD).",
+      "freq": "Cada 2 años en el estatuto de 1980 (§ 18.2); al menos una vez al año desde la reforma de 1981 (Fuente: Historia.org.pl, I KZD). Solo se celebró uno antes de la ley marcial.",
+      "desc": "896 delegados, uno por cada 10.000 afiliados. Aprobó la Uchwała programowa con el programa de la «República Autogestionada» y el «Mensaje a los trabajadores de Europa del Este» (Fuente: ES, I KZD)."
+    },
+    {
+      "id": "kk",
+      "n": "Comisión Nacional (KKP en 1980-81; KK desde el congreso)",
+      "nivel": 4,
+      "tipo": "delegados",
+      "elegido_por": [
+        "kzd",
+        "zr"
+      ],
+      "freq": "No consta en el estatuto",
+      "desc": "En 1981, 107 miembros: el presidente, los 38 presidentes regionales y 69 elegidos por el congreso en proporción a la afiliación de cada región (Fuente: ES, KKP/KK). Hasta el congreso funcionó en composición provisional como KKP (Estatuto 1980, § 41)."
+    },
+    {
+      "id": "prez",
+      "n": "Presidium de la Comisión Nacional",
+      "nivel": 5,
+      "tipo": "ejecutivo",
+      "elegido_por": [
+        "kk"
+      ],
+      "desc": "Vela por la ejecución de los acuerdos de la Comisión, dirige la oficina y realiza los actos jurídicos (Estatuto 1980, § 19.2). La KKP no nombró un presidium provisional hasta febrero de 1981 (Fuente: ES, KKP/KK)."
+    },
+    {
+      "id": "ekspert",
+      "n": "Asesores y expertos",
+      "nivel": 5,
+      "tipo": "tecnico",
+      "elegido_por": [
+        "przew"
+      ],
+      "desc": "Asesores de Wałęsa sin cargo electo, como Geremek, Kuroń y Mazowiecki, con gran peso en las negociaciones de marzo de 1981 (Fuente: Polish History, marzo de 1981)."
+    },
+    {
+      "id": "przew",
+      "n": "Presidente (Przewodniczący)",
+      "nivel": 6,
+      "tipo": "ejecutivo",
+      "cima": true,
+      "elegido_por": [
+        "kzd"
+      ],
+      "desc": "Wałęsa, reelegido por el congreso en 1981 con más del 55 % frente a Jurczyk (24 %), Gwiazda (9 %) y Rulewski (6 %) (Fuente: ES, I KZD). Desde 1981 lo elige el congreso; en el estatuto de 1980 lo elegía la Comisión Nacional (Estatuto 1980, § 19.1; Fuente: Historia.org.pl, I KZD)."
+    }
+  ],
+  "reglas": {
+    "metodo": "Mayoría simple en el congreso y en las asambleas regionales; voto secreto de cargos por candidatos individuales y sin límite de candidaturas (Estatuto 1980, §§ 9, 18.5 y 22.5).",
+    "ponderacion": "Delegados al congreso proporcionales a la afiliación de cada región (Estatuto 1980, § 18.3); en 1981, 1 por cada 10.000 afiliados (Fuente: ES, I KZD).",
+    "mandato": "El afiliado tiene derecho a participar en fijar las instrucciones de los delegados elegidos (Estatuto 1980, § 11.3). El estatuto no dice si son vinculantes ni cómo se controlan.",
+    "cargos": "Mandatos de 2 años; la misma función solo se puede ejercer dos mandatos seguidos (Estatuto 1980, §§ 9.5, 19.4 y 23.3). Incompatible con cargos directivos en la empresa o en organizaciones políticas (Estatuto 1980, § 9.6).",
+    "reforma": "Congreso, por mayoría absoluta de los delegados con derecho a voto, con ratificación de al menos la mitad de las juntas regionales que agrupen al menos a la mitad de los afiliados (Estatuto 1980, § 18.5).",
+    "minorias": "El estatuto no reconoce tendencias. En el congreso de 1981 competían moderados y radicales (Fuente: ES, I KZD) y actuó la facción «Verdaderos Polacos» (Fuente: Historia.org.pl, I KZD)."
+  },
+  "codigos": {
+    "mandato": [
+      3,
+      "El estatuto reconoce el derecho de cada afiliado a participar en fijar las instrucciones de los delegados elegidos (Estatuto 1980, § 11.3), pero no dice que sean vinculantes ni prevé sanción. Queda entre «mixto» e «imperativo y normado». No se ha consultado el texto enmendado de 1981.",
+      "media"
+    ],
+    "revocabilidad": [
+      2,
+      "La revocación de un miembro de los órganos se hace por las mismas reglas que su elección (Estatuto 1980, § 9.7), y el afiliado tiene derecho a elegir y revocar (§ 11.2). Revoca el órgano que eligió, sin trámite reforzado. No se ha consultado el texto enmendado de 1981.",
+      "media"
+    ],
+    "rotacion": [
+      4,
+      "La misma función solo se puede ejercer dos mandatos seguidos (Estatuto 1980, § 9.5), y el mandato de la Comisión Nacional dura 2 años (§ 19.4): 4 años como máximo. No se ha podido comprobar si la reforma de 1981 mantuvo el límite.",
+      "media"
+    ],
+    "profesionalizacion": [
+      2,
+      "El estatuto prevé una oficina dirigida por el Presidium (Estatuto 1980, § 19.2) y no prohíbe la remuneración de cargos, pero no la regula. Sin fuente verificable sobre el número de liberados en 1980-81.",
+      "baja"
+    ],
+    "eleccion_direccion": [
+      2,
+      "Desde 1981 el presidente lo elige el congreso de delegados (Fuente: Historia.org.pl, I KZD), por voto secreto entre varios candidatos (Fuente: ES, I KZD). La mitad de la Comisión Nacional la elige el congreso y la otra mitad son presidentes regionales elegidos por las asambleas regionales (Estatuto 1980, §§ 19.3 y 22). El congreso es de segundo grado: empresa → región → congreso (§§ 18.3 y 22.3).",
+      "media"
+    ],
+    "agenda_base": [
+      2,
+      "El congreso lo convoca la Comisión Nacional; un tercio de las juntas regionales puede exigir uno extraordinario (Estatuto 1980, § 18.2) y el 20 % de los afiliados de una región, una asamblea regional extraordinaria (§ 22.2). Cualquier afiliado puede dirigir propuestas a todos los órganos (§ 11.8). El estatuto no regula el orden del día.",
+      "media"
+    ],
+    "pluralismo": [
+      2,
+      "Elecciones sin límite de candidaturas, con voto a candidatos individuales y secreto (Estatuto 1980, § 9); el 10 % de los delegados puede exigir votación secreta (§ 18.6). No hay listas proporcionales ni tendencias reconocidas. El reparto de la Comisión Nacional en 1981 era proporcional por regiones, no por corrientes (Fuente: ES, KKP/KK).",
+      "media"
+    ],
+    "autonomia_base": [
+      3,
+      "Las regiones aprueban su propio programa, fijan las cuotas dentro de los límites del congreso y reparten los ingresos (Estatuto 1980, §§ 22.1 y 40). La junta regional decide las huelgas que no son de una sola empresa (§ 33.3). En 1981 las huelgas suprarregionales pasan a la Comisión Nacional (Fuente: Historia.org.pl, I KZD), que además decide en lo no previsto (§ 43).",
+      "alta"
+    ],
+    "brecha_formal_real": [
+      3,
+      "Formalmente decidía la Comisión Nacional (Estatuto 1980, § 19). En la práctica, el presidente y sus asesores sin cargo electo (Geremek, Kuroń, Mazowiecki) cerraron el acuerdo de Varsovia del 30 de marzo de 1981, que desconvocó la huelga general (Fuente: Polish History, marzo de 1981). La KKP lo ratificó después, y muchos de sus miembros criticaron el «modo autocrático» del grupo negociador y el peso de los expertos; dimitió el portavoz Modzelewski (Fuente: ES, Kalendarium III-1981). Desde 1986-87, órganos nombrados en torno a Wałęsa (TRS, KKW) sustituyeron a los elegidos en 1981 (Fuente: IPN, KKW).",
+      "media"
+    ],
+    "regla_decision": [
+      4,
+      "Mayoría simple en el congreso y en las asambleas regionales (Estatuto 1980, §§ 18.5 y 22.5).",
+      "alta"
+    ],
+    "capacidad_ejecutiva": [
+      2,
+      "El Presidium vela por la ejecución de los acuerdos de la Comisión Nacional, dirige la oficina y realiza actos jurídicos (Estatuto 1980, § 19.2); negociar y firmar convenios corresponde a la Comisión (§ 19.1). No se ha consultado el texto enmendado de 1981.",
+      "media"
+    ],
+    "freq_soberano_meses": [
+      12,
+      "El estatuto de 1980 fija el congreso cada 2 años (Estatuto 1980, § 18.2); la reforma de 1981 lo pasa a «al menos una vez al año» (Fuente: Historia.org.pl, I KZD). Se toma la norma de 1981, comprobada solo en una fuente secundaria.",
+      "media"
+    ],
+    "freq_intermedio_meses": [
+      1,
+      "Sin fuente verificable: el estatuto no fija la periodicidad de la Comisión Nacional y no se ha encontrado una fuente que la dé para 1980-81.",
+      "baja"
+    ],
+    "niveles": [
+      3,
+      "Empresa → asamblea regional de delegados → congreso nacional (Estatuto 1980, §§ 18.3, 22.3 y 26).",
+      "alta"
+    ],
+    "estructura_federal": [
+      3,
+      "Organización nacional única estructurada en regiones con órganos propios, que replican el mismo modelo en empresa, región y país, y secciones por oficio o rama en todos los niveles (Estatuto 1980, §§ 8, 21-26 y 29).",
+      "alta"
+    ],
+    "coste_coordinacion": [
+      2,
+      "Delegación con continuidad entre congresos (Estatuto 1980, § 19), pero la huelga por un conflicto de empresa exige el voto de la mayoría absoluta de sus afiliados (§ 33.2).",
+      "media"
+    ]
+  },
+  "crisis_crecimiento": [
+    {
+      "anio": 1980,
+      "x": "El 17 de septiembre de 1980 los representantes de más de 30 MKZ deciden unificar estatutos y registrar un solo sindicato nacional, coordinado por la KKP. La KKP funcionó en composición provisional y abierta (cerca de 40 organizaciones en octubre de 1980, 53 en febrero de 1981) hasta el congreso de 1981.",
+      "fuente": "http://web.archive.org/web/20201026123245/http://www.encysol.pl/wiki/Krajowa_Komisja_Porozumiewawcza,_Komisja_Krajowa_NSZZ_%E2%80%9ESolidarno%C5%9B%C4%87%E2%80%9D"
+    },
+    {
+      "anio": 1981,
+      "tamano": 9500000,
+      "x": "Crisis de Bydgoszcz: la delegación del Presidium desconvoca la huelga general del 31 de marzo tras negociar con el Gobierno. La KKP lo acepta después, entre críticas al «modo autocrático» del grupo negociador y al peso de los expertos.",
+      "fuente": "https://encysol.pl/es/encyklopedia/kalendarium-solidarnosci/1981/42853,marzec.pdf"
+    }
+  ],
+  "problemas": [
+    {
+      "t": "democratico",
+      "x": "La negociación con el Estado concentró el poder en el presidente y en asesores sin cargo electo; la Comisión solo pudo ratificar el acuerdo de Varsovia a posteriori (Fuente: ES, Kalendarium III-1981; Polish History, marzo de 1981)."
+    },
+    {
+      "t": "agilidad",
+      "x": "Las regiones podían convocar huelgas propias (Estatuto 1980, § 33.3), y hubo huelgas «salvajes» sin acuerdo de la dirección que tensaron la estrategia nacional (Fuente: Polish History, marzo de 1981)."
+    },
+    {
+      "t": "escalabilidad",
+      "x": "Con millones de afiliados, la dirección nacional funcionó en composición provisional hasta el congreso de 1981 y sin presidium hasta febrero de 1981 (Fuente: ES, KKP/KK). Tras la represión, la organización se rehízo en torno a órganos nombrados y no a los elegidos en 1981 (Fuente: IPN, KKW)."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Estatuto 1980 — Statut NSZZ «Solidarność» del 22-IX-1980, texto íntegro (Wszechnica Solidarności, copia en web.archive.org)",
+      "u": "http://web.archive.org/web/20220108012923/http://www.solidarnosc.org.pl/wszechnica/page_id=2891/index.html"
+    },
+    {
+      "t": "ES, I KZD — Encyklopedia Solidarności, «Krajowy Zjazd Delegatów NSZZ “Solidarność”, I» (G. Majchrzak; copia en web.archive.org)",
+      "u": "http://web.archive.org/web/20201206012422/http://www.encysol.pl/wiki/Krajowy_Zjazd_Delegat%C3%B3w_NSZZ_%E2%80%9ESolidarno%C5%9B%C4%87%E2%80%9D,_I"
+    },
+    {
+      "t": "ES, KKP/KK — Encyklopedia Solidarności, «Krajowa Komisja Porozumiewawcza, Komisja Krajowa» (G. Majchrzak; copia en web.archive.org)",
+      "u": "http://web.archive.org/web/20201026123245/http://www.encysol.pl/wiki/Krajowa_Komisja_Porozumiewawcza,_Komisja_Krajowa_NSZZ_%E2%80%9ESolidarno%C5%9B%C4%87%E2%80%9D"
+    },
+    {
+      "t": "ES, Kalendarium III-1981 — Encyklopedia Solidarności, cronología de marzo de 1981",
+      "u": "https://encysol.pl/es/encyklopedia/kalendarium-solidarnosci/1981/42853,marzec.pdf"
+    },
+    {
+      "t": "Historia.org.pl, I KZD — «I Krajowy Zjazd Delegatów NSZZ “Solidarność”» (2016)",
+      "u": "https://historia.org.pl/2016/12/19/i-krajowy-zjazd-delegatow-nszz-solidarnosc/"
+    },
+    {
+      "t": "IPN, KKW — «35. rocznica powołania Krajowej Komisji Wykonawczej NSZZ “Solidarność”» (2022)",
+      "u": "https://ipn.gov.pl/pl/dla-mediow/komunikaty/172563,35-rocznica-powolania-Krajowej-Komisji-Wykonawczej-NSZZ-Solidarnosc.pdf"
+    },
+    {
+      "t": "Polish History, marzo de 1981 — T. Kozłowski (IPN), «March 1981: Solidarity at the height of its power»",
+      "u": "https://polishhistory.pl/march-1981-solidarity-at-the-height-of-its-power/"
+    },
+    {
+      "t": "Christian Science Monitor — «Walesa calls off strike; Poland edges past crisis» (31-III-1981)",
+      "u": "https://csmonitor.com/1981/0331/033133.html"
+    },
+    {
+      "t": "Wikipedia, Solidarity — «Solidarity (Polish trade union)»",
+      "u": "https://en.wikipedia.org/wiki/Solidarity_(Polish_trade_union)"
+    },
+    {
+      "t": "Reseña de Ost — Perspectives on Politics, reseña de D. Ost, The Defeat of Solidarity (Cornell UP, 2005)",
+      "u": "https://www.cambridge.org/core/journals/perspectives-on-politics/article/defeat-of-solidarity-anger-and-politics-in-postcommunist-europe/9FE3C73BE1806B2BD9AC5D8A045CBA59"
+    }
+  ],
+  "confianza": "media"
+}

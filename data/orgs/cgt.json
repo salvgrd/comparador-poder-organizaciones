@@ -7,8 +7,8 @@
   "fundacion": 1989,
   "tamano": [
     100000,
-    "La CGT cifra su afiliación en torno a 100.000. Dato de la propia organización.",
-    "media"
+    "«Más de 100.000 afiliadas», según un artículo de opinión de un militante de la CGT (El Salto, 2025). No se ha encontrado una cifra oficial de la organización.",
+    "baja"
   ],
   "corriente": "Anarcosindicalismo / sindicalismo libertario que sí concurre a elecciones sindicales",
   "autogestionada": true,
@@ -143,22 +143,22 @@
   "codigos": {
     "mandato": [
       3,
-      "Delegaciones con acuerdos de asamblea y voto no fraccionable.",
+      "Reglamento de Congresos, art. 6: delegaciones elegidas en la asamblea de cada sindicato; disposición adicional tercera de los Estatutos: cada ente vota con todos sus votos, sin fraccionarlos.",
       "alta"
     ],
     "revocabilidad": [
       2,
-      "No consta revocación en cualquier momento; sustitución en Pleno o Congreso.",
+      "Los Estatutos no regulan la revocación del SP; lo elige el Congreso o, excepcionalmente, un Pleno Confederal (art. 49), que puede sustituirlo sin trámite reforzado.",
       "media"
     ],
     "rotacion": [
       3,
-      "4 años, máximo 2 mandatos seguidos (art. 50).",
+      "Art. 50: mandatos de 4 años en el Secretariado Permanente, sin poder repetir más de dos seguidos.",
       "alta"
     ],
     "profesionalizacion": [
       2,
-      "Participa en elecciones sindicales: muchas delegadas con horas sindicales y liberaciones.",
+      "Los Estatutos no prohíben las liberaciones ni regulan la remuneración de los cargos confederales; se apoyan en el crédito horario legal de los comités de empresa.",
       "media"
     ],
     "eleccion_direccion": [
@@ -172,8 +172,8 @@
       "alta"
     ],
     "pluralismo": [
-      3,
-      "Candidaturas que compiten de verdad (52/46 en 2022) y votos particulares.",
+      2,
+      "SP elegido secretaría por secretaría, «resultando elegida la más votada» (Reglamento de Congresos, art. 27): sin reparto proporcional. Hay votos particulares con el aval del 5 % y no se reconocen tendencias.",
       "alta"
     ],
     "autonomia_base": [
@@ -183,12 +183,12 @@
     ],
     "brecha_formal_real": [
       2,
-      "Las secciones con recursos de representación legal pesan más que su voto.",
-      "media"
+      "Sin fuente verificable: las secciones con recursos de representación legal pesan más que su voto. Estimación sin fuente citada.",
+      "baja"
     ],
     "regla_decision": [
       3,
-      "Mayoría ponderada; consenso obligatorio antes de votar en el Comité Confederal.",
+      "Art. 45: en el Comité Confederal solo se recurre al voto ponderado cuando se demuestra que no hay consenso; en Congreso, votos según afiliación (Reglamento, art. 8).",
       "alta"
     ],
     "capacidad_ejecutiva": [
@@ -198,12 +198,12 @@
     ],
     "freq_soberano_meses": [
       48,
-      "Congreso cada 4 años.",
+      "Reglamento de Congresos, art. 1: Congreso ordinario a los cuatro años del anterior.",
       "alta"
     ],
     "freq_intermedio_meses": [
       2,
-      "Comité Confederal cada dos meses.",
+      "Art. 46: el Comité Confederal se reúne de forma ordinaria cada dos meses.",
       "alta"
     ],
     "niveles": [
@@ -248,6 +248,10 @@
     {
       "t": "El Salto — CGT renueva su Secretariado Permanente (2022)",
       "u": "https://www.elsaltodiario.com/cgt/renueva-secretariado-permanente-candidatura-miguel-fadrique"
+    },
+    {
+      "t": "El Salto — La unidad del anarcosindicalismo es acción conjunta (opinión, 2025)",
+      "u": "https://www.elsaltodiario.com/opinion/unidad-del-anarcosindicalismo-es-accion-conjunta"
     }
   ],
   "confianza": "alta"
